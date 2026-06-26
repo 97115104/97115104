@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520" role="img" aria-label="Live profile canvas">
+  <defs>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#52b788"/><stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b263b"/><stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <filter id="softGlow"><feGaussianBlur stdDeviation="2"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+      @keyframes flow { 0% { offset-distance: 0%; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
+      @keyframes marquee { 0% { transform: translateX(920px); } 100% { transform: translateX(-100%); } }
+      .orbit { transform-origin: 130px 130px; animation: orbit 24s linear infinite; }
+      .ring-pulse { animation: pulse 2s ease-in-out infinite; }
+      .marquee { animation: marquee 28s linear infinite; }
+    </style>
+    <path id="flowPath" d="M 280 200 C 310 200, 310 200, 340 200"/>
+    <path id="flowPath2" d="M 570 200 C 600 200, 600 200, 632 200"/>
+  </defs>
+  <rect width="920" height="520" fill="#0a0f1a" rx="16" stroke="#1e3a5f" stroke-width="1"/>
+  <rect width="920" height="520" fill="url(#panelGrad)" opacity="0.03" rx="16"/>
+  <!-- stats bar -->
+  <rect x="16" y="16" width="888" height="52" rx="10" fill="#111927" stroke="#2d6a4f" stroke-width="1"/>
+  <text x="40" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">640 attestations</text>
+  <text x="240" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">31 repos</text>
+  <text x="420" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">9 provenance receipts</text>
+  <text x="640" y="48" fill="#52b788" font-family="ui-monospace,monospace" font-size="13">attest/s/ndscvnm6</text>
+  <rect x="820" y="30" width="60" height="24" rx="6" fill="#2d6a4f"/>
+  <text x="850" y="47" text-anchor="middle" fill="#fff" font-family="ui-monospace,monospace" font-size="11" font-weight="700">STYLE</text>
+  <!-- attest ring -->
+  <g transform="translate(130,130)">
+    <circle r="52" fill="none" stroke="#1e3a5f" stroke-width="1"/>
+    <g class="orbit">
+      <circle cx="52" cy="0" r="3" fill="#52b788"/>
+    </g>
+    <circle class="ring-pulse" r="42" fill="none" stroke="#52b788" stroke-width="2" stroke-dasharray="8 6" filter="url(#softGlow)"/>
+    <text text-anchor="middle" y="6" fill="#d8f3dc" font-family="ui-monospace,monospace" font-size="14" font-weight="700">attest</text>
+    <text text-anchor="middle" y="22" fill="#74c69d" font-family="ui-monospace,monospace" font-size="9">v3.0 · live</text>
+  </g>
+  <!-- panels -->
+  <rect x="16" y="88" width="280" height="280" rx="12" fill="url(#panelGrad)" stroke="#2d6a4f" stroke-width="1"/>
+  <rect x="308" y="88" width="280" height="280" rx="12" fill="url(#panelGrad)" stroke="#2d6a4f" stroke-width="1"/>
+  <rect x="600" y="88" width="304" height="280" rx="12" fill="url(#panelGrad)" stroke="#2d6a4f" stroke-width="1"/>
+  <text x="32" y="118" fill="#52b788" font-family="ui-monospace,monospace" font-size="12" font-weight="700">PLAN</text>
+  <text x="324" y="118" fill="#52b788" font-family="ui-monospace,monospace" font-size="12" font-weight="700">BUILD</text>
+  <text x="616" y="118" fill="#52b788" font-family="ui-monospace,monospace" font-size="12" font-weight="700">VERIFY</text>
+  <text x="48" y="168" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10" opacity="0"><animate attributeName="opacity" from="0" to="0.9" begin="0.3s" dur="0.5s" fill="freeze"/>“looping” is not new</text>
+<text x="48" y="192" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10" opacity="0"><animate attributeName="opacity" from="0" to="0.9" begin="0.5s" dur="0.5s" fill="freeze"/>old man winter and heliotrope</text>
+<text x="48" y="216" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10" opacity="0"><animate attributeName="opacity" from="0" to="0.9" begin="0.7s" dur="0.5s" fill="freeze"/>kissingparty on becoming</text>
+  <text x="340" y="168" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">97115104</text>
+<rect x="340" y="174" width="0" height="6" rx="3" fill="url(#barGrad)">
+  <animate attributeName="width" from="0" to="120" begin="0.5s" dur="0.8s" fill="freeze"/>
+</rect>
+<text x="340" y="196" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">hsc-chat</text>
+<rect x="340" y="202" width="0" height="6" rx="3" fill="url(#barGrad)">
+  <animate attributeName="width" from="0" to="102" begin="0.65s" dur="0.8s" fill="freeze"/>
+</rect>
+<text x="340" y="224" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">voice-clone</text>
+<rect x="340" y="230" width="0" height="6" rx="3" fill="url(#barGrad)">
+  <animate attributeName="width" from="0" to="84" begin="0.8s" dur="0.8s" fill="freeze"/>
+</rect>
+<text x="340" y="252" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">ollama-harness</text>
+<rect x="340" y="258" width="0" height="6" rx="3" fill="url(#barGrad)">
+  <animate attributeName="width" from="0" to="66" begin="0.95s" dur="0.8s" fill="freeze"/>
+</rect>
+  <text x="632" y="168" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">97115104 <tspan fill="#52b788">●</tspan></text>
+<text x="632" y="194" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">analyze-wps-e… <tspan fill="#52b788">●</tspan></text>
+<text x="632" y="220" fill="#b7e4c7" font-family="ui-monospace,monospace" font-size="10">attest <tspan fill="#52b788">●</tspan></text>
+  <!-- flow particles -->
+  <circle r="4" fill="#95d5b2"><animateMotion dur="2.5s" repeatCount="indefinite" path="M 296 200 L 340 200"/></circle>
+  <circle r="4" fill="#95d5b2"><animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite" path="M 588 200 L 632 200"/></circle>
+  <circle r="3" fill="#52b788"><animateMotion dur="3s" begin="0.6s" repeatCount="indefinite" path="M 880 360 C 920 380, 920 100, 48 120"/></circle>
+  <circle r="2" fill="#95d5b2"><animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M 880 360 C 920 380, 920 100, 48 120"/></circle>
+  <circle r="2" fill="#74c69d"><animateMotion dur="3.5s" begin="1s" repeatCount="indefinite" path="M 296 200 L 340 200"/></circle>
+  <!-- ledger strip -->
+  <rect x="16" y="432" width="888" height="72" rx="10" fill="#111927" stroke="#415a77" stroke-width="1"/>
+  <text x="32" y="454" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="9">PROVENANCE</text>
+  <circle cx="48" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/></circle>
+<text x="48" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">97115104</text>
+<circle cx="116" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/></circle>
+<text x="116" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">analyze…</text>
+<circle cx="184" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite"/></circle>
+<text x="184" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">attest</text>
+<circle cx="252" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/></circle>
+<text x="252" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">endor-t…</text>
+<circle cx="320" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/></circle>
+<text x="320" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">hsc-chat</text>
+<circle cx="388" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite"/></circle>
+<text x="388" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">ollama-…</text>
+<circle cx="456" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/></circle>
+<text x="456" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">PTL-3</text>
+<circle cx="524" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/></circle>
+<text x="524" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">vLLM-ha…</text>
+<circle cx="592" cy="468" r="5" fill="#52b788"><animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite"/></circle>
+<text x="592" y="486" text-anchor="middle" fill="#8d99ae" font-family="ui-monospace,monospace" font-size="7">voice-c…</text>
+  <!-- marquee -->
+  <clipPath id="clip"><rect x="16" y="388" width="888" height="28" rx="4"/></clipPath>
+  <g clip-path="url(#clip)">
+    <text class="marquee" x="0" y="408" fill="#74c69d" font-family="ui-monospace,monospace" font-size="11">“looping” is not new   ◆   old man winter and heliotrope   ◆   kissingparty on becoming   ◆   when to start a new chat   ◆   “looping” is not new   ◆   old man winter and heliotrope   ◆   kissingparty on becoming   ◆   when to start a new chat</text>
+  </g>
+</svg>

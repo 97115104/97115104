@@ -1,8 +1,25 @@
 {
-  "scanned_at": "2026-06-26T04:16:49.294Z",
+  "scanned_at": "2026-06-26T04:22:01.113Z",
   "total_repos": 31,
-  "with_receipts": 8,
+  "with_receipts": 9,
   "entries": [
+    {
+      "repo": "97115104",
+      "signals": [
+        {
+          "type": "short",
+          "url": "https://attest.97115104.com/s/1cdlezro",
+          "id": "1cdlezro"
+        },
+        {
+          "type": "verify",
+          "url": "https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA2LTI2LTZlZDJhMiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY2xhdWRlLW9wdXMtNCIsInJvbGUiOiJjb2xsYWJvcmF0ZWQiLCJhdXRob3JzaGlwX3R5cGUiOiJjb2xsYWIiLCJ0aW1lc3RhbXAiOiIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1oiLCJhdXRob3IiOiI5NzExNTEwNCIsInBsYXRmb3JtIjoiQ3Vyc29yIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjFlYWI3NzE2N2UyZGZlMTU2NjkyMzMwOTMzN2JlMjAzYmIxNWFlYjA5YWMxZDQ3YWE0NGE3Y2YwNTk0Mzk0MGUiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJ2YWx1ZSI6IjFjNjg0ZWE0N2FiMTg2ZTdiNDZlMzRiYzFmMTdlNzk3MTk1YTZlMTg4NTdlMDNiOWUxMmViNTk1NjZjNzg2Y2IiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1NjoxZWFiNzcxNjdlMmRmZTE1NjY5MjMzMDkzMzdiZTIwM2JiMTVhZWIwOWFjMWQ0N2FhNDRhN2NmMDU5NDM5NDBlXCIsXCJtb2RlbFwiOlwiY2xhdWRlLW9wdXMtNFwiLFwidGltZXN0YW1wXCI6XCIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1pcIixcImF1dGhvcnNoaXBfdHlwZVwiOlwiY29sbGFiXCIsXCJyb2xlXCI6XCJjb2xsYWJvcmF0ZWRcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiI5NzExNTEwNCIsImlkIjoiOTcxMTUxMDQifX0"
+        }
+      ],
+      "authorship_type": null,
+      "model": null,
+      "latest_url": "https://attest.97115104.com/s/1cdlezro"
+    },
     {
       "repo": "analyze-wps-embodiment",
       "signals": [

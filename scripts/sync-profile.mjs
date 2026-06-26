@@ -9,6 +9,13 @@ import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { writeStyleAttestation } from './lint-writing-profile.mjs';
+import {
+  renderHero,
+  renderCanvas,
+  renderOrbit,
+  renderTicker,
+  renderStyleBadge,
+} from './svg-studio.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -36,19 +43,6 @@ const PINNED = [
 ];
 
 const PLAN_REPOS = ['attest', 'endor-train', 'jennifer-lang', 'PTL-3'];
-
-function escapeXml(s) {
-  return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-function truncate(s, n) {
-  const t = String(s ?? '');
-  return t.length <= n ? t : `${t.slice(0, n - 1)}…`;
-}
 
 async function fetchJson(url, headers = {}) {
   const res = await fetch(url, { headers });
@@ -162,160 +156,6 @@ function replaceSection(content, name, body) {
     throw new Error(`Missing sync section: ${name}`);
   }
   return content.replace(re, replacement);
-}
-
-function renderAttestSealSvg(attestation, contentHash) {
-  const w = 640;
-  const h = 120;
-  const a = attestation?.attestation ?? {};
-  const shortUrl = attestation?.urls?.short ?? 'pending sync';
-  const type = a.authorship_type ?? a.role ?? 'collab';
-  const model = a.model ?? 'Human';
-  const ts = (a.timestamp ?? new Date().toISOString()).slice(0, 19);
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Attest seal">
-  <defs>
-    <style>
-      .ring { fill: none; stroke: #40916c; stroke-width: 2; }
-      @keyframes pulse { 0%,100% { stroke-opacity: 1; } 50% { stroke-opacity: 0.45; } }
-      .ring-anim { animation: pulse 3s ease-in-out infinite; }
-      @media (prefers-color-scheme: dark) {
-        .bg { fill: #0d1b2a; }
-        .label { fill: #adb5bd; }
-        .value { fill: #e0e1dd; }
-      }
-      @media (prefers-color-scheme: light) {
-        .bg { fill: #f8f9fa; }
-        .label { fill: #495057; }
-        .value { fill: #212529; }
-      }
-    </style>
-  </defs>
-  <rect class="bg" width="${w}" height="${h}" rx="10" stroke="#2d6a4f" stroke-width="2"/>
-  <circle class="ring ring-anim" cx="60" cy="60" r="36"/>
-  <circle class="ring" cx="60" cy="60" r="28" stroke-dasharray="4 3"/>
-  <text x="60" y="56" text-anchor="middle" fill="#40916c" font-family="ui-monospace,monospace" font-size="11" font-weight="700">attest</text>
-  <text x="60" y="72" text-anchor="middle" fill="#40916c" font-family="ui-monospace,monospace" font-size="9">v3.0</text>
-  <text class="label" x="120" y="36" font-family="ui-monospace,monospace" font-size="11">authorship_type</text>
-  <text class="value" x="120" y="54" font-family="ui-monospace,monospace" font-size="14" font-weight="600">${escapeXml(type)}</text>
-  <text class="label" x="280" y="36" font-family="ui-monospace,monospace" font-size="11">model</text>
-  <text class="value" x="280" y="54" font-family="ui-monospace,monospace" font-size="14" font-weight="600">${escapeXml(truncate(model, 24))}</text>
-  <text class="label" x="120" y="82" font-family="ui-monospace,monospace" font-size="11">sha256</text>
-  <text class="value" x="120" y="100" font-family="ui-monospace,monospace" font-size="10">${escapeXml(contentHash.slice(0, 32))}…</text>
-  <text class="label" x="440" y="36" font-family="ui-monospace,monospace" font-size="11">timestamp</text>
-  <text class="value" x="440" y="54" font-family="ui-monospace,monospace" font-size="12">${escapeXml(ts)}Z</text>
-  <text class="label" x="440" y="82" font-family="ui-monospace,monospace" font-size="11">verify</text>
-  <text class="value" x="440" y="100" font-family="ui-monospace,monospace" font-size="9">${escapeXml(truncate(shortUrl.replace('https://', ''), 28))}</text>
-</svg>`;
-}
-
-function renderLoopSvg(snapshot) {
-  const w = 780;
-  const h = 320;
-  const planItems = snapshot.plan.slice(0, 4);
-  const buildItems = snapshot.build.slice(0, 5);
-  const verifyItems = snapshot.verify.slice(0, 4);
-
-  const planLines = planItems
-    .map((p, i) => `<text x="24" y="${110 + i * 22}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· ${escapeXml(truncate(p, 42))}</text>`)
-    .join('\n');
-  const buildLines = buildItems
-    .map((b, i) => {
-      const pulse = i === 0 ? ' class="pulse"' : '';
-      return `<text${pulse} x="284" y="${110 + i * 22}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· ${escapeXml(truncate(b.name, 18))} ${escapeXml(b.pushed_at?.slice(0, 10) ?? '')}</text>`;
-    })
-    .join('\n');
-  const verifyLines = verifyItems
-    .map((v, i) => `<text x="544" y="${110 + i * 22}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· ${escapeXml(truncate(v.repo, 14))} ${escapeXml(v.authorship_type ?? '—')}</text>`)
-    .join('\n');
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Plan build verify loop">
-  <defs>
-    <style>
-      @keyframes pulse { 0%,100% { fill: #2d6a4f; } 50% { fill: #40916c; } }
-      .pulse { animation: pulse 2s ease-in-out infinite; }
-      @media (prefers-color-scheme: dark) {
-        .bg { fill: #0d1b2a; }
-        .panel { fill: #1b263b; stroke: #415a77; }
-        .title { fill: #e0e1dd; }
-        .head { fill: #90be6d; }
-        .arrow { stroke: #40916c; }
-      }
-      @media (prefers-color-scheme: light) {
-        .bg { fill: #f8f9fa; }
-        .panel { fill: #fff; stroke: #adb5bd; }
-        .title { fill: #212529; }
-        .head { fill: #2d6a4f; }
-        .arrow { stroke: #40916c; }
-      }
-    </style>
-    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#40916c"/>
-    </marker>
-  </defs>
-  <rect class="bg" width="${w}" height="${h}" rx="10"/>
-  <text class="title" x="24" y="32" font-family="Georgia,serif" font-size="18" font-weight="600">plan → build → verify</text>
-  <text class="title" x="24" y="52" font-family="ui-monospace,monospace" font-size="10" opacity="0.7">synced ${escapeXml(snapshot.synced_at.slice(0, 19))}Z</text>
-  <rect class="panel" x="16" y="68" width="230" height="220" rx="8"/>
-  <rect class="panel" x="276" y="68" width="230" height="220" rx="8"/>
-  <rect class="panel" x="536" y="68" width="230" height="220" rx="8"/>
-  <text class="head" x="32" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">PLAN</text>
-  <text class="head" x="292" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">BUILD</text>
-  <text class="head" x="552" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">VERIFY</text>
-  ${planLines}
-  ${buildLines}
-  ${verifyLines}
-  <line class="arrow" x1="246" y1="178" x2="276" y2="178" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line class="arrow" x1="506" y1="178" x2="536" y2="178" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <path class="arrow" d="M 650 288 C 700 300, 700 20, 130 68" fill="none" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowhead)"/>
-  <text x="390" y="308" text-anchor="middle" fill="#40916c" font-family="ui-monospace,monospace" font-size="10">loop closes on new attestation</text>
-</svg>`;
-}
-
-function renderLedgerSvg(ledger) {
-  const rows = ledger.entries.slice(0, 8);
-  const w = 720;
-  const h = 80 + rows.length * 26;
-  const header = `<text x="16" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">repo</text>
-  <text x="180" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">authorship</text>
-  <text x="300" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">model</text>
-  <text x="480" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">receipt</text>`;
-  const body = rows
-    .map((r, i) => {
-      const y = 80 + i * 26;
-      const has = r.latest_url ? 'yes' : '—';
-      return `<text x="16" y="${y}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">${escapeXml(r.repo)}</text>
-<text x="180" y="${y}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">${escapeXml(r.authorship_type ?? '—')}</text>
-<text x="300" y="${y}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">${escapeXml(truncate(r.model ?? '—', 20))}</text>
-<text x="480" y="${y}" fill="#495057" font-family="ui-monospace,monospace" font-size="11">${escapeXml(has)}</text>`;
-    })
-    .join('\n');
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Provenance ledger">
-  <defs>
-    <style>
-      @media (prefers-color-scheme: dark) {
-        .bg { fill: #0d1b2a; }
-        .title { fill: #e0e1dd; }
-        .sub { fill: #adb5bd; }
-      }
-      @media (prefers-color-scheme: light) {
-        .bg { fill: #f8f9fa; }
-        .title { fill: #212529; }
-        .sub { fill: #495057; }
-      }
-    </style>
-  </defs>
-  <rect class="bg" width="${w}" height="${h}" rx="8" stroke="#415a77" stroke-width="1"/>
-  <text class="title" x="16" y="28" font-family="Georgia,serif" font-size="15" font-weight="600">Provenance ledger</text>
-  <text class="sub" x="16" y="44" font-family="ui-monospace,monospace" font-size="10">${ledger.with_receipts} of ${ledger.total_repos} repos carry attest signals · sparse rows are expected until backfill</text>
-  <line x1="16" y1="64" x2="${w - 16}" y2="64" stroke="#adb5bd" stroke-width="1"/>
-  ${header}
-  ${body}
-</svg>`;
 }
 
 function extractHumanProse(readme) {
@@ -453,25 +293,6 @@ Last sync: ${snapshot.synced_at}
 `;
 }
 
-function renderAttestBlock(attestation) {
-  if (attestation.placeholder) {
-    return `Attestation pending next CI run with network access to [attest.97115104.com](https://attest.97115104.com/).
-
-Content SHA-256: \`${attestation.content_hash}\``;
-  }
-  const short = attestation.urls?.short ?? '';
-  const verify = attestation.urls?.verify ?? '';
-  return `[Verify this README](${short}) · [Full attestation record](${verify})
-
-Human prose SHA-256: \`${attestation.content_hash}\`
-
-Sidecar: [attestations/README.latest.json](attestations/README.latest.json)`;
-}
-
-function renderSyncMeta(snapshot, styleResult) {
-  return `Last profile sync: **${snapshot.synced_at.slice(0, 19)}Z** · ${snapshot.repo_count} repositories · ${snapshot.metrics?.total_attestations ?? '—'} total attestations on attest.97115104.com · style lint: **${styleResult.pass ? 'PASS' : 'FAIL'}**`;
-}
-
 async function main() {
   mkdirSync(GENERATED, { recursive: true });
   mkdirSync(ATTESTATIONS, { recursive: true });
@@ -535,8 +356,6 @@ async function main() {
   writeFileSync(join(GENERATED, 'entity-snapshot.json'), JSON.stringify(snapshot, null, 2));
 
   writeFileSync(join(GENERATED, 'provenance-ledger.json'), JSON.stringify(ledger, null, 2));
-  writeFileSync(join(GENERATED, 'loop-diagram.svg'), renderLoopSvg(snapshot));
-  writeFileSync(join(GENERATED, 'provenance-ledger.svg'), renderLedgerSvg(ledger));
 
   const readmePath = join(ROOT, 'README.md');
   let readme = readFileSync(readmePath, 'utf8');
@@ -546,18 +365,39 @@ async function main() {
   console.log('Creating README attestation…');
   const attestation = await createAttestation(readme, proseHash);
   writeFileSync(join(ATTESTATIONS, 'README.latest.json'), JSON.stringify(attestation, null, 2));
-  writeFileSync(join(GENERATED, 'attest-seal.svg'), renderAttestSealSvg(attestation, proseHash));
 
   console.log('Linting writing profile…');
   const styleResult = writeStyleAttestation(readmePath);
 
+  writeFileSync(join(GENERATED, 'hero.svg'), renderHero());
+  writeFileSync(
+    join(GENERATED, 'canvas.svg'),
+    renderCanvas(snapshot, attestation, styleResult.pass, ledger),
+  );
+  writeFileSync(join(GENERATED, 'orbit.svg'), renderOrbit());
+  writeFileSync(join(GENERATED, 'ticker.svg'), renderTicker(snapshot.recent_posts));
+  writeFileSync(join(GENERATED, 'style-badge.svg'), renderStyleBadge(styleResult.pass));
+
   writeFileSync(join(ROOT, 'llms.txt'), renderLlmsTxt(snapshot));
 
-  readme = replaceSection(readme, 'attest-seal', `![Attest seal](./generated/attest-seal.svg)\n\n${renderAttestBlock({ ...attestation, content_hash: proseHash })}`);
-  readme = replaceSection(readme, 'loop-diagram', `![Plan build verify loop](./generated/loop-diagram.svg)`);
-  readme = replaceSection(readme, 'style-attestation', `![Writing profile compliance](./generated/style-attestation.svg)`);
-  readme = replaceSection(readme, 'provenance-ledger', `![Provenance ledger](./generated/provenance-ledger.svg)`);
-  readme = replaceSection(readme, 'sync-meta', renderSyncMeta(snapshot, styleResult));
+  const verifyUrl = attestation.urls?.short ?? 'https://attest.97115104.com/';
+  readme = replaceSection(readme, 'hero', `<a href="https://links.97115104.com/"><img src="./generated/hero.svg" width="100%" alt="97115104"/></a>`);
+  readme = replaceSection(
+    readme,
+    'canvas',
+    `<a href="${verifyUrl}"><img src="./generated/canvas.svg" width="100%" alt="live canvas"/></a>`,
+  );
+  readme = replaceSection(readme, 'orbit', `<img src="./generated/orbit.svg" width="100%" alt="pinned repos"/>`);
+  readme = replaceSection(
+    readme,
+    'ticker',
+    `<a href="https://blog.97115104.com/"><img src="./generated/ticker.svg" width="100%" alt="blog ticker"/></a>`,
+  );
+  readme = replaceSection(
+    readme,
+    'sync-meta',
+    `<sub>${snapshot.repo_count} repos · ${snapshot.metrics?.total_attestations ?? '—'} attestations · [verify](${verifyUrl}) · synced ${snapshot.synced_at.slice(0, 16)}Z</sub>`,
+  );
 
   writeFileSync(readmePath, readme);
   console.log('Profile sync complete.');

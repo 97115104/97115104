@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="920" height="260" viewBox="0 0 920 260" role="img" aria-label="97115104">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a">
+        <animate attributeName="stop-color" values="#0a0f1a;#0d1b2a;#0a0f1a" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1b263b">
+        <animate attributeName="stop-color" values="#1b263b;#14213d;#1b263b" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#52b788"/>
+      <stop offset="50%" stop-color="#95d5b2"/>
+      <stop offset="100%" stop-color="#74c69d"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e3a5f" stroke-width="0.5" opacity="0.35"/>
+    </pattern>
+    <pattern id="hex" width="56" height="100" patternUnits="userSpaceOnUse" patternTransform="scale(0.5)">
+      <path d="M28 0 L56 16 L56 48 L28 64 L0 48 L0 16 Z" fill="none" stroke="#1e3a5f" stroke-width="0.6" opacity="0.25"/>
+    </pattern>
+    <style>
+      @keyframes draw { from { stroke-dashoffset: 800; } to { stroke-dashoffset: 0; } }
+      @keyframes fadeUp { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes scan { 0% { transform: translateY(-260px); } 100% { transform: translateY(260px); } }
+      @keyframes drift { 0% { transform: translateX(0); } 100% { transform: translateX(-40px); } }
+      @keyframes glitch1 { 0%,100% { transform: translate(0); } 20% { transform: translate(-3px,1px); } 40% { transform: translate(3px,-1px); } 60% { transform: translate(-2px,2px); } }
+      @keyframes glitch2 { 0%,100% { transform: translate(0); opacity: 0; } 20% { transform: translate(3px,-1px); opacity: 0.4; } 40% { transform: translate(-3px,1px); opacity: 0.3; } }
+      .title-stroke {
+        fill: none; stroke: url(#strokeGrad); stroke-width: 2.5;
+        stroke-dasharray: 800; stroke-dashoffset: 0;
+        animation: draw 3s ease-out forwards;
+        filter: url(#glow);
+      }
+      .sub { fill: #d8f3dc; opacity: 0; animation: fadeUp 1.2s ease 1.5s forwards; }
+      .tag { fill: #74c69d; font-family: ui-monospace,monospace; opacity: 0; animation: fadeUp 1s ease 2.2s forwards; }
+      .scanline { animation: scan 4s linear infinite; opacity: 0.06; }
+      .grid-pan { animation: drift 20s linear infinite; }
+      .glitch-a { animation: glitch1 4s infinite; }
+      .glitch-b { fill: #e5383b; opacity: 0; animation: glitch2 4s infinite; }
+    </style>
+  </defs>
+  <rect width="920" height="260" fill="url(#bg)" rx="16"/>
+  <rect width="920" height="260" fill="url(#hex)" rx="16" opacity="0.5"/>
+  <rect width="920" height="260" fill="url(#grid)" class="grid-pan" rx="16"/>
+  <rect class="scanline" x="0" y="0" width="920" height="4" fill="#52b788"/>
+  <circle cx="60" cy="20" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="20;-10;20" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle><circle cx="107" cy="51" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="51;21;51" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle><circle cx="154" cy="82" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="82;52;82" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle><circle cx="201" cy="113" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="113;83;113" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle><circle cx="248" cy="144" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="144;114;144" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite"/>
+    </circle><circle cx="295" cy="175" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="175;145;175" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle><circle cx="342" cy="206" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="206;176;206" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle><circle cx="389" cy="237" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="237;207;237" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle><circle cx="436" cy="48" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="48;18;48" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle><circle cx="483" cy="79" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="79;49;79" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite"/>
+    </circle><circle cx="530" cy="110" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="110;80;110" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle><circle cx="577" cy="141" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="141;111;141" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle><circle cx="624" cy="172" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="172;142;172" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle><circle cx="671" cy="203" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="203;173;203" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle><circle cx="718" cy="234" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="234;204;234" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite"/>
+    </circle><circle cx="765" cy="45" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="45;15;45" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle><circle cx="812" cy="76" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="76;46;76" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle><circle cx="859" cy="107" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="107;77;107" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle><circle cx="106" cy="138" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="138;108;138" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle><circle cx="153" cy="169" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="169;139;169" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite"/>
+    </circle><circle cx="200" cy="200" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="200;170;200" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="3s" repeatCount="indefinite"/>
+    </circle><circle cx="247" cy="231" r="1" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="231;201;231" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle><circle cx="294" cy="42" r="2" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="42;12;42" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="5s" repeatCount="indefinite"/>
+    </circle><circle cx="341" cy="73" r="3" fill="#52b788" opacity="0.4">
+      <animate attributeName="cy" values="73;43;73" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  <text x="460" y="108" text-anchor="middle" class="title-stroke glitch-b" font-family="ui-monospace,monospace" font-size="64" font-weight="700">97115104</text>
+  <text x="460" y="108" text-anchor="middle" class="title-stroke glitch-a" font-family="ui-monospace,monospace" font-size="64" font-weight="700">97115104</text>
+  <text x="460" y="142" text-anchor="middle" class="sub" font-family="Georgia,serif" font-size="22" letter-spacing="6">A U S T I N   H A R S H B E R G E R</text>
+  <text x="460" y="188" text-anchor="middle" class="tag" font-size="15">plan → build → verify</text>
+  <text x="460" y="210" text-anchor="middle" class="tag" font-size="11" opacity="0.7">open systems · attribution · personal inference</text>
+  <rect x="380" y="228" width="160" height="2" rx="1" fill="#52b788" opacity="0.5">
+    <animate attributeName="width" values="40;160;40" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="440;380;440" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
