@@ -19,7 +19,8 @@ const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
 const BLOG_FEED = 'https://blog.97115104.com/feed.xml';
 const FEED_BLOG_LIMIT = 6;
-const FEED_COMMIT_LIMIT = 9;
+const FEED_COMMIT_LIMIT = 12;
+const FEED_COMMIT_FETCH_LIMIT = 50;
 const PT = 'America/Los_Angeles';
 const ATTEST_MODEL = 'composer-2.5-fast';
 
@@ -237,7 +238,7 @@ async function fetchLanguagesByRecency(repos) {
 
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-async function fetchRecentCommits(repos) {
+async function fetchRecentCommits(repos, limit = FEED_COMMIT_FETCH_LIMIT) {
   const commits = [];
   const seen = new Set();
 
@@ -251,7 +252,7 @@ async function fetchRecentCommits(repos) {
       sha: fullSha.slice(0, 7),
       at: entry.at,
     });
-    return commits.length >= FEED_COMMIT_LIMIT;
+    return commits.length >= limit;
   };
 
   const eventsUrl = hasUserAuth()
@@ -302,7 +303,7 @@ async function fetchRecentCommits(repos) {
     console.warn('GitHub events unavailable:', err.message);
   }
 
-  if (commits.length >= FEED_COMMIT_LIMIT || !repos.length) return commits;
+  if (commits.length >= limit || !repos.length) return commits;
 
   const sorted = [...repos].sort(
     (a, b) => new Date(b.pushed_at ?? 0) - new Date(a.pushed_at ?? 0),
@@ -331,61 +332,47 @@ async function fetchRecentCommits(repos) {
   return commits.sort((a, b) => new Date(b.at) - new Date(a.at));
 }
 
-async function fetchActivity(repos = []) {
-  try {
-    const eventsUrl = hasUserAuth()
-      ? 'https://api.github.com/user/events?per_page=100'
-      : `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=100`;
-    const events = await fetchJson(eventsUrl, githubHeaders());
-    const pushEvents = events.filter((e) => e.type === 'PushEvent' && e.payload?.head);
-
-    const sample = pushEvents.map((e) => new Date(e.created_at));
-    const hourCounts = Array(24).fill(0);
-    const dayCounts = Array(7).fill(0);
-    for (const t of sample) {
-      hourCounts[pacificHour(t)] += 1;
-      const wd = new Intl.DateTimeFormat('en-US', { timeZone: PT, weekday: 'short' }).format(t);
-      const dayIdx = DAY_NAMES.indexOf(wd);
-      if (dayIdx >= 0) dayCounts[dayIdx] += 1;
+function groupCommitsByRepo(commits) {
+  const order = [];
+  const groups = new Map();
+  for (const c of commits) {
+    if (!groups.has(c.repo)) {
+      groups.set(c.repo, { ...c, count: 1 });
+      order.push(c.repo);
+    } else {
+      groups.get(c.repo).count += 1;
     }
-    const peakHour = sample.length ? hourCounts.indexOf(Math.max(...hourCounts)) : null;
-    const peakDay = sample.length ? DAY_NAMES[dayCounts.indexOf(Math.max(...dayCounts))] : null;
-    const sorted = [...sample].sort((a, b) => a - b);
-    const pushes7d = pushEvents.filter((e) => daysSince(e.created_at) <= 7).length;
-    const pushes30d = pushEvents.filter((e) => daysSince(e.created_at) <= 30).length;
-
-    const repoPushCounts = {};
-    for (const event of pushEvents) {
-      const name = event.repo?.name?.replace(`${GITHUB_USER}/`, '') ?? '?';
-      repoPushCounts[name] = (repoPushCounts[name] ?? 0) + 1;
-    }
-    const topPushRepo = Object.entries(repoPushCounts).sort((a, b) => b[1] - a[1])[0];
-
-    const recent_commits = await fetchRecentCommits(repos);
-
-    return {
-      recent_commits,
-      commit_stats: {
-        peak_hour_pt: peakHour,
-        peak_day_pt: peakDay,
-        hours_pt: hourCounts,
-        days_pt: dayCounts,
-        pushes_7d: pushes7d,
-        pushes_30d: pushes30d,
-        top_push_repo: topPushRepo ? { name: topPushRepo[0], count: topPushRepo[1] } : null,
-        latest: sorted.length ? sorted[sorted.length - 1].toISOString() : null,
-        earliest: sorted.length ? sorted[0].toISOString() : null,
-        sample_size: sample.length,
-      },
-    };
-  } catch (err) {
-    console.warn('GitHub events unavailable:', err.message);
-    const recent_commits = await fetchRecentCommits(repos);
-    const commitStats = recent_commits.length
-      ? { ...deriveCommitStats(recent_commits), sample_size: recent_commits.length }
-      : { sample_size: 0 };
-    return { recent_commits, commit_stats: commitStats };
   }
+  return order.map((repo) => groups.get(repo));
+}
+
+function topCommitRepo(commits) {
+  const counts = {};
+  for (const c of commits) {
+    counts[c.repo] = (counts[c.repo] ?? 0) + 1;
+  }
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+  return top ? { name: top[0], count: top[1] } : null;
+}
+
+function buildCommitStats(commits) {
+  if (!commits.length) return { sample_size: 0, commits_7d: 0, commits_30d: 0 };
+  const derived = deriveCommitStats(commits);
+  return {
+    ...derived,
+    commits_7d: commits.filter((c) => daysSince(c.at) <= 7).length,
+    commits_30d: commits.filter((c) => daysSince(c.at) <= 30).length,
+    top_commit_repo: topCommitRepo(commits),
+  };
+}
+
+async function fetchActivity(repos = []) {
+  const raw = await fetchRecentCommits(repos);
+  const recent_commits = groupCommitsByRepo(raw).slice(0, FEED_COMMIT_LIMIT);
+  return {
+    recent_commits,
+    commit_stats: buildCommitStats(raw),
+  };
 }
 
 function parseAtomFeed(xml) {
@@ -581,7 +568,7 @@ async function main() {
     repo_stats: repoStats ?? previous?.repo_stats ?? null,
     profile_stats: profileStats ?? previous?.profile_stats ?? null,
     recent_posts: blogPosts.length ? blogPosts.slice(0, FEED_BLOG_LIMIT) : (previous?.recent_posts ?? []),
-    recent_commits: recentCommits.slice(0, FEED_COMMIT_LIMIT),
+    recent_commits: recentCommits,
     commit_stats: commitStats,
     languages_by_recency: languages.length
       ? languages

@@ -22,7 +22,7 @@ const BORDER = '#ffffff';
 const FAINT = '#171717';
 
 const FEED_BLOG_LIMIT = 6;
-const FEED_COMMIT_LIMIT = 9;
+const FEED_COMMIT_LIMIT = 12;
 const CANVAS_W = 920;
 const FEED_W = 450;
 const RHYTHM_H = 108;
@@ -191,11 +191,11 @@ function renderStatsPanel(snapshot, x, y, w, h) {
   blocks.push(sectionRule(x + pad, cy, w - pad * 2));
   cy += 10;
   for (const [label, value] of [
-    ['pushes 7d', String(stats.pushes_7d ?? '—')],
-    ['pushes 30d', String(stats.pushes_30d ?? '—')],
+    ['commits 7d', String(stats.commits_7d ?? '—')],
+    ['commits 30d', String(stats.commits_30d ?? '—')],
     ['repos 7d', String(repo.pushed_7d ?? '—')],
     ['repos 30d', String(repo.pushed_30d ?? '—')],
-    ['top repo', truncate(stats.top_push_repo?.name ?? repo.active_repo?.name ?? '—', 18)],
+    ['top repo', truncate(stats.top_commit_repo?.name ?? repo.active_repo?.name ?? '—', 18)],
     ['top starred', truncate(repo.top_starred ? `${repo.top_starred.name} (${repo.top_starred.stars})` : '—', 22)],
   ]) {
     blocks.push(statLine(x + pad, cy, label, value));
@@ -351,10 +351,11 @@ function feedBlogEntry(y, post, delay) {
 function feedCommitEntry(y, commit, delay) {
   const d = delay.toFixed(1);
   const when = formatFeedPacific(commit.at);
-  const msg = truncate(commit.message, 34);
+  const msg = truncate(commit.message, 30);
+  const count = commit.count > 1 ? ` (${commit.count})` : '';
   return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="11" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
-    <tspan fill="${INK}" font-weight="700">@git</tspan><tspan fill="${MUTED}"> ${escapeXml(commit.sha)}</tspan><tspan fill="${INK}"> ${escapeXml(commit.repo)}</tspan>
+    <tspan fill="${INK}" font-weight="700">@git</tspan><tspan fill="${MUTED}"> ${escapeXml(commit.sha)}</tspan><tspan fill="${INK}"> ${escapeXml(commit.repo)}</tspan><tspan fill="${MUTED}">${escapeXml(count)}</tspan>
   </text>
 <text x="24" y="${y + 12}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="${(Number(d) + 0.05).toFixed(2)}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT · ${escapeXml(msg)}
@@ -393,7 +394,6 @@ function renderFeedPanel(snapshot, h) {
     y += commitH;
     return line;
   });
-  const cursorY = y + 8;
 
   return `<g>
   <rect x="0" y="0" width="${FEED_W}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
@@ -411,7 +411,6 @@ function renderFeedPanel(snapshot, h) {
       <animate attributeName="opacity" from="0" to="1" begin="${commitStart - 0.1}s" dur="0.3s" fill="freeze"/># recent commits
     </text>
     ${gitLines.join('\n')}
-    <text x="16" y="${cursorY}" fill="${INK}" font-family="ui-monospace,monospace" font-size="12" class="cursor">▋</text>
   </g>
 </g>`;
 }
@@ -426,12 +425,6 @@ export function renderCanvas(snapshot) {
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${CANVAS_W}" height="${h}" viewBox="0 0 ${CANVAS_W} ${h}" role="img" aria-label="feed and stats">
-  <defs>
-    <style>
-      @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
-      .cursor { animation: blink 1s step-end infinite; }
-    </style>
-  </defs>
   <rect width="${CANVAS_W}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
   <text x="16" y="${h - 8}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">synced ${escapeXml(formatSyncedAt(snapshot.synced_at))}</text>
   ${renderFeedPanel(snapshot, topH)}
