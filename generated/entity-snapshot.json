@@ -1,33 +1,37 @@
 {
-  "synced_at": "2026-06-26T05:15:52.231Z",
-  "repo_count": 31,
+  "synced_at": "2026-06-26T05:24:52.643Z",
+  "repo_count": 112,
   "repo_counts": {
     "public": 31,
-    "private": null,
-    "total": 31
+    "private": 81,
+    "total": 112
   },
   "repo_stats": {
-    "owned": 26,
-    "forked": 5,
-    "archived": 0,
+    "owned": 106,
+    "forked": 6,
+    "archived": 6,
     "stars": 2,
-    "forks": 1,
-    "pushed_7d": 5,
-    "pushed_30d": 12,
+    "forks": 2,
+    "pushed_7d": 10,
+    "pushed_30d": 22,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-06-26T04:35:01Z"
+      "at": "2026-06-26T05:20:29Z"
     },
     "oldest_repo": {
-      "name": "attest",
-      "at": "2025-05-13T02:42:00Z"
+      "name": "ferris-slack-bot-handler",
+      "at": "2024-12-03T02:20:54Z"
     }
   },
-  "profile_stats": null,
+  "profile_stats": {
+    "followers": 5,
+    "following": 8,
+    "member_since": "2024-10-14"
+  },
   "recent_posts": [
     {
       "title": "“looping” is not new",
@@ -63,95 +67,95 @@
   "recent_commits": [
     {
       "repo": "97115104",
+      "message": "[profile-sync] update profile artifacts and enhance visual elements",
+      "sha": "3a3f850",
+      "at": "2026-06-26T05:20:26Z"
+    },
+    {
+      "repo": "97115104",
       "message": "[profile-sync] update profile artifacts and remove obsolete files",
       "sha": "a3ef77c",
       "at": "2026-06-26T04:34:58Z"
     },
     {
       "repo": "97115104",
-      "message": "push to main",
+      "message": "Merge remote profile-sync with animated README redesign.",
       "sha": "c8b9678",
-      "at": "2026-06-26T04:24:29Z"
+      "at": "2026-06-26T04:24:14Z"
     },
     {
       "repo": "97115104",
-      "message": "push to main",
+      "message": "Add self-attesting profile README with live sync pipeline",
       "sha": "c1f8e8d",
-      "at": "2026-06-26T04:17:20Z"
+      "at": "2026-06-26T04:17:18Z"
     },
     {
       "repo": "hsc-chat",
-      "message": "push to main",
+      "message": "Update project documentation and enhance deployment scripts",
       "sha": "f38f3af",
-      "at": "2026-06-26T03:29:10Z"
+      "at": "2026-06-26T03:29:07Z"
     },
     {
       "repo": "voice-clone",
-      "message": "push to main",
+      "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
       "sha": "4765128",
-      "at": "2026-06-26T03:16:17Z"
-    },
-    {
-      "repo": "ollama-harness",
-      "message": "push to main",
-      "sha": "ff30462",
-      "at": "2026-06-26T02:59:15Z"
+      "at": "2026-06-26T03:16:12Z"
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 0,
     "peak_day_pt": "Thu",
-    "pushes_7d": 14,
-    "pushes_30d": 45,
+    "hours_pt": [
+      8,
+      3,
+      0,
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1,
+      0,
+      0,
+      2,
+      3,
+      3,
+      6,
+      4,
+      4,
+      5
+    ],
+    "days_pt": [
+      6,
+      5,
+      2,
+      4,
+      18,
+      8,
+      3
+    ],
+    "pushes_7d": 15,
+    "pushes_30d": 46,
     "top_push_repo": {
       "name": "vLLM-harness",
       "count": 11
     },
-    "latest": "2026-06-26T04:35:01.000Z",
+    "latest": "2026-06-26T05:20:29.000Z",
     "earliest": "2026-05-29T10:44:09.000Z",
-    "sample_size": 45,
-    "hours_pt": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      2,
-      3,
-      0,
-      0
-    ],
-    "days_pt": [
-      0,
-      0,
-      0,
-      0,
-      6,
-      0,
-      0
-    ]
+    "sample_size": 46
   },
   "languages_by_recency": [
     {
       "name": "JavaScript",
       "repo": "97115104",
-      "bytes": 22989,
-      "pushed_at": "2026-06-26T04:35:01Z"
+      "bytes": 40851,
+      "pushed_at": "2026-06-26T05:20:29Z"
     },
     {
       "name": "CSS",
@@ -190,11 +194,60 @@
       "pushed_at": "2026-06-26T03:29:09Z"
     },
     {
-      "name": "Rust",
-      "repo": "rusting",
-      "bytes": 1,
-      "pushed_at": "2026-06-07T06:55:08Z"
+      "name": "TeX",
+      "repo": "server-backup",
+      "bytes": 86916,
+      "pushed_at": "2026-06-25T21:22:39Z"
     }
   ],
-  "language_totals": []
+  "language_totals": [
+    {
+      "name": "JavaScript",
+      "bytes": 7092745
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 6500722
+    },
+    {
+      "name": "HTML",
+      "bytes": 6267195
+    },
+    {
+      "name": "CSS",
+      "bytes": 3186561
+    },
+    {
+      "name": "Python",
+      "bytes": 2583082
+    },
+    {
+      "name": "Shell",
+      "bytes": 1278654
+    },
+    {
+      "name": "Solidity",
+      "bytes": 820891
+    },
+    {
+      "name": "Swift",
+      "bytes": 595009
+    },
+    {
+      "name": "TeX",
+      "bytes": 574290
+    },
+    {
+      "name": "Rich Text Format",
+      "bytes": 520378
+    },
+    {
+      "name": "Ruby",
+      "bytes": 31511
+    },
+    {
+      "name": "Kotlin",
+      "bytes": 9783
+    }
+  ]
 }
