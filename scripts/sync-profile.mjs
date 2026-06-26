@@ -443,6 +443,7 @@ async function main() {
 
   console.log('Fetching data…');
   const hasAuth = hasUserAuth();
+  console.log(`GitHub auth: ${hasAuth ? 'PROFILE_SYNC_TOKEN (full)' : 'public only'}`);
   const [repos, userProfile] = await Promise.all([
     fetchAllRepos().catch((err) => {
       console.warn('GitHub repos unavailable:', err.message);
@@ -490,6 +491,7 @@ async function main() {
 
   const snapshot = {
     synced_at: new Date().toISOString(),
+    sync_auth: hasAuth ? 'pat' : 'public',
     repo_count: repoCounts?.total ?? previous?.repo_count ?? 0,
     repo_counts: repoCounts ?? previous?.repo_counts ?? { public: previous?.repo_count ?? 0, private: null },
     repo_stats: repoStats ?? previous?.repo_stats ?? null,
