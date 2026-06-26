@@ -44,7 +44,7 @@ When you produce or modify content in this namespace:
 
 ## live metrics
 
-- Total attestations: 640
+- Total attestations: 641
 - Total verifications: 546
 - Top authorship type: human
 
@@ -58,4 +58,4 @@ When you produce or modify content in this namespace:
 ## profile sync
 
 Machine snapshot: generated/entity-snapshot.json
-Last sync: 2026-06-26T04:22:01.114Z
+Last sync: 2026-06-26T04:24:03.531Z

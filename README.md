@@ -12,7 +12,7 @@
 </svg>
 
 <!-- profile-sync:canvas-start -->
-<a href="https://attest.97115104.com/s/ndscvnm6"><img src="./generated/canvas.svg" width="100%" alt="live canvas"/></a>
+<a href="https://attest.97115104.com/s/ncu4l76a"><img src="./generated/canvas.svg" width="100%" alt="live canvas"/></a>
 <!-- profile-sync:canvas-end -->
 
 <!-- profile-sync:orbit-start -->
@@ -39,7 +39,7 @@
 <br/>
 
 <!-- profile-sync:sync-meta-start -->
-<sub>31 repos · 640 attestations · [verify](https://attest.97115104.com/s/ndscvnm6) · synced 2026-06-26T04:22Z</sub>
+<sub>31 repos · 641 attestations · [verify](https://attest.97115104.com/s/ncu4l76a) · synced 2026-06-26T04:24Z</sub>
 <!-- profile-sync:sync-meta-end -->
 
 <br/>

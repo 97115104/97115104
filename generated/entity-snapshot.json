@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-26T04:22:01.114Z",
+  "synced_at": "2026-06-26T04:24:03.531Z",
   "identity": {
     "name": "Austin Harshberger",
     "github": "https://github.com/97115104",
@@ -8,13 +8,13 @@
     "orcid": "https://orcid.org/0009-0003-7242-2456"
   },
   "metrics": {
-    "total_attestations": 640,
+    "total_attestations": 641,
     "total_verifications": 546,
     "total_agent_visits": 125,
     "unique_agents": 3,
     "top_model": {
       "model": "claude-opus-4",
-      "count": 71
+      "count": 72
     },
     "top_type": {
       "authorship_type": "human",
@@ -22,7 +22,7 @@
     },
     "top_author": {
       "author": "97115104",
-      "count": 527
+      "count": 528
     },
     "top_platform": {
       "platform": "GitHub Copilot VS Code",
@@ -49,7 +49,7 @@
       },
       {
         "authorship_type": "collab",
-        "count": 121
+        "count": 122
       },
       {
         "authorship_type": "ai",
@@ -63,7 +63,7 @@
       },
       {
         "platform": "Cursor",
-        "count": 12
+        "count": 13
       },
       {
         "platform": "Claude Code",
@@ -99,7 +99,7 @@
       {
         "platform": "Cursor",
         "authorship_type": "collab",
-        "count": 11
+        "count": 12
       },
       {
         "platform": "Claude Code",
@@ -143,6 +143,15 @@
       }
     ],
     "recent_attestations": [
+      {
+        "id": "2026-06-26-5eb6a5",
+        "content_name": "README.md",
+        "authorship_type": "collab",
+        "model": "claude-opus-4",
+        "author": "97115104",
+        "short_id": "ndscvnm6",
+        "created_at": "2026-06-26 04:22:01"
+      },
       {
         "id": "2026-06-26-749aa6",
         "content_name": "README.md",
@@ -223,18 +232,9 @@
         "author": "Auto",
         "short_id": "kia8myqz",
         "created_at": "2026-06-25 22:25:48"
-      },
-      {
-        "id": "2026-06-23-6164c9",
-        "content_name": "voice-clone",
-        "authorship_type": "collab",
-        "model": "composer",
-        "author": "97115104",
-        "short_id": "9uccr2j5",
-        "created_at": "2026-06-23 08:11:34"
       }
     ],
-    "attestations_24h": 9
+    "attestations_24h": 10
   },
   "repo_count": 31,
   "pinned": [
