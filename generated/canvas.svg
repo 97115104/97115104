@@ -24,10 +24,10 @@
   <rect width="920" height="520" fill="url(#panelGrad)" opacity="0.03" rx="16"/>
   <!-- stats bar -->
   <rect x="16" y="16" width="888" height="52" rx="10" fill="#111927" stroke="#2d6a4f" stroke-width="1"/>
-  <text x="40" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">641 attestations</text>
+  <text x="40" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">642 attestations</text>
   <text x="240" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">31 repos</text>
   <text x="420" y="48" fill="#95d5b2" font-family="ui-monospace,monospace" font-size="13">9 provenance receipts</text>
-  <text x="640" y="48" fill="#52b788" font-family="ui-monospace,monospace" font-size="13">attest/s/ncu4l76a</text>
+  <text x="640" y="48" fill="#52b788" font-family="ui-monospace,monospace" font-size="13">attest/s/mz13ppun</text>
   <rect x="820" y="30" width="60" height="24" rx="6" fill="#2d6a4f"/>
   <text x="850" y="47" text-anchor="middle" fill="#fff" font-family="ui-monospace,monospace" font-size="11" font-weight="700">STYLE</text>
   <!-- attest ring -->

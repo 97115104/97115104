@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-26T04:24:03.531Z",
+  "synced_at": "2026-06-26T04:24:40.955Z",
   "identity": {
     "name": "Austin Harshberger",
     "github": "https://github.com/97115104",
@@ -8,13 +8,13 @@
     "orcid": "https://orcid.org/0009-0003-7242-2456"
   },
   "metrics": {
-    "total_attestations": 641,
+    "total_attestations": 642,
     "total_verifications": 546,
     "total_agent_visits": 125,
     "unique_agents": 3,
     "top_model": {
       "model": "claude-opus-4",
-      "count": 72
+      "count": 73
     },
     "top_type": {
       "authorship_type": "human",
@@ -22,7 +22,7 @@
     },
     "top_author": {
       "author": "97115104",
-      "count": 528
+      "count": 529
     },
     "top_platform": {
       "platform": "GitHub Copilot VS Code",
@@ -49,7 +49,7 @@
       },
       {
         "authorship_type": "collab",
-        "count": 122
+        "count": 123
       },
       {
         "authorship_type": "ai",
@@ -63,7 +63,7 @@
       },
       {
         "platform": "Cursor",
-        "count": 13
+        "count": 14
       },
       {
         "platform": "Claude Code",
@@ -99,7 +99,7 @@
       {
         "platform": "Cursor",
         "authorship_type": "collab",
-        "count": 12
+        "count": 13
       },
       {
         "platform": "Claude Code",
@@ -143,6 +143,15 @@
       }
     ],
     "recent_attestations": [
+      {
+        "id": "2026-06-26-8f30e3",
+        "content_name": "README.md",
+        "authorship_type": "collab",
+        "model": "claude-opus-4",
+        "author": "97115104",
+        "short_id": "ncu4l76a",
+        "created_at": "2026-06-26 04:24:03"
+      },
       {
         "id": "2026-06-26-5eb6a5",
         "content_name": "README.md",
@@ -223,18 +232,9 @@
         "author": "97115104",
         "short_id": "csii81x4",
         "created_at": "2026-06-25 22:51:25"
-      },
-      {
-        "id": "2026-06-25-0c00a7",
-        "content_name": "ollama-harness",
-        "authorship_type": "ai",
-        "model": "Composer 2.5",
-        "author": "Auto",
-        "short_id": "kia8myqz",
-        "created_at": "2026-06-25 22:25:48"
       }
     ],
-    "attestations_24h": 10
+    "attestations_24h": 11
   },
   "repo_count": 31,
   "pinned": [
@@ -351,7 +351,7 @@
   "build": [
     {
       "name": "97115104",
-      "pushed_at": "2026-06-26T04:17:40Z",
+      "pushed_at": "2026-06-26T04:24:28Z",
       "group": "other"
     },
     {
@@ -396,17 +396,18 @@
       "signals": [
         {
           "type": "short",
-          "url": "https://attest.97115104.com/s/1cdlezro",
-          "id": "1cdlezro"
+          "url": "https://attest.97115104.com/s/ncu4l76a",
+          "id": "ncu4l76a"
         },
         {
-          "type": "verify",
-          "url": "https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA2LTI2LTZlZDJhMiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY2xhdWRlLW9wdXMtNCIsInJvbGUiOiJjb2xsYWJvcmF0ZWQiLCJhdXRob3JzaGlwX3R5cGUiOiJjb2xsYWIiLCJ0aW1lc3RhbXAiOiIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1oiLCJhdXRob3IiOiI5NzExNTEwNCIsInBsYXRmb3JtIjoiQ3Vyc29yIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjFlYWI3NzE2N2UyZGZlMTU2NjkyMzMwOTMzN2JlMjAzYmIxNWFlYjA5YWMxZDQ3YWE0NGE3Y2YwNTk0Mzk0MGUiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJ2YWx1ZSI6IjFjNjg0ZWE0N2FiMTg2ZTdiNDZlMzRiYzFmMTdlNzk3MTk1YTZlMTg4NTdlMDNiOWUxMmViNTk1NjZjNzg2Y2IiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1NjoxZWFiNzcxNjdlMmRmZTE1NjY5MjMzMDkzMzdiZTIwM2JiMTVhZWIwOWFjMWQ0N2FhNDRhN2NmMDU5NDM5NDBlXCIsXCJtb2RlbFwiOlwiY2xhdWRlLW9wdXMtNFwiLFwidGltZXN0YW1wXCI6XCIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1pcIixcImF1dGhvcnNoaXBfdHlwZVwiOlwiY29sbGFiXCIsXCJyb2xlXCI6XCJjb2xsYWJvcmF0ZWRcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiI5NzExNTEwNCIsImlkIjoiOTcxMTUxMDQifX0"
+          "type": "short",
+          "url": "https://attest.97115104.com/s/ncu4l76a",
+          "id": "ncu4l76a"
         }
       ],
       "authorship_type": null,
       "model": null,
-      "latest_url": "https://attest.97115104.com/s/1cdlezro"
+      "latest_url": "https://attest.97115104.com/s/ncu4l76a"
     },
     {
       "repo": "analyze-wps-embodiment",
