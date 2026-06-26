@@ -22,7 +22,7 @@ const BORDER = '#ffffff';
 const FAINT = '#171717';
 
 const FEED_BLOG_LIMIT = 6;
-const FEED_COMMIT_LIMIT = 15;
+const FEED_COMMIT_LIMIT = 9;
 const CANVAS_W = 920;
 const FEED_W = 450;
 const RHYTHM_H = 108;
@@ -42,22 +42,25 @@ export function renderHero(artDataUri = null) {
   const ruleW = hasArt ? CANVAS_W - tx - 32 : 488;
 
   const words = ['humans', 'code', 'better', 'than', 'bots'];
+  const wordColors = { better: '#e879a9' };
+  const taglineStart = hasArt ? 1.05 : 0.45;
   const wordLines = words
     .map((word, i) => {
-      const letters = word.split('').map((ch, j) => {
-        const lx = tx + j * 22;
-        const delay = 0.4 + i * 0.35 + j * 0.06;
-        return `<tspan x="${lx}" fill="${INK}" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" begin="${delay.toFixed(2)}s" dur="0.15s" fill="freeze"/>
-          ${escapeXml(ch)}
-        </tspan>`;
-      }).join('');
-      return `<text y="${96 + i * 22}" font-family="ui-monospace,monospace" font-size="22" font-weight="400">${letters}</text>`;
+      const spaced = word.split('').join(' ');
+      const begin = (taglineStart + i * 0.32).toFixed(2);
+      const fill = wordColors[word] ?? INK;
+      return `<text x="${tx}" y="${96 + i * 22}" fill="${fill}" font-family="ui-monospace,monospace" font-size="22" font-weight="400" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${begin}s" dur="0.04s" fill="freeze"/>
+    ${escapeXml(spaced)}
+  </text>`;
     })
     .join('\n');
 
   const corner = (cx, cy, dx, dy) =>
     `<path d="M${cx} ${cy + dy * 10} L${cx} ${cy} L${cx + dx * 10} ${cy}" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
+
+  const cx = ix + is / 2;
+  const cy = iy + is / 2;
 
   const portrait = hasArt ? `<g>
     <rect x="${x}" y="${y}" width="${size}" height="${size}" fill="${FAINT}" stroke="${BORDER}" stroke-width="2"/>
@@ -66,20 +69,38 @@ export function renderHero(artDataUri = null) {
     ${corner(x + size - 10, y + 10, -1, 1)}
     ${corner(x + 10, y + size - 10, 1, -1)}
     ${corner(x + size - 10, y + size - 10, -1, -1)}
-    <image href="${artDataUri}" x="${ix}" y="${iy}" width="${is}" height="${is}" clip-path="url(#hero-art-clip)" preserveAspectRatio="xMidYMid slice"/>
-    <rect x="${ix}" y="${iy}" width="${is}" height="${is}" fill="url(#hero-vignette)" clip-path="url(#hero-art-clip)"/>
-    <rect x="${ix}" y="${iy}" width="${is}" height="2" fill="${INK}" opacity="0.07">
-      <animate attributeName="y" values="${iy};${iy + is - 2};${iy}" dur="6s" repeatCount="indefinite"/>
+    <g clip-path="url(#hero-crt-clip)">
+      <image href="${artDataUri}" x="${ix}" y="${iy}" width="${is}" height="${is}" preserveAspectRatio="xMidYMid slice"/>
+      <rect x="${ix}" y="${iy}" width="${is}" height="${is}" fill="url(#hero-vignette)"/>
+      <rect x="${ix}" y="${iy}" width="${is}" height="${is}" fill="#ffffff" opacity="0">
+        <animate attributeName="opacity" values="0.95;0.55;0" keyTimes="0;0.18;0.42" dur="0.75s" fill="freeze"/>
+      </rect>
+      <rect x="${ix}" y="${cy - 1}" width="${is}" height="2" fill="#ffffff" opacity="0">
+        <animate attributeName="opacity" values="0;1;0.35;0" keyTimes="0;0.22;0.38;0.55" dur="0.9s" fill="freeze"/>
+        <animate attributeName="width" values="4;${is};${is}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+        <animate attributeName="x" values="${cx - 2};${ix};${ix}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+      </rect>
+    </g>
+    <rect x="${ix}" y="${iy}" width="${is}" height="2" fill="${INK}" opacity="0" clip-path="url(#hero-crt-clip)">
+      <animate attributeName="opacity" values="0;0;0.08;0.08" keyTimes="0;0.55;0.65;1" dur="0.9s" fill="freeze"/>
+      <animate attributeName="y" values="${iy};${iy + is - 2};${iy}" begin="0.9s" dur="6s" repeatCount="indefinite"/>
     </rect>
     <rect x="${x}" y="${y + size - 3}" width="${size}" height="3" fill="#e879a9" opacity="0.75">
-      <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" begin="0.9s" repeatCount="indefinite"/>
     </rect>
   </g>` : '';
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${CANVAS_W}" height="${HERO_H}" viewBox="0 0 ${CANVAS_W} ${HERO_H}" role="img" aria-label="97 115 104">
   <defs>
-    ${hasArt ? `<clipPath id="hero-art-clip"><rect x="${ix}" y="${iy}" width="${is}" height="${is}"/></clipPath>
+    ${hasArt ? `<clipPath id="hero-crt-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="${cx - 2}" y="${cy - 2}" width="4" height="4">
+        <animate attributeName="x" values="${cx - 2};${ix};${ix}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+        <animate attributeName="y" values="${cy - 2};${cy - 1.5};${iy}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+        <animate attributeName="width" values="4;${is};${is}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+        <animate attributeName="height" values="4;3;${is}" keyTimes="0;0.32;1" dur="0.9s" fill="freeze"/>
+      </rect>
+    </clipPath>
     <radialGradient id="hero-vignette" cx="50%" cy="45%" r="65%">
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>

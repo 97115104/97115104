@@ -19,7 +19,7 @@ const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
 const BLOG_FEED = 'https://blog.97115104.com/feed.xml';
 const FEED_BLOG_LIMIT = 6;
-const FEED_COMMIT_LIMIT = 15;
+const FEED_COMMIT_LIMIT = 9;
 const PT = 'America/Los_Angeles';
 const ATTEST_MODEL = 'composer-2.5-fast';
 
