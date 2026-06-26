@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-26T04:16:49.295Z",
+  "synced_at": "2026-06-26T04:17:38.852Z",
   "identity": {
     "name": "Austin Harshberger",
     "github": "https://github.com/97115104",
@@ -8,13 +8,13 @@
     "orcid": "https://orcid.org/0009-0003-7242-2456"
   },
   "metrics": {
-    "total_attestations": 637,
+    "total_attestations": 638,
     "total_verifications": 546,
     "total_agent_visits": 125,
     "unique_agents": 3,
     "top_model": {
       "model": "claude-opus-4",
-      "count": 68
+      "count": 69
     },
     "top_type": {
       "authorship_type": "human",
@@ -22,7 +22,7 @@
     },
     "top_author": {
       "author": "97115104",
-      "count": 524
+      "count": 525
     },
     "top_platform": {
       "platform": "GitHub Copilot VS Code",
@@ -49,7 +49,7 @@
       },
       {
         "authorship_type": "collab",
-        "count": 118
+        "count": 119
       },
       {
         "authorship_type": "ai",
@@ -63,7 +63,7 @@
       },
       {
         "platform": "Cursor",
-        "count": 9
+        "count": 10
       },
       {
         "platform": "Claude Code",
@@ -99,7 +99,7 @@
       {
         "platform": "Cursor",
         "authorship_type": "collab",
-        "count": 8
+        "count": 9
       },
       {
         "platform": "Claude Code",
@@ -143,6 +143,15 @@
       }
     ],
     "recent_attestations": [
+      {
+        "id": "2026-06-26-410f0f",
+        "content_name": "README.md",
+        "authorship_type": "collab",
+        "model": "claude-opus-4",
+        "author": "97115104",
+        "short_id": "32dbp2fo",
+        "created_at": "2026-06-26 04:16:49"
+      },
       {
         "id": "2026-06-26-9e77be",
         "content_name": "README.md",
@@ -223,18 +232,9 @@
         "author": "cursor",
         "short_id": "kayaa6km",
         "created_at": "2026-06-23 08:10:46"
-      },
-      {
-        "id": "2026-06-23-2e9784",
-        "content_name": "voice-clone",
-        "authorship_type": "collab",
-        "model": "claude",
-        "author": "cursor",
-        "short_id": "2iuuf4zm",
-        "created_at": "2026-06-23 08:10:44"
       }
     ],
-    "attestations_24h": 6
+    "attestations_24h": 7
   },
   "repo_count": 31,
   "pinned": [
@@ -351,7 +351,7 @@
   "build": [
     {
       "name": "97115104",
-      "pushed_at": "2026-06-26T04:05:00Z",
+      "pushed_at": "2026-06-26T04:17:19Z",
       "group": "other"
     },
     {
@@ -391,6 +391,23 @@
     }
   ],
   "verify": [
+    {
+      "repo": "97115104",
+      "signals": [
+        {
+          "type": "short",
+          "url": "https://attest.97115104.com/s/32dbp2fo",
+          "id": "32dbp2fo"
+        },
+        {
+          "type": "verify",
+          "url": "https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA2LTI2LTQxMGYwZiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY2xhdWRlLW9wdXMtNCIsInJvbGUiOiJjb2xsYWJvcmF0ZWQiLCJhdXRob3JzaGlwX3R5cGUiOiJjb2xsYWIiLCJ0aW1lc3RhbXAiOiIyMDI2LTA2LTI2VDA0OjE2OjQ5LjQ5N1oiLCJhdXRob3IiOiI5NzExNTEwNCIsInBsYXRmb3JtIjoiQ3Vyc29yIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjFlYWI3NzE2N2UyZGZlMTU2NjkyMzMwOTMzN2JlMjAzYmIxNWFlYjA5YWMxZDQ3YWE0NGE3Y2YwNTk0Mzk0MGUiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJ2YWx1ZSI6ImZlN2RmYzkxMjgxMGJlNWY3ODA5N2JkNmM5MWFjZDQzNTc4ZmE2ODdkN2FjY2NiZTNkMGQ5ZDM5MzllMzAwOWEiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1NjoxZWFiNzcxNjdlMmRmZTE1NjY5MjMzMDkzMzdiZTIwM2JiMTVhZWIwOWFjMWQ0N2FhNDRhN2NmMDU5NDM5NDBlXCIsXCJtb2RlbFwiOlwiY2xhdWRlLW9wdXMtNFwiLFwidGltZXN0YW1wXCI6XCIyMDI2LTA2LTI2VDA0OjE2OjQ5LjQ5N1pcIixcImF1dGhvcnNoaXBfdHlwZVwiOlwiY29sbGFiXCIsXCJyb2xlXCI6XCJjb2xsYWJvcmF0ZWRcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiI5NzExNTEwNCIsImlkIjoiOTcxMTUxMDQifX0"
+        }
+      ],
+      "authorship_type": null,
+      "model": null,
+      "latest_url": "https://attest.97115104.com/s/32dbp2fo"
+    },
     {
       "repo": "analyze-wps-embodiment",
       "signals": [
@@ -532,6 +549,6 @@
   ],
   "ledger_summary": {
     "total": 31,
-    "with_receipts": 8
+    "with_receipts": 9
   }
 }

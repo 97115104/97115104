@@ -16,41 +16,41 @@
   </defs>
   <rect class="bg" width="720" height="288" rx="8" stroke="#415a77" stroke-width="1"/>
   <text class="title" x="16" y="28" font-family="Georgia,serif" font-size="15" font-weight="600">Provenance ledger</text>
-  <text class="sub" x="16" y="44" font-family="ui-monospace,monospace" font-size="10">8 of 31 repos carry attest signals · sparse rows are expected until backfill</text>
+  <text class="sub" x="16" y="44" font-family="ui-monospace,monospace" font-size="10">9 of 31 repos carry attest signals · sparse rows are expected until backfill</text>
   <line x1="16" y1="64" x2="704" y2="64" stroke="#adb5bd" stroke-width="1"/>
   <text x="16" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">repo</text>
   <text x="180" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">authorship</text>
   <text x="300" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">model</text>
   <text x="480" y="56" fill="#2d6a4f" font-family="ui-monospace,monospace" font-size="11" font-weight="700">receipt</text>
-  <text x="16" y="80" fill="#495057" font-family="ui-monospace,monospace" font-size="11">analyze-wps-embodiment</text>
+  <text x="16" y="80" fill="#495057" font-family="ui-monospace,monospace" font-size="11">97115104</text>
 <text x="180" y="80" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="80" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="80" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="106" fill="#495057" font-family="ui-monospace,monospace" font-size="11">attest</text>
+<text x="16" y="106" fill="#495057" font-family="ui-monospace,monospace" font-size="11">analyze-wps-embodiment</text>
 <text x="180" y="106" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="106" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="106" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">endor-train</text>
+<text x="16" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">attest</text>
 <text x="180" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="158" fill="#495057" font-family="ui-monospace,monospace" font-size="11">hsc-chat</text>
+<text x="16" y="158" fill="#495057" font-family="ui-monospace,monospace" font-size="11">endor-train</text>
 <text x="180" y="158" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="158" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="158" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="184" fill="#495057" font-family="ui-monospace,monospace" font-size="11">ollama-harness</text>
+<text x="16" y="184" fill="#495057" font-family="ui-monospace,monospace" font-size="11">hsc-chat</text>
 <text x="180" y="184" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="184" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="184" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="210" fill="#495057" font-family="ui-monospace,monospace" font-size="11">PTL-3</text>
+<text x="16" y="210" fill="#495057" font-family="ui-monospace,monospace" font-size="11">ollama-harness</text>
 <text x="180" y="210" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="210" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="210" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="236" fill="#495057" font-family="ui-monospace,monospace" font-size="11">vLLM-harness</text>
+<text x="16" y="236" fill="#495057" font-family="ui-monospace,monospace" font-size="11">PTL-3</text>
 <text x="180" y="236" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="236" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="236" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>
-<text x="16" y="262" fill="#495057" font-family="ui-monospace,monospace" font-size="11">voice-clone</text>
+<text x="16" y="262" fill="#495057" font-family="ui-monospace,monospace" font-size="11">vLLM-harness</text>
 <text x="180" y="262" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="300" y="262" fill="#495057" font-family="ui-monospace,monospace" font-size="11">—</text>
 <text x="480" y="262" fill="#495057" font-family="ui-monospace,monospace" font-size="11">yes</text>

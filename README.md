@@ -15,7 +15,7 @@ This README is a canonical public demo of [attest v3.0](https://attest.97115104.
 <!-- profile-sync:attest-seal-start -->
 ![Attest seal](./generated/attest-seal.svg)
 
-[Verify this README](https://attest.97115104.com/s/32dbp2fo) · [Full attestation record](https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA2LTI2LTQxMGYwZiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY2xhdWRlLW9wdXMtNCIsInJvbGUiOiJjb2xsYWJvcmF0ZWQiLCJhdXRob3JzaGlwX3R5cGUiOiJjb2xsYWIiLCJ0aW1lc3RhbXAiOiIyMDI2LTA2LTI2VDA0OjE2OjQ5LjQ5N1oiLCJhdXRob3IiOiI5NzExNTEwNCIsInBsYXRmb3JtIjoiQ3Vyc29yIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjFlYWI3NzE2N2UyZGZlMTU2NjkyMzMwOTMzN2JlMjAzYmIxNWFlYjA5YWMxZDQ3YWE0NGE3Y2YwNTk0Mzk0MGUiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJ2YWx1ZSI6ImZlN2RmYzkxMjgxMGJlNWY3ODA5N2JkNmM5MWFjZDQzNTc4ZmE2ODdkN2FjY2NiZTNkMGQ5ZDM5MzllMzAwOWEiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1NjoxZWFiNzcxNjdlMmRmZTE1NjY5MjMzMDkzMzdiZTIwM2JiMTVhZWIwOWFjMWQ0N2FhNDRhN2NmMDU5NDM5NDBlXCIsXCJtb2RlbFwiOlwiY2xhdWRlLW9wdXMtNFwiLFwidGltZXN0YW1wXCI6XCIyMDI2LTA2LTI2VDA0OjE2OjQ5LjQ5N1pcIixcImF1dGhvcnNoaXBfdHlwZVwiOlwiY29sbGFiXCIsXCJyb2xlXCI6XCJjb2xsYWJvcmF0ZWRcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiI5NzExNTEwNCIsImlkIjoiOTcxMTUxMDQifX0%3D)
+[Verify this README](https://attest.97115104.com/s/1cdlezro) · [Full attestation record](https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA2LTI2LTZlZDJhMiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY2xhdWRlLW9wdXMtNCIsInJvbGUiOiJjb2xsYWJvcmF0ZWQiLCJhdXRob3JzaGlwX3R5cGUiOiJjb2xsYWIiLCJ0aW1lc3RhbXAiOiIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1oiLCJhdXRob3IiOiI5NzExNTEwNCIsInBsYXRmb3JtIjoiQ3Vyc29yIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjFlYWI3NzE2N2UyZGZlMTU2NjkyMzMwOTMzN2JlMjAzYmIxNWFlYjA5YWMxZDQ3YWE0NGE3Y2YwNTk0Mzk0MGUiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJ2YWx1ZSI6IjFjNjg0ZWE0N2FiMTg2ZTdiNDZlMzRiYzFmMTdlNzk3MTk1YTZlMTg4NTdlMDNiOWUxMmViNTk1NjZjNzg2Y2IiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1NjoxZWFiNzcxNjdlMmRmZTE1NjY5MjMzMDkzMzdiZTIwM2JiMTVhZWIwOWFjMWQ0N2FhNDRhN2NmMDU5NDM5NDBlXCIsXCJtb2RlbFwiOlwiY2xhdWRlLW9wdXMtNFwiLFwidGltZXN0YW1wXCI6XCIyMDI2LTA2LTI2VDA0OjE3OjM4Ljk0M1pcIixcImF1dGhvcnNoaXBfdHlwZVwiOlwiY29sbGFiXCIsXCJyb2xlXCI6XCJjb2xsYWJvcmF0ZWRcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiI5NzExNTEwNCIsImlkIjoiOTcxMTUxMDQifX0%3D)
 
 Human prose SHA-256: `1eab77167e2dfe1566923309337be203bb15aeb09ac1d47aa44a7cf05943940e`
 
@@ -137,7 +137,7 @@ Verification checklist:
 ---
 
 <!-- profile-sync:sync-meta-start -->
-Last profile sync: **2026-06-26T04:16:49Z** · 31 repositories · 637 total attestations on attest.97115104.com · style lint: **PASS**
+Last profile sync: **2026-06-26T04:17:38Z** · 31 repositories · 638 total attestations on attest.97115104.com · style lint: **PASS**
 <!-- profile-sync:sync-meta-end -->
 
 [AI Attested](https://attest.97115104.com/) · [View llms.txt](./llms.txt) · [Profile sync workflow](./.github/workflows/profile-sync.yml)
