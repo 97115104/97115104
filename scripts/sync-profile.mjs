@@ -13,6 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const GENERATED = join(ROOT, 'generated');
 const ATTESTATIONS = join(ROOT, 'attestations');
+const HERO_ART = join(ROOT, 'assets', 'hero-art.png');
 
 const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
@@ -30,6 +31,13 @@ const PINNED = [
   { name: 'vLLM-harness', purpose: 'Serve models through vLLM with a secure public API.' },
   { name: 'ollama-harness', purpose: 'Serve models through Ollama with a secure public API.' },
 ];
+
+function loadHeroArtDataUri() {
+  if (!existsSync(HERO_ART)) return null;
+  const buf = readFileSync(HERO_ART);
+  const mime = buf[0] === 0xff && buf[1] === 0xd8 ? 'image/jpeg' : 'image/png';
+  return `data:${mime};base64,${buf.toString('base64')}`;
+}
 
 async function fetchJson(url, headers = {}) {
   const res = await fetch(url, { headers });
@@ -592,7 +600,7 @@ async function main() {
   const attestation = await createAttestation(readme, proseHash);
   writeFileSync(join(ATTESTATIONS, 'README.latest.json'), JSON.stringify(attestation, null, 2));
 
-  writeFileSync(join(GENERATED, 'hero.svg'), renderHero());
+  writeFileSync(join(GENERATED, 'hero.svg'), renderHero(loadHeroArtDataUri()));
   writeFileSync(join(GENERATED, 'canvas.svg'), renderCanvas(snapshot));
 
   writeFileSync(join(ROOT, 'llms.txt'), renderLlmsTxt(snapshot));

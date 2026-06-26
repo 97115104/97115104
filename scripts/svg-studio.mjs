@@ -27,15 +27,25 @@ const CANVAS_W = 920;
 const FEED_W = 450;
 const RHYTHM_H = 108;
 const HERO_H = 200;
+const HERO_FRAME = { x: 16, y: 16, size: 168, pad: 4 };
+const HERO_TEXT_X = 208;
 const PT = 'America/Los_Angeles';
 const DAY_LABELS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-export function renderHero() {
+export function renderHero(artDataUri = null) {
+  const hasArt = Boolean(artDataUri);
+  const { x, y, size, pad } = HERO_FRAME;
+  const tx = hasArt ? HERO_TEXT_X : 16;
+  const ix = x + pad;
+  const iy = y + pad;
+  const is = size - pad * 2;
+  const ruleW = hasArt ? CANVAS_W - tx - 32 : 488;
+
   const words = ['humans', 'code', 'better', 'than', 'bots'];
   const wordLines = words
     .map((word, i) => {
       const letters = word.split('').map((ch, j) => {
-        const lx = 16 + j * 22;
+        const lx = tx + j * 22;
         const delay = 0.4 + i * 0.35 + j * 0.06;
         return `<tspan x="${lx}" fill="${INK}" opacity="0">
           <animate attributeName="opacity" from="0" to="1" begin="${delay.toFixed(2)}s" dur="0.15s" fill="freeze"/>
@@ -46,17 +56,43 @@ export function renderHero() {
     })
     .join('\n');
 
+  const corner = (cx, cy, dx, dy) =>
+    `<path d="M${cx} ${cy + dy * 10} L${cx} ${cy} L${cx + dx * 10} ${cy}" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
+
+  const portrait = hasArt ? `<g>
+    <rect x="${x}" y="${y}" width="${size}" height="${size}" fill="${FAINT}" stroke="${BORDER}" stroke-width="2"/>
+    <rect x="${x + 6}" y="${y + 6}" width="${size - 12}" height="${size - 12}" fill="none" stroke="${MUTED}" stroke-width="1"/>
+    ${corner(x + 10, y + 10, 1, 1)}
+    ${corner(x + size - 10, y + 10, -1, 1)}
+    ${corner(x + 10, y + size - 10, 1, -1)}
+    ${corner(x + size - 10, y + size - 10, -1, -1)}
+    <image href="${artDataUri}" x="${ix}" y="${iy}" width="${is}" height="${is}" clip-path="url(#hero-art-clip)" preserveAspectRatio="xMidYMid slice"/>
+    <rect x="${ix}" y="${iy}" width="${is}" height="${is}" fill="url(#hero-vignette)" clip-path="url(#hero-art-clip)"/>
+    <rect x="${ix}" y="${iy}" width="${is}" height="2" fill="${INK}" opacity="0.07">
+      <animate attributeName="y" values="${iy};${iy + is - 2};${iy}" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="${x}" y="${y + size - 3}" width="${size}" height="3" fill="#e879a9" opacity="0.75">
+      <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>` : '';
+
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${CANVAS_W}" height="${HERO_H}" viewBox="0 0 ${CANVAS_W} ${HERO_H}" role="img" aria-label="97 115 104">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${CANVAS_W}" height="${HERO_H}" viewBox="0 0 ${CANVAS_W} ${HERO_H}" role="img" aria-label="97 115 104">
   <defs>
+    ${hasArt ? `<clipPath id="hero-art-clip"><rect x="${ix}" y="${iy}" width="${is}" height="${is}"/></clipPath>
+    <radialGradient id="hero-vignette" cx="50%" cy="45%" r="65%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </radialGradient>` : ''}
     <style>
-      @keyframes draw { from { stroke-dashoffset: 488; } to { stroke-dashoffset: 0; } }
+      @keyframes draw { from { stroke-dashoffset: ${ruleW}; } to { stroke-dashoffset: 0; } }
       .rule { stroke-dasharray: 2 10; stroke-linecap: round; animation: draw 1s ease 0.2s forwards; }
     </style>
   </defs>
   <rect width="${CANVAS_W}" height="${HERO_H}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
-  <text x="16" y="56" fill="${INK}" font-family="ui-monospace,monospace" font-size="48" font-weight="700">97 115 104</text>
-  <line x1="16" y1="72" x2="504" y2="72" stroke="${INK}" stroke-width="2" class="rule"/>
+  ${portrait}
+  <text x="${tx}" y="56" fill="${INK}" font-family="ui-monospace,monospace" font-size="48" font-weight="700">97 115 104</text>
+  <line x1="${tx}" y1="72" x2="${tx + ruleW}" y2="72" stroke="${INK}" stroke-width="2" class="rule"/>
   ${wordLines}
 </svg>`;
 }
