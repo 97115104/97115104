@@ -17,6 +17,8 @@ const ATTESTATIONS = join(ROOT, 'attestations');
 const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
 const BLOG_FEED = 'https://blog.97115104.com/feed.xml';
+const FEED_BLOG_LIMIT = 6;
+const FEED_COMMIT_LIMIT = 15;
 const PT = 'America/Los_Angeles';
 const ATTEST_MODEL = 'composer-2.5-fast';
 
@@ -227,12 +229,106 @@ async function fetchLanguagesByRecency(repos) {
 
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-async function fetchActivity() {
+async function fetchRecentCommits(repos) {
+  const commits = [];
+  const seen = new Set();
+
+  const addCommit = (entry) => {
+    const fullSha = entry.fullSha ?? entry.sha;
+    if (!fullSha || seen.has(fullSha)) return false;
+    seen.add(fullSha);
+    commits.push({
+      repo: entry.repo,
+      message: entry.message,
+      sha: fullSha.slice(0, 7),
+      at: entry.at,
+    });
+    return commits.length >= FEED_COMMIT_LIMIT;
+  };
+
+  const eventsUrl = hasUserAuth()
+    ? 'https://api.github.com/user/events?per_page=100'
+    : `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=100`;
+
   try {
-    const events = await fetchJson(
-      `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=100`,
-      githubHeaders(),
-    );
+    const events = await fetchJson(eventsUrl, githubHeaders());
+    const pushEvents = events.filter((e) => e.type === 'PushEvent');
+
+    for (const event of pushEvents) {
+      const repo = event.repo?.name?.replace(`${GITHUB_USER}/`, '') ?? '?';
+      const payloadCommits = event.payload?.commits ?? [];
+      if (payloadCommits.length) {
+        for (const c of [...payloadCommits].reverse()) {
+          if (addCommit({
+            repo,
+            message: (c.message ?? 'commit').split('\n')[0],
+            fullSha: c.sha,
+            at: event.created_at,
+          })) return commits;
+        }
+        continue;
+      }
+      if (!event.payload?.head) continue;
+      try {
+        const repoFull = event.repo?.name ?? '';
+        const detail = await fetchJson(
+          `https://api.github.com/repos/${repoFull}/commits/${event.payload.head}`,
+          githubHeaders(),
+        );
+        if (addCommit({
+          repo,
+          message: (detail.commit?.message ?? 'push').split('\n')[0],
+          fullSha: event.payload.head,
+          at: detail.commit?.author?.date ?? event.created_at,
+        })) return commits;
+      } catch {
+        if (addCommit({
+          repo,
+          message: `push to ${event.payload.ref?.split('/').pop() ?? 'main'}`,
+          fullSha: event.payload.head,
+          at: event.created_at,
+        })) return commits;
+      }
+    }
+  } catch (err) {
+    console.warn('GitHub events unavailable:', err.message);
+  }
+
+  if (commits.length >= FEED_COMMIT_LIMIT || !repos.length) return commits;
+
+  const sorted = [...repos].sort(
+    (a, b) => new Date(b.pushed_at ?? 0) - new Date(a.pushed_at ?? 0),
+  );
+  for (const repo of sorted.slice(0, 12)) {
+    try {
+      const batch = await fetchJson(
+        `https://api.github.com/repos/${repo.full_name}/commits?per_page=30`,
+        githubHeaders(),
+      );
+      for (const c of batch) {
+        if (addCommit({
+          repo: repo.name,
+          message: (c.commit?.message ?? 'commit').split('\n')[0],
+          fullSha: c.sha,
+          at: c.commit?.author?.date ?? c.commit?.committer?.date,
+        })) {
+          return commits.sort((a, b) => new Date(b.at) - new Date(a.at));
+        }
+      }
+    } catch (err) {
+      console.warn(`commits for ${repo.full_name}:`, err.message);
+    }
+  }
+
+  return commits.sort((a, b) => new Date(b.at) - new Date(a.at));
+}
+
+async function fetchActivity(repos = []) {
+  try {
+    const eventsUrl = hasUserAuth()
+      ? 'https://api.github.com/user/events?per_page=100'
+      : `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=100`;
+    const events = await fetchJson(eventsUrl, githubHeaders());
     const pushEvents = events.filter((e) => e.type === 'PushEvent' && e.payload?.head);
 
     const sample = pushEvents.map((e) => new Date(e.created_at));
@@ -257,34 +353,10 @@ async function fetchActivity() {
     }
     const topPushRepo = Object.entries(repoPushCounts).sort((a, b) => b[1] - a[1])[0];
 
-    const commits = [];
-    for (const event of pushEvents) {
-      const repoFull = event.repo?.name ?? '';
-      const repo = repoFull.replace(`${GITHUB_USER}/`, '');
-      try {
-        const detail = await fetchJson(
-          `https://api.github.com/repos/${repoFull}/commits/${event.payload.head}`,
-          githubHeaders(),
-        );
-        commits.push({
-          repo,
-          message: (detail.commit?.message ?? 'push').split('\n')[0],
-          sha: event.payload.head.slice(0, 7),
-          at: detail.commit?.author?.date ?? event.created_at,
-        });
-      } catch {
-        commits.push({
-          repo,
-          message: `push to ${event.payload.ref?.split('/').pop() ?? 'main'}`,
-          sha: event.payload.head.slice(0, 7),
-          at: event.created_at,
-        });
-      }
-      if (commits.length >= 6) break;
-    }
+    const recent_commits = await fetchRecentCommits(repos);
 
     return {
-      recent_commits: commits,
+      recent_commits,
       commit_stats: {
         peak_hour_pt: peakHour,
         peak_day_pt: peakDay,
@@ -300,7 +372,11 @@ async function fetchActivity() {
     };
   } catch (err) {
     console.warn('GitHub events unavailable:', err.message);
-    return { recent_commits: [], commit_stats: { sample_size: 0 } };
+    const recent_commits = await fetchRecentCommits(repos);
+    const commitStats = recent_commits.length
+      ? { ...deriveCommitStats(recent_commits), sample_size: recent_commits.length }
+      : { sample_size: 0 };
+    return { recent_commits, commit_stats: commitStats };
   }
 }
 
@@ -458,7 +534,7 @@ async function main() {
 
   const [blogPosts, activity, languages, languageTotals] = await Promise.all([
     fetchText(BLOG_FEED).then(parseAtomFeed).catch(() => []),
-    fetchActivity(),
+    fetchActivity(repos),
     repos.length ? fetchLanguagesByRecency(repos) : Promise.resolve([]),
     repos.length ? fetchLanguageTotals(repos) : Promise.resolve([]),
   ]);
@@ -496,8 +572,8 @@ async function main() {
     repo_counts: repoCounts ?? previous?.repo_counts ?? { public: previous?.repo_count ?? 0, private: null },
     repo_stats: repoStats ?? previous?.repo_stats ?? null,
     profile_stats: profileStats ?? previous?.profile_stats ?? null,
-    recent_posts: blogPosts.length ? blogPosts.slice(0, 6) : (previous?.recent_posts ?? []),
-    recent_commits: recentCommits,
+    recent_posts: blogPosts.length ? blogPosts.slice(0, FEED_BLOG_LIMIT) : (previous?.recent_posts ?? []),
+    recent_commits: recentCommits.slice(0, FEED_COMMIT_LIMIT),
     commit_stats: commitStats,
     languages_by_recency: languages.length
       ? languages

@@ -21,39 +21,42 @@ const MUTED = '#a3a3a3';
 const BORDER = '#ffffff';
 const FAINT = '#171717';
 
+const FEED_BLOG_LIMIT = 6;
+const FEED_COMMIT_LIMIT = 15;
 const CANVAS_W = 920;
 const FEED_W = 450;
-const RHYTHM_H = 80;
+const RHYTHM_H = 108;
+const HERO_H = 200;
 const PT = 'America/Los_Angeles';
 const DAY_LABELS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
 export function renderHero() {
-  const words = ['code', 'is', 'cool'];
+  const words = ['humans', 'code', 'better', 'than', 'bots'];
   const wordLines = words
     .map((word, i) => {
       const letters = word.split('').map((ch, j) => {
-        const x = 24 + j * 22;
-        const delay = 0.4 + i * 0.45 + j * 0.08;
-        return `<tspan x="${x}" fill="${INK}" opacity="0">
+        const lx = 16 + j * 22;
+        const delay = 0.4 + i * 0.35 + j * 0.06;
+        return `<tspan x="${lx}" fill="${INK}" opacity="0">
           <animate attributeName="opacity" from="0" to="1" begin="${delay.toFixed(2)}s" dur="0.15s" fill="freeze"/>
           ${escapeXml(ch)}
         </tspan>`;
       }).join('');
-      return `<text y="${108 + i * 28}" font-family="ui-monospace,monospace" font-size="22" font-weight="700">${letters}</text>`;
+      return `<text y="${96 + i * 22}" font-family="ui-monospace,monospace" font-size="22" font-weight="400">${letters}</text>`;
     })
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="${CANVAS_W}" height="200" viewBox="0 0 ${CANVAS_W} 200" role="img" aria-label="97 115 104">
+<svg xmlns="http://www.w3.org/2000/svg" width="${CANVAS_W}" height="${HERO_H}" viewBox="0 0 ${CANVAS_W} ${HERO_H}" role="img" aria-label="97 115 104">
   <defs>
     <style>
-      @keyframes draw { from { stroke-dashoffset: 400; } to { stroke-dashoffset: 0; } }
-      .rule { stroke-dasharray: 400; animation: draw 1s ease 0.2s forwards; }
+      @keyframes draw { from { stroke-dashoffset: 488; } to { stroke-dashoffset: 0; } }
+      .rule { stroke-dasharray: 2 10; stroke-linecap: round; animation: draw 1s ease 0.2s forwards; }
     </style>
   </defs>
-  <rect width="${CANVAS_W}" height="200" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
-  <text x="24" y="56" fill="${INK}" font-family="ui-monospace,monospace" font-size="48" font-weight="700">97 115 104</text>
-  <line x1="24" y1="72" x2="320" y2="72" stroke="${INK}" stroke-width="2" class="rule"/>
+  <rect width="${CANVAS_W}" height="${HERO_H}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
+  <text x="16" y="56" fill="${INK}" font-family="ui-monospace,monospace" font-size="48" font-weight="700">97 115 104</text>
+  <line x1="16" y1="72" x2="504" y2="72" stroke="${INK}" stroke-width="2" class="rule"/>
   ${wordLines}
 </svg>`;
 }
@@ -197,23 +200,27 @@ function renderRhythmGraph(snapshot, y, w, h) {
   const peakDayIdx = days.indexOf(maxD);
   const peakDay = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][peakDayIdx] ?? '—';
   const pad = 16;
+  const headerH = 40;
   const chartW = w - pad * 2;
   const hourBarW = chartW / 24;
-  const hourChartH = 32;
-  const hourBase = y + 48;
-  const dayChartH = 14;
-  const dayBase = y + h - 14;
+  const hourChartH = 28;
+  const hourBase = y + headerH + 8 + hourChartH;
+  const hourLabelY = hourBase + 12;
+  const dayChartH = 12;
+  const dayBarTop = hourLabelY + 10;
+  const dayBase = dayBarTop + dayChartH;
+  const dayLabelY = dayBase + 10;
 
   const hourBars = hours.map((count, i) => {
     const barH = Math.round((count / maxH) * hourChartH);
     const bx = pad + i * hourBarW + 1;
     const fill = i === peakHour ? INK : '#525252';
-    return `<rect x="${bx.toFixed(1)}" y="${hourBase - barH}" width="${Math.max(hourBarW - 2, 1).toFixed(1)}" height="${barH}" fill="${fill}"/>`;
+    return `<rect x="${bx.toFixed(1)}" y="${(hourBase - barH).toFixed(1)}" width="${Math.max(hourBarW - 2, 1).toFixed(1)}" height="${barH}" fill="${fill}"/>`;
   });
 
   const hourTicks = [0, 6, 12, 18].map((hr) => {
     const tx = pad + hr * hourBarW + hourBarW / 2;
-    return `<text x="${tx.toFixed(1)}" y="${hourBase + 10}" text-anchor="middle" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="7">${String(hr).padStart(2, '0')}</text>`;
+    return `<text x="${tx.toFixed(1)}" y="${hourLabelY}" text-anchor="middle" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="7">${String(hr).padStart(2, '0')}</text>`;
   });
 
   const dayBarW = chartW / 7;
@@ -221,8 +228,8 @@ function renderRhythmGraph(snapshot, y, w, h) {
     const barH = Math.round((count / maxD) * dayChartH);
     const bx = pad + i * dayBarW + 2;
     const fill = i === peakDayIdx ? INK : '#333333';
-    return `<rect x="${bx.toFixed(1)}" y="${dayBase - barH - 12}" width="${(dayBarW - 4).toFixed(1)}" height="${barH}" fill="${fill}"/>
-<text x="${(bx + (dayBarW - 4) / 2).toFixed(1)}" y="${dayBase}" text-anchor="middle" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="7">${DAY_LABELS[i]}</text>`;
+    return `<rect x="${bx.toFixed(1)}" y="${(dayBarTop + dayChartH - barH).toFixed(1)}" width="${(dayBarW - 4).toFixed(1)}" height="${barH}" fill="${fill}"/>
+<text x="${(bx + (dayBarW - 4) / 2).toFixed(1)}" y="${dayLabelY}" text-anchor="middle" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="7">${DAY_LABELS[i]}</text>`;
   });
 
   const peakLabel = maxH > 0 ? `${String(peakHour).padStart(2, '0')}:00 PT` : '—';
@@ -230,8 +237,10 @@ function renderRhythmGraph(snapshot, y, w, h) {
 
   return `<g>
   <rect x="0" y="${y}" width="${w}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
+  <rect x="0" y="${y}" width="${w}" height="${headerH}" fill="${FAINT}" stroke="${BORDER}" stroke-width="1"/>
   <text x="${pad}" y="${y + 18}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700">commit rhythm</text>
-  <text x="${pad}" y="${y + 30}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">${escapeXml(meta)}</text>
+  <text x="${pad}" y="${y + 32}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">${escapeXml(meta)}</text>
+  <text x="${w - pad}" y="${y + 32}" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">hourly · PT</text>
   <line x1="${pad}" y1="${hourBase + 1}" x2="${w - pad}" y2="${hourBase + 1}" stroke="${BORDER}" stroke-width="1"/>
   ${hourBars.join('\n')}
   ${hourTicks.join('\n')}
@@ -255,44 +264,76 @@ function formatSyncedAt(iso) {
   return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute} PT`;
 }
 
-function chatLine(y, user, msg, delay, maxLen = 44) {
+function formatFeedPacific(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: PT,
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(d).map((p) => [p.type, p.value]));
+  return `${parts.month}/${parts.day} ${parts.hour}:${parts.minute}`;
+}
+
+function feedBlogEntry(y, post, delay) {
   const d = delay.toFixed(1);
+  const when = formatFeedPacific(post.updated);
   return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="11" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
-    <tspan fill="${INK}" font-weight="700">${escapeXml(user)}</tspan><tspan fill="${INK}"> ${escapeXml(truncate(msg, maxLen))}</tspan>
+    <tspan fill="${INK}" font-weight="700">@blog</tspan><tspan fill="${INK}"> ${escapeXml(truncate(post.title, 38))}</tspan>
+  </text>
+<text x="24" y="${y + 12}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT
+  </text>`;
+}
+
+function feedCommitEntry(y, commit, delay) {
+  const d = delay.toFixed(1);
+  const when = formatFeedPacific(commit.at);
+  const msg = truncate(commit.message, 34);
+  return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="11" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
+    <tspan fill="${INK}" font-weight="700">@git</tspan><tspan fill="${MUTED}"> ${escapeXml(commit.sha)}</tspan><tspan fill="${INK}"> ${escapeXml(commit.repo)}</tspan>
+  </text>
+<text x="24" y="${y + 12}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${(Number(d) + 0.05).toFixed(2)}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT · ${escapeXml(msg)}
   </text>`;
 }
 
 function feedPanelHeight(snapshot) {
-  const posts = snapshot.recent_posts.slice(0, 2).length;
-  const commits = snapshot.recent_commits.slice(0, 3).length;
-  const lineH = 22;
+  const posts = Math.min(snapshot.recent_posts.length, FEED_BLOG_LIMIT);
+  const commits = Math.min(snapshot.recent_commits.length, FEED_COMMIT_LIMIT);
+  const blogH = 30;
+  const commitH = 30;
   const sectionGap = 18;
-  // header(60) + blog lines + section gap + git header + section gap + git lines + cursor
-  return 60 + posts * lineH + sectionGap + 12 + sectionGap + commits * lineH + 24;
+  return 60 + posts * blogH + sectionGap + 12 + sectionGap + commits * commitH + 24;
 }
 
 function renderFeedPanel(snapshot, h) {
-  const posts = snapshot.recent_posts.slice(0, 2);
-  const commits = snapshot.recent_commits.slice(0, 3);
-  const lineH = 22;
+  const posts = snapshot.recent_posts.slice(0, FEED_BLOG_LIMIT);
+  const commits = snapshot.recent_commits.slice(0, FEED_COMMIT_LIMIT);
+  const blogH = 30;
+  const commitH = 30;
   const sectionGap = 18;
   const termH = h - 52;
 
   let y = 76;
   const blogLines = posts.map((p, i) => {
-    const line = chatLine(y, '@blog', p.title, 0.2 + i * 0.35);
-    y += lineH;
+    const line = feedBlogEntry(y, p, 0.2 + i * 0.4);
+    y += blogH;
     return line;
   });
 
   const gitHeaderY = y + 4;
   y = gitHeaderY + sectionGap;
-  const commitStart = 0.2 + posts.length * 0.35 + 0.3;
+  const commitStart = 0.2 + posts.length * 0.4 + 0.3;
   const gitLines = commits.map((c, i) => {
-    const msg = `${c.repo}: ${c.message}`;
-    const line = chatLine(y, '@git', msg, commitStart + i * 0.35);
-    y += lineH;
+    const line = feedCommitEntry(y, c, commitStart + i * 0.4);
+    y += commitH;
     return line;
   });
   const cursorY = y + 8;

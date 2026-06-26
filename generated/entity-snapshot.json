@@ -1,30 +1,31 @@
 {
-  "synced_at": "2026-06-26T05:24:52.643Z",
-  "repo_count": 112,
+  "synced_at": "2026-06-26T05:34:40.230Z",
+  "sync_auth": "public",
+  "repo_count": 31,
   "repo_counts": {
     "public": 31,
-    "private": 81,
-    "total": 112
+    "private": null,
+    "total": 31
   },
   "repo_stats": {
-    "owned": 106,
-    "forked": 6,
-    "archived": 6,
+    "owned": 26,
+    "forked": 5,
+    "archived": 0,
     "stars": 2,
-    "forks": 2,
-    "pushed_7d": 10,
-    "pushed_30d": 22,
+    "forks": 1,
+    "pushed_7d": 5,
+    "pushed_30d": 12,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-06-26T05:20:29Z"
+      "at": "2026-06-26T05:26:50Z"
     },
     "oldest_repo": {
-      "name": "ferris-slack-bot-handler",
-      "at": "2024-12-03T02:20:54Z"
+      "name": "attest",
+      "at": "2025-05-13T02:42:00Z"
     }
   },
   "profile_stats": {
@@ -67,39 +68,39 @@
   "recent_commits": [
     {
       "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and enhance visual elements",
+      "message": "push to main",
+      "sha": "45c7140",
+      "at": "2026-06-26T05:26:51Z"
+    },
+    {
+      "repo": "97115104",
+      "message": "push to main",
       "sha": "3a3f850",
-      "at": "2026-06-26T05:20:26Z"
+      "at": "2026-06-26T05:20:29Z"
     },
     {
       "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and remove obsolete files",
+      "message": "push to main",
       "sha": "a3ef77c",
-      "at": "2026-06-26T04:34:58Z"
+      "at": "2026-06-26T04:35:01Z"
     },
     {
       "repo": "97115104",
-      "message": "Merge remote profile-sync with animated README redesign.",
+      "message": "push to main",
       "sha": "c8b9678",
-      "at": "2026-06-26T04:24:14Z"
+      "at": "2026-06-26T04:24:29Z"
     },
     {
       "repo": "97115104",
-      "message": "Add self-attesting profile README with live sync pipeline",
+      "message": "push to main",
       "sha": "c1f8e8d",
-      "at": "2026-06-26T04:17:18Z"
+      "at": "2026-06-26T04:17:20Z"
     },
     {
       "repo": "hsc-chat",
-      "message": "Update project documentation and enhance deployment scripts",
+      "message": "push to main",
       "sha": "f38f3af",
-      "at": "2026-06-26T03:29:07Z"
-    },
-    {
-      "repo": "voice-clone",
-      "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
-      "sha": "4765128",
-      "at": "2026-06-26T03:16:12Z"
+      "at": "2026-06-26T03:29:10Z"
     }
   ],
   "commit_stats": {
@@ -128,7 +129,7 @@
       3,
       6,
       4,
-      4,
+      5,
       5
     ],
     "days_pt": [
@@ -136,26 +137,26 @@
       5,
       2,
       4,
-      18,
+      19,
       8,
       3
     ],
-    "pushes_7d": 15,
-    "pushes_30d": 46,
+    "pushes_7d": 16,
+    "pushes_30d": 47,
     "top_push_repo": {
       "name": "vLLM-harness",
       "count": 11
     },
-    "latest": "2026-06-26T05:20:29.000Z",
+    "latest": "2026-06-26T05:26:51.000Z",
     "earliest": "2026-05-29T10:44:09.000Z",
-    "sample_size": 46
+    "sample_size": 47
   },
   "languages_by_recency": [
     {
       "name": "JavaScript",
       "repo": "97115104",
-      "bytes": 40851,
-      "pushed_at": "2026-06-26T05:20:29Z"
+      "bytes": 40982,
+      "pushed_at": "2026-06-26T05:26:50Z"
     },
     {
       "name": "CSS",
@@ -194,60 +195,52 @@
       "pushed_at": "2026-06-26T03:29:09Z"
     },
     {
-      "name": "TeX",
-      "repo": "server-backup",
-      "bytes": 86916,
-      "pushed_at": "2026-06-25T21:22:39Z"
+      "name": "Rust",
+      "repo": "rusting",
+      "bytes": 1,
+      "pushed_at": "2026-06-07T06:55:08Z"
     }
   ],
   "language_totals": [
     {
       "name": "JavaScript",
-      "bytes": 7092745
+      "bytes": 959407
     },
     {
       "name": "TypeScript",
-      "bytes": 6500722
-    },
-    {
-      "name": "HTML",
-      "bytes": 6267195
-    },
-    {
-      "name": "CSS",
-      "bytes": 3186561
+      "bytes": 446541
     },
     {
       "name": "Python",
-      "bytes": 2583082
+      "bytes": 386017
+    },
+    {
+      "name": "HTML",
+      "bytes": 363929
+    },
+    {
+      "name": "CSS",
+      "bytes": 250500
     },
     {
       "name": "Shell",
-      "bytes": 1278654
-    },
-    {
-      "name": "Solidity",
-      "bytes": 820891
+      "bytes": 164624
     },
     {
       "name": "Swift",
-      "bytes": 595009
-    },
-    {
-      "name": "TeX",
-      "bytes": 574290
-    },
-    {
-      "name": "Rich Text Format",
-      "bytes": 520378
-    },
-    {
-      "name": "Ruby",
-      "bytes": 31511
+      "bytes": 12026
     },
     {
       "name": "Kotlin",
       "bytes": 9783
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 5749
+    },
+    {
+      "name": "Rust",
+      "bytes": 368
     }
   ]
 }
