@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-26T05:47:36.299Z",
+  "synced_at": "2026-06-26T09:10:00.718Z",
   "sync_auth": "pat",
   "repo_count": 112,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-06-26T05:46:39Z"
+      "name": "CrustyRustaceans",
+      "at": "2026-06-26T09:04:25Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -67,64 +67,67 @@
   ],
   "recent_commits": [
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and enhance recent activity tracking",
-      "sha": "8bb9ac6",
-      "at": "2026-06-26T05:46:37Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "f767709",
+      "at": "2026-06-26T09:04:25Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and enhance visual elements",
-      "sha": "32649f4",
-      "at": "2026-06-26T05:41:50Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "e0eedce",
+      "at": "2026-06-26T07:16:02Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and enhance recent activity tracking",
-      "sha": "a7d8d8f",
-      "at": "2026-06-26T05:37:16Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "3b3493e",
+      "at": "2026-06-26T03:05:43Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] enhance logging and update sync authentication details",
-      "sha": "45c7140",
-      "at": "2026-06-26T05:26:48Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "719c83a",
+      "at": "2026-06-26T01:42:37Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update generated profile artifacts",
-      "sha": "b63ec98",
-      "at": "2026-06-26T05:24:53Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "9bf2cc6",
+      "at": "2026-06-26T00:38:25Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and enhance visual elements",
-      "sha": "3a3f850",
-      "at": "2026-06-26T05:20:26Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "4112ba0",
+      "at": "2026-06-25T23:28:50Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update profile artifacts and remove obsolete files",
-      "sha": "a3ef77c",
-      "at": "2026-06-26T04:34:58Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "0216e11",
+      "at": "2026-06-25T22:30:12Z"
     },
     {
-      "repo": "97115104",
-      "message": "[profile-sync] update generated profile artifacts",
-      "sha": "26dc0b5",
-      "at": "2026-06-26T04:24:41Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "cf5a017",
+      "at": "2026-06-25T21:32:11Z"
     },
     {
-      "repo": "97115104",
-      "message": "Merge remote profile-sync with animated README redesign.",
-      "sha": "c8b9678",
-      "at": "2026-06-26T04:24:14Z"
+      "repo": "CrustyRustaceans",
+      "message": "chore: refresh YouTube channel stats",
+      "sha": "dabcbc2",
+      "at": "2026-06-25T20:39:24Z"
     }
   ],
   "commit_stats": {
-    "peak_hour_pt": 22,
+    "peak_hour_pt": 0,
     "peak_day_pt": "Thu",
     "hours_pt": [
+      1,
+      0,
+      1,
       0,
       0,
       0,
@@ -135,19 +138,16 @@
       0,
       0,
       0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      3,
-      6,
       0
     ],
     "days_pt": [
@@ -155,49 +155,49 @@
       0,
       0,
       0,
-      9,
-      0,
+      7,
+      2,
       0
     ],
-    "latest": "2026-06-26T05:46:37.000Z",
-    "earliest": "2026-06-26T04:24:14.000Z",
+    "latest": "2026-06-26T09:04:25.000Z",
+    "earliest": "2026-06-25T20:39:24.000Z",
     "sample_size": 9
   },
   "languages_by_recency": [
     {
+      "name": "HTML",
+      "repo": "CrustyRustaceans",
+      "bytes": 18085,
+      "pushed_at": "2026-06-26T09:04:25Z"
+    },
+    {
       "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 49426,
-      "pushed_at": "2026-06-26T05:46:39Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 17277,
+      "pushed_at": "2026-06-26T09:04:25Z"
     },
     {
       "name": "CSS",
-      "repo": "hsc-chat",
-      "bytes": 19275,
-      "pushed_at": "2026-06-26T03:29:09Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 12759,
+      "pushed_at": "2026-06-26T09:04:25Z"
+    },
+    {
+      "name": "Python",
+      "repo": "CrustyRustaceans",
+      "bytes": 4802,
+      "pushed_at": "2026-06-26T09:04:25Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "CrustyRustaceans",
+      "bytes": 1214,
+      "pushed_at": "2026-06-26T09:04:25Z"
     },
     {
       "name": "TypeScript",
       "repo": "hsc-chat",
       "bytes": 19173,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "Python",
-      "repo": "hsc-chat",
-      "bytes": 17079,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "hsc-chat",
-      "bytes": 12141,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "hsc-chat",
-      "bytes": 6741,
       "pushed_at": "2026-06-26T03:29:09Z"
     },
     {
