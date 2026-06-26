@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-26T09:10:00.718Z",
+  "synced_at": "2026-06-26T21:24:02.696Z",
   "sync_auth": "pat",
   "repo_count": 112,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "CrustyRustaceans",
-      "at": "2026-06-26T09:04:25Z"
+      "name": "97115104",
+      "at": "2026-06-26T21:22:53Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -67,87 +67,54 @@
   ],
   "recent_commits": [
     {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "f767709",
-      "at": "2026-06-26T09:04:25Z"
+      "repo": "97115104",
+      "message": "[profile-sync] increase recent commit display limit",
+      "sha": "2fce038",
+      "at": "2026-06-26T21:22:50Z",
+      "count": 18
     },
     {
       "repo": "CrustyRustaceans",
       "message": "chore: refresh YouTube channel stats",
-      "sha": "e0eedce",
-      "at": "2026-06-26T07:16:02Z"
+      "sha": "7b40718",
+      "at": "2026-06-26T20:33:37Z",
+      "count": 30
     },
     {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "3b3493e",
-      "at": "2026-06-26T03:05:43Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "719c83a",
-      "at": "2026-06-26T01:42:37Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "9bf2cc6",
-      "at": "2026-06-26T00:38:25Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "4112ba0",
-      "at": "2026-06-25T23:28:50Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "0216e11",
-      "at": "2026-06-25T22:30:12Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "cf5a017",
-      "at": "2026-06-25T21:32:11Z"
-    },
-    {
-      "repo": "CrustyRustaceans",
-      "message": "chore: refresh YouTube channel stats",
-      "sha": "dabcbc2",
-      "at": "2026-06-25T20:39:24Z"
+      "repo": "hsc-chat",
+      "message": "Update project documentation and enhance deployment scripts",
+      "sha": "f38f3af",
+      "at": "2026-06-26T03:29:07Z",
+      "count": 2
     }
   ],
   "commit_stats": {
-    "peak_hour_pt": 0,
+    "peak_hour_pt": 21,
     "peak_day_pt": "Thu",
     "hours_pt": [
       1,
       0,
+      3,
       1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      2,
       1,
       1,
-      0,
+      1,
       1,
       0,
-      0,
+      3,
+      7,
+      7,
       0
     ],
     "days_pt": [
@@ -155,44 +122,50 @@
       0,
       0,
       0,
-      7,
-      2,
+      34,
+      16,
       0
     ],
-    "latest": "2026-06-26T09:04:25.000Z",
-    "earliest": "2026-06-25T20:39:24.000Z",
-    "sample_size": 9
+    "latest": "2026-06-26T21:22:50.000Z",
+    "earliest": "2026-06-25T09:04:55.000Z",
+    "sample_size": 50,
+    "commits_7d": 50,
+    "commits_30d": 50,
+    "top_commit_repo": {
+      "name": "CrustyRustaceans",
+      "count": 30
+    }
   },
   "languages_by_recency": [
+    {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 48006,
+      "pushed_at": "2026-06-26T21:22:53Z"
+    },
     {
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-06-26T09:04:25Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "CrustyRustaceans",
-      "bytes": 17277,
-      "pushed_at": "2026-06-26T09:04:25Z"
+      "pushed_at": "2026-06-26T20:33:37Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-06-26T09:04:25Z"
+      "pushed_at": "2026-06-26T20:33:37Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-06-26T09:04:25Z"
+      "pushed_at": "2026-06-26T20:33:37Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-06-26T09:04:25Z"
+      "pushed_at": "2026-06-26T20:33:37Z"
     },
     {
       "name": "TypeScript",
@@ -216,7 +189,7 @@
   "language_totals": [
     {
       "name": "JavaScript",
-      "bytes": 7101320
+      "bytes": 7099900
     },
     {
       "name": "TypeScript",
