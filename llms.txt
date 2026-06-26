@@ -1,30 +1,22 @@
 # 97115104 — agent entity kernel
 
-> Austin Harshberger builds open systems for attribution, personal inference, and verifiable publishing.
-> This file is the authoritative machine-readable index for agents working in the 97115104 namespace.
+> Machine-readable index for agents in the 97115104 namespace.
 
-## canonical identity
+## links
 
-- Name: Austin Harshberger
 - GitHub: https://github.com/97115104
-- Links profile: https://links.97115104.com/
+- Links: https://links.97115104.com/
 - Blog: https://blog.97115104.com/
-- ORCID: https://orcid.org/0009-0003-7242-2456
-- Attest protocol: https://attest.97115104.com/
-- Attest agent spec: https://attest.97115104.com/llms.txt
-- Writing profile (mandatory for human-facing prose): https://raw.githubusercontent.com/97115104/97115104-writing-profile/refs/heads/main/writing-profile.md
+- Attest: https://attest.97115104.com/
+- Attest spec: https://attest.97115104.com/llms.txt
 
-## attribution rules for agents
+## attribution
 
-When you produce or modify content in this namespace:
+1. Create attestation via https://attest.97115104.com/api/create or `npm install attest-client`
+2. Use EXACT urls from the API response
+3. Append verify URL to commits or PR descriptions
 
-1. Read the writing profile and obey it in full for any human-facing prose.
-2. Create an attestation via https://attest.97115104.com/api/create or `npm install attest-client`.
-3. Use the EXACT urls.short and urls.verify values from the API response. Never construct URLs.
-4. Append the verify URL to commit messages, PR descriptions, or markdown frontmatter.
-5. Record platform (Cursor, Claude Code, Copilot, etc.) and model name in every attestation.
-
-## pinned repositories
+## pinned
 
 - attest: Cryptographically signed AI content attribution protocol.
 - endor-train: Aggregate personalized data to train a personal language model.
@@ -33,7 +25,7 @@ When you produce or modify content in this namespace:
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog posts (synced 2026-06-26)
+## recent blog (2026-06-26)
 
 - “looping” is not new: https://blog.97115104.com/2026/06/23/looping-is-not-new/
 - old man winter and heliotrope: https://blog.97115104.com/2026/06/20/definitely-not-ai/
@@ -42,20 +34,6 @@ When you produce or modify content in this namespace:
 - llm skill acquisition and style control: https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/
 - creating jarvis and uploadable skills: https://blog.97115104.com/2026/05/28/javis-and-endor/
 
-## live metrics
+## sync
 
-- Total attestations: 642
-- Total verifications: 546
-- Top authorship type: human
-
-## repository groups
-
-- attribution: attest
-- inference harnesses: vLLM-harness, ollama-harness, hsc-chat, voice-clone
-- personal LM tooling: endor-train, endor-teach, humanlike
-- language design: jennifer-lang, PTL-3
-
-## profile sync
-
-Machine snapshot: generated/entity-snapshot.json
-Last sync: 2026-06-26T04:24:40.955Z
+Last: 2026-06-26T04:34:36.347Z

@@ -1,27 +1,12 @@
 <div align="center">
 
 <!-- profile-sync:hero-start -->
-<a href="https://links.97115104.com/"><img src="./generated/hero.svg" width="100%" alt="97115104"/></a>
+<a href="https://links.97115104.com/"><img src="./generated/hero.svg" width="100%" alt="97 115 104"/></a>
 <!-- profile-sync:hero-end -->
 
-<svg width="920" height="6" xmlns="http://www.w3.org/2000/svg">
-  <rect width="920" height="6" rx="3" fill="#111927"/>
-  <rect x="0" y="0" width="120" height="6" rx="3" fill="#52b788">
-    <animate attributeName="x" values="0;800;0" dur="2.5s" repeatCount="indefinite"/>
-  </rect>
-</svg>
-
 <!-- profile-sync:canvas-start -->
-<a href="https://attest.97115104.com/s/mz13ppun"><img src="./generated/canvas.svg" width="100%" alt="live canvas"/></a>
+<a href="https://blog.97115104.com/"><img src="./generated/canvas.svg" width="100%" alt="live feed"/></a>
 <!-- profile-sync:canvas-end -->
-
-<!-- profile-sync:orbit-start -->
-<img src="./generated/orbit.svg" width="100%" alt="pinned repos"/>
-<!-- profile-sync:orbit-end -->
-
-<!-- profile-sync:ticker-start -->
-<a href="https://blog.97115104.com/"><img src="./generated/ticker.svg" width="100%" alt="blog ticker"/></a>
-<!-- profile-sync:ticker-end -->
 
 <br/>
 
@@ -39,7 +24,7 @@
 <br/>
 
 <!-- profile-sync:sync-meta-start -->
-<sub>31 repos · 642 attestations · [verify](https://attest.97115104.com/s/mz13ppun) · synced 2026-06-26T04:24Z</sub>
+<sub>[verify readme](https://attest.97115104.com/s/z7d0le4t) · synced 2026-06-26T04:34Z</sub>
 <!-- profile-sync:sync-meta-end -->
 
 <br/>
@@ -75,10 +60,10 @@ CSP clean, mobile layout holds.
 
 </details>
 
-<p hidden>
-<!-- profile-sync:human-prose-start -->
-97115104 builds open systems for attribution, personal inference, and verifiable publishing across GitHub, a links profile, and a blog where every post carries a cryptographic receipt. The animated canvas on this profile is regenerated from live repository, feed, and attest metrics on every sync.
-<!-- profile-sync:human-prose-end -->
-</p>
+<!--
+profile-sync:human-prose-start
+97115104 maintains a GitHub profile readme with live blog and commit feeds rendered as terminal output. The page syncs automatically through a GitHub Action on every push to main.
+profile-sync:human-prose-end
+-->
 
 </div>

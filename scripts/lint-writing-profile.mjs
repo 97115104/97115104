@@ -33,12 +33,9 @@ const FORBIDDEN_PATTERNS = [
 ];
 
 function extractHumanProse(readme) {
-  const start = '<!-- profile-sync:human-prose-start -->';
-  const end = '<!-- profile-sync:human-prose-end -->';
-  const i = readme.indexOf(start);
-  const j = readme.indexOf(end);
-  if (i === -1 || j === -1) return readme;
-  return readme.slice(i + start.length, j);
+  const re = /profile-sync:human-prose-start\s*\n?([\s\S]*?)\s*profile-sync:human-prose-end/;
+  const m = readme.match(re);
+  return m ? m[1].trim() : '';
 }
 
 function stripMarkdown(text) {

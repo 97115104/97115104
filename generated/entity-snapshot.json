@@ -1,555 +1,74 @@
 {
-  "synced_at": "2026-06-26T04:24:40.955Z",
-  "identity": {
-    "name": "Austin Harshberger",
-    "github": "https://github.com/97115104",
-    "links": "https://links.97115104.com/",
-    "blog": "https://blog.97115104.com/",
-    "orcid": "https://orcid.org/0009-0003-7242-2456"
-  },
-  "metrics": {
-    "total_attestations": 642,
-    "total_verifications": 546,
-    "total_agent_visits": 125,
-    "unique_agents": 3,
-    "top_model": {
-      "model": "claude-opus-4",
-      "count": 73
-    },
-    "top_type": {
-      "authorship_type": "human",
-      "count": 517
-    },
-    "top_author": {
-      "author": "97115104",
-      "count": 529
-    },
-    "top_platform": {
-      "platform": "GitHub Copilot VS Code",
-      "count": 34
-    },
-    "agent_breakdown": [
-      {
-        "agent_name": "Bot/Crawler",
-        "count": 113
-      },
-      {
-        "agent_name": "ChatGPT/OpenAI",
-        "count": 7
-      },
-      {
-        "agent_name": "Claude",
-        "count": 5
-      }
-    ],
-    "type_breakdown": [
-      {
-        "authorship_type": "human",
-        "count": 517
-      },
-      {
-        "authorship_type": "collab",
-        "count": 123
-      },
-      {
-        "authorship_type": "ai",
-        "count": 2
-      }
-    ],
-    "platform_breakdown": [
-      {
-        "platform": "GitHub Copilot VS Code",
-        "count": 34
-      },
-      {
-        "platform": "Cursor",
-        "count": 14
-      },
-      {
-        "platform": "Claude Code",
-        "count": 6
-      },
-      {
-        "platform": "Claude Code VS Code",
-        "count": 2
-      },
-      {
-        "platform": "Various",
-        "count": 1
-      },
-      {
-        "platform": "OpenAI Codex",
-        "count": 1
-      },
-      {
-        "platform": "Cursor + Auto",
-        "count": 1
-      },
-      {
-        "platform": "Codex CLI",
-        "count": 1
-      }
-    ],
-    "platform_by_type": [
-      {
-        "platform": "GitHub Copilot VS Code",
-        "authorship_type": "collab",
-        "count": 34
-      },
-      {
-        "platform": "Cursor",
-        "authorship_type": "collab",
-        "count": 13
-      },
-      {
-        "platform": "Claude Code",
-        "authorship_type": "collab",
-        "count": 5
-      },
-      {
-        "platform": "Claude Code VS Code",
-        "authorship_type": "collab",
-        "count": 2
-      },
-      {
-        "platform": "Claude Code",
-        "authorship_type": "ai",
-        "count": 1
-      },
-      {
-        "platform": "Codex CLI",
-        "authorship_type": "collab",
-        "count": 1
-      },
-      {
-        "platform": "Cursor",
-        "authorship_type": "ai",
-        "count": 1
-      },
-      {
-        "platform": "Cursor + Auto",
-        "authorship_type": "collab",
-        "count": 1
-      },
-      {
-        "platform": "OpenAI Codex",
-        "authorship_type": "collab",
-        "count": 1
-      },
-      {
-        "platform": "Various",
-        "authorship_type": "collab",
-        "count": 1
-      }
-    ],
-    "recent_attestations": [
-      {
-        "id": "2026-06-26-8f30e3",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "ncu4l76a",
-        "created_at": "2026-06-26 04:24:03"
-      },
-      {
-        "id": "2026-06-26-5eb6a5",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "ndscvnm6",
-        "created_at": "2026-06-26 04:22:01"
-      },
-      {
-        "id": "2026-06-26-749aa6",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "6lm4odsv",
-        "created_at": "2026-06-26 04:20:23"
-      },
-      {
-        "id": "2026-06-26-6ed2a2",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "1cdlezro",
-        "created_at": "2026-06-26 04:17:38"
-      },
-      {
-        "id": "2026-06-26-410f0f",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "32dbp2fo",
-        "created_at": "2026-06-26 04:16:49"
-      },
-      {
-        "id": "2026-06-26-9e77be",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "97115104",
-        "short_id": "uolt7le3",
-        "created_at": "2026-06-26 04:15:50"
-      },
-      {
-        "id": "2026-06-26-5bd63f",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "claude-opus-4",
-        "author": "jane",
-        "short_id": "xu8vp0in",
-        "created_at": "2026-06-26 03:58:07"
-      },
-      {
-        "id": "2026-06-26-4c8537",
-        "content_name": "TITLE",
-        "authorship_type": "collab",
-        "model": "YOUR_MODEL",
-        "author": "YOUR_NAME",
-        "short_id": "ihdgft5j",
-        "created_at": "2026-06-26 03:37:31"
-      },
-      {
-        "id": "2026-06-26-0d408d",
-        "content_name": "README.md",
-        "authorship_type": "collab",
-        "model": "gpt-4",
-        "author": "Anonymous",
-        "short_id": "nhy8r0a9",
-        "created_at": "2026-06-26 03:31:41"
-      },
-      {
-        "id": "2026-06-25-3c6e8a",
-        "content_name": "vLLM-harness",
-        "authorship_type": "collab",
-        "model": "composer-2.5-fast",
-        "author": "97115104",
-        "short_id": "csii81x4",
-        "created_at": "2026-06-25 22:51:25"
-      }
-    ],
-    "attestations_24h": 11
-  },
+  "synced_at": "2026-06-26T04:34:36.347Z",
   "repo_count": 31,
-  "pinned": [
-    {
-      "name": "attest",
-      "purpose": "Cryptographically signed AI content attribution protocol."
-    },
-    {
-      "name": "endor-train",
-      "purpose": "Aggregate personalized data to train a personal language model."
-    },
-    {
-      "name": "hsc-chat",
-      "purpose": "Chat client for an OpenAI-compatible API."
-    },
-    {
-      "name": "voice-clone",
-      "purpose": "Chatterbox-based voice cloning tool."
-    },
-    {
-      "name": "vLLM-harness",
-      "purpose": "Serve models through vLLM with a secure public API."
-    },
-    {
-      "name": "ollama-harness",
-      "purpose": "Serve models through Ollama with a secure public API."
-    }
-  ],
-  "repo_groups": {
-    "attribution": [
-      "attest"
-    ],
-    "inference": [
-      "vLLM-harness",
-      "ollama-harness",
-      "hsc-chat",
-      "voice-clone"
-    ],
-    "personal_lm": [
-      "endor-train",
-      "endor-teach",
-      "humanlike"
-    ],
-    "language": [
-      "jennifer-lang",
-      "PTL-3"
-    ]
-  },
   "recent_posts": [
     {
       "title": "“looping” is not new",
       "link": "https://blog.97115104.com/2026/06/23/looping-is-not-new/",
-      "updated": "2026-06-23T12:00:00-07:00",
-      "categories": [
-        "ai",
-        "op-ed"
-      ]
+      "updated": "2026-06-23T12:00:00-07:00"
     },
     {
       "title": "old man winter and heliotrope",
       "link": "https://blog.97115104.com/2026/06/20/definitely-not-ai/",
-      "updated": "2026-06-20T12:00:00-07:00",
-      "categories": [
-        "ai",
-        "op-ed",
-        "creative"
-      ]
+      "updated": "2026-06-20T12:00:00-07:00"
     },
     {
       "title": "kissingparty on becoming",
       "link": "https://blog.97115104.com/2026/06/16/on-becoming/",
-      "updated": "2026-06-16T12:00:00-07:00",
-      "categories": [
-        "poems",
-        "personal",
-        "creative"
-      ]
+      "updated": "2026-06-16T12:00:00-07:00"
     },
     {
       "title": "when to start a new chat",
       "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
-      "updated": "2026-06-05T12:00:00-07:00",
-      "categories": [
-        "ai",
-        "op-ed",
-        "tools"
-      ]
+      "updated": "2026-06-05T12:00:00-07:00"
     },
     {
       "title": "llm skill acquisition and style control",
       "link": "https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/",
-      "updated": "2026-05-30T12:00:00-07:00",
-      "categories": [
-        "ai",
-        "research"
-      ]
+      "updated": "2026-05-30T12:00:00-07:00"
     },
     {
       "title": "creating jarvis and uploadable skills",
       "link": "https://blog.97115104.com/2026/05/28/javis-and-endor/",
-      "updated": "2026-05-28T20:01:00-07:00",
-      "categories": [
-        "ai",
-        "research",
-        "op-ed"
-      ]
+      "updated": "2026-05-28T20:01:00-07:00"
     }
   ],
-  "plan": [
-    "“looping” is not new",
-    "old man winter and heliotrope",
-    "kissingparty on becoming"
-  ],
-  "build": [
-    {
-      "name": "97115104",
-      "pushed_at": "2026-06-26T04:24:28Z",
-      "group": "other"
-    },
-    {
-      "name": "hsc-chat",
-      "pushed_at": "2026-06-26T03:29:09Z",
-      "group": "inference"
-    },
-    {
-      "name": "voice-clone",
-      "pushed_at": "2026-06-26T03:16:16Z",
-      "group": "inference"
-    },
-    {
-      "name": "ollama-harness",
-      "pushed_at": "2026-06-26T02:59:14Z",
-      "group": "inference"
-    },
-    {
-      "name": "vLLM-harness",
-      "pushed_at": "2026-06-26T01:24:59Z",
-      "group": "inference"
-    },
-    {
-      "name": "rusting",
-      "pushed_at": "2026-06-07T06:55:08Z",
-      "group": "other"
-    },
-    {
-      "name": "endor-teach",
-      "pushed_at": "2026-06-05T19:29:42Z",
-      "group": "personal_lm"
-    },
-    {
-      "name": "endor-train",
-      "pushed_at": "2026-06-04T21:24:31Z",
-      "group": "personal_lm"
-    }
-  ],
-  "verify": [
+  "recent_commits": [
     {
       "repo": "97115104",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/ncu4l76a",
-          "id": "ncu4l76a"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/ncu4l76a",
-          "id": "ncu4l76a"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/ncu4l76a"
+      "message": "Merge remote profile-sync with animated README redesign.",
+      "sha": "c8b9678",
+      "at": "2026-06-26T04:24:29Z"
     },
     {
-      "repo": "analyze-wps-embodiment",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/47w1auzt",
-          "id": "47w1auzt"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/47w1auzt"
-    },
-    {
-      "repo": "attest",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/y52ru5lq",
-          "id": "y52ru5lq"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/y52ru5lq",
-          "id": "y52ru5lq"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/abc12345",
-          "id": "abc12345"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/ID",
-          "id": "ID"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/ID",
-          "id": "ID"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/YOUR",
-          "id": "YOUR"
-        },
-        {
-          "type": "verify",
-          "url": "https://attest.97115104.com/verify/?data=eyJ2ZXJz"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/y52ru5lq"
-    },
-    {
-      "repo": "endor-train",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/528v29uv",
-          "id": "528v29uv"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/528v29uv"
+      "repo": "97115104",
+      "message": "Add self-attesting profile README with live sync pipeline",
+      "sha": "c1f8e8d",
+      "at": "2026-06-26T04:17:20Z"
     },
     {
       "repo": "hsc-chat",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/hsc",
-          "id": "hsc"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/hsc"
-    },
-    {
-      "repo": "ollama-harness",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/kia8myqz",
-          "id": "kia8myqz"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/kia8myqz"
-    },
-    {
-      "repo": "PTL-3",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/kyhc8vv0",
-          "id": "kyhc8vv0"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/kyhc8vv0"
-    },
-    {
-      "repo": "vLLM-harness",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/csii81x4",
-          "id": "csii81x4"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/csii81x4"
+      "message": "Update project documentation and enhance deployment scripts",
+      "sha": "f38f3af",
+      "at": "2026-06-26T03:29:10Z"
     },
     {
       "repo": "voice-clone",
-      "signals": [
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/9uccr2j5",
-          "id": "9uccr2j5"
-        },
-        {
-          "type": "short",
-          "url": "https://attest.97115104.com/s/9uccr2j5",
-          "id": "9uccr2j5"
-        }
-      ],
-      "authorship_type": null,
-      "model": null,
-      "latest_url": "https://attest.97115104.com/s/9uccr2j5"
+      "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
+      "sha": "4765128",
+      "at": "2026-06-26T03:16:17Z"
+    },
+    {
+      "repo": "ollama-harness",
+      "message": "Implement service startup progress indicators in deploy-locally.sh. Introduce a progress panel to display the status of Ollama, API, and Web UI services during deployment. Enhance error handling and logging for service initialization, including health checks and loading states.",
+      "sha": "ff30462",
+      "at": "2026-06-26T02:59:15Z"
+    },
+    {
+      "repo": "voice-clone",
+      "message": "Update README and admin interface with API integration details. Add instructions for sharing access with clients, including API base URL and key usage. Enhance admin dashboard to display API base URL and agent instructions, improving usability for remote clients. Implement endpoint listing for voice operations in the web interface.",
+      "sha": "f123ffc",
+      "at": "2026-06-26T02:58:36Z"
     }
-  ],
-  "ledger_summary": {
-    "total": 31,
-    "with_receipts": 9
-  }
+  ]
 }
