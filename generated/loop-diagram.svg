@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="320" viewBox="0 0 780 320" role="img" aria-label="Plan build verify loop">
+  <defs>
+    <style>
+      @keyframes pulse { 0%,100% { fill: #2d6a4f; } 50% { fill: #40916c; } }
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #0d1b2a; }
+        .panel { fill: #1b263b; stroke: #415a77; }
+        .title { fill: #e0e1dd; }
+        .head { fill: #90be6d; }
+        .arrow { stroke: #40916c; }
+      }
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #f8f9fa; }
+        .panel { fill: #fff; stroke: #adb5bd; }
+        .title { fill: #212529; }
+        .head { fill: #2d6a4f; }
+        .arrow { stroke: #40916c; }
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#40916c"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="780" height="320" rx="10"/>
+  <text class="title" x="24" y="32" font-family="Georgia,serif" font-size="18" font-weight="600">plan → build → verify</text>
+  <text class="title" x="24" y="52" font-family="ui-monospace,monospace" font-size="10" opacity="0.7">synced 2026-06-26T04:16:49Z</text>
+  <rect class="panel" x="16" y="68" width="230" height="220" rx="8"/>
+  <rect class="panel" x="276" y="68" width="230" height="220" rx="8"/>
+  <rect class="panel" x="536" y="68" width="230" height="220" rx="8"/>
+  <text class="head" x="32" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">PLAN</text>
+  <text class="head" x="292" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">BUILD</text>
+  <text class="head" x="552" y="92" font-family="ui-monospace,monospace" font-size="13" font-weight="700">VERIFY</text>
+  <text x="24" y="110" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· “looping” is not new</text>
+<text x="24" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· old man winter and heliotrope</text>
+<text x="24" y="154" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· kissingparty on becoming</text>
+  <text class="pulse" x="284" y="110" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· 97115104 2026-06-26</text>
+<text x="284" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· hsc-chat 2026-06-26</text>
+<text x="284" y="154" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· voice-clone 2026-06-26</text>
+<text x="284" y="176" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· ollama-harness 2026-06-26</text>
+<text x="284" y="198" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· vLLM-harness 2026-06-26</text>
+  <text x="544" y="110" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· analyze-wps-e… —</text>
+<text x="544" y="132" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· attest —</text>
+<text x="544" y="154" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· endor-train —</text>
+<text x="544" y="176" fill="#495057" font-family="ui-monospace,monospace" font-size="11">· hsc-chat —</text>
+  <line class="arrow" x1="246" y1="178" x2="276" y2="178" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line class="arrow" x1="506" y1="178" x2="536" y2="178" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M 650 288 C 700 300, 700 20, 130 68" fill="none" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowhead)"/>
+  <text x="390" y="308" text-anchor="middle" fill="#40916c" font-family="ui-monospace,monospace" font-size="10">loop closes on new attestation</text>
+</svg>

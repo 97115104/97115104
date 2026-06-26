@@ -1,0 +1,12 @@
+{
+  "name": "97115104-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-profile.mjs",
+    "lint:style": "node scripts/lint-writing-profile.mjs"
+  },
+  "dependencies": {
+    "attest-client": "^3.0.0"
+  }
+}

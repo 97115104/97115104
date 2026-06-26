@@ -1,0 +1,39 @@
+name: Profile sync
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[profile-sync]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Sync profile artifacts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-profile.mjs
+
+      - name: Lint writing profile
+        run: node scripts/lint-writing-profile.mjs
+
+      - name: Commit generated artifacts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '[profile-sync] update generated profile artifacts'
+          file_pattern: 'generated/* attestations/* llms.txt README.md'
