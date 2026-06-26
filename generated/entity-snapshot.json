@@ -1,6 +1,33 @@
 {
-  "synced_at": "2026-06-26T04:34:36.347Z",
+  "synced_at": "2026-06-26T05:15:52.231Z",
   "repo_count": 31,
+  "repo_counts": {
+    "public": 31,
+    "private": null,
+    "total": 31
+  },
+  "repo_stats": {
+    "owned": 26,
+    "forked": 5,
+    "archived": 0,
+    "stars": 2,
+    "forks": 1,
+    "pushed_7d": 5,
+    "pushed_30d": 12,
+    "top_starred": {
+      "name": "lexicographer-companion",
+      "stars": 1
+    },
+    "active_repo": {
+      "name": "97115104",
+      "at": "2026-06-26T04:35:01Z"
+    },
+    "oldest_repo": {
+      "name": "attest",
+      "at": "2025-05-13T02:42:00Z"
+    }
+  },
+  "profile_stats": null,
   "recent_posts": [
     {
       "title": "“looping” is not new",
@@ -36,39 +63,138 @@
   "recent_commits": [
     {
       "repo": "97115104",
-      "message": "Merge remote profile-sync with animated README redesign.",
+      "message": "[profile-sync] update profile artifacts and remove obsolete files",
+      "sha": "a3ef77c",
+      "at": "2026-06-26T04:34:58Z"
+    },
+    {
+      "repo": "97115104",
+      "message": "push to main",
       "sha": "c8b9678",
       "at": "2026-06-26T04:24:29Z"
     },
     {
       "repo": "97115104",
-      "message": "Add self-attesting profile README with live sync pipeline",
+      "message": "push to main",
       "sha": "c1f8e8d",
       "at": "2026-06-26T04:17:20Z"
     },
     {
       "repo": "hsc-chat",
-      "message": "Update project documentation and enhance deployment scripts",
+      "message": "push to main",
       "sha": "f38f3af",
       "at": "2026-06-26T03:29:10Z"
     },
     {
       "repo": "voice-clone",
-      "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
+      "message": "push to main",
       "sha": "4765128",
       "at": "2026-06-26T03:16:17Z"
     },
     {
       "repo": "ollama-harness",
-      "message": "Implement service startup progress indicators in deploy-locally.sh. Introduce a progress panel to display the status of Ollama, API, and Web UI services during deployment. Enhance error handling and logging for service initialization, including health checks and loading states.",
+      "message": "push to main",
       "sha": "ff30462",
       "at": "2026-06-26T02:59:15Z"
+    }
+  ],
+  "commit_stats": {
+    "peak_hour_pt": 0,
+    "peak_day_pt": "Thu",
+    "pushes_7d": 14,
+    "pushes_30d": 45,
+    "top_push_repo": {
+      "name": "vLLM-harness",
+      "count": 11
+    },
+    "latest": "2026-06-26T04:35:01.000Z",
+    "earliest": "2026-05-29T10:44:09.000Z",
+    "sample_size": 45,
+    "hours_pt": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      0,
+      0
+    ],
+    "days_pt": [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0
+    ]
+  },
+  "languages_by_recency": [
+    {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 22989,
+      "pushed_at": "2026-06-26T04:35:01Z"
     },
     {
-      "repo": "voice-clone",
-      "message": "Update README and admin interface with API integration details. Add instructions for sharing access with clients, including API base URL and key usage. Enhance admin dashboard to display API base URL and agent instructions, improving usability for remote clients. Implement endpoint listing for voice operations in the web interface.",
-      "sha": "f123ffc",
-      "at": "2026-06-26T02:58:36Z"
+      "name": "CSS",
+      "repo": "hsc-chat",
+      "bytes": 19275,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "hsc-chat",
+      "bytes": 19173,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "Python",
+      "repo": "hsc-chat",
+      "bytes": 17079,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "hsc-chat",
+      "bytes": 12141,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "hsc-chat",
+      "bytes": 6741,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "Dockerfile",
+      "repo": "hsc-chat",
+      "bytes": 1433,
+      "pushed_at": "2026-06-26T03:29:09Z"
+    },
+    {
+      "name": "Rust",
+      "repo": "rusting",
+      "bytes": 1,
+      "pushed_at": "2026-06-07T06:55:08Z"
     }
-  ]
+  ],
+  "language_totals": []
 }

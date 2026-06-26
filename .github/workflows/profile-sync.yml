@@ -27,6 +27,7 @@ jobs:
       - name: Sync profile artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_SYNC_TOKEN: ${{ secrets.PROFILE_SYNC_TOKEN }}
         run: node scripts/sync-profile.mjs
 
       - name: Commit generated artifacts

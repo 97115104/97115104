@@ -3,7 +3,7 @@
  * Profile sync: blog feed, recent commits, SVG generation, attestation.
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,6 +17,8 @@ const ATTESTATIONS = join(ROOT, 'attestations');
 const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
 const BLOG_FEED = 'https://blog.97115104.com/feed.xml';
+const PT = 'America/Los_Angeles';
+const ATTEST_MODEL = 'composer-2.5-fast';
 
 const PINNED = [
   { name: 'attest', purpose: 'Cryptographically signed AI content attribution protocol.' },
@@ -39,21 +41,33 @@ async function fetchText(url, headers = {}) {
   return res.text();
 }
 
+function githubToken() {
+  return process.env.PROFILE_SYNC_TOKEN || process.env.GITHUB_TOKEN || null;
+}
+
 function githubHeaders() {
-  const token = process.env.GITHUB_TOKEN;
+  const token = githubToken();
   return token
     ? { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' }
     : { Accept: 'application/vnd.github+json' };
 }
 
-async function fetchRepos() {
+function hasUserAuth() {
+  return Boolean(process.env.PROFILE_SYNC_TOKEN);
+}
+
+async function fetchAllRepos() {
+  const token = githubToken();
+  const useUserRepos = Boolean(process.env.PROFILE_SYNC_TOKEN);
   const repos = [];
   let page = 1;
   while (true) {
-    const batch = await fetchJson(
-      `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&page=${page}&sort=updated`,
-      githubHeaders(),
-    );
+    const url = useUserRepos
+      ? `https://api.github.com/user/repos?per_page=100&page=${page}&affiliation=owner&visibility=all&sort=updated`
+      : token
+        ? `https://api.github.com/user/repos?per_page=100&page=${page}&affiliation=owner&sort=updated`
+        : `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&page=${page}&sort=updated`;
+    const batch = await fetchJson(url, githubHeaders());
     if (!batch.length) break;
     repos.push(...batch);
     if (batch.length < 100) break;
@@ -62,15 +76,189 @@ async function fetchRepos() {
   return repos;
 }
 
-async function fetchRecentCommits() {
+function countRepos(repos, hasAuth, userProfile = null) {
+  const pub = repos.filter((r) => !r.private).length;
+  const privFromRepos = hasAuth ? repos.filter((r) => r.private).length : null;
+  const priv = userProfile?.total_private_repos ?? privFromRepos;
+  return {
+    public: userProfile?.public_repos ?? pub,
+    private: hasAuth ? priv : null,
+    total: hasAuth && userProfile
+      ? (userProfile.public_repos ?? pub) + (userProfile.total_private_repos ?? privFromRepos ?? 0)
+      : repos.length,
+  };
+}
+
+function daysSince(iso) {
+  return (Date.now() - new Date(iso).getTime()) / 86_400_000;
+}
+
+function buildRepoStats(repos) {
+  const owned = repos.filter((r) => !r.fork);
+  const forked = repos.filter((r) => r.fork);
+  const archived = repos.filter((r) => r.archived);
+  const stars = repos.reduce((sum, r) => sum + (r.stargazers_count ?? 0), 0);
+  const forkTotal = repos.reduce((sum, r) => sum + (r.forks_count ?? 0), 0);
+  const pushed7d = owned.filter((r) => daysSince(r.pushed_at) <= 7).length;
+  const pushed30d = owned.filter((r) => daysSince(r.pushed_at) <= 30).length;
+  const topStarred = [...owned].sort((a, b) => b.stargazers_count - a.stargazers_count)[0];
+  const activeRepo = [...owned].sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))[0];
+  const oldest = [...owned].sort((a, b) => new Date(a.created_at) - new Date(b.created_at))[0];
+
+  return {
+    owned: owned.length,
+    forked: forked.length,
+    archived: archived.length,
+    stars,
+    forks: forkTotal,
+    pushed_7d: pushed7d,
+    pushed_30d: pushed30d,
+    top_starred: topStarred ? { name: topStarred.name, stars: topStarred.stargazers_count } : null,
+    active_repo: activeRepo ? { name: activeRepo.name, at: activeRepo.pushed_at } : null,
+    oldest_repo: oldest ? { name: oldest.name, at: oldest.created_at } : null,
+  };
+}
+
+async function fetchUserProfile() {
+  if (!hasUserAuth()) return null;
+  try {
+    return await fetchJson('https://api.github.com/user', githubHeaders());
+  } catch (err) {
+    console.warn('GitHub user profile unavailable:', err.message);
+    return null;
+  }
+}
+
+async function fetchLanguageTotals(repos) {
+  const owned = repos.filter((r) => !r.fork);
+  const totals = {};
+  const batchSize = 8;
+
+  for (let i = 0; i < owned.length; i += batchSize) {
+    const batch = owned.slice(i, i + batchSize);
+    await Promise.all(
+      batch.map(async (repo) => {
+        try {
+          const langs = await fetchJson(
+            `https://api.github.com/repos/${repo.full_name}/languages`,
+            githubHeaders(),
+          );
+          for (const [name, bytes] of Object.entries(langs)) {
+            totals[name] = (totals[name] ?? 0) + bytes;
+          }
+        } catch {
+          if (repo.language) totals[repo.language] = (totals[repo.language] ?? 0) + 1;
+        }
+      }),
+    );
+  }
+
+  return Object.entries(totals)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 12)
+    .map(([name, bytes]) => ({ name, bytes }));
+}
+
+function pacificHour(date) {
+  return Number(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: PT,
+      hour: 'numeric',
+      hour12: false,
+    }).format(date),
+  );
+}
+
+function formatSyncedPacific(iso) {
+  const d = new Date(iso);
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: PT,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(d).map((p) => [p.type, p.value]));
+  return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute} PT`;
+}
+
+async function fetchLanguagesByRecency(repos) {
+  const sorted = repos
+    .filter((r) => !r.fork)
+    .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+
+  const seen = new Set();
+  const result = [];
+
+  for (const repo of sorted.slice(0, 12)) {
+    if (result.length >= 8) break;
+    try {
+      const langs = await fetchJson(
+        `https://api.github.com/repos/${repo.full_name}/languages`,
+        githubHeaders(),
+      );
+      for (const [name, bytes] of Object.entries(langs)) {
+        if (seen.has(name)) continue;
+        seen.add(name);
+        result.push({ name, repo: repo.name, bytes, pushed_at: repo.pushed_at });
+        if (result.length >= 8) break;
+      }
+    } catch {
+      if (repo.language && !seen.has(repo.language)) {
+        seen.add(repo.language);
+        result.push({ name: repo.language, repo: repo.name, bytes: 1, pushed_at: repo.pushed_at });
+      }
+    }
+  }
+
+  if (result.length === 0) {
+    for (const repo of sorted.slice(0, 8)) {
+      if (repo.language && !seen.has(repo.language)) {
+        seen.add(repo.language);
+        result.push({ name: repo.language, repo: repo.name, bytes: 1, pushed_at: repo.pushed_at });
+      }
+    }
+  }
+
+  return result;
+}
+
+const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+async function fetchActivity() {
   try {
     const events = await fetchJson(
-      `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=30`,
+      `https://api.github.com/users/${GITHUB_USER}/events/public?per_page=100`,
       githubHeaders(),
     );
+    const pushEvents = events.filter((e) => e.type === 'PushEvent' && e.payload?.head);
+
+    const sample = pushEvents.map((e) => new Date(e.created_at));
+    const hourCounts = Array(24).fill(0);
+    const dayCounts = Array(7).fill(0);
+    for (const t of sample) {
+      hourCounts[pacificHour(t)] += 1;
+      const wd = new Intl.DateTimeFormat('en-US', { timeZone: PT, weekday: 'short' }).format(t);
+      const dayIdx = DAY_NAMES.indexOf(wd);
+      if (dayIdx >= 0) dayCounts[dayIdx] += 1;
+    }
+    const peakHour = sample.length ? hourCounts.indexOf(Math.max(...hourCounts)) : null;
+    const peakDay = sample.length ? DAY_NAMES[dayCounts.indexOf(Math.max(...dayCounts))] : null;
+    const sorted = [...sample].sort((a, b) => a - b);
+    const pushes7d = pushEvents.filter((e) => daysSince(e.created_at) <= 7).length;
+    const pushes30d = pushEvents.filter((e) => daysSince(e.created_at) <= 30).length;
+
+    const repoPushCounts = {};
+    for (const event of pushEvents) {
+      const name = event.repo?.name?.replace(`${GITHUB_USER}/`, '') ?? '?';
+      repoPushCounts[name] = (repoPushCounts[name] ?? 0) + 1;
+    }
+    const topPushRepo = Object.entries(repoPushCounts).sort((a, b) => b[1] - a[1])[0];
+
     const commits = [];
-    for (const event of events) {
-      if (event.type !== 'PushEvent' || !event.payload?.head) continue;
+    for (const event of pushEvents) {
       const repoFull = event.repo?.name ?? '';
       const repo = repoFull.replace(`${GITHUB_USER}/`, '');
       try {
@@ -82,17 +270,37 @@ async function fetchRecentCommits() {
           repo,
           message: (detail.commit?.message ?? 'push').split('\n')[0],
           sha: event.payload.head.slice(0, 7),
-          at: event.created_at,
+          at: detail.commit?.author?.date ?? event.created_at,
         });
       } catch {
-        commits.push({ repo, message: `push to ${event.payload.ref?.split('/').pop() ?? 'main'}`, sha: event.payload.head.slice(0, 7), at: event.created_at });
+        commits.push({
+          repo,
+          message: `push to ${event.payload.ref?.split('/').pop() ?? 'main'}`,
+          sha: event.payload.head.slice(0, 7),
+          at: event.created_at,
+        });
       }
       if (commits.length >= 6) break;
     }
-    return commits;
+
+    return {
+      recent_commits: commits,
+      commit_stats: {
+        peak_hour_pt: peakHour,
+        peak_day_pt: peakDay,
+        hours_pt: hourCounts,
+        days_pt: dayCounts,
+        pushes_7d: pushes7d,
+        pushes_30d: pushes30d,
+        top_push_repo: topPushRepo ? { name: topPushRepo[0], count: topPushRepo[1] } : null,
+        latest: sorted.length ? sorted[sorted.length - 1].toISOString() : null,
+        earliest: sorted.length ? sorted[0].toISOString() : null,
+        sample_size: sample.length,
+      },
+    };
   } catch (err) {
     console.warn('GitHub events unavailable:', err.message);
-    return [];
+    return { recent_commits: [], commit_stats: { sample_size: 0 } };
   }
 }
 
@@ -132,7 +340,7 @@ async function createAttestation(readmeContent, contentHash) {
   const humanProse = extractHumanProse(readmeContent);
   const params = new URLSearchParams({
     content_name: 'README.md',
-    model: 'claude-opus-4',
+    model: ATTEST_MODEL,
     role: 'collaborated',
     author: GITHUB_USER,
     platform: 'Cursor',
@@ -192,22 +400,109 @@ Last: ${snapshot.synced_at}
 `;
 }
 
+function loadPreviousSnapshot() {
+  const path = join(GENERATED, 'entity-snapshot.json');
+  if (!existsSync(path)) return null;
+  try {
+    return JSON.parse(readFileSync(path, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function deriveCommitStats(commits) {
+  const timestamps = commits
+    .map((c) => new Date(c.at))
+    .filter((d) => !Number.isNaN(d.getTime()));
+  if (!timestamps.length) return { sample_size: 0 };
+
+  const hourCounts = Array(24).fill(0);
+  const dayCounts = Array(7).fill(0);
+  for (const t of timestamps) {
+    hourCounts[pacificHour(t)] += 1;
+    const wd = new Intl.DateTimeFormat('en-US', { timeZone: PT, weekday: 'short' }).format(t);
+    const dayIdx = DAY_NAMES.indexOf(wd);
+    if (dayIdx >= 0) dayCounts[dayIdx] += 1;
+  }
+  const sorted = [...timestamps].sort((a, b) => a - b);
+  return {
+    peak_hour_pt: hourCounts.indexOf(Math.max(...hourCounts)),
+    peak_day_pt: DAY_NAMES[dayCounts.indexOf(Math.max(...dayCounts))],
+    hours_pt: hourCounts,
+    days_pt: dayCounts,
+    latest: sorted[sorted.length - 1].toISOString(),
+    earliest: sorted[0].toISOString(),
+    sample_size: timestamps.length,
+  };
+}
+
 async function main() {
   mkdirSync(GENERATED, { recursive: true });
   mkdirSync(ATTESTATIONS, { recursive: true });
+  const previous = loadPreviousSnapshot();
 
   console.log('Fetching data…');
-  const [repos, blogPosts, recentCommits] = await Promise.all([
-    fetchRepos(),
-    fetchText(BLOG_FEED).then(parseAtomFeed).catch(() => []),
-    fetchRecentCommits(),
+  const hasAuth = hasUserAuth();
+  const [repos, userProfile] = await Promise.all([
+    fetchAllRepos().catch((err) => {
+      console.warn('GitHub repos unavailable:', err.message);
+      return [];
+    }),
+    fetchUserProfile(),
   ]);
+  const repoCounts = repos.length || userProfile
+    ? countRepos(repos, hasAuth, userProfile)
+    : null;
+  const repoStats = repos.length ? buildRepoStats(repos) : null;
+
+  const [blogPosts, activity, languages, languageTotals] = await Promise.all([
+    fetchText(BLOG_FEED).then(parseAtomFeed).catch(() => []),
+    fetchActivity(),
+    repos.length ? fetchLanguagesByRecency(repos) : Promise.resolve([]),
+    repos.length ? fetchLanguageTotals(repos) : Promise.resolve([]),
+  ]);
+
+  const recentCommits = activity.recent_commits.length
+    ? activity.recent_commits
+    : (previous?.recent_commits ?? []);
+  let commitStats = activity.commit_stats.sample_size
+    ? activity.commit_stats
+    : (previous?.commit_stats?.sample_size ? previous.commit_stats : null);
+  if (!commitStats?.sample_size && recentCommits.length) {
+    commitStats = deriveCommitStats(recentCommits);
+  }
+  commitStats ??= { sample_size: 0 };
+  if (!commitStats.hours_pt) {
+    const derived = recentCommits.length
+      ? deriveCommitStats(recentCommits)
+      : { hours_pt: Array(24).fill(0), days_pt: Array(7).fill(0) };
+    commitStats.hours_pt = derived.hours_pt;
+    commitStats.days_pt = derived.days_pt;
+  }
+
+  const profileStats = userProfile
+    ? {
+        followers: userProfile.followers,
+        following: userProfile.following,
+        member_since: userProfile.created_at?.slice(0, 10) ?? null,
+      }
+    : null;
 
   const snapshot = {
     synced_at: new Date().toISOString(),
-    repo_count: repos.length,
-    recent_posts: blogPosts.slice(0, 6),
+    repo_count: repoCounts?.total ?? previous?.repo_count ?? 0,
+    repo_counts: repoCounts ?? previous?.repo_counts ?? { public: previous?.repo_count ?? 0, private: null },
+    repo_stats: repoStats ?? previous?.repo_stats ?? null,
+    profile_stats: profileStats ?? previous?.profile_stats ?? null,
+    recent_posts: blogPosts.length ? blogPosts.slice(0, 6) : (previous?.recent_posts ?? []),
     recent_commits: recentCommits,
+    commit_stats: commitStats,
+    languages_by_recency: languages.length
+      ? languages
+      : (previous?.languages_by_recency ?? []),
+    language_totals: languageTotals.length
+      ? languageTotals
+      : (previous?.language_totals ?? []),
   };
   writeFileSync(join(GENERATED, 'entity-snapshot.json'), JSON.stringify(snapshot, null, 2));
 
@@ -238,7 +533,7 @@ async function main() {
   readme = replaceSection(
     readme,
     'sync-meta',
-    `<sub>[verify readme](${verifyUrl}) · synced ${snapshot.synced_at.slice(0, 16)}Z</sub>`,
+    `<p><sub><a href="${verifyUrl}">verify readme</a> · synced ${formatSyncedPacific(snapshot.synced_at)} · feed updates on push + daily</sub></p>`,
   );
 
   writeFileSync(readmePath, readme);
