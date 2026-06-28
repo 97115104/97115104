@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="742" viewBox="0 0 920 742" role="img" aria-label="feed and stats">
   <rect width="920" height="742" fill="#000000" stroke="#ffffff" stroke-width="1"/>
-  <text x="16" y="734" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-27 01:58 PT</text>
+  <text x="16" y="734" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-28 02:06 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="612" fill="#000000" stroke="#ffffff" stroke-width="1"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717" stroke="#ffffff" stroke-width="1"/>
@@ -60,24 +60,17 @@
     </text>
     <text x="16" y="278" font-family="ui-monospace,monospace" font-size="11" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="2.9s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 040fb64</tspan><tspan fill="#ffffff"> CrustyRustaceans</tspan><tspan fill="#a3a3a3"> (30)</tspan>
+    <tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 23aef96</tspan><tspan fill="#ffffff"> CrustyRustaceans</tspan><tspan fill="#a3a3a3"> (30)</tspan>
   </text>
 <text x="24" y="290" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="2.95s" dur="0.4s" fill="freeze"/>06/27 01:54 PT · chore: refresh YouTube channe…
+    <animate attributeName="opacity" from="0" to="1" begin="2.95s" dur="0.4s" fill="freeze"/>06/28 02:01 PT · chore: refresh YouTube channe…
   </text>
 <text x="16" y="308" font-family="ui-monospace,monospace" font-size="11" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.3s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> aad7119</tspan><tspan fill="#ffffff"> 97115104</tspan><tspan fill="#a3a3a3"> (19)</tspan>
+    <tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 3ac5c54</tspan><tspan fill="#ffffff"> 97115104</tspan><tspan fill="#a3a3a3"> (20)</tspan>
   </text>
 <text x="24" y="320" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.35s" dur="0.4s" fill="freeze"/>06/26 14:24 PT · [profile-sync] update generat…
-  </text>
-<text x="16" y="338" font-family="ui-monospace,monospace" font-size="11" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.7s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f38f3af</tspan><tspan fill="#ffffff"> hsc-chat</tspan><tspan fill="#a3a3a3"></tspan>
-  </text>
-<text x="24" y="350" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.75s" dur="0.4s" fill="freeze"/>06/25 20:29 PT · Update project documentation …
+    <animate attributeName="opacity" from="0" to="1" begin="3.35s" dur="0.4s" fill="freeze"/>06/27 01:58 PT · [profile-sync] update generat…
   </text>
   </g>
 </g>
@@ -178,38 +171,38 @@
   <rect x="0" y="614" width="920" height="108" fill="#000000" stroke="#ffffff" stroke-width="1"/>
   <rect x="0" y="614" width="920" height="40" fill="#171717" stroke="#ffffff" stroke-width="1"/>
   <text x="16" y="632" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">commit rhythm</text>
-  <text x="16" y="646" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">peak 22:00 PT · Thu · n=50</text>
+  <text x="16" y="646" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">peak 22:00 PT · Sat · n=50</text>
   <text x="904" y="646" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">hourly · PT</text>
   <line x1="16" y1="691" x2="904" y2="691" stroke="#ffffff" stroke-width="1"/>
-  <rect x="17.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="54.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="91.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="128.0" y="690.0" width="35.0" height="0" fill="#525252"/>
-<rect x="165.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="202.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="239.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="276.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="313.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="350.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="387.0" y="686.0" width="35.0" height="4" fill="#525252"/>
-<rect x="424.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="461.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="498.0" y="676.0" width="35.0" height="14" fill="#525252"/>
-<rect x="535.0" y="676.0" width="35.0" height="14" fill="#525252"/>
-<rect x="572.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="609.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="646.0" y="683.0" width="35.0" height="7" fill="#525252"/>
-<rect x="683.0" y="683.0" width="35.0" height="7" fill="#525252"/>
+  <rect x="17.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="54.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="91.0" y="681.0" width="35.0" height="9" fill="#525252"/>
+<rect x="128.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="165.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="202.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="239.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="276.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="313.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="350.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="387.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="424.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="461.0" y="687.0" width="35.0" height="3" fill="#525252"/>
+<rect x="498.0" y="681.0" width="35.0" height="9" fill="#525252"/>
+<rect x="535.0" y="678.0" width="35.0" height="12" fill="#525252"/>
+<rect x="572.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="609.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="646.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="683.0" y="684.0" width="35.0" height="6" fill="#525252"/>
 <rect x="720.0" y="690.0" width="35.0" height="0" fill="#525252"/>
-<rect x="757.0" y="679.0" width="35.0" height="11" fill="#525252"/>
-<rect x="794.0" y="665.0" width="35.0" height="25" fill="#525252"/>
+<rect x="757.0" y="684.0" width="35.0" height="6" fill="#525252"/>
+<rect x="794.0" y="668.0" width="35.0" height="22" fill="#525252"/>
 <rect x="831.0" y="662.0" width="35.0" height="28" fill="#ffffff"/>
 <rect x="868.0" y="690.0" width="35.0" height="0" fill="#525252"/>
   <text x="34.5" y="702" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">00</text>
 <text x="256.5" y="702" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">06</text>
 <text x="478.5" y="702" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">12</text>
 <text x="700.5" y="702" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">18</text>
-  <rect x="18.0" y="724.0" width="122.9" height="0" fill="#333333"/>
+  <rect x="18.0" y="723.0" width="122.9" height="1" fill="#333333"/>
 <text x="79.4" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
 <rect x="144.9" y="724.0" width="122.9" height="0" fill="#333333"/>
 <text x="206.3" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">M</text>
@@ -217,11 +210,11 @@
 <text x="333.1" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
 <rect x="398.6" y="724.0" width="122.9" height="0" fill="#333333"/>
 <text x="460.0" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">W</text>
-<rect x="525.4" y="712.0" width="122.9" height="12" fill="#ffffff"/>
+<rect x="525.4" y="716.0" width="122.9" height="8" fill="#333333"/>
 <text x="586.9" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
-<rect x="652.3" y="712.0" width="122.9" height="12" fill="#333333"/>
+<rect x="652.3" y="717.0" width="122.9" height="7" fill="#333333"/>
 <text x="713.7" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">F</text>
-<rect x="779.1" y="723.0" width="122.9" height="1" fill="#333333"/>
+<rect x="779.1" y="712.0" width="122.9" height="12" fill="#ffffff"/>
 <text x="840.6" y="734" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
 </g>
 </svg>
