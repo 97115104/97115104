@@ -25,7 +25,7 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-06-28)
+## recent blog (2026-06-29)
 
 - “looping” is not new: https://blog.97115104.com/2026/06/23/looping-is-not-new/
 - old man winter and heliotrope: https://blog.97115104.com/2026/06/20/definitely-not-ai/
@@ -36,4 +36,4 @@
 
 ## sync
 
-Last: 2026-06-28T09:06:31.407Z
+Last: 2026-06-29T09:39:49.134Z
