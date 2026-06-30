@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-29T09:39:49.134Z",
+  "synced_at": "2026-06-30T09:10:47.362Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 2,
     "forks": 2,
     "pushed_7d": 11,
-    "pushed_30d": 22,
+    "pushed_30d": 21,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-06-29T09:34:26Z"
+      "at": "2026-06-30T09:05:17Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -69,23 +69,23 @@
     {
       "repo": "CrustyRustaceans",
       "message": "chore: refresh YouTube channel stats",
-      "sha": "1d87889",
-      "at": "2026-06-29T09:34:26Z",
+      "sha": "7a4823e",
+      "at": "2026-06-30T09:05:17Z",
       "count": 30
     },
     {
       "repo": "lance-proposal",
-      "message": "Enhance README.md with detailed site description, password protection mechanism, and project structure. Added summaries for Pitch and Numbers sections, clarified password security, and updated deployment instructions. Included tech stack information for better context.",
-      "sha": "e95e7fd",
-      "at": "2026-06-29T06:28:14Z",
-      "count": 13
+      "message": "fix typo",
+      "sha": "fb8285b",
+      "at": "2026-06-29T23:15:53Z",
+      "count": 14
     },
     {
       "repo": "97115104",
       "message": "[profile-sync] update generated profile artifacts",
-      "sha": "56078f7",
-      "at": "2026-06-28T09:06:32Z",
-      "count": 7
+      "sha": "3eac14e",
+      "at": "2026-06-29T09:39:49Z",
+      "count": 6
     }
   ],
   "commit_stats": {
@@ -95,39 +95,39 @@
       2,
       1,
       4,
+      0,
+      1,
+      0,
       1,
       1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      4,
-      4,
-      2,
-      3,
-      3,
       2,
       1,
+      2,
+      2,
+      2,
+      3,
+      4,
+      2,
       4,
       3,
-      6,
+      2,
+      1,
+      3,
+      3,
+      5,
       1
     ],
     "days_pt": [
-      34,
+      28,
+      16,
       2,
       0,
       0,
-      0,
-      5,
-      9
+      3,
+      1
     ],
-    "latest": "2026-06-29T09:34:26.000Z",
-    "earliest": "2026-06-26T09:10:01.000Z",
+    "latest": "2026-06-30T09:05:17.000Z",
+    "earliest": "2026-06-26T20:19:54.000Z",
     "sample_size": 50,
     "commits_7d": 50,
     "commits_30d": 50,
@@ -141,37 +141,37 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-06-29T09:34:26Z"
+      "pushed_at": "2026-06-30T09:05:17Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-06-29T09:34:26Z"
+      "pushed_at": "2026-06-30T09:05:17Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-06-29T09:34:26Z"
+      "pushed_at": "2026-06-30T09:05:17Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-06-29T09:34:26Z"
+      "pushed_at": "2026-06-30T09:05:17Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-06-29T09:34:26Z"
+      "pushed_at": "2026-06-30T09:05:17Z"
     },
     {
       "name": "TypeScript",
       "repo": "lance-proposal",
       "bytes": 78321,
-      "pushed_at": "2026-06-29T06:28:18Z"
+      "pushed_at": "2026-06-29T23:15:55Z"
     },
     {
       "name": "Dockerfile",
