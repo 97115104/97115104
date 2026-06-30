@@ -20,6 +20,7 @@ const INK = '#ffffff';
 const MUTED = '#a3a3a3';
 const BORDER = '#ffffff';
 const FAINT = '#171717';
+const INSET = 0.5;
 
 const FEED_BLOG_LIMIT = 6;
 const FEED_COMMIT_LIMIT = 12;
@@ -188,11 +189,19 @@ function renderStatsPanel(snapshot, x, y, w, h) {
     ['forked', String(repo.forked ?? '—')],
     ['archived', String(repo.archived ?? '—')],
     ['stars', String(repo.stars ?? '—')],
+    ['forks', String(repo.forks ?? '—')],
   ]) {
     blocks.push(statLine(x + pad, cy, label, value));
     cy += line;
   }
   cy += 6;
+
+  const peakHour = stats.peak_hour_pt;
+  const peakHourLabel = peakHour != null && stats.sample_size
+    ? `${String(peakHour).padStart(2, '0')}:00 PT`
+    : '—';
+  const readingCount = snapshot.books?.currently_reading?.length ?? 0;
+  const postCount = snapshot.recent_posts?.length ?? 0;
 
   blocks.push(sectionHeader(x + pad, cy, 'activity'));
   cy += 6;
@@ -203,8 +212,12 @@ function renderStatsPanel(snapshot, x, y, w, h) {
     ['commits 30d', String(stats.commits_30d ?? '—')],
     ['repos 7d', String(repo.pushed_7d ?? '—')],
     ['repos 30d', String(repo.pushed_30d ?? '—')],
+    ['peak hour', peakHourLabel],
+    ['peak day', stats.peak_day_pt ?? '—'],
     ['top repo', truncate(stats.top_commit_repo?.name ?? repo.active_repo?.name ?? '—', 18)],
     ['top starred', truncate(repo.top_starred ? `${repo.top_starred.name} (${repo.top_starred.stars})` : '—', 22)],
+    ['reading', readingCount ? String(readingCount) : '—'],
+    ['posts', postCount ? String(postCount) : '—'],
   ]) {
     blocks.push(statLine(x + pad, cy, label, value));
     cy += line;
@@ -235,8 +248,8 @@ function renderStatsPanel(snapshot, x, y, w, h) {
   cy += 4;
 
   return `<g>
-  <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
-  <rect x="${x}" y="${y}" width="${w}" height="40" fill="${FAINT}" stroke="${BORDER}" stroke-width="1"/>
+  <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${BG}"/>
+  <rect x="${x}" y="${y}" width="${w}" height="40" fill="${FAINT}"/>
   <text x="${x + pad}" y="${y + 26}" fill="${INK}" font-family="ui-monospace,monospace" font-size="11" font-weight="700">stats</text>
   ${blocks.join('\n')}
 </g>`;
@@ -248,8 +261,8 @@ export function statsPanelHeight(snapshot) {
   const totals = Math.min((snapshot.language_totals ?? []).length, 8);
   let h = 40 + 8;
   if (profile.followers != null) h += 20 + 3 * 14 + 6;
-  h += 20 + 6 * 14 + 6;
-  h += 20 + 6 * 14 + 6;
+  h += 20 + 7 * 14 + 6;
+  h += 20 + 10 * 14 + 6;
   if (totals) h += 22 + totals * 20 + 4;
   h += 22 + langs * 20 + 8;
   return Math.max(h, 280);
@@ -301,8 +314,8 @@ function renderRhythmGraph(snapshot, y, w, h) {
   const meta = `peak ${peakLabel} · ${peakDay} · n=${stats.sample_size ?? 0}`;
 
   return `<g>
-  <rect x="0" y="${y}" width="${w}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
-  <rect x="0" y="${y}" width="${w}" height="${headerH}" fill="${FAINT}" stroke="${BORDER}" stroke-width="1"/>
+  <rect x="0" y="${y}" width="${w}" height="${h}" fill="${BG}"/>
+  <rect x="0" y="${y}" width="${w}" height="${headerH}" fill="${FAINT}"/>
   <text x="${pad}" y="${y + 18}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700">commit rhythm</text>
   <text x="${pad}" y="${y + 32}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">${escapeXml(meta)}</text>
   <text x="${w - pad}" y="${y + 32}" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">hourly · PT</text>
@@ -397,7 +410,16 @@ function feedRepoTree(y, group, delay) {
     lines.push(feedCommitMoreLine(cy, group.more, md));
     cy += FEED_TREE_MORE_H;
   }
-  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP };
+  let animEnd = Number(d) + 0.3;
+  group.commits.forEach((commit, i) => {
+    const cd = Number(d) + 0.15 + i * 0.25;
+    animEnd = Math.max(animEnd, cd + 0.35);
+  });
+  if (group.more > 0) {
+    const md = Number(d) + 0.15 + group.commits.length * 0.25;
+    animEnd = Math.max(animEnd, md + 0.3);
+  }
+  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP, animEnd };
 }
 
 function feedCommitTreeItem(y, commit, delay, isLast) {
@@ -441,7 +463,7 @@ function feedBooksSection(y, books, delay) {
   const reading = (books.currently_reading ?? []).slice(0, FEED_BOOKS_READING_LIMIT);
   const last = books.last_read;
   const hasLast = Boolean(last?.title);
-  if (!reading.length && !hasLast) return { markup: '', height: 0 };
+  if (!reading.length && !hasLast) return { markup: '', height: 0, animEnd: delay };
 
   const d = delay.toFixed(1);
   const lines = [`<text x="16" y="${y}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
@@ -479,7 +501,18 @@ function feedBooksSection(y, books, delay) {
     cy += FEED_BOOK_LINE_H;
   }
 
-  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP };
+  let animEnd = Number(d) + 0.3;
+  if (reading.length) {
+    animEnd = Math.max(animEnd, Number(d) + step + 0.3);
+    reading.forEach((book, i) => {
+      animEnd = Math.max(animEnd, Number(d) + step + 0.1 + i * 0.2 + 0.35);
+    });
+  }
+  if (hasLast) {
+    animEnd = Math.max(animEnd, Number(d) + step + reading.length * 0.2 + 0.25 + 0.35);
+  }
+
+  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP, animEnd };
 }
 
 function feedBlogEntry(y, post, delay) {
@@ -501,7 +534,7 @@ function feedPanelHeight(snapshot) {
   const sectionGap = 14;
   const booksH = booksSectionHeight(snapshot.books);
   const booksBlock = booksH ? sectionGap + booksH : 0;
-  return 60 + posts * blogH + booksBlock + sectionGap + 12 + sectionGap + commitTreeHeight(tree) + 24;
+  return 60 + posts * blogH + booksBlock + sectionGap + 12 + sectionGap + commitTreeHeight(tree) + 12;
 }
 
 function renderFeedPanel(snapshot, h) {
@@ -512,33 +545,42 @@ function renderFeedPanel(snapshot, h) {
   const termH = h - 52;
 
   let y = 76;
+  let feedAnimEnd = 0.3;
   const blogLines = posts.map((p, i) => {
-    const line = feedBlogEntry(y, p, 0.2 + i * 0.4);
+    const begin = 0.2 + i * 0.4;
+    feedAnimEnd = Math.max(feedAnimEnd, begin + 0.4);
+    const line = feedBlogEntry(y, p, begin);
     y += blogH;
     return line;
   });
 
   const booksStart = 0.2 + posts.length * 0.4 + 0.2;
   const booksBlock = feedBooksSection(y + sectionGap, snapshot.books, booksStart);
-  if (booksBlock.height) y += sectionGap + booksBlock.height;
+  if (booksBlock.height) {
+    y += sectionGap + booksBlock.height;
+    feedAnimEnd = Math.max(feedAnimEnd, booksBlock.animEnd);
+  }
 
   const gitHeaderY = y + 4;
   y = gitHeaderY + sectionGap;
   const commitStart = booksStart + 0.3 + (booksBlock.height ? 0.4 : 0);
+  feedAnimEnd = Math.max(feedAnimEnd, commitStart - 0.1 + 0.3);
   let delay = commitStart;
   const gitLines = tree.map((group) => {
     const block = feedRepoTree(y, group, delay);
     y += block.height;
     delay += 0.35 + group.commits.length * 0.25;
+    feedAnimEnd = Math.max(feedAnimEnd, block.animEnd);
     return block.markup;
   });
+  const cursorY = y + 4;
+  const cursorBegin = (feedAnimEnd + 0.15).toFixed(2);
 
   return `<g>
-  <rect x="0" y="0" width="${FEED_W}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
-  <rect x="0" y="0" width="${FEED_W}" height="40" fill="${FAINT}" stroke="${BORDER}" stroke-width="1"/>
+  <rect x="0" y="0" width="${FEED_W}" height="${h}" fill="${BG}"/>
+  <rect x="0" y="0" width="${FEED_W}" height="40" fill="${FAINT}"/>
   <text x="16" y="26" fill="${INK}" font-family="ui-monospace,monospace" font-size="11" font-weight="700">feed</text>
   <text x="${FEED_W - 16}" y="26" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="10">synced</text>
-  <rect x="0" y="40" width="${FEED_W}" height="${termH}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
   <clipPath id="term"><rect x="0" y="40" width="${FEED_W}" height="${termH}"/></clipPath>
   <g clip-path="url(#term)">
     <text x="16" y="60" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
@@ -550,24 +592,38 @@ function renderFeedPanel(snapshot, h) {
       <animate attributeName="opacity" from="0" to="1" begin="${commitStart - 0.1}s" dur="0.3s" fill="freeze"/># recent commits
     </text>
     ${gitLines.join('\n')}
+    <text x="16" y="${cursorY}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;1" begin="${cursorBegin}s" dur="1s" repeatCount="indefinite"/>
+      ▋
+    </text>
   </g>
 </g>`;
 }
 
 export function renderCanvas(snapshot) {
   const topH = Math.max(feedPanelHeight(snapshot), statsPanelHeight(snapshot), 280);
-  const gap = 2;
+  const gap = 0;
   const h = topH + gap + RHYTHM_H + 20;
-  const statsW = CANVAS_W - FEED_W - 2;
-  const statsX = FEED_W + 2;
+  const statsW = CANVAS_W - FEED_W;
+  const statsX = FEED_W;
   const rhythmY = topH + gap;
+  const s = INSET;
+  const right = CANVAS_W - s;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${CANVAS_W}" height="${h}" viewBox="0 0 ${CANVAS_W} ${h}" role="img" aria-label="feed and stats">
-  <rect width="${CANVAS_W}" height="${h}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
+  <rect width="${CANVAS_W}" height="${h}" fill="${BG}"/>
   <text x="16" y="${h - 8}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">synced ${escapeXml(formatSyncedAt(snapshot.synced_at))}</text>
   ${renderFeedPanel(snapshot, topH)}
   ${renderStatsPanel(snapshot, statsX, 0, statsW, topH)}
   ${renderRhythmGraph(snapshot, rhythmY, CANVAS_W, RHYTHM_H)}
+  <g fill="none" stroke="${BORDER}" stroke-width="1">
+    <rect x="${s}" y="${s}" width="${CANVAS_W - 1}" height="${h - 1}"/>
+    <line x1="${FEED_W + s}" y1="${s}" x2="${FEED_W + s}" y2="${topH - s}"/>
+    <line x1="${s}" y1="${topH + s}" x2="${right}" y2="${topH + s}"/>
+    <line x1="${s}" y1="40" x2="${FEED_W - s}" y2="40"/>
+    <line x1="${FEED_W + s}" y1="40" x2="${right}" y2="40"/>
+    <line x1="${s}" y1="${rhythmY + 40}" x2="${right}" y2="${rhythmY + 40}"/>
+  </g>
 </svg>`;
 }
