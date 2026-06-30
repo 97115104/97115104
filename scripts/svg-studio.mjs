@@ -23,6 +23,14 @@ const FAINT = '#171717';
 
 const FEED_BLOG_LIMIT = 6;
 const FEED_COMMIT_LIMIT = 12;
+const FEED_REPO_LIMIT = 3;
+const FEED_COMMITS_PER_REPO = 3;
+const FEED_TREE_REPO_H = 14;
+const FEED_TREE_COMMIT_H = 20;
+const FEED_TREE_GAP = 6;
+const FEED_TREE_MORE_H = 12;
+const FEED_BOOK_LINE_H = 20;
+const FEED_BOOKS_READING_LIMIT = 3;
 const CANVAS_W = 920;
 const FEED_W = 450;
 const RHYTHM_H = 108;
@@ -336,47 +344,171 @@ function formatFeedPacific(iso) {
   return `${parts.month}/${parts.day} ${parts.hour}:${parts.minute}`;
 }
 
-function feedBlogEntry(y, post, delay) {
-  const d = delay.toFixed(1);
-  const when = formatFeedPacific(post.updated);
-  return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="11" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
-    <tspan fill="${INK}" font-weight="700">@blog</tspan><tspan fill="${INK}"> ${escapeXml(truncate(post.title, 38))}</tspan>
-  </text>
-<text x="24" y="${y + 12}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT
+function commitTreeHeight(groups) {
+  if (!groups.length) return 0;
+  let h = 0;
+  for (const g of groups) {
+    h += FEED_TREE_REPO_H + g.commits.length * FEED_TREE_COMMIT_H;
+    if (g.more > 0) h += FEED_TREE_MORE_H;
+  }
+  return h + FEED_TREE_GAP * Math.max(groups.length - 1, 0);
+}
+
+function normalizeCommitTree(groups) {
+  return groups.map((g) => {
+    if (g.commits?.length) {
+      return {
+        repo: g.repo,
+        commits: g.commits,
+        more: g.more ?? 0,
+      };
+    }
+    const legacyCount = g.count ?? 1;
+    return {
+      repo: g.repo,
+      commits: [{ sha: g.sha, message: g.message, at: g.at }],
+      more: Math.max(legacyCount - 1, 0),
+    };
+  });
+}
+
+function feedCommitMoreLine(y, more, delay) {
+  return `<text x="20" y="${y}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${delay}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${MUTED}">└─ </tspan><tspan fill="${MUTED}">(${more} more)</tspan>
   </text>`;
 }
 
-function feedCommitEntry(y, commit, delay) {
+function feedRepoTree(y, group, delay) {
   const d = delay.toFixed(1);
+  const lines = [`<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${INK}" font-weight="700">${escapeXml(group.repo)}</tspan><tspan fill="${MUTED}">/</tspan>
+  </text>`];
+  let cy = y + FEED_TREE_REPO_H;
+  group.commits.forEach((commit, i) => {
+    const isLast = i === group.commits.length - 1 && !group.more;
+    const cd = (Number(d) + 0.15 + i * 0.25).toFixed(2);
+    lines.push(feedCommitTreeItem(cy, commit, cd, isLast));
+    cy += FEED_TREE_COMMIT_H;
+  });
+  if (group.more > 0) {
+    const md = (Number(d) + 0.15 + group.commits.length * 0.25).toFixed(2);
+    lines.push(feedCommitMoreLine(cy, group.more, md));
+    cy += FEED_TREE_MORE_H;
+  }
+  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP };
+}
+
+function feedCommitTreeItem(y, commit, delay, isLast) {
+  const branch = isLast ? '└─' : '├─';
+  const guide = isLast ? '  ' : '│ ';
   const when = formatFeedPacific(commit.at);
-  const msg = truncate(commit.message, 30);
-  const count = commit.count > 1 ? ` (${commit.count})` : '';
-  return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="11" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
-    <tspan fill="${INK}" font-weight="700">@git</tspan><tspan fill="${MUTED}"> ${escapeXml(commit.sha)}</tspan><tspan fill="${INK}"> ${escapeXml(commit.repo)}</tspan><tspan fill="${MUTED}">${escapeXml(count)}</tspan>
+  const msg = truncate(commit.message, 26);
+  return `<text x="20" y="${y}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${delay}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${MUTED}">${branch} </tspan><tspan fill="${INK}" font-weight="700">@git</tspan><tspan fill="${MUTED}"> ${escapeXml(commit.sha)}</tspan>
   </text>
-<text x="24" y="${y + 12}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="${(Number(d) + 0.05).toFixed(2)}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT · ${escapeXml(msg)}
+<text x="28" y="${y + 10}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${(Number(delay) + 0.05).toFixed(2)}s" dur="0.3s" fill="freeze"/>${guide}${escapeXml(when)} PT · ${escapeXml(msg)}
+  </text>`;
+}
+
+function booksSectionHeight(books) {
+  if (!books) return 0;
+  const reading = (books.currently_reading ?? []).slice(0, FEED_BOOKS_READING_LIMIT);
+  const hasLast = Boolean(books.last_read?.title);
+  if (!reading.length && !hasLast) return 0;
+  let h = 12 + 14;
+  if (reading.length) h += FEED_TREE_REPO_H + reading.length * FEED_BOOK_LINE_H;
+  if (hasLast) h += (reading.length ? FEED_TREE_GAP : FEED_TREE_REPO_H) + FEED_BOOK_LINE_H;
+  return h;
+}
+
+function feedBookLine(y, tag, title, subline, delay, branch, isLast) {
+  const guide = isLast ? '  ' : '│ ';
+  return `<text x="20" y="${y}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${delay}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${MUTED}">${branch} </tspan><tspan fill="${INK}" font-weight="700">${escapeXml(tag)}</tspan><tspan fill="${INK}"> ${escapeXml(truncate(title, 32))}</tspan>
+  </text>
+<text x="28" y="${y + 10}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${(Number(delay) + 0.05).toFixed(2)}s" dur="0.3s" fill="freeze"/>${guide}${escapeXml(truncate(subline, 40))}
+  </text>`;
+}
+
+function feedBooksSection(y, books, delay) {
+  if (!books) return { markup: '', height: 0 };
+  const reading = (books.currently_reading ?? []).slice(0, FEED_BOOKS_READING_LIMIT);
+  const last = books.last_read;
+  const hasLast = Boolean(last?.title);
+  if (!reading.length && !hasLast) return { markup: '', height: 0 };
+
+  const d = delay.toFixed(1);
+  const lines = [`<text x="16" y="${y}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.3s" fill="freeze"/># books.97115104.com
+  </text>`];
+  let cy = y + 18;
+  let step = 0.2;
+
+  if (reading.length) {
+    lines.push(`<text x="16" y="${cy}" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${(Number(d) + step).toFixed(2)}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${INK}">reading</tspan><tspan fill="${MUTED}">/</tspan>
+  </text>`);
+    cy += FEED_TREE_REPO_H;
+    reading.forEach((book, i) => {
+      const isLastInReading = i === reading.length - 1 && !hasLast;
+      const branch = isLastInReading ? '└─' : '├─';
+      const sub = [book.author, book.progress].filter(Boolean).join(' · ');
+      const cd = (Number(d) + step + 0.1 + i * 0.2).toFixed(2);
+      lines.push(feedBookLine(cy, '@now', book.title, sub, cd, branch, isLastInReading));
+      cy += FEED_BOOK_LINE_H;
+    });
+    if (hasLast) cy += FEED_TREE_GAP;
+  }
+
+  if (hasLast) {
+    lines.push(`<text x="16" y="${cy}" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${(Number(d) + step + reading.length * 0.2 + 0.1).toFixed(2)}s" dur="0.3s" fill="freeze"/>
+    <tspan fill="${INK}">last read</tspan><tspan fill="${MUTED}">/</tspan>
+  </text>`);
+    cy += FEED_TREE_REPO_H;
+    const sub = [last.author, last.completedDate].filter(Boolean).join(' · ');
+    const cd = (Number(d) + step + reading.length * 0.2 + 0.25).toFixed(2);
+    lines.push(feedBookLine(cy, '@read', last.title, sub, cd, '└─', true));
+    cy += FEED_BOOK_LINE_H;
+  }
+
+  return { markup: lines.join('\n'), height: cy - y + FEED_TREE_GAP };
+}
+
+function feedBlogEntry(y, post, delay) {
+  const d = delay.toFixed(1);
+  const when = formatFeedPacific(post.updated);
+  return `<text x="16" y="${y}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>
+    <tspan fill="${INK}" font-weight="700">@blog</tspan><tspan fill="${INK}"> ${escapeXml(truncate(post.title, 38))}</tspan>
+  </text>
+<text x="24" y="${y + 10}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="${d}s" dur="0.4s" fill="freeze"/>${escapeXml(when)} PT
   </text>`;
 }
 
 function feedPanelHeight(snapshot) {
   const posts = Math.min(snapshot.recent_posts.length, FEED_BLOG_LIMIT);
-  const commits = Math.min(snapshot.recent_commits.length, FEED_COMMIT_LIMIT);
-  const blogH = 30;
-  const commitH = 30;
-  const sectionGap = 18;
-  return 60 + posts * blogH + sectionGap + 12 + sectionGap + commits * commitH + 24;
+  const tree = normalizeCommitTree(snapshot.recent_commits.slice(0, FEED_REPO_LIMIT));
+  const blogH = 22;
+  const sectionGap = 14;
+  const booksH = booksSectionHeight(snapshot.books);
+  const booksBlock = booksH ? sectionGap + booksH : 0;
+  return 60 + posts * blogH + booksBlock + sectionGap + 12 + sectionGap + commitTreeHeight(tree) + 24;
 }
 
 function renderFeedPanel(snapshot, h) {
   const posts = snapshot.recent_posts.slice(0, FEED_BLOG_LIMIT);
-  const commits = snapshot.recent_commits.slice(0, FEED_COMMIT_LIMIT);
-  const blogH = 30;
-  const commitH = 30;
-  const sectionGap = 18;
+  const tree = normalizeCommitTree(snapshot.recent_commits.slice(0, FEED_REPO_LIMIT));
+  const blogH = 22;
+  const sectionGap = 14;
   const termH = h - 52;
 
   let y = 76;
@@ -386,13 +518,19 @@ function renderFeedPanel(snapshot, h) {
     return line;
   });
 
+  const booksStart = 0.2 + posts.length * 0.4 + 0.2;
+  const booksBlock = feedBooksSection(y + sectionGap, snapshot.books, booksStart);
+  if (booksBlock.height) y += sectionGap + booksBlock.height;
+
   const gitHeaderY = y + 4;
   y = gitHeaderY + sectionGap;
-  const commitStart = 0.2 + posts.length * 0.4 + 0.3;
-  const gitLines = commits.map((c, i) => {
-    const line = feedCommitEntry(y, c, commitStart + i * 0.4);
-    y += commitH;
-    return line;
+  const commitStart = booksStart + 0.3 + (booksBlock.height ? 0.4 : 0);
+  let delay = commitStart;
+  const gitLines = tree.map((group) => {
+    const block = feedRepoTree(y, group, delay);
+    y += block.height;
+    delay += 0.35 + group.commits.length * 0.25;
+    return block.markup;
   });
 
   return `<g>
@@ -403,11 +541,12 @@ function renderFeedPanel(snapshot, h) {
   <rect x="0" y="40" width="${FEED_W}" height="${termH}" fill="${BG}" stroke="${BORDER}" stroke-width="1"/>
   <clipPath id="term"><rect x="0" y="40" width="${FEED_W}" height="${termH}"/></clipPath>
   <g clip-path="url(#term)">
-    <text x="16" y="60" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <text x="16" y="60" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.3s" fill="freeze"/># blog.97115104.com
     </text>
     ${blogLines.join('\n')}
-    <text x="16" y="${gitHeaderY}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    ${booksBlock.markup}
+    <text x="16" y="${gitHeaderY}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="${commitStart - 0.1}s" dur="0.3s" fill="freeze"/># recent commits
     </text>
     ${gitLines.join('\n')}

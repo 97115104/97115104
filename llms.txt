@@ -34,6 +34,13 @@
 - llm skill acquisition and style control: https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/
 - creating jarvis and uploadable skills: https://blog.97115104.com/2026/05/28/javis-and-endor/
 
+## reading (2026-06-30)
+
+- reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
+- reading: The Hobbit, or There and Back Again by J.R.R. Tolkien (Page 201 of 366)
+- reading: The Picture of Dorian Gray by Oscar Wilde (Page 134 of 226)
+- last read: The Atomic Human: Understanding Ourselves in the Age of AI by Neil D. Lawrence (June 2026)
+
 ## sync
 
-Last: 2026-06-30T09:10:47.362Z
+Last: 2026-06-30T20:20:23.476Z

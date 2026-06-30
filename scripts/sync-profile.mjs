@@ -18,9 +18,12 @@ const HERO_ART = join(ROOT, 'assets', 'hero-art.png');
 const GITHUB_USER = '97115104';
 const ATTEST_BASE = 'https://attest.97115104.com';
 const BLOG_FEED = 'https://blog.97115104.com/feed.xml';
+const BLOG_BOOKS = 'https://blog.97115104.com/books/books.json';
 const FEED_BLOG_LIMIT = 6;
 const FEED_COMMIT_LIMIT = 13;
 const FEED_COMMIT_FETCH_LIMIT = 50;
+const FEED_REPO_LIMIT = 3;
+const FEED_COMMITS_PER_REPO = 3;
 const PT = 'America/Los_Angeles';
 const ATTEST_MODEL = 'composer-2.5-fast';
 
@@ -332,18 +335,67 @@ async function fetchRecentCommits(repos, limit = FEED_COMMIT_FETCH_LIMIT) {
   return commits.sort((a, b) => new Date(b.at) - new Date(a.at));
 }
 
+async function fetchCommitsByRepo(repos) {
+  const sorted = [...repos].sort(
+    (a, b) => new Date(b.pushed_at ?? 0) - new Date(a.pushed_at ?? 0),
+  );
+  const groups = [];
+  const flat = [];
+
+  for (const repo of sorted) {
+    try {
+      const batch = await fetchJson(
+        `https://api.github.com/repos/${repo.full_name}/commits?per_page=30`,
+        githubHeaders(),
+      );
+      if (!batch.length) continue;
+      const commits = batch.map((c) => ({
+        sha: c.sha.slice(0, 7),
+        message: (c.commit?.message ?? 'commit').split('\n')[0],
+        at: c.commit?.author?.date ?? c.commit?.committer?.date,
+      }));
+      groups.push({ repo: repo.name, commits });
+      for (const c of commits) {
+        flat.push({ repo: repo.name, ...c });
+      }
+    } catch (err) {
+      console.warn(`commits for ${repo.full_name}:`, err.message);
+    }
+  }
+
+  return { groups, flat };
+}
+
 function groupCommitsByRepo(commits) {
   const order = [];
   const groups = new Map();
   for (const c of commits) {
     if (!groups.has(c.repo)) {
-      groups.set(c.repo, { ...c, count: 1 });
+      groups.set(c.repo, { repo: c.repo, commits: [] });
       order.push(c.repo);
-    } else {
-      groups.get(c.repo).count += 1;
     }
+    groups.get(c.repo).commits.push({
+      sha: c.sha,
+      message: c.message,
+      at: c.at,
+    });
   }
   return order.map((repo) => groups.get(repo));
+}
+
+function trimCommitTree(groups) {
+  return groups
+    .slice(0, FEED_REPO_LIMIT)
+    .map((g) => {
+      const total = g.commits.length;
+      const commits = g.commits.slice(0, FEED_COMMITS_PER_REPO);
+      return {
+        repo: g.repo,
+        commits,
+        more: Math.max(total - commits.length, 0),
+      };
+    })
+    .filter((g) => g.commits.length);
 }
 
 function topCommitRepo(commits) {
@@ -367,12 +419,72 @@ function buildCommitStats(commits) {
 }
 
 async function fetchActivity(repos = []) {
+  if (repos.length) {
+    const { groups, flat } = await fetchCommitsByRepo(repos);
+    return {
+      recent_commits: trimCommitTree(groups),
+      commit_stats: buildCommitStats(flat),
+    };
+  }
   const raw = await fetchRecentCommits(repos);
-  const recent_commits = groupCommitsByRepo(raw).slice(0, FEED_COMMIT_LIMIT);
   return {
-    recent_commits,
+    recent_commits: trimCommitTree(groupCommitsByRepo(raw)),
     commit_stats: buildCommitStats(raw),
   };
+}
+
+const BOOK_MONTHS = {
+  january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+  july: 6, august: 7, september: 8, october: 9, november: 10, december: 11,
+  jan: 0, feb: 1, mar: 2, apr: 3, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11,
+};
+
+function trimBook(book) {
+  return {
+    title: book.title ?? '',
+    author: book.author ?? '',
+    progress: book.progress ?? '',
+    completedDate: book.completedDate ?? '',
+    goodreadsUrl: book.goodreadsUrl ?? '',
+    rating: book.rating ?? null,
+  };
+}
+
+function completedDateSortKey(dateString) {
+  if (!dateString) return 0;
+  const match = dateString.trim().match(/^(\w+)\s+((?:19|20)\d{2})$/i);
+  if (match) {
+    const month = BOOK_MONTHS[match[1].toLowerCase()];
+    const year = Number(match[2]);
+    if (month != null) return year * 100 + month;
+    return year * 100;
+  }
+  const year = dateString.match(/\b((?:19|20)\d{2})\b/);
+  return year ? Number(year[1]) * 100 : 0;
+}
+
+function parseBooksData(data) {
+  const currentlyReading = (data.currentlyReading ?? []).map(trimBook);
+  const recentlyRead = [...(data.recentlyRead ?? [])]
+    .map(trimBook)
+    .sort((a, b) => {
+      const keyA = completedDateSortKey(a.completedDate);
+      const keyB = completedDateSortKey(b.completedDate);
+      if (keyB !== keyA) return keyB - keyA;
+      return a.title.localeCompare(b.title);
+    });
+  const lastRead = recentlyRead.find((b) => b.completedDate) ?? recentlyRead[0] ?? null;
+  return { currently_reading: currentlyReading, last_read: lastRead };
+}
+
+async function fetchBooks() {
+  try {
+    const data = await fetchJson(BLOG_BOOKS);
+    return parseBooksData(data);
+  } catch (err) {
+    console.warn('Blog books unavailable:', err.message);
+    return null;
+  }
 }
 
 function parseAtomFeed(xml) {
@@ -435,6 +547,19 @@ async function createAttestation(readmeContent, contentHash) {
   }
 }
 
+function renderLlmsBooks(books) {
+  if (!books) return '- books unavailable';
+  const lines = [];
+  for (const book of (books.currently_reading ?? []).slice(0, 3)) {
+    lines.push(`- reading: ${book.title} by ${book.author}${book.progress ? ` (${book.progress})` : ''}`);
+  }
+  if (books.last_read?.title) {
+    const last = books.last_read;
+    lines.push(`- last read: ${last.title} by ${last.author}${last.completedDate ? ` (${last.completedDate})` : ''}`);
+  }
+  return lines.length ? lines.join('\n') : '- none listed';
+}
+
 function renderLlmsTxt(snapshot) {
   const posts = snapshot.recent_posts.map((p) => `- ${p.title}: ${p.link}`).join('\n');
   const pinned = PINNED.map((p) => `- ${p.name}: ${p.purpose}`).join('\n');
@@ -464,6 +589,10 @@ ${pinned}
 ## recent blog (${snapshot.synced_at.slice(0, 10)})
 
 ${posts || '- feed unavailable'}
+
+## reading (${snapshot.synced_at.slice(0, 10)})
+
+${renderLlmsBooks(snapshot.books)}
 
 ## sync
 
@@ -527,8 +656,9 @@ async function main() {
     : null;
   const repoStats = repos.length ? buildRepoStats(repos) : null;
 
-  const [blogPosts, activity, languages, languageTotals] = await Promise.all([
+  const [blogPosts, books, activity, languages, languageTotals] = await Promise.all([
     fetchText(BLOG_FEED).then(parseAtomFeed).catch(() => []),
+    fetchBooks(),
     fetchActivity(repos),
     repos.length ? fetchLanguagesByRecency(repos) : Promise.resolve([]),
     repos.length ? fetchLanguageTotals(repos) : Promise.resolve([]),
@@ -568,6 +698,7 @@ async function main() {
     repo_stats: repoStats ?? previous?.repo_stats ?? null,
     profile_stats: profileStats ?? previous?.profile_stats ?? null,
     recent_posts: blogPosts.length ? blogPosts.slice(0, FEED_BLOG_LIMIT) : (previous?.recent_posts ?? []),
+    books: books ?? previous?.books ?? null,
     recent_commits: recentCommits,
     commit_stats: commitStats,
     languages_by_recency: languages.length
