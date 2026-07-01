@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-01T02:23:16.222Z",
+  "synced_at": "2026-07-01T02:25:00.090Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-06-30T23:45:37Z"
+      "at": "2026-07-01T02:24:03Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -106,111 +106,111 @@
       "repo": "97115104",
       "commits": [
         {
-          "sha": "9f277dc",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-06-30T23:49:20Z"
+          "sha": "7a2869d",
+          "message": "Preserve PAT snapshot data during public-only syncs.",
+          "at": "2026-07-01T02:23:31Z"
         },
         {
-          "sha": "e00278d",
+          "sha": "2a805db",
+          "message": "Merge remote profile-sync and prevent generated-file conflicts.",
+          "at": "2026-07-01T02:22:38Z"
+        },
+        {
+          "sha": "3a1a647",
           "message": "[profile-sync] update sync timestamps and enhance SVG rendering",
-          "at": "2026-06-30T23:45:34Z"
-        },
-        {
-          "sha": "ee24af7",
-          "message": "[profile-sync] update reading list and sync metadata",
-          "at": "2026-06-30T23:37:57Z"
+          "at": "2026-07-01T02:20:42Z"
         }
       ],
-      "more": 23
+      "more": 26
     },
     {
-      "repo": "hsc-chat",
+      "repo": "blog",
       "commits": [
         {
-          "sha": "f38f3af",
-          "message": "Update project documentation and enhance deployment scripts",
-          "at": "2026-06-26T03:29:07Z"
+          "sha": "7c8da1d",
+          "message": "change to turbulent",
+          "at": "2026-07-01T02:16:41Z"
         },
         {
-          "sha": "904d488",
-          "message": "Enhance SearXNG integration and chat UI features",
-          "at": "2026-06-26T03:26:51Z"
+          "sha": "1877dd8",
+          "message": "Revise the conclusion of the San Francisco free labor post to invite reader engagement. Replace the previous rhetorical questions with a direct inquiry about personal experiences related to unpaid work during interview processes, encouraging comments and sharing of stories.",
+          "at": "2026-07-01T00:40:04Z"
         },
         {
-          "sha": "85cba11",
-          "message": "Implement SearXNG web search and chat history features",
-          "at": "2026-06-26T02:37:43Z"
+          "sha": "73f881c",
+          "message": "Enhance the narrative in the San Francisco free labor post by clarifying the timeline and details surrounding the work trial arrangements. Improve readability by streamlining the description of communication with the CTO and Interim Chief of Staff, while maintaining focus on the implications of unpaid labor and travel logistics.",
+          "at": "2026-07-01T00:37:19Z"
         }
       ],
-      "more": 2
+      "more": 27
     },
     {
-      "repo": "voice-clone",
+      "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "4765128",
-          "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
-          "at": "2026-06-26T03:16:12Z"
+          "sha": "3c871a3",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-07-01T01:45:27Z"
         },
         {
-          "sha": "f123ffc",
-          "message": "Update README and admin interface with API integration details. Add instructions for sharing access with clients, including API base URL and key usage. Enhance admin dashboard to display API base URL and agent instructions, improving usability for remote clients. Implement endpoint listing for voice operations in the web interface.",
-          "at": "2026-06-26T02:58:33Z"
+          "sha": "77e3f7d",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-07-01T00:37:58Z"
         },
         {
-          "sha": "a3d6519",
-          "message": "Enhance deployment scripts and configuration for voice cloning tool. Add support for Cloudflare Quick Tunnel in `deploy-locally.sh`, allowing remote access without port forwarding. Update `.gitignore` to exclude `data/` directory. Modify `docker-compose.yml` to include new environment variables for admin credentials and data directory. Improve README with updated usage instructions and details on new features, including API key authentication and tunnel setup. Add necessary dependencies in `requirements.txt` for authentication support.",
-          "at": "2026-06-26T02:26:06Z"
+          "sha": "6d40ecb",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-06-30T23:27:19Z"
         }
       ],
-      "more": 6
+      "more": 27
     }
   ],
   "commit_stats": {
-    "peak_hour_pt": 22,
-    "peak_day_pt": "Sat",
+    "peak_hour_pt": 15,
+    "peak_day_pt": "Tue",
     "hours_pt": [
-      27,
-      23,
-      14,
-      14,
-      11,
+      92,
+      92,
+      94,
+      73,
+      38,
+      24,
+      17,
+      9,
+      9,
       5,
-      5,
-      6,
-      1,
-      1,
-      0,
-      1,
-      7,
-      12,
-      20,
-      37,
-      25,
-      19,
-      27,
-      16,
-      29,
-      20,
-      51,
-      28
+      14,
+      35,
+      62,
+      92,
+      126,
+      176,
+      157,
+      123,
+      133,
+      113,
+      111,
+      92,
+      127,
+      85
     ],
     "days_pt": [
-      39,
-      64,
-      60,
-      45,
-      60,
-      62,
-      69
+      161,
+      308,
+      350,
+      297,
+      262,
+      276,
+      245
     ],
-    "latest": "2026-06-30T23:49:20.000Z",
-    "earliest": "2025-04-15T04:16:59.000Z",
-    "sample_size": 399,
-    "commits_7d": 41,
-    "commits_30d": 108,
+    "latest": "2026-07-01T02:23:31.000Z",
+    "earliest": "2013-10-11T20:59:34.000Z",
+    "sample_size": 1899,
+    "commits_7d": 139,
+    "commits_30d": 287,
     "top_commit_repo": {
-      "name": "opik",
+      "name": "blog",
       "count": 30
     }
   },
@@ -218,96 +218,100 @@
     {
       "name": "JavaScript",
       "repo": "97115104",
-      "bytes": 60125,
-      "pushed_at": "2026-06-30T23:49:21Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "hsc-chat",
-      "bytes": 19275,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "hsc-chat",
-      "bytes": 19173,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "Python",
-      "repo": "hsc-chat",
-      "bytes": 17079,
-      "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "hsc-chat",
-      "bytes": 12141,
-      "pushed_at": "2026-06-26T03:29:09Z"
+      "bytes": 61792,
+      "pushed_at": "2026-07-01T02:24:03Z"
     },
     {
       "name": "Shell",
-      "repo": "hsc-chat",
-      "bytes": 6741,
-      "pushed_at": "2026-06-26T03:29:09Z"
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-07-01T02:24:03Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 408178,
+      "pushed_at": "2026-07-01T02:16:43Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "blog",
+      "bytes": 98999,
+      "pushed_at": "2026-07-01T02:16:43Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-07-01T02:16:43Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-07-01T02:16:43Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "lance-proposal",
+      "bytes": 78321,
+      "pushed_at": "2026-06-29T23:15:55Z"
     },
     {
       "name": "Dockerfile",
       "repo": "hsc-chat",
       "bytes": 1433,
       "pushed_at": "2026-06-26T03:29:09Z"
-    },
-    {
-      "name": "Rust",
-      "repo": "rusting",
-      "bytes": 368,
-      "pushed_at": "2026-06-07T06:55:08Z"
     }
   ],
   "language_totals": [
     {
       "name": "JavaScript",
-      "bytes": 1886903
-    },
-    {
-      "name": "HTML",
-      "bytes": 926349
-    },
-    {
-      "name": "CSS",
-      "bytes": 465709
+      "bytes": 7134777
     },
     {
       "name": "TypeScript",
-      "bytes": 446541
+      "bytes": 6579043
+    },
+    {
+      "name": "HTML",
+      "bytes": 6274376
+    },
+    {
+      "name": "CSS",
+      "bytes": 3198978
     },
     {
       "name": "Python",
-      "bytes": 413277
+      "bytes": 2583082
     },
     {
       "name": "Shell",
-      "bytes": 172580
+      "bytes": 1285264
+    },
+    {
+      "name": "Solidity",
+      "bytes": 820891
     },
     {
       "name": "Swift",
-      "bytes": 12026
+      "bytes": 595009
+    },
+    {
+      "name": "TeX",
+      "bytes": 574290
+    },
+    {
+      "name": "Rich Text Format",
+      "bytes": 520378
+    },
+    {
+      "name": "Ruby",
+      "bytes": 31511
     },
     {
       "name": "Kotlin",
       "bytes": 9783
-    },
-    {
-      "name": "Dockerfile",
-      "bytes": 7417
-    },
-    {
-      "name": "Batchfile",
-      "bytes": 1796
-    },
-    {
-      "name": "Rust",
-      "bytes": 368
     }
   ]
 }
