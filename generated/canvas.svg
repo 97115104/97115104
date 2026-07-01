@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 19:35 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 19:43 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -102,24 +102,24 @@
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> c82bacd</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f9ad4bc</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 06/30 19:32 PT · Enhance SVG rendering wit…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 06/30 19:42 PT · Enhance SVG animations an…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> c5eba18</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 097f862</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 06/30 19:25 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 06/30 19:35 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 7a2869d</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> c82bacd</tspan>
   </text>
 <text x="28" y="442" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 06/30 19:23 PT · Preserve PAT snapshot dat…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 06/30 19:32 PT · Enhance SVG rendering wit…
   </text>
 <text x="20" y="452" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
@@ -368,7 +368,7 @@
   97115104
 </text>
 <rect x="462" y="608" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="70" begin="3.99s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="72" begin="3.99s" dur="0.45s" fill="freeze"/>
 </rect>
 <text x="462" y="624" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.17s" dur="0.3s" fill="freeze"/>
@@ -419,7 +419,7 @@
 <rect x="609.0" y="733.0" width="35.0" height="25" fill="#525252"/>
 <rect x="646.0" y="738.0" width="35.0" height="20" fill="#525252"/>
 <rect x="683.0" y="737.0" width="35.0" height="21" fill="#525252"/>
-<rect x="720.0" y="740.0" width="35.0" height="18" fill="#525252"/>
+<rect x="720.0" y="739.0" width="35.0" height="19" fill="#525252"/>
 <rect x="757.0" y="740.0" width="35.0" height="18" fill="#525252"/>
 <rect x="794.0" y="744.0" width="35.0" height="14" fill="#525252"/>
 <rect x="831.0" y="738.0" width="35.0" height="20" fill="#525252"/>
@@ -430,7 +430,7 @@
 <text x="700.5" y="770" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">18</text>
   <rect x="18.0" y="787.0" width="122.9" height="5" fill="#333333"/>
 <text x="79.4" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
-<rect x="144.9" y="781.0" width="122.9" height="11" fill="#333333"/>
+<rect x="144.9" y="782.0" width="122.9" height="10" fill="#333333"/>
 <text x="206.3" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">M</text>
 <rect x="271.7" y="780.0" width="122.9" height="12" fill="#ffffff"/>
 <text x="333.1" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
