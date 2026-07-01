@@ -21,6 +21,7 @@ const MUTED = '#a3a3a3';
 const BORDER = '#ffffff';
 const FAINT = '#171717';
 const INSET = 0.5;
+const PINK = '#e879a9';
 
 const FEED_BLOG_LIMIT = 6;
 const FEED_COMMIT_LIMIT = 12;
@@ -41,6 +42,85 @@ const HERO_TEXT_X = 208;
 const PT = 'America/Los_Angeles';
 const DAY_LABELS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
+const HERO_TAGLINE = [
+  [
+    { text: '"', pink: false },
+    { text: 'silent ', pink: false },
+    { text: 'waiting', pink: true },
+    { text: ' on the ', pink: false },
+    { text: 'truth', pink: true },
+    { text: ',', pink: false },
+  ],
+  [
+    { text: 'pure ', pink: false },
+    { text: 'sitting', pink: true },
+    { text: ' and ', pink: false },
+    { text: 'breathing', pink: true },
+  ],
+  [
+    { text: 'in the ', pink: false },
+    { text: 'presence', pink: true },
+    { text: ' of', pink: false },
+  ],
+  [
+    { text: 'the ', pink: false },
+    { text: 'question mark', pink: true },
+    { text: '.', pink: false },
+    { text: '"', pink: false },
+  ],
+];
+
+const HERO_CHAR_W = 0.62;
+const HERO_CLIP_PAD = 12;
+
+function heroLineWidth(text, fontSize) {
+  return text.length * fontSize * HERO_CHAR_W + HERO_CLIP_PAD;
+}
+
+function renderHeroTagline(tx, start) {
+  const fontSize = 18;
+  const lineH = 23;
+  const y0 = 98;
+  const charsPerSec = 17;
+  const linePause = 0.1;
+  let time = start;
+  const clips = [];
+  const texts = [];
+
+  for (let i = 0; i < HERO_TAGLINE.length; i += 1) {
+    const parts = HERO_TAGLINE[i];
+    const plain = parts.map((p) => p.text).join('');
+    const lineW = heroLineWidth(plain, fontSize);
+    const dur = Math.max(plain.length / charsPerSec, 0.55);
+    const y = y0 + i * lineH;
+    const clipId = `hero-tag-${i}`;
+    const clipY = y - fontSize + 4;
+    const clipH = fontSize + 8;
+    const begin = time.toFixed(2);
+    const durStr = dur.toFixed(2);
+    const lineWStr = lineW.toFixed(1);
+
+    clips.push(`<clipPath id="${clipId}"><rect x="${tx}" y="${clipY}" height="${clipH}" width="0">
+      <animate attributeName="width" from="0" to="${lineWStr}" begin="${begin}s" dur="${durStr}s" fill="freeze"/>
+    </rect></clipPath>`);
+
+    const tspans = parts
+      .map((part) => `<tspan fill="${part.pink ? PINK : INK}">${escapeXml(part.text)}</tspan>`)
+      .join('');
+    texts.push(`<text x="${tx}" y="${y}" font-family="ui-monospace,monospace" font-size="${fontSize}" font-weight="400" clip-path="url(#${clipId})">${tspans}</text>`);
+    time += dur + linePause;
+  }
+
+  const lastY = y0 + (HERO_TAGLINE.length - 1) * lineH;
+  const cursorX = tx + heroLineWidth('the question mark', fontSize);
+  const cursorBegin = time.toFixed(2);
+  const cursor = `<text x="${cursorX.toFixed(1)}" y="${lastY}" fill="${PINK}" font-family="ui-monospace,monospace" font-size="${fontSize}" opacity="0">
+  <animate attributeName="opacity" values="0;1;0;1;0" begin="${cursorBegin}s" dur="2s" fill="freeze"/>
+  ▋</text>`;
+
+  return { clips: clips.join('\n'), markup: `${texts.join('\n')}\n${cursor}` };
+}
+
 export function renderHero(artDataUri = null) {
   const hasArt = Boolean(artDataUri);
   const { x, y, size, pad } = HERO_FRAME;
@@ -49,21 +129,8 @@ export function renderHero(artDataUri = null) {
   const iy = y + pad;
   const is = size - pad * 2;
   const ruleW = hasArt ? CANVAS_W - tx - 32 : 488;
-
-  const words = ['humans', 'code', 'better', 'than', 'bots'];
-  const wordColors = { better: '#e879a9' };
   const taglineStart = hasArt ? 1.05 : 0.45;
-  const wordLines = words
-    .map((word, i) => {
-      const spaced = word.split('').join(' ');
-      const begin = (taglineStart + i * 0.32).toFixed(2);
-      const fill = wordColors[word] ?? INK;
-      return `<text x="${tx}" y="${96 + i * 22}" fill="${fill}" font-family="ui-monospace,monospace" font-size="22" font-weight="400" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="${begin}s" dur="0.04s" fill="freeze"/>
-    ${escapeXml(spaced)}
-  </text>`;
-    })
-    .join('\n');
+  const tagline = renderHeroTagline(tx, taglineStart);
 
   const corner = (cx, cy, dx, dy) =>
     `<path d="M${cx} ${cy + dy * 10} L${cx} ${cy} L${cx + dx * 10} ${cy}" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
@@ -94,7 +161,7 @@ export function renderHero(artDataUri = null) {
       <animate attributeName="opacity" values="0;0;0.08;0.08" keyTimes="0;0.55;0.65;1" dur="0.9s" fill="freeze"/>
       <animate attributeName="y" values="${iy};${iy + is - 2};${iy}" begin="0.9s" dur="6s" repeatCount="indefinite"/>
     </rect>
-    <rect x="${x}" y="${y + size - 3}" width="${size}" height="3" fill="#e879a9" opacity="0.75">
+    <rect x="${x}" y="${y + size - 3}" width="${size}" height="3" fill="${PINK}" opacity="0.75">
       <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" begin="0.9s" repeatCount="indefinite"/>
     </rect>
   </g>` : '';
@@ -114,6 +181,7 @@ export function renderHero(artDataUri = null) {
       <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
     </radialGradient>` : ''}
+    ${tagline.clips}
     <style>
       @keyframes draw { from { stroke-dashoffset: ${ruleW}; } to { stroke-dashoffset: 0; } }
       .rule { stroke-dasharray: 2 10; stroke-linecap: round; animation: draw 1s ease 0.2s forwards; }
@@ -123,7 +191,7 @@ export function renderHero(artDataUri = null) {
   ${portrait}
   <text x="${tx}" y="56" fill="${INK}" font-family="ui-monospace,monospace" font-size="48" font-weight="700">97 115 104</text>
   <line x1="${tx}" y1="72" x2="${tx + ruleW}" y2="72" stroke="${INK}" stroke-width="2" class="rule"/>
-  ${wordLines}
+  ${tagline.markup}
 </svg>`;
 }
 
