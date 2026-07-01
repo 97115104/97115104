@@ -11,5 +11,10 @@ touch "$LOCK"
 trap 'rm -f "$LOCK"' EXIT
 
 cd "$ROOT" || exit 1
+
+if [ -f "$ROOT/.git/MERGE_HEAD" ]; then
+  git checkout --theirs generated/entity-snapshot.json attestations/README.latest.json 2>/dev/null || true
+fi
+
 node scripts/sync-profile.mjs || exit 1
 exit 0

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 19:22 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 19:23 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -210,22 +210,22 @@
     <tspan fill="#a3a3a3">public</tspan><tspan fill="#ffffff" font-weight="400"> 31</tspan>
   </text>
 <text x="462" y="144" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">private</tspan><tspan fill="#ffffff" font-weight="400"> —</tspan>
+    <tspan fill="#a3a3a3">private</tspan><tspan fill="#ffffff" font-weight="400"> 82</tspan>
   </text>
 <text x="462" y="158" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">owned</tspan><tspan fill="#ffffff" font-weight="400"> 26</tspan>
+    <tspan fill="#a3a3a3">owned</tspan><tspan fill="#ffffff" font-weight="400"> 107</tspan>
   </text>
 <text x="462" y="172" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">forked</tspan><tspan fill="#ffffff" font-weight="400"> 5</tspan>
+    <tspan fill="#a3a3a3">forked</tspan><tspan fill="#ffffff" font-weight="400"> 6</tspan>
   </text>
 <text x="462" y="186" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">archived</tspan><tspan fill="#ffffff" font-weight="400"> 0</tspan>
+    <tspan fill="#a3a3a3">archived</tspan><tspan fill="#ffffff" font-weight="400"> 6</tspan>
   </text>
 <text x="462" y="200" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">stars</tspan><tspan fill="#ffffff" font-weight="400"> 1</tspan>
   </text>
 <text x="462" y="214" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">forks</tspan><tspan fill="#ffffff" font-weight="400"> 1</tspan>
+    <tspan fill="#a3a3a3">forks</tspan><tspan fill="#ffffff" font-weight="400"> 2</tspan>
   </text>
 <text x="462" y="234" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">activity</text>
 <line x1="462" y1="240" x2="908" y2="240" stroke="#ffffff" stroke-width="1"/>
@@ -236,10 +236,10 @@
     <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 108</tspan>
   </text>
 <text x="462" y="278" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">repos 7d</tspan><tspan fill="#ffffff" font-weight="400"> 5</tspan>
+    <tspan fill="#a3a3a3">repos 7d</tspan><tspan fill="#ffffff" font-weight="400"> 11</tspan>
   </text>
 <text x="462" y="292" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">repos 30d</tspan><tspan fill="#ffffff" font-weight="400"> 10</tspan>
+    <tspan fill="#a3a3a3">repos 30d</tspan><tspan fill="#ffffff" font-weight="400"> 21</tspan>
   </text>
 <text x="462" y="306" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">peak hour</tspan><tspan fill="#ffffff" font-weight="400"> 22:00 PT</tspan>

@@ -610,6 +610,33 @@ function loadPreviousSnapshot() {
   }
 }
 
+function shouldPreservePatSnapshot(previous, hasAuth, repoCounts) {
+  if (!previous || previous.sync_auth !== 'pat' || hasAuth) return false;
+  const prevTotal = previous.repo_counts?.total ?? previous.repo_count ?? 0;
+  const nextTotal = repoCounts?.total ?? 0;
+  return nextTotal < prevTotal;
+}
+
+function preservePatSnapshot(snapshot, previous) {
+  snapshot.sync_auth = previous.sync_auth;
+  snapshot.repo_count = previous.repo_count;
+  snapshot.repo_counts = previous.repo_counts;
+  snapshot.repo_stats = previous.repo_stats;
+  if (!snapshot.languages_by_recency?.length && previous.languages_by_recency?.length) {
+    snapshot.languages_by_recency = previous.languages_by_recency;
+  }
+  if (!snapshot.language_totals?.length && previous.language_totals?.length) {
+    snapshot.language_totals = previous.language_totals;
+  }
+  if (!snapshot.recent_commits?.length && previous.recent_commits?.length) {
+    snapshot.recent_commits = previous.recent_commits;
+  }
+  if (!snapshot.commit_stats?.sample_size && previous.commit_stats?.sample_size) {
+    snapshot.commit_stats = previous.commit_stats;
+  }
+  return snapshot;
+}
+
 function deriveCommitStats(commits) {
   const timestamps = commits
     .map((c) => new Date(c.at))
@@ -708,6 +735,10 @@ async function main() {
       ? languageTotals
       : (previous?.language_totals ?? []),
   };
+  if (shouldPreservePatSnapshot(previous, hasAuth, repoCounts)) {
+    console.log('Keeping PAT snapshot stats (public-only sync would downgrade repo data).');
+    preservePatSnapshot(snapshot, previous);
+  }
   writeFileSync(join(GENERATED, 'entity-snapshot.json'), JSON.stringify(snapshot, null, 2));
 
   const readmePath = join(ROOT, 'README.md');

@@ -1,31 +1,31 @@
 {
-  "synced_at": "2026-07-01T02:22:30.952Z",
-  "sync_auth": "public",
-  "repo_count": 31,
+  "synced_at": "2026-07-01T02:23:16.222Z",
+  "sync_auth": "pat",
+  "repo_count": 113,
   "repo_counts": {
     "public": 31,
-    "private": null,
-    "total": 31
+    "private": 82,
+    "total": 113
   },
   "repo_stats": {
-    "owned": 26,
-    "forked": 5,
-    "archived": 0,
+    "owned": 107,
+    "forked": 6,
+    "archived": 6,
     "stars": 1,
-    "forks": 1,
-    "pushed_7d": 5,
-    "pushed_30d": 10,
+    "forks": 2,
+    "pushed_7d": 11,
+    "pushed_30d": 21,
     "top_starred": {
       "name": "97115104",
       "stars": 0
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-06-30T23:49:21Z"
+      "at": "2026-06-30T23:45:37Z"
     },
     "oldest_repo": {
-      "name": "attest",
-      "at": "2025-05-13T02:42:00Z"
+      "name": "ferris-slack-bot-handler",
+      "at": "2024-12-03T02:20:54Z"
     }
   },
   "profile_stats": {
