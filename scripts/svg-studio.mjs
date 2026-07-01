@@ -115,7 +115,7 @@ function renderHeroTagline(tx, start) {
   const cursorX = tx + heroLineWidth('the question mark', fontSize);
   const cursorBegin = time.toFixed(2);
   const cursor = `<text x="${cursorX.toFixed(1)}" y="${lastY}" fill="${PINK}" font-family="ui-monospace,monospace" font-size="${fontSize}" opacity="0">
-  <animate attributeName="opacity" values="0;1;0;1;0" begin="${cursorBegin}s" dur="2s" fill="freeze"/>
+  <animate attributeName="opacity" values="0;1;0;1;0" begin="${cursorBegin}s" dur="1.4s" fill="freeze"/>
   ▋</text>`;
 
   return { clips: clips.join('\n'), markup: `${texts.join('\n')}\n${cursor}` };
@@ -201,12 +201,26 @@ function statLine(x, y, label, value, bold = false) {
   </text>`;
 }
 
-function langRow(x, y, lang, repo, barW, maxBar, contentW) {
+function langRow(x, y, lang, repo, barW, maxBar, contentW, begin = null) {
   const barMax = Math.max(contentW, 1);
   const w = maxBar > 0 ? Math.min(barMax, Math.round((barW / maxBar) * barMax)) : 0;
-  return `<text x="${x}" y="${y}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700">${escapeXml(truncate(lang, 14))}</text>
+  if (begin == null) {
+    return `<text x="${x}" y="${y}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700">${escapeXml(truncate(lang, 14))}</text>
 <text x="${x + contentW}" y="${y}" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9">${escapeXml(truncate(repo, 16))}</text>
 <rect x="${x}" y="${y + 4}" width="${w}" height="4" fill="${INK}"/>`;
+  }
+  const barY = y + 4;
+  return `<text x="${x}" y="${y}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${begin}s" dur="0.3s" fill="freeze"/>
+  ${escapeXml(truncate(lang, 14))}
+</text>
+<text x="${x + contentW}" y="${y}" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${begin}s" dur="0.3s" fill="freeze"/>
+  ${escapeXml(truncate(repo, 16))}
+</text>
+<rect x="${x}" y="${barY}" width="0" height="4" fill="${INK}">
+  <animate attributeName="width" from="0" to="${w}" begin="${begin}s" dur="0.45s" fill="freeze"/>
+</rect>`;
 }
 
 function sectionHeader(x, y, title) {
@@ -293,15 +307,21 @@ function renderStatsPanel(snapshot, x, y, w, h) {
   cy += 6;
 
   const aggregateCount = Math.min(totals.length, 8);
+  const totalsAnimStart = 2.2;
   if (aggregateCount) {
     const displayTotals = totals.slice(0, aggregateCount);
     const maxTotal = Math.max(...displayTotals.map((t) => t.bytes), 1);
-    blocks.push(sectionHeader(x + pad, cy, 'all languages'));
+    blocks.push(`<text x="${x + pad}" y="${cy}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${(totalsAnimStart - 0.2).toFixed(2)}s" dur="0.3s" fill="freeze"/>all languages
+</text>`);
     cy += 12;
-    blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">aggregate bytes across owned repos</text>`);
+    blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${(totalsAnimStart - 0.1).toFixed(2)}s" dur="0.3s" fill="freeze"/>aggregate bytes across owned repos
+</text>`);
     cy += 10;
     for (let i = 0; i < aggregateCount; i += 1) {
-      blocks.push(langRow(x + pad, cy, displayTotals[i].name, 'all repos', displayTotals[i].bytes, maxTotal, contentW));
+      const begin = (totalsAnimStart + i * 0.18).toFixed(2);
+      blocks.push(langRow(x + pad, cy, displayTotals[i].name, 'all repos', displayTotals[i].bytes, maxTotal, contentW, begin));
       cy += 20;
     }
     cy += 4;
@@ -309,12 +329,18 @@ function renderStatsPanel(snapshot, x, y, w, h) {
 
   const displayLangs = langs.slice(0, 3);
   const maxBytes = Math.max(...displayLangs.map((l) => l.bytes), 1);
-  blocks.push(sectionHeader(x + pad, cy, 'languages'));
+  const recencyAnimStart = aggregateCount ? totalsAnimStart + aggregateCount * 0.18 + 0.35 : 2.2;
+  blocks.push(`<text x="${x + pad}" y="${cy}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${(recencyAnimStart - 0.2).toFixed(2)}s" dur="0.3s" fill="freeze"/>languages
+</text>`);
   cy += 12;
-  blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">by recency</text>`);
+  blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="${(recencyAnimStart - 0.1).toFixed(2)}s" dur="0.3s" fill="freeze"/>by recency
+</text>`);
   cy += 10;
   for (let i = 0; i < displayLangs.length; i += 1) {
-    blocks.push(langRow(x + pad, cy, displayLangs[i].name, displayLangs[i].repo, displayLangs[i].bytes, maxBytes, contentW));
+    const begin = (recencyAnimStart + i * 0.18).toFixed(2);
+    blocks.push(langRow(x + pad, cy, displayLangs[i].name, displayLangs[i].repo, displayLangs[i].bytes, maxBytes, contentW, begin));
     cy += 20;
   }
   cy += 4;
@@ -665,7 +691,7 @@ function renderFeedPanel(snapshot, h) {
     </text>
     ${gitLines.join('\n')}
     <text x="16" y="${cursorY}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-      <animate attributeName="opacity" values="0;1;0;1" begin="${cursorBegin}s" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0;1;0" begin="${cursorBegin}s" dur="2s" fill="freeze"/>
       ▋
     </text>
   </g>
