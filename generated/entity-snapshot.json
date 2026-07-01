@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-01T02:19:41.401Z",
+  "synced_at": "2026-07-01T02:22:30.952Z",
   "sync_auth": "public",
   "repo_count": 31,
   "repo_counts": {
@@ -16,12 +16,12 @@
     "pushed_7d": 5,
     "pushed_30d": 10,
     "top_starred": {
-      "name": "lexicographer-companion",
+      "name": "97115104",
       "stars": 0
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-06-30T09:10:49Z"
+      "at": "2026-06-30T23:49:21Z"
     },
     "oldest_repo": {
       "name": "attest",
@@ -34,6 +34,16 @@
     "member_since": "2024-10-14"
   },
   "recent_posts": [
+    {
+      "title": "free labor in san francisco and turbulent YC startups",
+      "link": "https://blog.97115104.com/2026/06/30/free-labor-in-san-francisco/",
+      "updated": "2026-06-30T15:00:00-07:00"
+    },
+    {
+      "title": "where are all the real engineers and thought leaders?",
+      "link": "https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/",
+      "updated": "2026-06-30T12:00:00-07:00"
+    },
     {
       "title": "“looping” is not new",
       "link": "https://blog.97115104.com/2026/06/23/looping-is-not-new/",
@@ -53,16 +63,6 @@
       "title": "when to start a new chat",
       "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
       "updated": "2026-06-05T12:00:00-07:00"
-    },
-    {
-      "title": "llm skill acquisition and style control",
-      "link": "https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/",
-      "updated": "2026-05-30T12:00:00-07:00"
-    },
-    {
-      "title": "creating jarvis and uploadable skills",
-      "link": "https://blog.97115104.com/2026/05/28/javis-and-endor/",
-      "updated": "2026-05-28T20:01:00-07:00"
     }
   ],
   "books": {
@@ -106,22 +106,22 @@
       "repo": "97115104",
       "commits": [
         {
-          "sha": "00c6f39",
+          "sha": "9f277dc",
           "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-06-30T09:10:48Z"
+          "at": "2026-06-30T23:49:20Z"
         },
         {
-          "sha": "3eac14e",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-06-29T09:39:49Z"
+          "sha": "e00278d",
+          "message": "[profile-sync] update sync timestamps and enhance SVG rendering",
+          "at": "2026-06-30T23:45:34Z"
         },
         {
-          "sha": "56078f7",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-06-28T09:06:32Z"
+          "sha": "ee24af7",
+          "message": "[profile-sync] update reading list and sync metadata",
+          "at": "2026-06-30T23:37:57Z"
         }
       ],
-      "more": 20
+      "more": 23
     },
     {
       "repo": "hsc-chat",
@@ -164,111 +164,6 @@
         }
       ],
       "more": 6
-    },
-    {
-      "repo": "ollama-harness",
-      "commits": [
-        {
-          "sha": "ff30462",
-          "message": "Implement service startup progress indicators in deploy-locally.sh. Introduce a progress panel to display the status of Ollama, API, and Web UI services during deployment. Enhance error handling and logging for service initialization, including health checks and loading states.",
-          "at": "2026-06-26T02:59:11Z"
-        },
-        {
-          "sha": "a8b8c23",
-          "message": "Update package.json to include react-markdown and remark-gfm dependencies. Enhance global styles for markdown rendering with a dark theme. Modify chat page to utilize MarkdownContent for rendering message content, improving display of user and assistant messages.",
-          "at": "2026-06-26T00:31:35Z"
-        },
-        {
-          "sha": "8b46bb3",
-          "message": "Update README and documentation to clarify Docker usage and model deployment. Enhanced instructions for using any Ollama model, added details on GPU support, and improved API reference for model management. Updated setup and troubleshooting guides for better user experience.",
-          "at": "2026-06-26T00:25:04Z"
-        }
-      ],
-      "more": 2
-    },
-    {
-      "repo": "vLLM-harness",
-      "commits": [
-        {
-          "sha": "67e703c",
-          "message": "Enhance Docker support and API documentation",
-          "at": "2026-06-26T01:24:57Z"
-        },
-        {
-          "sha": "1d5150d",
-          "message": "Update README to specify vLLM inference",
-          "at": "2026-06-01T07:57:06Z"
-        },
-        {
-          "sha": "e523054",
-          "message": "Update README to remove attestation details",
-          "at": "2026-06-01T07:31:39Z"
-        }
-      ],
-      "more": 9
-    },
-    {
-      "repo": "opik",
-      "commits": [
-        {
-          "sha": "69842d4",
-          "message": "[OPIK-6786] [DOCS] docs: document the Opik MCP install step in opik configure (#7140)",
-          "at": "2026-06-17T15:11:25Z"
-        },
-        {
-          "sha": "9ba3442",
-          "message": "[NA] [SDK] [DOCS] Update automatically OpenAPI spec and Fern code (#7143)",
-          "at": "2026-06-17T14:34:35Z"
-        },
-        {
-          "sha": "01e216e",
-          "message": "[OPIK-6814] [BE] feat: add internal endpoint to run Agent Insights free-form SQL (#7111)",
-          "at": "2026-06-17T14:29:04Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "rusting",
-      "commits": [
-        {
-          "sha": "22cced9",
-          "message": "minor changes and removed file",
-          "at": "2026-06-07T06:55:05Z"
-        },
-        {
-          "sha": "ea2c7ac",
-          "message": "organize as projects instead",
-          "at": "2026-06-07T06:53:47Z"
-        },
-        {
-          "sha": "a99af69",
-          "message": "Implement initial project structure and setup",
-          "at": "2026-06-07T06:50:40Z"
-        }
-      ],
-      "more": 1
-    },
-    {
-      "repo": "endor-teach",
-      "commits": [
-        {
-          "sha": "46d9c56",
-          "message": "feat: Enhance app.js with detailed comments for showScreen and getPopover functions",
-          "at": "2026-06-05T19:29:39Z"
-        },
-        {
-          "sha": "e9b6ff0",
-          "message": "feat: Add favicon and apple touch icon links to index.html for improved branding",
-          "at": "2026-06-05T19:15:51Z"
-        },
-        {
-          "sha": "2ef7b47",
-          "message": "feat: Update endor.sh for improved OS detection and Docker installation instructions",
-          "at": "2026-06-05T19:05:59Z"
-        }
-      ],
-      "more": 10
     }
   ],
   "commit_stats": {
@@ -291,7 +186,7 @@
       12,
       20,
       37,
-      22,
+      25,
       19,
       27,
       16,
@@ -303,17 +198,17 @@
     "days_pt": [
       39,
       64,
-      57,
+      60,
       45,
       60,
       62,
       69
     ],
-    "latest": "2026-06-30T09:10:48.000Z",
+    "latest": "2026-06-30T23:49:20.000Z",
     "earliest": "2025-04-15T04:16:59.000Z",
-    "sample_size": 396,
-    "commits_7d": 38,
-    "commits_30d": 107,
+    "sample_size": 399,
+    "commits_7d": 41,
+    "commits_30d": 108,
     "top_commit_repo": {
       "name": "opik",
       "count": 30
@@ -323,8 +218,8 @@
     {
       "name": "JavaScript",
       "repo": "97115104",
-      "bytes": 48006,
-      "pushed_at": "2026-06-30T09:10:49Z"
+      "bytes": 60125,
+      "pushed_at": "2026-06-30T23:49:21Z"
     },
     {
       "name": "CSS",
@@ -372,7 +267,7 @@
   "language_totals": [
     {
       "name": "JavaScript",
-      "bytes": 1874784
+      "bytes": 1886903
     },
     {
       "name": "HTML",

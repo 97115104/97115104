@@ -7,6 +7,10 @@ on:
     - cron: '0 8 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: profile-sync
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -23,6 +27,14 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      - name: Configure profile-sync merge driver
+        run: |
+          git config merge.profile-sync.name 'Regenerate profile artifacts'
+          git config merge.profile-sync.driver 'sh scripts/git-merge-profile.sh %O %A %B'
+
+      - name: Rebase onto latest main
+        run: git pull --rebase origin main
 
       - name: Sync profile artifacts
         env:

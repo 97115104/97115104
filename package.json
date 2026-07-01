@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync-profile.mjs",
-    "lint:style": "node scripts/lint-writing-profile.mjs"
+    "lint:style": "node scripts/lint-writing-profile.mjs",
+    "prepare": "git config merge.profile-sync.name 'Regenerate profile artifacts' && git config merge.profile-sync.driver 'sh scripts/git-merge-profile.sh %O %A %B'"
   },
   "dependencies": {
     "attest-client": "^3.0.0"
