@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-01T02:43:11.495Z",
+  "synced_at": "2026-07-01T09:12:43.009Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
-    "public": 31,
-    "private": 82,
+    "public": 26,
+    "private": 87,
     "total": 113
   },
   "repo_stats": {
@@ -13,15 +13,15 @@
     "archived": 6,
     "stars": 1,
     "forks": 2,
-    "pushed_7d": 11,
-    "pushed_30d": 21,
+    "pushed_7d": 12,
+    "pushed_30d": 19,
     "top_starred": {
-      "name": "97115104",
+      "name": "CrustyRustaceans",
       "stars": 0
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-07-01T02:42:39Z"
+      "name": "CrustyRustaceans",
+      "at": "2026-07-01T09:06:54Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -45,6 +45,11 @@
       "updated": "2026-06-30T12:00:00-07:00"
     },
     {
+      "title": "reading the sonogram",
+      "link": "https://blog.97115104.com/2026/06/24/reading-the-sonogram/",
+      "updated": "2026-06-24T10:00:00-07:00"
+    },
+    {
       "title": "“looping” is not new",
       "link": "https://blog.97115104.com/2026/06/23/looping-is-not-new/",
       "updated": "2026-06-23T12:00:00-07:00"
@@ -58,11 +63,6 @@
       "title": "kissingparty on becoming",
       "link": "https://blog.97115104.com/2026/06/16/on-becoming/",
       "updated": "2026-06-16T12:00:00-07:00"
-    },
-    {
-      "title": "when to start a new chat",
-      "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
-      "updated": "2026-06-05T12:00:00-07:00"
     }
   ],
   "books": {
@@ -103,78 +103,78 @@
   },
   "recent_commits": [
     {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "f9ad4bc",
-          "message": "Enhance SVG animations and rendering logic",
-          "at": "2026-07-01T02:42:37Z"
-        },
-        {
-          "sha": "097f862",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-01T02:35:37Z"
-        },
-        {
-          "sha": "c82bacd",
-          "message": "Enhance SVG rendering with animated hero tagline and new color scheme",
-          "at": "2026-07-01T02:32:54Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "7c8da1d",
-          "message": "change to turbulent",
-          "at": "2026-07-01T02:16:41Z"
-        },
-        {
-          "sha": "1877dd8",
-          "message": "Revise the conclusion of the San Francisco free labor post to invite reader engagement. Replace the previous rhetorical questions with a direct inquiry about personal experiences related to unpaid work during interview processes, encouraging comments and sharing of stories.",
-          "at": "2026-07-01T00:40:04Z"
-        },
-        {
-          "sha": "73f881c",
-          "message": "Enhance the narrative in the San Francisco free labor post by clarifying the timeline and details surrounding the work trial arrangements. Improve readability by streamlining the description of communication with the CTO and Interim Chief of Staff, while maintaining focus on the implications of unpaid labor and travel logistics.",
-          "at": "2026-07-01T00:37:19Z"
-        }
-      ],
-      "more": 27
-    },
-    {
       "repo": "CrustyRustaceans",
       "commits": [
+        {
+          "sha": "ed89d7e",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-07-01T09:06:53Z"
+        },
+        {
+          "sha": "9e38fac",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-07-01T07:27:51Z"
+        },
         {
           "sha": "3c871a3",
           "message": "chore: refresh YouTube channel stats",
           "at": "2026-07-01T01:45:27Z"
-        },
-        {
-          "sha": "77e3f7d",
-          "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-01T00:37:58Z"
-        },
-        {
-          "sha": "6d40ecb",
-          "message": "chore: refresh YouTube channel stats",
-          "at": "2026-06-30T23:27:19Z"
         }
       ],
       "more": 27
+    },
+    {
+      "repo": "sms-receiver",
+      "commits": [
+        {
+          "sha": "bfea47f",
+          "message": "Merge pull request #1 from 97115104/cursor/research-docs-3374",
+          "at": "2026-07-01T08:09:06Z"
+        },
+        {
+          "sha": "4161c8a",
+          "message": "Add research folder with plan, MVP, and SMS gateway analysis",
+          "at": "2026-07-01T08:05:05Z"
+        },
+        {
+          "sha": "40e5a81",
+          "message": "Initial commit",
+          "at": "2026-07-01T07:30:23Z"
+        }
+      ],
+      "more": 0
+    },
+    {
+      "repo": "ollama-harness",
+      "commits": [
+        {
+          "sha": "1f3992c",
+          "message": "Update docker-compose.yml to change service restart policy from 'unless-stopped' to 'no' for Ollama, API, and Web UI services, ensuring they do not restart automatically.",
+          "at": "2026-07-01T07:14:19Z"
+        },
+        {
+          "sha": "ff30462",
+          "message": "Implement service startup progress indicators in deploy-locally.sh. Introduce a progress panel to display the status of Ollama, API, and Web UI services during deployment. Enhance error handling and logging for service initialization, including health checks and loading states.",
+          "at": "2026-06-26T02:59:11Z"
+        },
+        {
+          "sha": "a8b8c23",
+          "message": "Update package.json to include react-markdown and remark-gfm dependencies. Enhance global styles for markdown rendering with a dark theme. Modify chat page to utilize MarkdownContent for rendering message content, improving display of user and assistant messages.",
+          "at": "2026-06-26T00:31:35Z"
+        }
+      ],
+      "more": 3
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      92,
-      92,
+      97,
+      94,
       94,
       73,
-      38,
+      37,
       24,
       17,
       9,
@@ -184,31 +184,31 @@
       35,
       62,
       92,
-      126,
-      176,
+      123,
+      174,
       157,
       123,
-      133,
-      117,
+      132,
+      118,
       111,
       89,
-      127,
+      131,
       85
     ],
     "days_pt": [
       161,
-      308,
-      354,
-      297,
-      259,
+      306,
+      359,
+      300,
+      258,
       276,
       245
     ],
-    "latest": "2026-07-01T02:42:37.000Z",
+    "latest": "2026-07-01T09:06:53.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 1900,
-    "commits_7d": 140,
-    "commits_30d": 288,
+    "sample_size": 1905,
+    "commits_7d": 146,
+    "commits_30d": 272,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -216,58 +216,58 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-07-01T02:42:39Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-07-01T02:42:39Z"
-    },
-    {
       "name": "HTML",
-      "repo": "blog",
-      "bytes": 408178,
-      "pushed_at": "2026-07-01T02:16:43Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 18085,
+      "pushed_at": "2026-07-01T09:06:54Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "CrustyRustaceans",
+      "bytes": 17277,
+      "pushed_at": "2026-07-01T09:06:54Z"
     },
     {
       "name": "CSS",
-      "repo": "blog",
-      "bytes": 98999,
-      "pushed_at": "2026-07-01T02:16:43Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 12759,
+      "pushed_at": "2026-07-01T09:06:54Z"
+    },
+    {
+      "name": "Python",
+      "repo": "CrustyRustaceans",
+      "bytes": 4802,
+      "pushed_at": "2026-07-01T09:06:54Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "CrustyRustaceans",
+      "bytes": 1214,
+      "pushed_at": "2026-07-01T09:06:54Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "ollama-harness",
+      "bytes": 153466,
+      "pushed_at": "2026-07-01T07:14:21Z"
+    },
+    {
+      "name": "Dockerfile",
+      "repo": "ollama-harness",
+      "bytes": 782,
+      "pushed_at": "2026-07-01T07:14:21Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-07-01T02:16:43Z"
-    },
-    {
-      "name": "Python",
-      "repo": "blog",
-      "bytes": 6850,
-      "pushed_at": "2026-07-01T02:16:43Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "lance-proposal",
-      "bytes": 78321,
-      "pushed_at": "2026-06-29T23:15:55Z"
-    },
-    {
-      "name": "Dockerfile",
-      "repo": "hsc-chat",
-      "bytes": 1433,
-      "pushed_at": "2026-06-26T03:29:09Z"
+      "pushed_at": "2026-07-01T05:50:30Z"
     }
   ],
   "language_totals": [
     {
       "name": "JavaScript",
-      "bytes": 7138687
+      "bytes": 7159034
     },
     {
       "name": "TypeScript",
@@ -275,11 +275,11 @@
     },
     {
       "name": "HTML",
-      "bytes": 6274376
+      "bytes": 6278278
     },
     {
       "name": "CSS",
-      "bytes": 3198978
+      "bytes": 3202176
     },
     {
       "name": "Python",

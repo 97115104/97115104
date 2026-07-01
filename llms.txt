@@ -29,10 +29,10 @@
 
 - free labor in san francisco and turbulent YC startups: https://blog.97115104.com/2026/06/30/free-labor-in-san-francisco/
 - where are all the real engineers and thought leaders?: https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/
+- reading the sonogram: https://blog.97115104.com/2026/06/24/reading-the-sonogram/
 - “looping” is not new: https://blog.97115104.com/2026/06/23/looping-is-not-new/
 - old man winter and heliotrope: https://blog.97115104.com/2026/06/20/definitely-not-ai/
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
-- when to start a new chat: https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/
 
 ## reading (2026-07-01)
 
@@ -43,4 +43,4 @@
 
 ## sync
 
-Last: 2026-07-01T02:43:11.495Z
+Last: 2026-07-01T09:12:43.009Z
