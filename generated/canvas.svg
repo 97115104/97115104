@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 16:44 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-06-30 19:19 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -262,40 +262,40 @@
 <text x="462" y="396" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">all languages</text>
 <text x="462" y="408" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">aggregate bytes across owned repos</text>
 <text x="462" y="418" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">JavaScript</text>
-<text x="572" y="418" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="422" width="120" height="4" fill="#ffffff"/>
+<text x="908" y="418" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="422" width="446" height="4" fill="#ffffff"/>
 <text x="462" y="438" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">HTML</text>
-<text x="572" y="438" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="442" width="59" height="4" fill="#ffffff"/>
+<text x="908" y="438" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="442" width="220" height="4" fill="#ffffff"/>
 <text x="462" y="458" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">CSS</text>
-<text x="572" y="458" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="462" width="30" height="4" fill="#ffffff"/>
+<text x="908" y="458" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="462" width="111" height="4" fill="#ffffff"/>
 <text x="462" y="478" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">TypeScript</text>
-<text x="572" y="478" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="482" width="29" height="4" fill="#ffffff"/>
+<text x="908" y="478" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="482" width="106" height="4" fill="#ffffff"/>
 <text x="462" y="498" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">Python</text>
-<text x="572" y="498" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="502" width="26" height="4" fill="#ffffff"/>
+<text x="908" y="498" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="502" width="98" height="4" fill="#ffffff"/>
 <text x="462" y="518" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">Shell</text>
-<text x="572" y="518" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="522" width="11" height="4" fill="#ffffff"/>
+<text x="908" y="518" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="522" width="41" height="4" fill="#ffffff"/>
 <text x="462" y="538" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">Swift</text>
-<text x="572" y="538" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="542" width="1" height="4" fill="#ffffff"/>
+<text x="908" y="538" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="542" width="3" height="4" fill="#ffffff"/>
 <text x="462" y="558" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">Kotlin</text>
-<text x="572" y="558" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
-<rect x="462" y="562" width="1" height="4" fill="#ffffff"/>
+<text x="908" y="558" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">all repos</text>
+<rect x="462" y="562" width="2" height="4" fill="#ffffff"/>
 <text x="462" y="582" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">languages</text>
 <text x="462" y="594" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">by recency</text>
 <text x="462" y="604" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">JavaScript</text>
-<text x="572" y="604" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">97115104</text>
-<rect x="462" y="608" width="120" height="4" fill="#ffffff"/>
+<text x="908" y="604" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">97115104</text>
+<rect x="462" y="608" width="446" height="4" fill="#ffffff"/>
 <text x="462" y="624" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">CSS</text>
-<text x="572" y="624" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">hsc-chat</text>
-<rect x="462" y="628" width="48" height="4" fill="#ffffff"/>
+<text x="908" y="624" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">hsc-chat</text>
+<rect x="462" y="628" width="179" height="4" fill="#ffffff"/>
 <text x="462" y="644" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">TypeScript</text>
-<text x="572" y="644" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">hsc-chat</text>
-<rect x="462" y="648" width="48" height="4" fill="#ffffff"/>
+<text x="908" y="644" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9">hsc-chat</text>
+<rect x="462" y="648" width="178" height="4" fill="#ffffff"/>
 </g>
   <g>
   <rect x="0" y="682" width="920" height="108" fill="#000000"/>

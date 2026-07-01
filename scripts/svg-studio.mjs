@@ -133,10 +133,11 @@ function statLine(x, y, label, value, bold = false) {
   </text>`;
 }
 
-function langRow(x, y, lang, repo, barW, maxBar) {
-  const w = maxBar > 0 ? Math.round((barW / maxBar) * 120) : 0;
+function langRow(x, y, lang, repo, barW, maxBar, contentW) {
+  const barMax = Math.max(contentW, 1);
+  const w = maxBar > 0 ? Math.min(barMax, Math.round((barW / maxBar) * barMax)) : 0;
   return `<text x="${x}" y="${y}" fill="${INK}" font-family="ui-monospace,monospace" font-size="10" font-weight="700">${escapeXml(truncate(lang, 14))}</text>
-<text x="${x + 110}" y="${y}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9">${escapeXml(truncate(repo, 16))}</text>
+<text x="${x + contentW}" y="${y}" text-anchor="end" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="9">${escapeXml(truncate(repo, 16))}</text>
 <rect x="${x}" y="${y + 4}" width="${w}" height="4" fill="${INK}"/>`;
 }
 
@@ -154,9 +155,8 @@ function renderStatsPanel(snapshot, x, y, w, h) {
   const repo = snapshot.repo_stats ?? {};
   const langs = snapshot.languages_by_recency ?? [];
   const totals = snapshot.language_totals ?? [];
-  const maxBytes = langs[0]?.bytes ?? 1;
-  const maxTotal = totals[0]?.bytes ?? 1;
   const pad = 12;
+  const contentW = w - pad * 2;
   const line = 14;
   const counts = snapshot.repo_counts ?? {};
   const pub = counts.public ?? snapshot.repo_count ?? '—';
@@ -226,23 +226,27 @@ function renderStatsPanel(snapshot, x, y, w, h) {
 
   const aggregateCount = Math.min(totals.length, 8);
   if (aggregateCount) {
+    const displayTotals = totals.slice(0, aggregateCount);
+    const maxTotal = Math.max(...displayTotals.map((t) => t.bytes), 1);
     blocks.push(sectionHeader(x + pad, cy, 'all languages'));
     cy += 12;
     blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">aggregate bytes across owned repos</text>`);
     cy += 10;
     for (let i = 0; i < aggregateCount; i += 1) {
-      blocks.push(langRow(x + pad, cy, totals[i].name, 'all repos', totals[i].bytes, maxTotal));
+      blocks.push(langRow(x + pad, cy, displayTotals[i].name, 'all repos', displayTotals[i].bytes, maxTotal, contentW));
       cy += 20;
     }
     cy += 4;
   }
 
+  const displayLangs = langs.slice(0, 3);
+  const maxBytes = Math.max(...displayLangs.map((l) => l.bytes), 1);
   blocks.push(sectionHeader(x + pad, cy, 'languages'));
   cy += 12;
   blocks.push(`<text x="${x + pad}" y="${cy}" fill="${MUTED}" font-family="ui-monospace,monospace" font-size="8">by recency</text>`);
   cy += 10;
-  for (let i = 0; i < Math.min(langs.length, 3); i += 1) {
-    blocks.push(langRow(x + pad, cy, langs[i].name, langs[i].repo, langs[i].bytes, maxBytes));
+  for (let i = 0; i < displayLangs.length; i += 1) {
+    blocks.push(langRow(x + pad, cy, displayLangs[i].name, displayLangs[i].repo, displayLangs[i].bytes, maxBytes, contentW));
     cy += 20;
   }
   cy += 4;
