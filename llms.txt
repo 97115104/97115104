@@ -25,7 +25,7 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-07-01)
+## recent blog (2026-07-02)
 
 - free labor in san francisco and turbulent YC startups: https://blog.97115104.com/2026/06/30/free-labor-in-san-francisco/
 - where are all the real engineers and thought leaders?: https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/
@@ -34,7 +34,7 @@
 - old man winter and heliotrope: https://blog.97115104.com/2026/06/20/definitely-not-ai/
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
 
-## reading (2026-07-01)
+## reading (2026-07-02)
 
 - reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
 - reading: The Hobbit, or There and Back Again by J.R.R. Tolkien (Page 201 of 366)
@@ -43,4 +43,4 @@
 
 ## sync
 
-Last: 2026-07-01T09:12:43.009Z
+Last: 2026-07-02T09:07:40.316Z
