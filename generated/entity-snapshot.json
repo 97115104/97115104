@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-02T09:07:40.316Z",
+  "synced_at": "2026-07-03T09:07:05.384Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 6,
     "stars": 1,
     "forks": 2,
-    "pushed_7d": 13,
-    "pushed_30d": 19,
+    "pushed_7d": 11,
+    "pushed_30d": 18,
     "top_starred": {
       "name": "CrustyRustaceans",
       "stars": 0
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-02T09:02:55Z"
+      "at": "2026-07-03T09:02:30Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -35,34 +35,34 @@
   },
   "recent_posts": [
     {
-      "title": "free labor in san francisco and turbulent YC startups",
-      "link": "https://blog.97115104.com/2026/06/30/free-labor-in-san-francisco/",
-      "updated": "2026-06-30T15:00:00-07:00"
-    },
-    {
-      "title": "where are all the real engineers and thought leaders?",
-      "link": "https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/",
-      "updated": "2026-06-30T12:00:00-07:00"
-    },
-    {
       "title": "reading the sonogram",
       "link": "https://blog.97115104.com/2026/06/24/reading-the-sonogram/",
       "updated": "2026-06-24T10:00:00-07:00"
     },
     {
-      "title": "“looping” is not new",
-      "link": "https://blog.97115104.com/2026/06/23/looping-is-not-new/",
-      "updated": "2026-06-23T12:00:00-07:00"
-    },
-    {
-      "title": "old man winter and heliotrope",
-      "link": "https://blog.97115104.com/2026/06/20/definitely-not-ai/",
-      "updated": "2026-06-20T12:00:00-07:00"
-    },
-    {
       "title": "kissingparty on becoming",
       "link": "https://blog.97115104.com/2026/06/16/on-becoming/",
       "updated": "2026-06-16T12:00:00-07:00"
+    },
+    {
+      "title": "when to start a new chat",
+      "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
+      "updated": "2026-06-05T12:00:00-07:00"
+    },
+    {
+      "title": "llm skill acquisition and style control",
+      "link": "https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/",
+      "updated": "2026-05-30T12:00:00-07:00"
+    },
+    {
+      "title": "creating jarvis and uploadable skills",
+      "link": "https://blog.97115104.com/2026/05/28/javis-and-endor/",
+      "updated": "2026-05-28T20:01:00-07:00"
+    },
+    {
+      "title": "“Looping” is not new",
+      "link": "https://blog.97115104.com/2026/05/27/looping-is-not-new/",
+      "updated": "2026-05-27T12:00:00-07:00"
     }
   ],
   "books": {
@@ -106,61 +106,61 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "735c93c",
+          "sha": "7deebdc",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-02T09:02:54Z"
+          "at": "2026-07-03T09:02:30Z"
         },
         {
-          "sha": "b449426",
+          "sha": "1f8159f",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-02T07:05:52Z"
+          "at": "2026-07-03T07:04:02Z"
         },
         {
-          "sha": "56de7f0",
+          "sha": "f934c84",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-02T01:40:33Z"
+          "at": "2026-07-03T05:16:54Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "rusting",
+      "repo": "blog",
       "commits": [
         {
-          "sha": "faca094",
-          "message": "Update .gitignore to include Rust/Cargo build output and rustfmt backup files; add new note on i128 type in 07.01.26",
-          "at": "2026-07-02T05:12:30Z"
+          "sha": "48cb770",
+          "message": "Remove outdated category file for 'yc' and clean up attestations.json by deleting multiple entries related to past posts, including 'first failure' and 'yc' applications. Update AI post threads to enhance clarity and relevance, and adjust CSS for improved code display in posts.",
+          "at": "2026-07-03T06:12:51Z"
         },
         {
-          "sha": "ef74935",
-          "message": "remove dependencies",
-          "at": "2026-07-02T00:00:32Z"
+          "sha": "844ab6e",
+          "message": "Add new posts reflecting personal experiences and insights on startup challenges, AI tool frustrations, and the importance of privacy in tech. Includes articles on co-founding mistakes, applying to Y Combinator, critiques of Anthropic's policies, and a shift towards privacy-focused alternatives like Proton's Lumo.",
+          "at": "2026-07-03T06:12:39Z"
         },
         {
-          "sha": "54e99fb",
-          "message": "completed the guessing game",
-          "at": "2026-07-01T23:59:45Z"
+          "sha": "48070b2",
+          "message": "Remove outdated profile photo from assets to streamline image management and improve site performance.",
+          "at": "2026-07-01T05:50:27Z"
         }
       ],
-      "more": 6
+      "more": 27
     },
     {
-      "repo": "server-backup",
+      "repo": "97115104",
       "commits": [
         {
-          "sha": "4ebec42",
-          "message": "Update server-hosting-scripts submodule to latest commit ed2e976.",
-          "at": "2026-07-01T09:21:36Z"
+          "sha": "e2aa7de",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-02T09:07:41Z"
         },
         {
-          "sha": "f1b5d9a",
-          "message": "Update blog configuration to enhance markdown processing, include new directories, and improve image handling. Refactor index and post layouts for better AI content management and add new project entries in JSON data files. Update CSS for improved styling and responsiveness across various components.",
-          "at": "2026-07-01T09:21:24Z"
+          "sha": "276d8b7",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-01T09:12:43Z"
         },
         {
-          "sha": "1a08f59",
-          "message": "Update server-hosting-scripts submodule to latest commit.",
-          "at": "2026-06-25T21:22:34Z"
+          "sha": "4e536a2",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-01T02:43:12Z"
         }
       ],
       "more": 27
@@ -172,43 +172,43 @@
     "hours_pt": [
       97,
       94,
-      99,
-      73,
+      100,
+      74,
       35,
       24,
       16,
       9,
-      9,
-      6,
-      14,
+      8,
+      5,
+      13,
       35,
       62,
       92,
       124,
-      174,
+      172,
       157,
       124,
       132,
       118,
-      111,
-      88,
-      132,
-      85
+      112,
+      87,
+      133,
+      87
     ],
     "days_pt": [
       161,
       295,
-      353,
-      322,
-      258,
-      276,
+      342,
+      311,
+      278,
+      278,
       245
     ],
-    "latest": "2026-07-02T09:02:54.000Z",
+    "latest": "2026-07-03T09:02:30.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1910,
-    "commits_7d": 132,
-    "commits_30d": 275,
+    "commits_7d": 105,
+    "commits_30d": 241,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -219,31 +219,37 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-02T09:02:55Z"
+      "pushed_at": "2026-07-03T09:02:30Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-02T09:02:55Z"
+      "pushed_at": "2026-07-03T09:02:30Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-02T09:02:55Z"
+      "pushed_at": "2026-07-03T09:02:30Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-02T09:02:55Z"
+      "pushed_at": "2026-07-03T09:02:30Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-02T09:02:55Z"
+      "pushed_at": "2026-07-03T09:02:30Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-07-03T06:12:53Z"
     },
     {
       "name": "Makefile",
@@ -256,12 +262,6 @@
       "repo": "rusting",
       "bytes": 3417,
       "pushed_at": "2026-07-02T05:12:33Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "server-backup",
-      "bytes": 196078,
-      "pushed_at": "2026-07-01T09:21:40Z"
     }
   ],
   "language_totals": [
@@ -279,7 +279,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 3208957
+      "bytes": 3208894
     },
     {
       "name": "Python",
