@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-03T09:07:05.384Z",
+  "synced_at": "2026-07-04T08:56:30.312Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-03T09:02:30Z"
+      "at": "2026-07-04T08:02:07Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -76,14 +76,6 @@
         "rating": null
       },
       {
-        "title": "The Hobbit, or There and Back Again",
-        "author": "J.R.R. Tolkien",
-        "progress": "Page 201 of 366",
-        "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/5907.The_Hobbit",
-        "rating": null
-      },
-      {
         "title": "The Picture of Dorian Gray",
         "author": "Oscar Wilde",
         "progress": "Page 134 of 226",
@@ -93,12 +85,12 @@
       }
     ],
     "last_read": {
-      "title": "The Atomic Human: Understanding Ourselves in the Age of AI",
-      "author": "Neil D. Lawrence",
+      "title": "The Hobbit, or There and Back Again",
+      "author": "J.R.R. Tolkien",
       "progress": "",
-      "completedDate": "June 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/198283327-the-atomic-human",
-      "rating": 5
+      "completedDate": "July 2026",
+      "goodreadsUrl": "https://www.goodreads.com/book/show/5907.The_Hobbit",
+      "rating": 4
     }
   },
   "recent_commits": [
@@ -106,61 +98,61 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "7deebdc",
+          "sha": "22f9e1e",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-03T09:02:30Z"
+          "at": "2026-07-04T08:02:07Z"
         },
         {
-          "sha": "1f8159f",
+          "sha": "009944a",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-03T07:04:02Z"
+          "at": "2026-07-04T06:59:12Z"
         },
         {
-          "sha": "f934c84",
+          "sha": "ed08dae",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-03T05:16:54Z"
+          "at": "2026-07-04T05:15:23Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "blog",
+      "repo": "server-backup",
       "commits": [
         {
-          "sha": "48cb770",
-          "message": "Remove outdated category file for 'yc' and clean up attestations.json by deleting multiple entries related to past posts, including 'first failure' and 'yc' applications. Update AI post threads to enhance clarity and relevance, and adjust CSS for improved code display in posts.",
-          "at": "2026-07-03T06:12:51Z"
+          "sha": "12a3d74",
+          "message": "Update blog configuration and data files: remove deprecated posts, update deployment details, and add new book entry. Adjust attestation data structure and remove unused category file for improved content management.",
+          "at": "2026-07-04T04:51:11Z"
         },
         {
-          "sha": "844ab6e",
-          "message": "Add new posts reflecting personal experiences and insights on startup challenges, AI tool frustrations, and the importance of privacy in tech. Includes articles on co-founding mistakes, applying to Y Combinator, critiques of Anthropic's policies, and a shift towards privacy-focused alternatives like Proton's Lumo.",
-          "at": "2026-07-03T06:12:39Z"
+          "sha": "0ef7090",
+          "message": "Update blog configuration and data files: remove deprecated posts, update deployment details, and add new book entry. Adjust attestation data structure and remove unused category file for improved content management.",
+          "at": "2026-07-04T04:51:03Z"
         },
         {
-          "sha": "48070b2",
-          "message": "Remove outdated profile photo from assets to streamline image management and improve site performance.",
-          "at": "2026-07-01T05:50:27Z"
+          "sha": "4ebec42",
+          "message": "Update server-hosting-scripts submodule to latest commit ed2e976.",
+          "at": "2026-07-01T09:21:36Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "97115104",
+      "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "e2aa7de",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-02T09:07:41Z"
+          "sha": "580c79b",
+          "message": "Update blog configuration and data files: remove deprecated posts, update deployment details, and add new book entry. Adjust attestation data structure and remove unused category file for improved content management.",
+          "at": "2026-07-04T04:51:06Z"
         },
         {
-          "sha": "276d8b7",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-01T09:12:43Z"
+          "sha": "ed2e976",
+          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com, ensuring accurate tracking of recent deployment statuses and outputs.",
+          "at": "2026-07-01T09:21:28Z"
         },
         {
-          "sha": "4e536a2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-01T02:43:12Z"
+          "sha": "9a4d5af",
+          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com, ensuring accurate tracking of recent deployment statuses and outputs.",
+          "at": "2026-06-25T21:22:27Z"
         }
       ],
       "more": 27
@@ -170,10 +162,10 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      97,
-      94,
+      96,
+      95,
       100,
-      74,
+      72,
       35,
       24,
       16,
@@ -181,34 +173,34 @@
       8,
       5,
       13,
-      35,
-      62,
+      34,
+      61,
       92,
       124,
-      172,
-      157,
+      173,
+      155,
       124,
       132,
       118,
-      112,
-      87,
-      133,
-      87
+      113,
+      90,
+      134,
+      88
     ],
     "days_pt": [
       161,
       295,
       342,
-      311,
-      278,
-      278,
-      245
+      302,
+      264,
+      301,
+      246
     ],
-    "latest": "2026-07-03T09:02:30.000Z",
+    "latest": "2026-07-04T08:02:07.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 1910,
-    "commits_7d": 105,
-    "commits_30d": 241,
+    "sample_size": 1911,
+    "commits_7d": 106,
+    "commits_30d": 236,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -219,49 +211,49 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-03T09:02:30Z"
+      "pushed_at": "2026-07-04T08:02:07Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-03T09:02:30Z"
+      "pushed_at": "2026-07-04T08:02:07Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-03T09:02:30Z"
+      "pushed_at": "2026-07-04T08:02:07Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-03T09:02:30Z"
+      "pushed_at": "2026-07-04T08:02:07Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-03T09:02:30Z"
+      "pushed_at": "2026-07-04T08:02:07Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "server-backup",
+      "bytes": 196078,
+      "pushed_at": "2026-07-04T04:51:16Z"
+    },
+    {
+      "name": "TeX",
+      "repo": "server-backup",
+      "bytes": 86916,
+      "pushed_at": "2026-07-04T04:51:16Z"
     },
     {
       "name": "Ruby",
-      "repo": "blog",
+      "repo": "server-backup",
       "bytes": 8050,
-      "pushed_at": "2026-07-03T06:12:53Z"
-    },
-    {
-      "name": "Makefile",
-      "repo": "rusting",
-      "bytes": 85720,
-      "pushed_at": "2026-07-02T05:12:33Z"
-    },
-    {
-      "name": "Rust",
-      "repo": "rusting",
-      "bytes": 3417,
-      "pushed_at": "2026-07-02T05:12:33Z"
+      "pushed_at": "2026-07-04T04:51:16Z"
     }
   ],
   "language_totals": [
@@ -279,7 +271,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 3208894
+      "bytes": 3208831
     },
     {
       "name": "Python",
