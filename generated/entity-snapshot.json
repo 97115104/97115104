@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-05T09:04:46.717Z",
+  "synced_at": "2026-07-06T09:25:45.972Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 1,
     "forks": 2,
     "pushed_7d": 11,
-    "pushed_30d": 15,
+    "pushed_30d": 14,
     "top_starred": {
       "name": "CrustyRustaceans",
       "stars": 0
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-05T09:01:02Z"
+      "at": "2026-07-06T09:20:05Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,19 +98,19 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "6be4487",
+          "sha": "7206877",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-05T09:01:01Z"
+          "at": "2026-07-06T09:20:04Z"
         },
         {
-          "sha": "b916031",
+          "sha": "c6fa037",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-05T07:04:42Z"
+          "at": "2026-07-06T07:30:08Z"
         },
         {
-          "sha": "264eb41",
+          "sha": "d4b4592",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-05T05:18:50Z"
+          "at": "2026-07-06T05:26:07Z"
         }
       ],
       "more": 27
@@ -118,6 +118,11 @@
     {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "3385415",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-05T09:04:47Z"
+        },
         {
           "sha": "3e280ad",
           "message": "[profile-sync] update generated profile artifacts",
@@ -127,11 +132,6 @@
           "sha": "ddc6953",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-07-03T09:07:06Z"
-        },
-        {
-          "sha": "e2aa7de",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-02T09:07:41Z"
         }
       ],
       "more": 27
@@ -162,9 +162,9 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      96,
-      96,
-      101,
+      97,
+      95,
+      102,
       72,
       35,
       24,
@@ -173,7 +173,7 @@
       8,
       5,
       13,
-      33,
+      34,
       61,
       92,
       124,
@@ -184,23 +184,23 @@
       118,
       113,
       90,
-      133,
-      88
+      132,
+      87
     ],
     "days_pt": [
-      163,
-      295,
+      182,
+      297,
       342,
       302,
-      255,
-      289,
-      265
+      254,
+      280,
+      254
     ],
-    "latest": "2026-07-05T09:01:01.000Z",
+    "latest": "2026-07-06T09:20:04.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1911,
-    "commits_7d": 106,
-    "commits_30d": 230,
+    "commits_7d": 93,
+    "commits_30d": 226,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,31 +211,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-05T09:01:02Z"
+      "pushed_at": "2026-07-06T09:20:05Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-05T09:01:02Z"
+      "pushed_at": "2026-07-06T09:20:05Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-05T09:01:02Z"
+      "pushed_at": "2026-07-06T09:20:05Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-05T09:01:02Z"
+      "pushed_at": "2026-07-06T09:20:05Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-05T09:01:02Z"
+      "pushed_at": "2026-07-06T09:20:05Z"
     },
     {
       "name": "TypeScript",
