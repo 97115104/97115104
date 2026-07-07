@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-06T09:25:45.972Z",
+  "synced_at": "2026-07-07T09:10:23.782Z",
   "sync_auth": "pat",
   "repo_count": 113,
   "repo_counts": {
@@ -11,17 +11,17 @@
     "owned": 107,
     "forked": 6,
     "archived": 6,
-    "stars": 1,
+    "stars": 2,
     "forks": 2,
-    "pushed_7d": 11,
+    "pushed_7d": 10,
     "pushed_30d": 14,
     "top_starred": {
-      "name": "CrustyRustaceans",
-      "stars": 0
+      "name": "lexicographer-companion",
+      "stars": 1
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-06T09:20:05Z"
+      "at": "2026-07-07T09:05:00Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,19 +98,19 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "7206877",
+          "sha": "e330d02",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-06T09:20:04Z"
+          "at": "2026-07-07T09:04:59Z"
         },
         {
-          "sha": "c6fa037",
+          "sha": "0a2116f",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-06T07:30:08Z"
+          "at": "2026-07-07T07:09:39Z"
         },
         {
-          "sha": "d4b4592",
+          "sha": "66d6791",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-06T05:26:07Z"
+          "at": "2026-07-07T01:33:51Z"
         }
       ],
       "more": 27
@@ -118,6 +118,11 @@
     {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "ceab25c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-06T09:25:46Z"
+        },
         {
           "sha": "3385415",
           "message": "[profile-sync] update generated profile artifacts",
@@ -127,11 +132,6 @@
           "sha": "3e280ad",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-07-04T08:56:31Z"
-        },
-        {
-          "sha": "ddc6953",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-03T09:07:06Z"
         }
       ],
       "more": 27
@@ -164,17 +164,17 @@
     "hours_pt": [
       97,
       95,
-      102,
-      72,
+      103,
+      71,
       35,
-      24,
+      23,
       16,
-      9,
       8,
+      9,
       5,
-      13,
-      34,
-      61,
+      15,
+      35,
+      62,
       92,
       124,
       173,
@@ -182,25 +182,25 @@
       124,
       132,
       118,
-      113,
+      112,
       90,
-      132,
+      130,
       87
     ],
     "days_pt": [
-      182,
-      297,
-      342,
+      175,
+      311,
+      344,
       302,
-      254,
+      253,
       280,
-      254
+      246
     ],
-    "latest": "2026-07-06T09:20:04.000Z",
+    "latest": "2026-07-07T09:04:59.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1911,
-    "commits_7d": 93,
-    "commits_30d": 226,
+    "commits_7d": 92,
+    "commits_30d": 220,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,31 +211,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-06T09:20:05Z"
+      "pushed_at": "2026-07-07T09:05:00Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-06T09:20:05Z"
+      "pushed_at": "2026-07-07T09:05:00Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-06T09:20:05Z"
+      "pushed_at": "2026-07-07T09:05:00Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-06T09:20:05Z"
+      "pushed_at": "2026-07-07T09:05:00Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-06T09:20:05Z"
+      "pushed_at": "2026-07-07T09:05:00Z"
     },
     {
       "name": "TypeScript",
