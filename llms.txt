@@ -25,7 +25,7 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-07-07)
+## recent blog (2026-07-08)
 
 - reading the sonogram: https://blog.97115104.com/2026/06/24/reading-the-sonogram/
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
@@ -34,7 +34,7 @@
 - creating jarvis and uploadable skills: https://blog.97115104.com/2026/05/28/javis-and-endor/
 - “Looping” is not new: https://blog.97115104.com/2026/05/27/looping-is-not-new/
 
-## reading (2026-07-07)
+## reading (2026-07-08)
 
 - reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
 - reading: The Picture of Dorian Gray by Oscar Wilde (Page 134 of 226)
@@ -42,4 +42,4 @@
 
 ## sync
 
-Last: 2026-07-07T09:10:23.782Z
+Last: 2026-07-08T08:55:05.958Z
