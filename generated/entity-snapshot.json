@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-08T08:55:05.958Z",
+  "synced_at": "2026-07-09T09:10:30.291Z",
   "sync_auth": "pat",
   "repo_count": 115,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-08T08:51:23Z"
+      "at": "2026-07-09T03:03:11Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,19 +98,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "6a209ac",
+          "sha": "14a51fb",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-08T08:51:22Z"
+          "at": "2026-07-09T03:03:10Z"
         },
         {
-          "sha": "3423454",
+          "sha": "0128dcf",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-08T07:47:06Z"
+          "at": "2026-07-09T01:33:40Z"
         },
         {
-          "sha": "c58a5c4",
+          "sha": "53a35a5",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-08T06:48:42Z"
+          "at": "2026-07-09T00:30:16Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "0a1a01c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-08T08:55:06Z"
+        },
+        {
+          "sha": "201b36d",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-07T09:10:24Z"
+        },
+        {
+          "sha": "ceab25c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-06T09:25:46Z"
         }
       ],
       "more": 27
@@ -135,39 +156,23 @@
         }
       ],
       "more": 13
-    },
-    {
-      "repo": "cursor-skills",
-      "commits": [
-        {
-          "sha": "79da8e3",
-          "message": "Update README.md to provide detailed documentation on Cursor Agent Skills, including quick start instructions, installation steps, available skills, and guidelines for adding new skills.",
-          "at": "2026-07-07T23:03:37Z"
-        },
-        {
-          "sha": "662447c",
-          "message": "Initial commit",
-          "at": "2026-07-07T22:47:37Z"
-        }
-      ],
-      "more": 0
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      97,
       96,
+      97,
       103,
-      71,
+      72,
       35,
       24,
       16,
       9,
       8,
       5,
-      15,
+      14,
       36,
       62,
       91,
@@ -177,24 +182,24 @@
       125,
       138,
       124,
-      112,
+      113,
       90,
-      128,
+      127,
       88
     ],
     "days_pt": [
       162,
-      306,
-      382,
-      302,
-      251,
+      296,
+      374,
+      321,
+      250,
       280,
       246
     ],
-    "latest": "2026-07-08T08:51:22.000Z",
+    "latest": "2026-07-09T03:03:10.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1929,
-    "commits_7d": 73,
+    "commits_7d": 64,
     "commits_30d": 238,
     "top_commit_repo": {
       "name": "97115104",
@@ -206,31 +211,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-08T08:51:23Z"
+      "pushed_at": "2026-07-09T03:03:11Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-08T08:51:23Z"
+      "pushed_at": "2026-07-09T03:03:11Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-08T08:51:23Z"
+      "pushed_at": "2026-07-09T03:03:11Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-08T08:51:23Z"
+      "pushed_at": "2026-07-09T03:03:11Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-08T08:51:23Z"
+      "pushed_at": "2026-07-09T03:03:11Z"
     },
     {
       "name": "Ruby",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-08 01:55 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-09 02:10 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -95,24 +95,24 @@
   </text>
 <text x="20" y="372" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 6a209ac</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 14a51fb</tspan>
   </text>
 <text x="28" y="382" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/08 01:51 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/08 20:03 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 3423454</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0128dcf</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/08 00:47 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/08 18:33 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> c58a5c4</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 53a35a5</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/07 23:48 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/08 17:30 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
@@ -120,53 +120,64 @@
   </text>
 <text x="16" y="450" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">temp-uv-historical-trends</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
 <text x="20" y="464" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> a2c6c3e</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0a1a01c</tspan>
   </text>
 <text x="28" y="474" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 07/07 20:40 PT · Enhance error notificatio…
+    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 07/08 01:55 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="484" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> ea9be25</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 201b36d</tspan>
   </text>
 <text x="28" y="494" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 07/07 19:56 PT · Improve error handling an…
+    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 07/07 02:10 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="504" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.25s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 82ba5bc</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> ceab25c</tspan>
   </text>
 <text x="28" y="514" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 07/07 19:52 PT · Enhance city data loading…
+    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 07/06 02:25 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="524" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.50s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(13 more)</tspan>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
   </text>
 <text x="16" y="542" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.7s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">cursor-skills</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">temp-uv-historical-trends</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
 <text x="20" y="556" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.85s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 79da8e3</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> a2c6c3e</tspan>
   </text>
 <text x="28" y="566" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.90s" dur="0.3s" fill="freeze"/>│ 07/07 16:03 PT · Update README.md to provi…
+    <animate attributeName="opacity" from="0" to="1" begin="5.90s" dur="0.3s" fill="freeze"/>│ 07/07 20:40 PT · Enhance error notificatio…
   </text>
 <text x="20" y="576" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.10s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 662447c</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> ea9be25</tspan>
   </text>
 <text x="28" y="586" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>  07/07 15:47 PT · Initial commit
+    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>│ 07/07 19:56 PT · Improve error handling an…
   </text>
-    <text x="16" y="606" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-      <animate attributeName="opacity" values="0;1;0;1;0" begin="6.60s" dur="2s" fill="freeze"/>
+<text x="20" y="596" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="6.35s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 82ba5bc</tspan>
+  </text>
+<text x="28" y="606" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="6.40s" dur="0.3s" fill="freeze"/>│ 07/07 19:52 PT · Enhance city data loading…
+  </text>
+<text x="20" y="616" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="6.60s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(13 more)</tspan>
+  </text>
+    <text x="16" y="638" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;1;0" begin="7.05s" dur="2s" fill="freeze"/>
       ▋
     </text>
   </g>
@@ -212,7 +223,7 @@
 <text x="462" y="234" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">activity</text>
 <line x1="462" y1="240" x2="908" y2="240" stroke="#ffffff" stroke-width="1"/>
 <text x="462" y="250" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 73</tspan>
+    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 64</tspan>
   </text>
 <text x="462" y="264" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 238</tspan>
@@ -412,11 +423,11 @@
 <text x="700.5" y="770" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">18</text>
   <rect x="18.0" y="787.0" width="122.9" height="5" fill="#333333"/>
 <text x="79.4" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
-<rect x="144.9" y="782.0" width="122.9" height="10" fill="#333333"/>
+<rect x="144.9" y="783.0" width="122.9" height="9" fill="#333333"/>
 <text x="206.3" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">M</text>
 <rect x="271.7" y="780.0" width="122.9" height="12" fill="#ffffff"/>
 <text x="333.1" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
-<rect x="398.6" y="783.0" width="122.9" height="9" fill="#333333"/>
+<rect x="398.6" y="782.0" width="122.9" height="10" fill="#333333"/>
 <text x="460.0" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">W</text>
 <rect x="525.4" y="784.0" width="122.9" height="8" fill="#333333"/>
 <text x="586.9" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
