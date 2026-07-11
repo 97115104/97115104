@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-07-10T09:09:05.459Z",
+  "synced_at": "2026-07-11T08:36:31.000Z",
   "sync_auth": "pat",
-  "repo_count": 116,
+  "repo_count": 117,
   "repo_counts": {
-    "public": 28,
-    "private": 88,
-    "total": 116
+    "public": 27,
+    "private": 90,
+    "total": 117
   },
   "repo_stats": {
-    "owned": 109,
-    "forked": 7,
+    "owned": 111,
+    "forked": 6,
     "archived": 6,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 9,
-    "pushed_30d": 16,
+    "pushed_7d": 8,
+    "pushed_30d": 18,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-10T09:04:06Z"
+      "at": "2026-07-11T08:33:36Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,109 +98,109 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "417770a",
+          "sha": "eefb13f",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-10T09:04:05Z"
+          "at": "2026-07-11T08:33:35Z"
         },
         {
-          "sha": "9342f1e",
+          "sha": "d851ec2",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-10T07:09:06Z"
+          "at": "2026-07-11T07:32:43Z"
         },
         {
-          "sha": "ad4f57d",
+          "sha": "6e80568",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-10T03:03:21Z"
+          "at": "2026-07-11T06:44:34Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "voice-clone",
+      "repo": "cursor-technical-submission",
       "commits": [
         {
-          "sha": "a090bf6",
-          "message": "Update README.md",
-          "at": "2026-07-09T19:30:44Z"
+          "sha": "2dc9030",
+          "message": "Update SlideDeck component to enhance sign-out button accessibility and improve UI clarity by changing the button text to a concise abbreviation. This change aims to streamline the user interface while maintaining functionality.",
+          "at": "2026-07-11T07:49:29Z"
         },
         {
-          "sha": "fda1c6a",
-          "message": "Update docker-compose.yml to change service restart policy from 'unless-stopped' to 'no', preventing automatic restarts of the service.",
-          "at": "2026-07-01T07:12:45Z"
+          "sha": "a2a4003",
+          "message": "Refactor SlideDeck and Login styles for improved layout and consistency. Added sign-out functionality, updated credit section, and refined CSS for better responsiveness and visual appeal across components.",
+          "at": "2026-07-11T07:36:35Z"
         },
         {
-          "sha": "4765128",
-          "message": "Add favicon support to web interface and TTS server. Implement favicon endpoint in `tts_server.py` and update HTML files to link to the favicon, enhancing user experience across the application.",
-          "at": "2026-06-26T03:16:12Z"
+          "sha": "1600600",
+          "message": "Update SlideDeck and Login styles to include credit section and improve layout. Adjusted CSS for app-shell, deck elements, and added new credit links for attribution. Enhanced responsiveness and visual consistency across components.",
+          "at": "2026-07-11T07:32:28Z"
         }
       ],
       "more": 8
     },
     {
-      "repo": "97115104",
+      "repo": "opik-onboarding-tool",
       "commits": [
         {
-          "sha": "e244598",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-09T09:10:30Z"
+          "sha": "919b8cf",
+          "message": "feat: refine contribution branch naming and enhance onboarding documentation",
+          "at": "2026-07-11T06:33:37Z"
         },
         {
-          "sha": "0a1a01c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-08T08:55:06Z"
+          "sha": "5f35a0a",
+          "message": "feat: update onboarding wizard with enhanced contribution guidance",
+          "at": "2026-07-11T05:58:09Z"
         },
         {
-          "sha": "201b36d",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-07T09:10:24Z"
+          "sha": "deaca43",
+          "message": "feat: add contributing quiz step to onboarding wizard",
+          "at": "2026-07-11T05:41:34Z"
         }
       ],
-      "more": 27
+      "more": 25
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      98,
-      97,
-      105,
-      77,
+      100,
+      95,
+      103,
+      74,
+      32,
+      22,
+      12,
+      5,
+      11,
+      8,
+      16,
       37,
-      24,
-      17,
-      9,
-      13,
-      10,
-      17,
-      38,
       63,
       91,
       125,
       177,
-      155,
-      125,
-      139,
-      124,
+      156,
+      133,
+      151,
+      126,
       114,
-      90,
-      128,
-      87
+      94,
+      135,
+      92
     ],
     "days_pt": [
       162,
       300,
-      365,
-      318,
-      278,
-      290,
-      247
+      354,
+      287,
+      269,
+      347,
+      253
     ],
-    "latest": "2026-07-10T09:04:05.000Z",
+    "latest": "2026-07-11T08:33:35.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 1960,
-    "commits_7d": 63,
-    "commits_30d": 240,
+    "sample_size": 1972,
+    "commits_7d": 101,
+    "commits_30d": 251,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,31 +211,37 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-10T09:04:06Z"
+      "pushed_at": "2026-07-11T08:33:36Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-10T09:04:06Z"
+      "pushed_at": "2026-07-11T08:33:36Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-10T09:04:06Z"
+      "pushed_at": "2026-07-11T08:33:36Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-10T09:04:06Z"
+      "pushed_at": "2026-07-11T08:33:36Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-10T09:04:06Z"
+      "pushed_at": "2026-07-11T08:33:36Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "cursor-technical-submission",
+      "bytes": 33014,
+      "pushed_at": "2026-07-11T07:49:31Z"
     },
     {
       "name": "Dockerfile",
@@ -248,30 +254,24 @@
       "repo": "blog",
       "bytes": 8050,
       "pushed_at": "2026-07-07T22:22:13Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "server-backup",
-      "bytes": 196078,
-      "pushed_at": "2026-07-04T04:51:16Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56234023
+      "bytes": 56235507
     },
     {
       "name": "JavaScript",
-      "bytes": 7340435
+      "bytes": 7345589
     },
     {
       "name": "TypeScript",
-      "bytes": 6579043
+      "bytes": 6796787
     },
     {
       "name": "CSS",
-      "bytes": 3226156
+      "bytes": 3246185
     },
     {
       "name": "Python",
@@ -279,7 +279,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 1297010
+      "bytes": 1336819
     },
     {
       "name": "Solidity",
