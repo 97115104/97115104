@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-11T08:36:31.000Z",
+  "synced_at": "2026-07-12T08:47:12.708Z",
   "sync_auth": "pat",
   "repo_count": 117,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-11T08:33:36Z"
+      "at": "2026-07-12T08:43:57Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,19 +98,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "eefb13f",
+          "sha": "4d3289e",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-11T08:33:35Z"
+          "at": "2026-07-12T08:43:56Z"
         },
         {
-          "sha": "d851ec2",
+          "sha": "a2de665",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-11T07:32:43Z"
+          "at": "2026-07-12T07:43:19Z"
         },
         {
-          "sha": "6e80568",
+          "sha": "8725ce1",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-11T06:44:34Z"
+          "at": "2026-07-12T06:52:19Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "06246f5",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-11T08:36:31Z"
+        },
+        {
+          "sha": "879910a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-10T09:09:06Z"
+        },
+        {
+          "sha": "e244598",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-09T09:10:30Z"
         }
       ],
       "more": 27
@@ -135,27 +156,6 @@
         }
       ],
       "more": 8
-    },
-    {
-      "repo": "opik-onboarding-tool",
-      "commits": [
-        {
-          "sha": "919b8cf",
-          "message": "feat: refine contribution branch naming and enhance onboarding documentation",
-          "at": "2026-07-11T06:33:37Z"
-        },
-        {
-          "sha": "5f35a0a",
-          "message": "feat: update onboarding wizard with enhanced contribution guidance",
-          "at": "2026-07-11T05:58:09Z"
-        },
-        {
-          "sha": "deaca43",
-          "message": "feat: add contributing quiz step to onboarding wizard",
-          "at": "2026-07-11T05:41:34Z"
-        }
-      ],
-      "more": 25
     }
   ],
   "commit_stats": {
@@ -163,9 +163,9 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       100,
-      95,
-      103,
-      74,
+      97,
+      102,
+      75,
       32,
       22,
       12,
@@ -174,29 +174,29 @@
       8,
       16,
       37,
-      63,
-      91,
-      125,
-      177,
+      62,
+      90,
+      124,
+      176,
       156,
       133,
       151,
       126,
       114,
       94,
-      135,
-      92
+      136,
+      93
     ],
     "days_pt": [
-      162,
+      164,
       300,
       354,
       287,
-      269,
-      347,
-      253
+      261,
+      332,
+      274
     ],
-    "latest": "2026-07-11T08:33:35.000Z",
+    "latest": "2026-07-12T08:43:56.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1972,
     "commits_7d": 101,
@@ -211,31 +211,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-11T08:33:36Z"
+      "pushed_at": "2026-07-12T08:43:57Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-11T08:33:36Z"
+      "pushed_at": "2026-07-12T08:43:57Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-11T08:33:36Z"
+      "pushed_at": "2026-07-12T08:43:57Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-11T08:33:36Z"
+      "pushed_at": "2026-07-12T08:43:57Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-11T08:33:36Z"
+      "pushed_at": "2026-07-12T08:43:57Z"
     },
     {
       "name": "TypeScript",
