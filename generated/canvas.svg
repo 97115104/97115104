@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-13 02:09 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-14 01:46 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -95,24 +95,24 @@
   </text>
 <text x="20" y="372" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 4224488</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> b822145</tspan>
   </text>
 <text x="28" y="382" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/13 02:04 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/14 01:43 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 8563bf7</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 706b101</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/13 00:04 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/14 00:33 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 28b09fc</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> a3457a9</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/12 20:02 PT · chore: refresh YouTube ch…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/13 20:01 PT · chore: refresh YouTube ch…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
@@ -120,61 +120,61 @@
   </text>
 <text x="16" y="450" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">cursor-skills</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
 <text x="20" y="464" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 1e6292b</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0361a8b</tspan>
   </text>
 <text x="28" y="474" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 07/12 15:59 PT · Add new skills documentat…
+    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 07/13 02:09 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="484" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f330941</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> cc09473</tspan>
   </text>
 <text x="28" y="494" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 07/12 14:35 PT · Enhance documentation for…
+    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 07/12 01:47 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="504" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.25s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 40e3220</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 06246f5</tspan>
   </text>
 <text x="28" y="514" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 07/12 14:31 PT · Refactor fixwriting skill…
+    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 07/11 01:36 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="524" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.50s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(6 more)</tspan>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
   </text>
 <text x="16" y="542" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.7s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">rusting</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">cursor-skills</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
 <text x="20" y="556" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.85s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 2df37a7</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 1e6292b</tspan>
   </text>
 <text x="28" y="566" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.90s" dur="0.3s" fill="freeze"/>│ 07/12 15:24 PT · remove the python cache f…
+    <animate attributeName="opacity" from="0" to="1" begin="5.90s" dur="0.3s" fill="freeze"/>│ 07/12 15:59 PT · Add new skills documentat…
   </text>
 <text x="20" y="576" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.10s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 889eb8a</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f330941</tspan>
   </text>
 <text x="28" y="586" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>│ 07/12 15:23 PT · Refactor palindrome check…
+    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>│ 07/12 14:35 PT · Enhance documentation for…
   </text>
 <text x="20" y="596" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.35s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> eaa5dcf</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 40e3220</tspan>
   </text>
 <text x="28" y="606" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.40s" dur="0.3s" fill="freeze"/>│ 07/12 15:18 PT · wrote a custom palindrome…
+    <animate attributeName="opacity" from="0" to="1" begin="6.40s" dur="0.3s" fill="freeze"/>│ 07/12 14:31 PT · Refactor fixwriting skill…
   </text>
 <text x="20" y="616" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.60s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(11 more)</tspan>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(6 more)</tspan>
   </text>
     <text x="16" y="638" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" opacity="0">
       <animate attributeName="opacity" values="0;1;0;1;0" begin="7.05s" dur="2s" fill="freeze"/>
@@ -212,7 +212,7 @@
     <tspan fill="#a3a3a3">forked</tspan><tspan fill="#ffffff" font-weight="400"> 6</tspan>
   </text>
 <text x="462" y="186" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">archived</tspan><tspan fill="#ffffff" font-weight="400"> 6</tspan>
+    <tspan fill="#a3a3a3">archived</tspan><tspan fill="#ffffff" font-weight="400"> 7</tspan>
   </text>
 <text x="462" y="200" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">stars</tspan><tspan fill="#ffffff" font-weight="400"> 2</tspan>
@@ -396,14 +396,14 @@
   <rect x="17.0" y="743.0" width="35.0" height="15" fill="#525252"/>
 <rect x="54.0" y="743.0" width="35.0" height="15" fill="#525252"/>
 <rect x="91.0" y="742.0" width="35.0" height="16" fill="#525252"/>
-<rect x="128.0" y="746.0" width="35.0" height="12" fill="#525252"/>
+<rect x="128.0" y="747.0" width="35.0" height="11" fill="#525252"/>
 <rect x="165.0" y="753.0" width="35.0" height="5" fill="#525252"/>
 <rect x="202.0" y="755.0" width="35.0" height="3" fill="#525252"/>
 <rect x="239.0" y="756.0" width="35.0" height="2" fill="#525252"/>
 <rect x="276.0" y="757.0" width="35.0" height="1" fill="#525252"/>
 <rect x="313.0" y="756.0" width="35.0" height="2" fill="#525252"/>
 <rect x="350.0" y="757.0" width="35.0" height="1" fill="#525252"/>
-<rect x="387.0" y="756.0" width="35.0" height="2" fill="#525252"/>
+<rect x="387.0" y="755.0" width="35.0" height="3" fill="#525252"/>
 <rect x="424.0" y="752.0" width="35.0" height="6" fill="#525252"/>
 <rect x="461.0" y="748.0" width="35.0" height="10" fill="#525252"/>
 <rect x="498.0" y="744.0" width="35.0" height="14" fill="#525252"/>
@@ -421,9 +421,9 @@
 <text x="256.5" y="770" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">06</text>
 <text x="478.5" y="770" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">12</text>
 <text x="700.5" y="770" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">18</text>
-  <rect x="18.0" y="785.0" width="122.9" height="7" fill="#333333"/>
+  <rect x="18.0" y="786.0" width="122.9" height="6" fill="#333333"/>
 <text x="79.4" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
-<rect x="144.9" y="782.0" width="122.9" height="10" fill="#333333"/>
+<rect x="144.9" y="781.0" width="122.9" height="11" fill="#333333"/>
 <text x="206.3" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">M</text>
 <rect x="271.7" y="780.0" width="122.9" height="12" fill="#ffffff"/>
 <text x="333.1" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
@@ -433,7 +433,7 @@
 <text x="586.9" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
 <rect x="652.3" y="781.0" width="122.9" height="11" fill="#333333"/>
 <text x="713.7" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">F</text>
-<rect x="779.1" y="783.0" width="122.9" height="9" fill="#333333"/>
+<rect x="779.1" y="784.0" width="122.9" height="8" fill="#333333"/>
 <text x="840.6" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
 </g>
   <g fill="none" stroke="#ffffff" stroke-width="1">

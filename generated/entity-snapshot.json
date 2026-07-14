@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-13T09:09:16.940Z",
+  "synced_at": "2026-07-14T08:46:46.608Z",
   "sync_auth": "pat",
   "repo_count": 118,
   "repo_counts": {
@@ -10,7 +10,7 @@
   "repo_stats": {
     "owned": 112,
     "forked": 6,
-    "archived": 6,
+    "archived": 7,
     "stars": 2,
     "forks": 2,
     "pushed_7d": 10,
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-13T09:04:11Z"
+      "at": "2026-07-14T08:43:05Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,19 +98,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "4224488",
+          "sha": "b822145",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-13T09:04:10Z"
+          "at": "2026-07-14T08:43:04Z"
         },
         {
-          "sha": "8563bf7",
+          "sha": "706b101",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-13T07:04:23Z"
+          "at": "2026-07-14T07:33:44Z"
         },
         {
-          "sha": "28b09fc",
+          "sha": "a3457a9",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-13T03:02:50Z"
+          "at": "2026-07-14T03:01:15Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "0361a8b",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-13T09:09:17Z"
+        },
+        {
+          "sha": "cc09473",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-12T08:47:13Z"
+        },
+        {
+          "sha": "06246f5",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-11T08:36:31Z"
         }
       ],
       "more": 27
@@ -135,27 +156,6 @@
         }
       ],
       "more": 6
-    },
-    {
-      "repo": "rusting",
-      "commits": [
-        {
-          "sha": "2df37a7",
-          "message": "remove the python cache for alternatives",
-          "at": "2026-07-12T22:24:04Z"
-        },
-        {
-          "sha": "889eb8a",
-          "message": "Refactor palindrome checker for improved performance and readability",
-          "at": "2026-07-12T22:23:39Z"
-        },
-        {
-          "sha": "eaa5dcf",
-          "message": "wrote a custom palindrome checker",
-          "at": "2026-07-12T22:18:41Z"
-        }
-      ],
-      "more": 11
     }
   ],
   "commit_stats": {
@@ -165,16 +165,16 @@
       100,
       97,
       103,
-      75,
+      74,
       32,
       22,
       12,
       5,
       11,
       8,
-      16,
-      37,
-      62,
+      17,
+      38,
+      63,
       89,
       132,
       182,
@@ -184,19 +184,19 @@
       126,
       114,
       94,
-      135,
-      92
+      134,
+      91
     ],
     "days_pt": [
-      195,
-      302,
-      354,
+      185,
+      319,
+      356,
       287,
       261,
-      325,
-      260
+      324,
+      252
     ],
-    "latest": "2026-07-13T09:04:10.000Z",
+    "latest": "2026-07-14T08:43:04.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1984,
     "commits_7d": 113,
@@ -211,31 +211,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-13T09:04:11Z"
+      "pushed_at": "2026-07-14T08:43:05Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-13T09:04:11Z"
+      "pushed_at": "2026-07-14T08:43:05Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-13T09:04:11Z"
+      "pushed_at": "2026-07-14T08:43:05Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-13T09:04:11Z"
+      "pushed_at": "2026-07-14T08:43:05Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-13T09:04:11Z"
+      "pushed_at": "2026-07-14T08:43:05Z"
     },
     {
       "name": "Makefile",
