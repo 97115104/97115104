@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-14T08:46:46.608Z",
+  "synced_at": "2026-07-15T08:49:53.662Z",
   "sync_auth": "pat",
   "repo_count": 118,
   "repo_counts": {
@@ -13,7 +13,7 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 10,
+    "pushed_7d": 9,
     "pushed_30d": 19,
     "top_starred": {
       "name": "lexicographer-companion",
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-14T08:43:05Z"
+      "at": "2026-07-15T08:46:16Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -68,6 +68,22 @@
   "books": {
     "currently_reading": [
       {
+        "title": "Tip of the ADHD Iceberg: An adult's guide to embracing the hidden layers of your neurodivergence",
+        "author": "Dr Samantha Hiew",
+        "progress": "Page 143 of 304",
+        "completedDate": "",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/219412919-tip-of-the-adhd-iceberg?ref=nav_sb_ss_1_151",
+        "rating": null
+      },
+      {
+        "title": "Hubris Maximus: The Shattering of Elon Musk",
+        "author": "Faiz Siddiqui",
+        "progress": "Page 159 of  271",
+        "completedDate": "",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/217387777-hubris-maximus?ac=1&from_search=true&qid=iaAlR5sa09&rank=5",
+        "rating": null
+      },
+      {
         "title": "What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research",
         "author": "Sharri Markson",
         "progress": "Page 57 of 352",
@@ -85,12 +101,12 @@
       }
     ],
     "last_read": {
-      "title": "The Hobbit, or There and Back Again",
-      "author": "J.R.R. Tolkien",
+      "title": "Hands on Hacking: Become an Expert at Next Gen Penetration Testing and Purple Teaming",
+      "author": "Matthew Hickey ,  Jennifer Arcuri",
       "progress": "",
       "completedDate": "July 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/5907.The_Hobbit",
-      "rating": 4
+      "goodreadsUrl": "https://www.goodreads.com/book/show/43864450-hands-on-hacking",
+      "rating": 5
     }
   },
   "recent_commits": [
@@ -98,19 +114,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "b822145",
+          "sha": "cebc9fb",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-14T08:43:04Z"
+          "at": "2026-07-15T08:46:15Z"
         },
         {
-          "sha": "706b101",
+          "sha": "e1ba733",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-14T07:33:44Z"
+          "at": "2026-07-15T07:35:50Z"
         },
         {
-          "sha": "a3457a9",
+          "sha": "2d333fd",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-14T03:01:15Z"
+          "at": "2026-07-15T01:32:43Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "365277f",
+          "message": "Add new books to the reading lists in books.json, including \"Hands on Hacking\" in recentlyRead and two titles in currentlyReading: \"Tip of the ADHD Iceberg\" and \"Hubris Maximus.\" Each entry includes relevant details such as authors, images, Goodreads links, and reading progress.",
+          "at": "2026-07-15T01:03:31Z"
+        },
+        {
+          "sha": "1656fde",
+          "message": "Add search highlight functionality across books and dictionary pages, implementing slugify for titles and terms. Enhance search navigation with smooth scrolling and visual highlights for search results. Update relevant scripts and styles for improved user experience.",
+          "at": "2026-07-07T22:22:10Z"
+        },
+        {
+          "sha": "e8f0b14",
+          "message": "Remove references to 'yc' from posts.html and dictionary.json to streamline content and focus on relevant topics. Update the startups category in the build-sonogram-insights.js script to reflect these changes.",
+          "at": "2026-07-07T22:14:25Z"
         }
       ],
       "more": 27
@@ -118,6 +155,11 @@
     {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "e4db122",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-14T08:46:47Z"
+        },
         {
           "sha": "0361a8b",
           "message": "[profile-sync] update generated profile artifacts",
@@ -127,35 +169,9 @@
           "sha": "cc09473",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-07-12T08:47:13Z"
-        },
-        {
-          "sha": "06246f5",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-11T08:36:31Z"
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "cursor-skills",
-      "commits": [
-        {
-          "sha": "1e6292b",
-          "message": "Add new skills documentation for `pearl-craft` and `check-code-quality` in README and index.html. Include detailed descriptions, usage instructions, and installation steps for both skills, enhancing overall documentation clarity and usability.",
-          "at": "2026-07-12T22:59:00Z"
-        },
-        {
-          "sha": "f330941",
-          "message": "Enhance documentation for skills in README and index.html, adding search functionality for skills, updating skill summaries for clarity, and improving styling for better user experience. Include instructions for new searchable sections in the docs and update the skills table accordingly.",
-          "at": "2026-07-12T21:35:21Z"
-        },
-        {
-          "sha": "40e3220",
-          "message": "Refactor fixwriting skill to fix-writing, update documentation accordingly, and introduce new skills multi-agent and first-pass. Enhance sync-skills to include rename detection and improve conflict resolution steps. Update README and index.html to reflect these changes.",
-          "at": "2026-07-12T21:31:00Z"
-        }
-      ],
-      "more": 6
     }
   ],
   "commit_stats": {
@@ -163,44 +179,44 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       100,
-      97,
+      99,
       103,
-      74,
+      75,
       32,
       22,
       12,
       5,
       11,
       8,
-      17,
+      16,
       38,
       63,
-      89,
-      132,
+      88,
+      131,
       182,
       156,
       133,
-      151,
+      152,
       126,
-      114,
+      113,
       94,
       134,
       91
     ],
     "days_pt": [
-      185,
-      319,
-      356,
-      287,
-      261,
-      324,
+      175,
+      311,
+      374,
+      289,
+      260,
+      323,
       252
     ],
-    "latest": "2026-07-14T08:43:04.000Z",
+    "latest": "2026-07-15T08:46:15.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1984,
-    "commits_7d": 113,
-    "commits_30d": 263,
+    "commits_7d": 93,
+    "commits_30d": 254,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,31 +227,37 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-14T08:43:05Z"
+      "pushed_at": "2026-07-15T08:46:16Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-14T08:43:05Z"
+      "pushed_at": "2026-07-15T08:46:16Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-14T08:43:05Z"
+      "pushed_at": "2026-07-15T08:46:16Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-14T08:43:05Z"
+      "pushed_at": "2026-07-15T08:46:16Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-14T08:43:05Z"
+      "pushed_at": "2026-07-15T08:46:16Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-07-15T01:03:34Z"
     },
     {
       "name": "Makefile",
@@ -248,12 +270,6 @@
       "repo": "rusting",
       "bytes": 5841,
       "pushed_at": "2026-07-12T22:24:06Z"
-    },
-    {
-      "name": "C",
-      "repo": "pentesting",
-      "bytes": 8286,
-      "pushed_at": "2026-07-12T21:31:48Z"
     }
   ],
   "language_totals": [
