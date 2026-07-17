@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-16T08:49:37.177Z",
+  "synced_at": "2026-07-17T08:46:47.762Z",
   "sync_auth": "pat",
   "repo_count": 118,
   "repo_counts": {
@@ -13,7 +13,7 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 11,
+    "pushed_7d": 10,
     "pushed_30d": 19,
     "top_starred": {
       "name": "lexicographer-companion",
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-16T08:45:35Z"
+      "at": "2026-07-17T08:42:49Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -106,7 +106,7 @@
       "progress": "",
       "completedDate": "July 2026",
       "goodreadsUrl": "https://www.goodreads.com/book/show/43864450-hands-on-hacking",
-      "rating": 5
+      "rating": 3
     }
   },
   "recent_commits": [
@@ -114,19 +114,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "5cf3162",
+          "sha": "fe6b2f8",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-16T08:45:34Z"
+          "at": "2026-07-17T08:42:48Z"
         },
         {
-          "sha": "443808e",
+          "sha": "07447bd",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-16T07:40:59Z"
+          "at": "2026-07-17T07:38:55Z"
         },
         {
-          "sha": "4bfce92",
+          "sha": "84a0f25",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-16T03:01:52Z"
+          "at": "2026-07-17T05:01:51Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "42afec1",
+          "message": "change to 3 stars",
+          "at": "2026-07-17T01:18:56Z"
+        },
+        {
+          "sha": "cfe5cd6",
+          "message": "Correct spelling in post title and enhance clarity in the narrative about neurodivergence. Update phrasing to improve readability and coherence throughout the text, ensuring a more polished presentation of personal experiences with ADHD and dyslexia.",
+          "at": "2026-07-15T21:32:52Z"
+        },
+        {
+          "sha": "28b4ffc",
+          "message": "Refine content in \"systemizing the chaos\" post to enhance clarity and depth. Update the discussion on intelligence and AI, incorporating historical context and personal insights on the development of the photic token language and its relation to current AI models. Improve phrasing for better readability and coherence.",
+          "at": "2026-07-15T21:32:12Z"
         }
       ],
       "more": 27
@@ -135,43 +156,22 @@
       "repo": "opik-onboarding-tool",
       "commits": [
         {
+          "sha": "493eaba",
+          "message": "refactor: update onboarding UI and contracts for improved clarity and functionality",
+          "at": "2026-07-16T18:04:33Z"
+        },
+        {
+          "sha": "8e106a3",
+          "message": "feat: enhance PR help prompts and onboarding UI with new features",
+          "at": "2026-07-16T17:35:41Z"
+        },
+        {
           "sha": "b27ce98",
           "message": "feat: enhance onboarding UI and contributing guidelines with AI context and new features",
           "at": "2026-07-16T07:12:11Z"
-        },
-        {
-          "sha": "83542b8",
-          "message": "feat: enhance onboarding UI and chat-demo with new features and styling updates",
-          "at": "2026-07-16T06:20:07Z"
-        },
-        {
-          "sha": "fbc3c01",
-          "message": "feat: enhance onboarding UI with new steps and navigation improvements",
-          "at": "2026-07-16T06:04:01Z"
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "cursor-technical-submission",
-      "commits": [
-        {
-          "sha": "ce6f98d",
-          "message": "Refine aside content in slides for improved clarity and engagement. Adjusted wording to emphasize collaboration among various roles, enhancing the overall message of the presentation.",
-          "at": "2026-07-16T07:30:55Z"
-        },
-        {
-          "sha": "8ab5cb1",
-          "message": "Update slides to include new 'Learnings' section and modify trail labels for enhanced presentation flow. Added detailed insights and reflections to improve audience engagement.",
-          "at": "2026-07-16T07:11:31Z"
-        },
-        {
-          "sha": "9ef2c34",
-          "message": "Update slide thesis to remove Docker reference, streamlining content for clarity and focus.",
-          "at": "2026-07-16T05:50:51Z"
-        }
-      ],
-      "more": 14
     }
   ],
   "commit_stats": {
@@ -188,35 +188,35 @@
       5,
       11,
       8,
-      16,
+      18,
       38,
-      67,
+      66,
       90,
       135,
       182,
       146,
-      126,
-      152,
+      123,
+      153,
       128,
-      116,
+      117,
       95,
-      137,
+      138,
       93
     ],
     "days_pt": [
       173,
       301,
-      353,
-      333,
-      264,
+      344,
+      320,
+      288,
       316,
-      252
+      251
     ],
-    "latest": "2026-07-16T08:45:34.000Z",
+    "latest": "2026-07-17T08:42:48.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 1992,
-    "commits_7d": 115,
-    "commits_30d": 265,
+    "sample_size": 1993,
+    "commits_7d": 116,
+    "commits_30d": 252,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -227,48 +227,48 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-16T08:45:35Z"
+      "pushed_at": "2026-07-17T08:42:49Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-16T08:45:35Z"
+      "pushed_at": "2026-07-17T08:42:49Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-16T08:45:35Z"
+      "pushed_at": "2026-07-17T08:42:49Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-16T08:45:35Z"
+      "pushed_at": "2026-07-17T08:42:49Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-16T08:45:35Z"
+      "pushed_at": "2026-07-17T08:42:49Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-07-17T01:18:58Z"
     },
     {
       "name": "TypeScript",
       "repo": "opik-onboarding-tool",
-      "bytes": 253683,
-      "pushed_at": "2026-07-16T07:31:49Z"
+      "bytes": 255781,
+      "pushed_at": "2026-07-16T18:04:36Z"
     },
     {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-16T00:47:27Z"
-    },
-    {
-      "name": "Ruby",
-      "repo": "server-backup",
-      "bytes": 8050,
       "pushed_at": "2026-07-16T00:47:27Z"
     }
   ],
@@ -283,11 +283,11 @@
     },
     {
       "name": "TypeScript",
-      "bytes": 6879267
+      "bytes": 6884330
     },
     {
       "name": "CSS",
-      "bytes": 3256759
+      "bytes": 3258819
     },
     {
       "name": "Python",
