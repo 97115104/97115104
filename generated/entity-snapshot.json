@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-17T08:46:47.762Z",
+  "synced_at": "2026-07-18T08:36:35.533Z",
   "sync_auth": "pat",
   "repo_count": 118,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 2,
     "forks": 2,
     "pushed_7d": 10,
-    "pushed_30d": 19,
+    "pushed_30d": 18,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "CrustyRustaceans",
-      "at": "2026-07-17T08:42:49Z"
+      "at": "2026-07-18T08:33:27Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -114,19 +114,40 @@
       "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "fe6b2f8",
+          "sha": "1fe3fd4",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-17T08:42:48Z"
+          "at": "2026-07-18T08:33:26Z"
         },
         {
-          "sha": "07447bd",
+          "sha": "d3114ef",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-17T07:38:55Z"
+          "at": "2026-07-18T07:32:08Z"
         },
         {
-          "sha": "84a0f25",
+          "sha": "cb4e6d2",
           "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-17T05:01:51Z"
+          "at": "2026-07-18T06:37:42Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "dac4a0c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-17T08:46:48Z"
+        },
+        {
+          "sha": "b98dd44",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-16T08:49:38Z"
+        },
+        {
+          "sha": "fdaaed9",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-15T08:49:54Z"
         }
       ],
       "more": 27
@@ -151,27 +172,6 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "opik-onboarding-tool",
-      "commits": [
-        {
-          "sha": "493eaba",
-          "message": "refactor: update onboarding UI and contracts for improved clarity and functionality",
-          "at": "2026-07-16T18:04:33Z"
-        },
-        {
-          "sha": "8e106a3",
-          "message": "feat: enhance PR help prompts and onboarding UI with new features",
-          "at": "2026-07-16T17:35:41Z"
-        },
-        {
-          "sha": "b27ce98",
-          "message": "feat: enhance onboarding UI and contributing guidelines with AI context and new features",
-          "at": "2026-07-16T07:12:11Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -179,8 +179,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       103,
-      100,
-      103,
+      101,
+      102,
       75,
       32,
       22,
@@ -191,31 +191,31 @@
       18,
       38,
       66,
-      90,
-      135,
-      182,
+      89,
+      134,
+      181,
       146,
       123,
       153,
       128,
       117,
-      95,
-      138,
-      93
+      96,
+      139,
+      94
     ],
     "days_pt": [
-      173,
+      172,
       301,
       344,
-      320,
-      288,
-      316,
-      251
+      313,
+      272,
+      338,
+      253
     ],
-    "latest": "2026-07-17T08:42:48.000Z",
+    "latest": "2026-07-18T08:33:26.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1993,
-    "commits_7d": 116,
+    "commits_7d": 81,
     "commits_30d": 252,
     "top_commit_repo": {
       "name": "97115104",
@@ -227,31 +227,31 @@
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-17T08:42:49Z"
+      "pushed_at": "2026-07-18T08:33:27Z"
     },
     {
       "name": "JavaScript",
       "repo": "CrustyRustaceans",
       "bytes": 17277,
-      "pushed_at": "2026-07-17T08:42:49Z"
+      "pushed_at": "2026-07-18T08:33:27Z"
     },
     {
       "name": "CSS",
       "repo": "CrustyRustaceans",
       "bytes": 12759,
-      "pushed_at": "2026-07-17T08:42:49Z"
+      "pushed_at": "2026-07-18T08:33:27Z"
     },
     {
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-17T08:42:49Z"
+      "pushed_at": "2026-07-18T08:33:27Z"
     },
     {
       "name": "Shell",
       "repo": "CrustyRustaceans",
       "bytes": 1214,
-      "pushed_at": "2026-07-17T08:42:49Z"
+      "pushed_at": "2026-07-18T08:33:27Z"
     },
     {
       "name": "Ruby",
