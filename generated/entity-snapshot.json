@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-07-19T08:49:32.196Z",
+  "synced_at": "2026-07-20T09:06:33.572Z",
   "sync_auth": "pat",
-  "repo_count": 118,
+  "repo_count": 119,
   "repo_counts": {
-    "public": 28,
+    "public": 29,
     "private": 90,
-    "total": 118
+    "total": 119
   },
   "repo_stats": {
-    "owned": 112,
+    "owned": 113,
     "forked": 6,
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 10,
-    "pushed_30d": 18,
+    "pushed_7d": 8,
+    "pushed_30d": 19,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "CrustyRustaceans",
-      "at": "2026-07-18T23:59:36Z"
+      "name": "founderness",
+      "at": "2026-07-19T22:31:22Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -111,6 +111,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "b217269",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-19T08:49:32Z"
+        },
+        {
+          "sha": "900a688",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-18T08:36:36Z"
+        },
+        {
+          "sha": "dac4a0c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-17T08:46:48Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "CrustyRustaceans",
       "commits": [
         {
@@ -151,27 +172,6 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "900a688",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-18T08:36:36Z"
-        },
-        {
-          "sha": "dac4a0c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-17T08:46:48Z"
-        },
-        {
-          "sha": "b98dd44",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-16T08:49:38Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -179,8 +179,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       102,
-      101,
-      101,
+      102,
+      100,
       75,
       32,
       22,
@@ -204,19 +204,19 @@
       94
     ],
     "days_pt": [
-      172,
+      173,
       300,
-      344,
+      343,
       313,
       267,
       324,
       273
     ],
-    "latest": "2026-07-18T23:59:35.000Z",
+    "latest": "2026-07-19T08:49:32.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 1993,
-    "commits_7d": 83,
-    "commits_30d": 249,
+    "commits_7d": 72,
+    "commits_30d": 248,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -224,15 +224,21 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-07-19T08:49:33Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-07-19T08:49:33Z"
+    },
+    {
       "name": "HTML",
       "repo": "CrustyRustaceans",
       "bytes": 18085,
-      "pushed_at": "2026-07-18T23:59:36Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "CrustyRustaceans",
-      "bytes": 17277,
       "pushed_at": "2026-07-18T23:59:36Z"
     },
     {
@@ -245,12 +251,6 @@
       "name": "Python",
       "repo": "CrustyRustaceans",
       "bytes": 4802,
-      "pushed_at": "2026-07-18T23:59:36Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "CrustyRustaceans",
-      "bytes": 1214,
       "pushed_at": "2026-07-18T23:59:36Z"
     },
     {
