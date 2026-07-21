@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-07-20T09:06:33.572Z",
+  "synced_at": "2026-07-21T08:56:47.104Z",
   "sync_auth": "pat",
-  "repo_count": 119,
+  "repo_count": 120,
   "repo_counts": {
     "public": 29,
-    "private": 90,
-    "total": 119
+    "private": 91,
+    "total": 120
   },
   "repo_stats": {
-    "owned": 113,
+    "owned": 114,
     "forked": 6,
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 8,
-    "pushed_30d": 19,
+    "pushed_7d": 10,
+    "pushed_30d": 20,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "founderness",
-      "at": "2026-07-19T22:31:22Z"
+      "name": "server-hosting-scripts",
+      "at": "2026-07-21T08:34:56Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -34,6 +34,11 @@
     "member_since": "2024-10-14"
   },
   "recent_posts": [
+    {
+      "title": "emotion, memory, and machine intelligence",
+      "link": "https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/",
+      "updated": "2026-07-20T12:00:00-07:00"
+    },
     {
       "title": "how i use ai in my work",
       "link": "https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/",
@@ -58,11 +63,6 @@
       "title": "when to start a new chat",
       "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
       "updated": "2026-06-05T12:00:00-07:00"
-    },
-    {
-      "title": "llm skill acquisition and style control",
-      "link": "https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/",
-      "updated": "2026-05-30T12:00:00-07:00"
     }
   ],
   "books": {
@@ -73,14 +73,6 @@
         "progress": "Page 143 of 304",
         "completedDate": "",
         "goodreadsUrl": "https://www.goodreads.com/book/show/219412919-tip-of-the-adhd-iceberg?ref=nav_sb_ss_1_151",
-        "rating": null
-      },
-      {
-        "title": "Hubris Maximus: The Shattering of Elon Musk",
-        "author": "Faiz Siddiqui",
-        "progress": "Page 159 of  271",
-        "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/217387777-hubris-maximus?ac=1&from_search=true&qid=iaAlR5sa09&rank=5",
         "rating": null
       },
       {
@@ -111,64 +103,64 @@
   },
   "recent_commits": [
     {
-      "repo": "97115104",
+      "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "b217269",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-19T08:49:32Z"
+          "sha": "30c6ea7",
+          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com to enhance tracking accuracy.",
+          "at": "2026-07-21T08:34:52Z"
         },
         {
-          "sha": "900a688",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-18T08:36:36Z"
+          "sha": "34790f1",
+          "message": "Cleanup deploy-history.json by removing outdated deployment entries and adding new entries for recent deployments to improve tracking and accuracy.",
+          "at": "2026-07-21T05:33:50Z"
         },
         {
-          "sha": "dac4a0c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-17T08:46:48Z"
+          "sha": "a68139b",
+          "message": "updates",
+          "at": "2026-07-16T00:47:14Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "CrustyRustaceans",
+      "repo": "energyaccounting",
       "commits": [
         {
-          "sha": "12e6f6b",
-          "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-18T23:59:35Z"
+          "sha": "a8731b2",
+          "message": "Refactor energy day lifecycle and update documentation: modify ARCHITECTURE.md to clarify the phases of an energy day, including the ability to amend closed days without reopening them. Update README.md to reflect changes in terminology and user interactions. Enhance deploy-locally.sh with new API health checks and port management features. Refactor server routes and frontend components to align with the new energy day model, ensuring a consistent user experience and improved task management.",
+          "at": "2026-07-21T08:32:02Z"
         },
         {
-          "sha": "eda6e43",
-          "message": "Change cron schedule to run monthly",
-          "at": "2026-07-18T23:59:27Z"
+          "sha": "ba66797",
+          "message": "Refactor ledger lifecycle and enhance user experience: update ARCHITECTURE.md to clarify the phases of a ledger, including the ability to amend closed ledgers without reopening them. Modify README.md to reflect changes in terminology and user interactions. Enhance deploy-locally.sh with new API checks and port management features. Update TodayPage and DashboardPage to improve handling of closed energy days, including deletion and editing capabilities. Refine various components and styles for better clarity and consistency across the application.",
+          "at": "2026-07-21T07:41:43Z"
         },
         {
-          "sha": "b283a75",
-          "message": "chore: refresh YouTube channel stats",
-          "at": "2026-07-18T23:17:21Z"
+          "sha": "3f2295b",
+          "message": "Update architecture and database schema for ledger management: modify ARCHITECTURE.md to reflect changes in ledger lifecycle and API endpoints, enhance README.md for clarity on user interactions, and update database schema to support new ledger features including `startedAt`. Refactor server routes and frontend components to align with the new ledger model, ensuring a consistent user experience and improved task management.",
+          "at": "2026-07-21T07:25:59Z"
         }
       ],
-      "more": 27
+      "more": 17
     },
     {
-      "repo": "opik-onboarding-tool",
+      "repo": "blog",
       "commits": [
         {
-          "sha": "d0b68b2",
-          "message": "Add video demo link to README",
-          "at": "2026-07-18T19:56:15Z"
+          "sha": "9b3b5c4",
+          "message": "Update books.json to add \"Hubris Maximus: The Shattering of Elon Musk\" with review and rating. Remove previous entry for the same book, streamlining the recently read section.",
+          "at": "2026-07-21T06:42:33Z"
         },
         {
-          "sha": "3e6c298",
-          "message": "feat: add error handling for issue loading and update contracts",
-          "at": "2026-07-18T19:21:31Z"
+          "sha": "e1110a1",
+          "message": "Add \"Provocation\" category to sidebar in index.html. Update attestation for \"emotion, memory, and machine intelligence\" post in attestations.json. Change featured status for \"how I use AI in my work\" to false and for \"systemizing the chaos\" to true, improving content visibility and organization.",
+          "at": "2026-07-20T21:02:25Z"
         },
         {
-          "sha": "493eaba",
-          "message": "refactor: update onboarding UI and contracts for improved clarity and functionality",
-          "at": "2026-07-16T18:04:33Z"
+          "sha": "42afec1",
+          "message": "change to 3 stars",
+          "at": "2026-07-17T01:18:56Z"
         }
       ],
       "more": 27
@@ -178,9 +170,9 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      102,
-      102,
-      100,
+      104,
+      104,
+      101,
       75,
       32,
       22,
@@ -192,31 +184,31 @@
       38,
       69,
       90,
-      135,
-      182,
-      148,
-      121,
-      151,
-      128,
+      136,
+      183,
+      147,
+      119,
+      153,
+      129,
       116,
       96,
-      138,
-      94
+      147,
+      100
     ],
     "days_pt": [
-      173,
-      300,
-      343,
-      313,
-      267,
+      171,
       324,
+      345,
+      313,
+      266,
+      323,
       273
     ],
-    "latest": "2026-07-19T08:49:32.000Z",
+    "latest": "2026-07-21T08:34:52.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 1993,
-    "commits_7d": 72,
-    "commits_30d": 248,
+    "sample_size": 2015,
+    "commits_7d": 99,
+    "commits_30d": 274,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -224,58 +216,58 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-07-19T08:49:33Z"
-    },
-    {
       "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-07-19T08:49:33Z"
+      "repo": "server-hosting-scripts",
+      "bytes": 99159,
+      "pushed_at": "2026-07-21T08:34:56Z"
     },
     {
-      "name": "HTML",
-      "repo": "CrustyRustaceans",
-      "bytes": 18085,
-      "pushed_at": "2026-07-18T23:59:36Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "CrustyRustaceans",
-      "bytes": 12759,
-      "pushed_at": "2026-07-18T23:59:36Z"
-    },
-    {
-      "name": "Python",
-      "repo": "CrustyRustaceans",
-      "bytes": 4802,
-      "pushed_at": "2026-07-18T23:59:36Z"
+      "name": "JavaScript",
+      "repo": "server-hosting-scripts",
+      "bytes": 39719,
+      "pushed_at": "2026-07-21T08:34:56Z"
     },
     {
       "name": "TypeScript",
-      "repo": "opik-onboarding-tool",
-      "bytes": 256461,
-      "pushed_at": "2026-07-18T19:56:16Z"
+      "repo": "energyaccounting",
+      "bytes": 320004,
+      "pushed_at": "2026-07-21T08:32:09Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "energyaccounting",
+      "bytes": 41108,
+      "pushed_at": "2026-07-21T08:32:09Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "energyaccounting",
+      "bytes": 1414,
+      "pushed_at": "2026-07-21T08:32:09Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-07-17T01:18:58Z"
+      "pushed_at": "2026-07-21T06:42:36Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-07-21T06:42:36Z"
     },
     {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-16T00:47:27Z"
+      "pushed_at": "2026-07-21T05:34:01Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56246470
+      "bytes": 56248506
     },
     {
       "name": "JavaScript",
@@ -283,11 +275,11 @@
     },
     {
       "name": "TypeScript",
-      "bytes": 6885010
+      "bytes": 7205014
     },
     {
       "name": "CSS",
-      "bytes": 3258819
+      "bytes": 3299927
     },
     {
       "name": "Python",
@@ -295,7 +287,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 1353856
+      "bytes": 1359409
     },
     {
       "name": "Solidity",

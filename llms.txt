@@ -25,22 +25,22 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-07-20)
+## recent blog (2026-07-21)
 
+- emotion, memory, and machine intelligence: https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/
 - how i use ai in my work: https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/
 - neurodivergent and proud of it: https://blog.97115104.com/2026/07/15/systemizing-the-chaos/
 - reading the sonogram: https://blog.97115104.com/2026/06/24/reading-the-sonogram/
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
 - when to start a new chat: https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/
-- llm skill acquisition and style control: https://blog.97115104.com/2026/05/30/llm-skill-acquisition-and-style-control/
 
-## reading (2026-07-20)
+## reading (2026-07-21)
 
 - reading: Tip of the ADHD Iceberg: An adult's guide to embracing the hidden layers of your neurodivergence by Dr Samantha Hiew (Page 143 of 304)
-- reading: Hubris Maximus: The Shattering of Elon Musk by Faiz Siddiqui (Page 159 of  271)
 - reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
+- reading: The Picture of Dorian Gray by Oscar Wilde (Page 134 of 226)
 - last read: Hands on Hacking: Become an Expert at Next Gen Penetration Testing and Purple Teaming by Matthew Hickey ,  Jennifer Arcuri (July 2026)
 
 ## sync
 
-Last: 2026-07-20T09:06:33.572Z
+Last: 2026-07-21T08:56:47.104Z
