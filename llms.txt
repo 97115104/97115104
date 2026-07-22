@@ -25,7 +25,7 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-07-21)
+## recent blog (2026-07-22)
 
 - emotion, memory, and machine intelligence: https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/
 - how i use ai in my work: https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/
@@ -34,7 +34,7 @@
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
 - when to start a new chat: https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/
 
-## reading (2026-07-21)
+## reading (2026-07-22)
 
 - reading: Tip of the ADHD Iceberg: An adult's guide to embracing the hidden layers of your neurodivergence by Dr Samantha Hiew (Page 143 of 304)
 - reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
@@ -43,4 +43,4 @@
 
 ## sync
 
-Last: 2026-07-21T08:56:47.104Z
+Last: 2026-07-22T08:55:42.586Z

@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-21T08:56:47.104Z",
+  "synced_at": "2026-07-22T08:55:42.586Z",
   "sync_auth": "pat",
   "repo_count": 120,
   "repo_counts": {
-    "public": 29,
-    "private": 91,
+    "public": 28,
+    "private": 92,
     "total": 120
   },
   "repo_stats": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "server-hosting-scripts",
-      "at": "2026-07-21T08:34:56Z"
+      "name": "energyaccounting",
+      "at": "2026-07-22T06:49:46Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -103,64 +103,64 @@
   },
   "recent_commits": [
     {
-      "repo": "server-hosting-scripts",
+      "repo": "energyaccounting",
       "commits": [
         {
-          "sha": "30c6ea7",
-          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com to enhance tracking accuracy.",
-          "at": "2026-07-21T08:34:52Z"
+          "sha": "d67a1d1",
+          "message": "Refactor weather-related components and styles for improved UI consistency: Introduce ModalCloseButton and WeatherGlyph components to enhance modularity and reusability. Update CSS for weather glyphs to standardize appearance across different weather conditions, ensuring better visual coherence. Adjust TodayPage and WeatherDetailModal to utilize new components, streamlining the codebase and enhancing user experience.",
+          "at": "2026-07-22T06:49:43Z"
         },
         {
-          "sha": "34790f1",
-          "message": "Cleanup deploy-history.json by removing outdated deployment entries and adding new entries for recent deployments to improve tracking and accuracy.",
-          "at": "2026-07-21T05:33:50Z"
+          "sha": "09499a8",
+          "message": "Integrate SiteFooter component across multiple pages: Replace inline footer implementation in App and TodayPage with the new SiteFooter component for improved code maintainability. Update CSS styles for the SiteFooter to enhance layout and visual consistency. Ensure proper rendering based on user authentication state.",
+          "at": "2026-07-22T06:42:00Z"
         },
         {
-          "sha": "a68139b",
-          "message": "updates",
-          "at": "2026-07-16T00:47:14Z"
+          "sha": "1dc2c33",
+          "message": "Update skyPalette and styles for improved UI consistency: Introduce a new 'surface' color property for smoother transitions in nested UI components. Adjust CSS to utilize the 'surface' variable across various elements, enhancing visual coherence between day and night themes. Update tests to validate the new 'surface' property and its integration within the skyPalette.",
+          "at": "2026-07-22T02:47:29Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "energyaccounting",
+      "repo": "server-backup",
       "commits": [
         {
-          "sha": "a8731b2",
-          "message": "Refactor energy day lifecycle and update documentation: modify ARCHITECTURE.md to clarify the phases of an energy day, including the ability to amend closed days without reopening them. Update README.md to reflect changes in terminology and user interactions. Enhance deploy-locally.sh with new API health checks and port management features. Refactor server routes and frontend components to align with the new energy day model, ensuring a consistent user experience and improved task management.",
-          "at": "2026-07-21T08:32:02Z"
+          "sha": "4dbfd5e",
+          "message": "refactor: remove @fontsource/caveat dependency and related code",
+          "at": "2026-07-22T02:49:19Z"
         },
         {
-          "sha": "ba66797",
-          "message": "Refactor ledger lifecycle and enhance user experience: update ARCHITECTURE.md to clarify the phases of a ledger, including the ability to amend closed ledgers without reopening them. Modify README.md to reflect changes in terminology and user interactions. Enhance deploy-locally.sh with new API checks and port management features. Update TodayPage and DashboardPage to improve handling of closed energy days, including deletion and editing capabilities. Refine various components and styles for better clarity and consistency across the application.",
-          "at": "2026-07-21T07:41:43Z"
+          "sha": "8019aef",
+          "message": "refactor: remove @fontsource/caveat dependency and related code",
+          "at": "2026-07-22T02:49:10Z"
         },
         {
-          "sha": "3f2295b",
-          "message": "Update architecture and database schema for ledger management: modify ARCHITECTURE.md to reflect changes in ledger lifecycle and API endpoints, enhance README.md for clarity on user interactions, and update database schema to support new ledger features including `startedAt`. Refactor server routes and frontend components to align with the new ledger model, ensuring a consistent user experience and improved task management.",
-          "at": "2026-07-21T07:25:59Z"
+          "sha": "83b6b6a",
+          "message": "feat: add SharePage and YouPage components for sharing and personal profile management",
+          "at": "2026-07-22T00:43:55Z"
         }
       ],
-      "more": 17
+      "more": 27
     },
     {
-      "repo": "blog",
+      "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "9b3b5c4",
-          "message": "Update books.json to add \"Hubris Maximus: The Shattering of Elon Musk\" with review and rating. Remove previous entry for the same book, streamlining the recently read section.",
-          "at": "2026-07-21T06:42:33Z"
+          "sha": "e502d4e",
+          "message": "refactor: remove @fontsource/caveat dependency and related code",
+          "at": "2026-07-22T02:49:12Z"
         },
         {
-          "sha": "e1110a1",
-          "message": "Add \"Provocation\" category to sidebar in index.html. Update attestation for \"emotion, memory, and machine intelligence\" post in attestations.json. Change featured status for \"how I use AI in my work\" to false and for \"systemizing the chaos\" to true, improving content visibility and organization.",
-          "at": "2026-07-20T21:02:25Z"
+          "sha": "620043c",
+          "message": "feat: add SharePage and YouPage components for sharing and personal profile management",
+          "at": "2026-07-22T00:43:49Z"
         },
         {
-          "sha": "42afec1",
-          "message": "change to 3 stars",
-          "at": "2026-07-17T01:18:56Z"
+          "sha": "30c6ea7",
+          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com to enhance tracking accuracy.",
+          "at": "2026-07-21T08:34:52Z"
         }
       ],
       "more": 27
@@ -170,9 +170,9 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      104,
-      104,
-      101,
+      96,
+      105,
+      99,
       75,
       32,
       22,
@@ -182,33 +182,33 @@
       8,
       18,
       38,
-      69,
+      68,
       90,
       136,
-      183,
-      147,
-      119,
-      153,
-      129,
-      116,
+      189,
+      149,
+      125,
+      159,
+      138,
+      114,
       96,
-      147,
-      100
+      141,
+      99
     ],
     "days_pt": [
       171,
-      324,
-      345,
+      305,
+      378,
       313,
-      266,
-      323,
+      264,
+      321,
       273
     ],
-    "latest": "2026-07-21T08:34:52.000Z",
+    "latest": "2026-07-22T06:49:43.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 2015,
-    "commits_7d": 99,
-    "commits_30d": 274,
+    "sample_size": 2025,
+    "commits_7d": 117,
+    "commits_30d": 293,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -216,70 +216,70 @@
   },
   "languages_by_recency": [
     {
-      "name": "Shell",
-      "repo": "server-hosting-scripts",
-      "bytes": 99159,
-      "pushed_at": "2026-07-21T08:34:56Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "server-hosting-scripts",
-      "bytes": 39719,
-      "pushed_at": "2026-07-21T08:34:56Z"
-    },
-    {
       "name": "TypeScript",
       "repo": "energyaccounting",
-      "bytes": 320004,
-      "pushed_at": "2026-07-21T08:32:09Z"
+      "bytes": 734036,
+      "pushed_at": "2026-07-22T06:49:46Z"
     },
     {
       "name": "CSS",
       "repo": "energyaccounting",
-      "bytes": 41108,
-      "pushed_at": "2026-07-21T08:32:09Z"
+      "bytes": 95138,
+      "pushed_at": "2026-07-22T06:49:46Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "energyaccounting",
+      "bytes": 5665,
+      "pushed_at": "2026-07-22T06:49:46Z"
     },
     {
       "name": "HTML",
       "repo": "energyaccounting",
       "bytes": 1414,
-      "pushed_at": "2026-07-21T08:32:09Z"
+      "pushed_at": "2026-07-22T06:49:46Z"
     },
     {
-      "name": "Ruby",
-      "repo": "blog",
-      "bytes": 8050,
-      "pushed_at": "2026-07-21T06:42:36Z"
-    },
-    {
-      "name": "Python",
-      "repo": "blog",
-      "bytes": 6850,
-      "pushed_at": "2026-07-21T06:42:36Z"
+      "name": "JavaScript",
+      "repo": "server-backup",
+      "bytes": 818126,
+      "pushed_at": "2026-07-22T02:49:25Z"
     },
     {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-21T05:34:01Z"
+      "pushed_at": "2026-07-22T02:49:25Z"
+    },
+    {
+      "name": "Python",
+      "repo": "server-backup",
+      "bytes": 72572,
+      "pushed_at": "2026-07-22T02:49:25Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "server-backup",
+      "bytes": 8050,
+      "pushed_at": "2026-07-22T02:49:25Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56248506
+      "bytes": 56249920
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 8347221
     },
     {
       "name": "JavaScript",
       "bytes": 7351892
     },
     {
-      "name": "TypeScript",
-      "bytes": 7205014
-    },
-    {
       "name": "CSS",
-      "bytes": 3299927
+      "bytes": 3449224
     },
     {
       "name": "Python",
@@ -287,7 +287,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 1359409
+      "bytes": 1365186
     },
     {
       "name": "Solidity",
