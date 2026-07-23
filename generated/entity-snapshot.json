@@ -1,10 +1,10 @@
 {
-  "synced_at": "2026-07-22T08:55:42.586Z",
+  "synced_at": "2026-07-23T08:56:09.093Z",
   "sync_auth": "pat",
   "repo_count": 120,
   "repo_counts": {
-    "public": 28,
-    "private": 92,
+    "public": 29,
+    "private": 91,
     "total": 120
   },
   "repo_stats": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "energyaccounting",
-      "at": "2026-07-22T06:49:46Z"
+      "name": "server-backup",
+      "at": "2026-07-22T23:48:50Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -103,43 +103,22 @@
   },
   "recent_commits": [
     {
-      "repo": "energyaccounting",
-      "commits": [
-        {
-          "sha": "d67a1d1",
-          "message": "Refactor weather-related components and styles for improved UI consistency: Introduce ModalCloseButton and WeatherGlyph components to enhance modularity and reusability. Update CSS for weather glyphs to standardize appearance across different weather conditions, ensuring better visual coherence. Adjust TodayPage and WeatherDetailModal to utilize new components, streamlining the codebase and enhancing user experience.",
-          "at": "2026-07-22T06:49:43Z"
-        },
-        {
-          "sha": "09499a8",
-          "message": "Integrate SiteFooter component across multiple pages: Replace inline footer implementation in App and TodayPage with the new SiteFooter component for improved code maintainability. Update CSS styles for the SiteFooter to enhance layout and visual consistency. Ensure proper rendering based on user authentication state.",
-          "at": "2026-07-22T06:42:00Z"
-        },
-        {
-          "sha": "1dc2c33",
-          "message": "Update skyPalette and styles for improved UI consistency: Introduce a new 'surface' color property for smoother transitions in nested UI components. Adjust CSS to utilize the 'surface' variable across various elements, enhancing visual coherence between day and night themes. Update tests to validate the new 'surface' property and its integration within the skyPalette.",
-          "at": "2026-07-22T02:47:29Z"
-        }
-      ],
-      "more": 27
-    },
-    {
       "repo": "server-backup",
       "commits": [
         {
-          "sha": "4dbfd5e",
-          "message": "refactor: remove @fontsource/caveat dependency and related code",
-          "at": "2026-07-22T02:49:19Z"
+          "sha": "8497da7",
+          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
+          "at": "2026-07-22T23:48:47Z"
         },
         {
-          "sha": "8019aef",
-          "message": "refactor: remove @fontsource/caveat dependency and related code",
-          "at": "2026-07-22T02:49:10Z"
+          "sha": "977bf31",
+          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
+          "at": "2026-07-22T23:48:38Z"
         },
         {
-          "sha": "83b6b6a",
-          "message": "feat: add SharePage and YouPage components for sharing and personal profile management",
-          "at": "2026-07-22T00:43:55Z"
+          "sha": "8a06396",
+          "message": "feat: implement reverse geocoding for location display and add related tests",
+          "at": "2026-07-22T23:17:37Z"
         }
       ],
       "more": 27
@@ -148,19 +127,40 @@
       "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "e502d4e",
-          "message": "refactor: remove @fontsource/caveat dependency and related code",
-          "at": "2026-07-22T02:49:12Z"
+          "sha": "6e0ba1c",
+          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
+          "at": "2026-07-22T23:48:40Z"
         },
         {
-          "sha": "620043c",
-          "message": "feat: add SharePage and YouPage components for sharing and personal profile management",
-          "at": "2026-07-22T00:43:49Z"
+          "sha": "d4a3fb7",
+          "message": "feat: implement reverse geocoding for location display and add related tests",
+          "at": "2026-07-22T23:17:32Z"
         },
         {
-          "sha": "30c6ea7",
-          "message": "Cleanup deploy-history.json by removing outdated deployment entries for blog.97115104.com to enhance tracking accuracy.",
-          "at": "2026-07-21T08:34:52Z"
+          "sha": "02af7e5",
+          "message": "fix: update port and deployment timestamp in configuration files",
+          "at": "2026-07-22T23:00:27Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "energyaccounting",
+      "commits": [
+        {
+          "sha": "ce72af6",
+          "message": "Update button placement in SettingsPage: Adjust button margin for improved layout consistency in the location settings section, enhancing user experience and accessibility.",
+          "at": "2026-07-22T23:46:33Z"
+        },
+        {
+          "sha": "618c2f7",
+          "message": "Refactor location input in SettingsPage: Replace location field legend with a label for better accessibility and update button placement for improved layout consistency in the location settings section.",
+          "at": "2026-07-22T23:45:32Z"
+        },
+        {
+          "sha": "e0ab57c",
+          "message": "Update button styling in SettingsPage: Adjust button margin for improved layout and user experience in the location settings section, ensuring better visual consistency.",
+          "at": "2026-07-22T23:31:13Z"
         }
       ],
       "more": 27
@@ -170,10 +170,10 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      96,
+      95,
       105,
       99,
-      75,
+      73,
       32,
       22,
       12,
@@ -182,14 +182,14 @@
       8,
       18,
       38,
-      68,
-      90,
-      136,
-      189,
-      149,
-      125,
+      76,
+      93,
+      142,
+      183,
       159,
-      138,
+      120,
+      151,
+      133,
       114,
       96,
       141,
@@ -197,18 +197,18 @@
     ],
     "days_pt": [
       171,
-      305,
-      378,
-      313,
-      264,
+      301,
+      351,
+      348,
+      262,
       321,
-      273
+      271
     ],
-    "latest": "2026-07-22T06:49:43.000Z",
+    "latest": "2026-07-22T23:48:47.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2025,
-    "commits_7d": 117,
-    "commits_30d": 293,
+    "commits_7d": 104,
+    "commits_30d": 297,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -217,61 +217,61 @@
   "languages_by_recency": [
     {
       "name": "TypeScript",
-      "repo": "energyaccounting",
-      "bytes": 734036,
-      "pushed_at": "2026-07-22T06:49:46Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "energyaccounting",
-      "bytes": 95138,
-      "pushed_at": "2026-07-22T06:49:46Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "energyaccounting",
-      "bytes": 5665,
-      "pushed_at": "2026-07-22T06:49:46Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "energyaccounting",
-      "bytes": 1414,
-      "pushed_at": "2026-07-22T06:49:46Z"
+      "repo": "server-backup",
+      "bytes": 1050322,
+      "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
       "name": "JavaScript",
       "repo": "server-backup",
       "bytes": 818126,
-      "pushed_at": "2026-07-22T02:49:25Z"
+      "pushed_at": "2026-07-22T23:48:50Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "server-backup",
+      "bytes": 762316,
+      "pushed_at": "2026-07-22T23:48:50Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "server-backup",
+      "bytes": 508236,
+      "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-22T02:49:25Z"
+      "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
       "name": "Python",
       "repo": "server-backup",
       "bytes": 72572,
-      "pushed_at": "2026-07-22T02:49:25Z"
+      "pushed_at": "2026-07-22T23:48:50Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "server-backup",
+      "bytes": 39049,
+      "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
       "name": "Ruby",
       "repo": "server-backup",
       "bytes": 8050,
-      "pushed_at": "2026-07-22T02:49:25Z"
+      "pushed_at": "2026-07-22T23:48:50Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56249920
+      "bytes": 56249946
     },
     {
       "name": "TypeScript",
-      "bytes": 8347221
+      "bytes": 8593498
     },
     {
       "name": "JavaScript",
@@ -279,7 +279,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 3449224
+      "bytes": 3497659
     },
     {
       "name": "Python",
