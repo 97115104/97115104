@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-23T08:56:09.093Z",
+  "synced_at": "2026-07-24T08:54:28.589Z",
   "sync_auth": "pat",
   "repo_count": 120,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 10,
+    "pushed_7d": 9,
     "pushed_30d": 20,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "server-backup",
-      "at": "2026-07-22T23:48:50Z"
+      "name": "97115104",
+      "at": "2026-07-23T08:56:10Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -103,6 +103,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "138fc6a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-23T08:56:10Z"
+        },
+        {
+          "sha": "f066692",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-22T08:55:43Z"
+        },
+        {
+          "sha": "48e1cc6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-21T08:56:47Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "server-backup",
       "commits": [
         {
@@ -143,27 +164,6 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "energyaccounting",
-      "commits": [
-        {
-          "sha": "ce72af6",
-          "message": "Update button placement in SettingsPage: Adjust button margin for improved layout consistency in the location settings section, enhancing user experience and accessibility.",
-          "at": "2026-07-22T23:46:33Z"
-        },
-        {
-          "sha": "618c2f7",
-          "message": "Refactor location input in SettingsPage: Replace location field legend with a label for better accessibility and update button placement for improved layout consistency in the location settings section.",
-          "at": "2026-07-22T23:45:32Z"
-        },
-        {
-          "sha": "e0ab57c",
-          "message": "Update button styling in SettingsPage: Adjust button margin for improved layout and user experience in the location settings section, ensuring better visual consistency.",
-          "at": "2026-07-22T23:31:13Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -171,7 +171,7 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       95,
-      105,
+      106,
       99,
       73,
       32,
@@ -189,7 +189,7 @@
       159,
       120,
       151,
-      133,
+      132,
       114,
       96,
       141,
@@ -198,16 +198,16 @@
     "days_pt": [
       171,
       301,
-      351,
+      350,
       348,
-      262,
+      263,
       321,
       271
     ],
-    "latest": "2026-07-22T23:48:47.000Z",
+    "latest": "2026-07-23T08:56:10.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2025,
-    "commits_7d": 104,
+    "commits_7d": 100,
     "commits_30d": 297,
     "top_commit_repo": {
       "name": "97115104",
@@ -216,15 +216,21 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-07-23T08:56:10Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-07-23T08:56:10Z"
+    },
+    {
       "name": "TypeScript",
       "repo": "server-backup",
       "bytes": 1050322,
-      "pushed_at": "2026-07-22T23:48:50Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "server-backup",
-      "bytes": 818126,
       "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
@@ -249,12 +255,6 @@
       "name": "Python",
       "repo": "server-backup",
       "bytes": 72572,
-      "pushed_at": "2026-07-22T23:48:50Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "server-backup",
-      "bytes": 39049,
       "pushed_at": "2026-07-22T23:48:50Z"
     },
     {
