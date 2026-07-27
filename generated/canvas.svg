@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-26 01:50 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-07-27 02:10 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -102,24 +102,24 @@
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 800790a</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 6a5e009</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/25 01:43 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 07/26 01:50 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> d8dd1e5</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 800790a</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/24 01:54 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 07/25 01:43 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 138fc6a</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> d8dd1e5</tspan>
   </text>
 <text x="28" y="442" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/23 01:56 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 07/24 01:54 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="452" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
@@ -245,7 +245,7 @@
     <tspan fill="#a3a3a3">peak hour</tspan><tspan fill="#ffffff" font-weight="400"> 15:00 PT</tspan>
   </text>
 <text x="462" y="320" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">peak day</tspan><tspan fill="#ffffff" font-weight="400"> Tue</tspan>
+    <tspan fill="#a3a3a3">peak day</tspan><tspan fill="#ffffff" font-weight="400"> Wed</tspan>
   </text>
 <text x="462" y="334" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">top repo</tspan><tspan fill="#ffffff" font-weight="400"> 97115104</tspan>
@@ -397,7 +397,7 @@
   <rect x="0" y="682" width="920" height="108" fill="#000000"/>
   <rect x="0" y="682" width="920" height="40" fill="#171717"/>
   <text x="16" y="700" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">commit rhythm</text>
-  <text x="16" y="714" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">peak 15:00 PT · Tue · n=2025</text>
+  <text x="16" y="714" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">peak 15:00 PT · Wed · n=2025</text>
   <text x="904" y="714" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">hourly · PT</text>
   <line x1="16" y1="759" x2="904" y2="759" stroke="#ffffff" stroke-width="1"/>
   <rect x="17.0" y="743.0" width="35.0" height="15" fill="#525252"/>
@@ -432,9 +432,9 @@
 <text x="79.4" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">S</text>
 <rect x="144.9" y="782.0" width="122.9" height="10" fill="#333333"/>
 <text x="206.3" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">M</text>
-<rect x="271.7" y="780.0" width="122.9" height="12" fill="#ffffff"/>
+<rect x="271.7" y="780.0" width="122.9" height="12" fill="#333333"/>
 <text x="333.1" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
-<rect x="398.6" y="780.0" width="122.9" height="12" fill="#333333"/>
+<rect x="398.6" y="780.0" width="122.9" height="12" fill="#ffffff"/>
 <text x="460.0" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">W</text>
 <rect x="525.4" y="783.0" width="122.9" height="9" fill="#333333"/>
 <text x="586.9" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
