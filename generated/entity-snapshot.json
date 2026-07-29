@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-07-28T08:58:51.719Z",
+  "synced_at": "2026-07-29T09:00:40.449Z",
   "sync_auth": "pat",
   "repo_count": 120,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-07-28T03:34:14Z"
+      "name": "97115104",
+      "at": "2026-07-28T08:58:53Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "27140bf",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-28T08:58:52Z"
+        },
+        {
+          "sha": "0671349",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-27T09:10:29Z"
+        },
+        {
+          "sha": "6a5e009",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-26T08:50:24Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "e1110a1",
           "message": "Add \"Provocation\" category to sidebar in index.html. Update attestation for \"emotion, memory, and machine intelligence\" post in attestations.json. Change featured status for \"how I use AI in my work\" to false and for \"systemizing the chaos\" to true, improving content visibility and organization.",
           "at": "2026-07-20T21:02:25Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "0671349",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-27T09:10:29Z"
-        },
-        {
-          "sha": "6a5e009",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-26T08:50:24Z"
-        },
-        {
-          "sha": "800790a",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-25T08:43:12Z"
         }
       ],
       "more": 27
@@ -163,7 +163,7 @@
     "peak_day_pt": "Wed",
     "hours_pt": [
       95,
-      109,
+      110,
       100,
       73,
       32,
@@ -181,7 +181,7 @@
       159,
       119,
       151,
-      128,
+      127,
       115,
       96,
       141,
@@ -196,11 +196,11 @@
       322,
       272
     ],
-    "latest": "2026-07-28T03:34:06.000Z",
+    "latest": "2026-07-28T08:58:52.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2025,
-    "commits_7d": 58,
-    "commits_30d": 267,
+    "commits_7d": 48,
+    "commits_30d": 254,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-07-28T08:58:53Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-07-28T08:58:53Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 420493,
       "pushed_at": "2026-07-28T03:34:14Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-07-28T03:34:14Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-07-28T03:34:14Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-07-28T03:34:14Z"
     },
     {
