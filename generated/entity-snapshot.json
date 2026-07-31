@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-07-30T08:57:56.281Z",
+  "synced_at": "2026-07-31T09:03:46.621Z",
   "sync_auth": "pat",
-  "repo_count": 122,
+  "repo_count": 123,
   "repo_counts": {
-    "public": 31,
+    "public": 32,
     "private": 91,
-    "total": 122
+    "total": 123
   },
   "repo_stats": {
-    "owned": 115,
+    "owned": 116,
     "forked": 7,
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 3,
-    "pushed_30d": 18,
+    "pushed_7d": 5,
+    "pushed_30d": 16,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "fplearning",
-      "at": "2026-07-29T20:00:51Z"
+      "name": "fp-learning",
+      "at": "2026-07-30T21:55:49Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -30,7 +30,7 @@
   },
   "profile_stats": {
     "followers": 5,
-    "following": 8,
+    "following": 9,
     "member_since": "2024-10-14"
   },
   "recent_posts": [
@@ -95,8 +95,18 @@
   },
   "recent_commits": [
     {
-      "repo": "fplearning",
+      "repo": "fp-learning",
       "commits": [
+        {
+          "sha": "6f946db",
+          "message": "Update README.md",
+          "at": "2026-07-30T21:55:49Z"
+        },
+        {
+          "sha": "60bbcad",
+          "message": "Add .gitignore and initial hello.scala implementation",
+          "at": "2026-07-30T21:38:33Z"
+        },
         {
           "sha": "a8a7008",
           "message": "Initial commit",
@@ -106,46 +116,36 @@
       "more": 0
     },
     {
-      "repo": "97115104",
+      "repo": "llm-learning",
       "commits": [
         {
-          "sha": "09fc341",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-29T09:00:41Z"
-        },
-        {
-          "sha": "27140bf",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-28T08:58:52Z"
-        },
-        {
-          "sha": "0671349",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-27T09:10:29Z"
+          "sha": "e23132e",
+          "message": "Initial commit",
+          "at": "2026-07-30T21:55:15Z"
         }
       ],
-      "more": 27
+      "more": 0
     },
     {
-      "repo": "blog",
+      "repo": "voice-clone",
       "commits": [
         {
-          "sha": "c1b271b",
-          "message": "Add \"Tip of the ADHD Iceberg\" to recently read section and remove from currently reading",
-          "at": "2026-07-28T03:34:06Z"
+          "sha": "9664318",
+          "message": "Clarify license and add platforms section in README",
+          "at": "2026-07-30T18:26:23Z"
         },
         {
-          "sha": "9b3b5c4",
-          "message": "Update books.json to add \"Hubris Maximus: The Shattering of Elon Musk\" with review and rating. Remove previous entry for the same book, streamlining the recently read section.",
-          "at": "2026-07-21T06:42:33Z"
+          "sha": "a090bf6",
+          "message": "Update README.md",
+          "at": "2026-07-09T19:30:44Z"
         },
         {
-          "sha": "e1110a1",
-          "message": "Add \"Provocation\" category to sidebar in index.html. Update attestation for \"emotion, memory, and machine intelligence\" post in attestations.json. Change featured status for \"how I use AI in my work\" to false and for \"systemizing the chaos\" to true, improving content visibility and organization.",
-          "at": "2026-07-20T21:02:25Z"
+          "sha": "fda1c6a",
+          "message": "Update docker-compose.yml to change service restart policy from 'unless-stopped' to 'no', preventing automatic restarts of the service.",
+          "at": "2026-07-01T07:12:45Z"
         }
       ],
-      "more": 27
+      "more": 9
     }
   ],
   "commit_stats": {
@@ -153,7 +153,7 @@
     "peak_day_pt": "Wed",
     "hours_pt": [
       95,
-      110,
+      111,
       101,
       73,
       32,
@@ -163,15 +163,15 @@
       11,
       8,
       22,
-      38,
+      39,
       79,
       96,
-      142,
+      145,
       187,
       159,
       120,
       151,
-      126,
+      125,
       115,
       96,
       141,
@@ -180,17 +180,17 @@
     "days_pt": [
       174,
       306,
-      347,
+      346,
       351,
-      267,
+      272,
       323,
       273
     ],
-    "latest": "2026-07-29T20:00:51.000Z",
+    "latest": "2026-07-30T21:55:49.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 2041,
-    "commits_7d": 8,
-    "commits_30d": 254,
+    "sample_size": 2045,
+    "commits_7d": 12,
+    "commits_30d": 244,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -198,22 +198,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-07-29T09:00:42Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-07-29T09:00:42Z"
+      "name": "Scala",
+      "repo": "fp-learning",
+      "bytes": 88,
+      "pushed_at": "2026-07-30T21:55:49Z"
     },
     {
       "name": "HTML",
-      "repo": "blog",
-      "bytes": 420493,
-      "pushed_at": "2026-07-28T03:34:14Z"
+      "repo": "voice-clone",
+      "bytes": 63201,
+      "pushed_at": "2026-07-30T18:26:23Z"
+    },
+    {
+      "name": "Python",
+      "repo": "voice-clone",
+      "bytes": 49026,
+      "pushed_at": "2026-07-30T18:26:23Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "voice-clone",
+      "bytes": 20426,
+      "pushed_at": "2026-07-30T18:26:23Z"
+    },
+    {
+      "name": "Dockerfile",
+      "repo": "voice-clone",
+      "bytes": 2715,
+      "pushed_at": "2026-07-30T18:26:23Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "voice-clone",
+      "bytes": 1069,
+      "pushed_at": "2026-07-30T18:26:23Z"
     },
     {
       "name": "CSS",
@@ -226,24 +244,6 @@
       "repo": "blog",
       "bytes": 8050,
       "pushed_at": "2026-07-28T03:34:14Z"
-    },
-    {
-      "name": "Python",
-      "repo": "blog",
-      "bytes": 6850,
-      "pushed_at": "2026-07-28T03:34:14Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "server-backup",
-      "bytes": 1050322,
-      "pushed_at": "2026-07-22T23:48:50Z"
-    },
-    {
-      "name": "TeX",
-      "repo": "server-backup",
-      "bytes": 86916,
-      "pushed_at": "2026-07-22T23:48:50Z"
     }
   ],
   "language_totals": [
