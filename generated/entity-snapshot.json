@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-07-31T09:03:46.621Z",
+  "synced_at": "2026-08-01T08:49:16.015Z",
   "sync_auth": "pat",
-  "repo_count": 123,
+  "repo_count": 124,
   "repo_counts": {
     "public": 32,
-    "private": 91,
-    "total": 123
+    "private": 92,
+    "total": 124
   },
   "repo_stats": {
-    "owned": 116,
+    "owned": 117,
     "forked": 7,
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 5,
-    "pushed_30d": 16,
+    "pushed_7d": 9,
+    "pushed_30d": 17,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "fp-learning",
-      "at": "2026-07-30T21:55:49Z"
+      "name": "CrustyRustaceans",
+      "at": "2026-08-01T00:42:56Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,57 +95,67 @@
   },
   "recent_commits": [
     {
-      "repo": "fp-learning",
+      "repo": "CrustyRustaceans",
       "commits": [
         {
-          "sha": "6f946db",
-          "message": "Update README.md",
-          "at": "2026-07-30T21:55:49Z"
+          "sha": "1a942b3",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-08-01T00:42:55Z"
         },
         {
-          "sha": "60bbcad",
-          "message": "Add .gitignore and initial hello.scala implementation",
-          "at": "2026-07-30T21:38:33Z"
+          "sha": "12e6f6b",
+          "message": "chore: refresh YouTube channel stats",
+          "at": "2026-07-18T23:59:35Z"
         },
         {
-          "sha": "a8a7008",
+          "sha": "eda6e43",
+          "message": "Change cron schedule to run monthly",
+          "at": "2026-07-18T23:59:27Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "ssh-resume",
+      "commits": [
+        {
+          "sha": "e341761",
+          "message": "Add files via upload",
+          "at": "2026-07-31T21:44:23Z"
+        },
+        {
+          "sha": "7213fdb",
+          "message": "Fix typo in project name from 'ssh-reume' to 'ssh-resume'",
+          "at": "2026-07-31T20:24:40Z"
+        },
+        {
+          "sha": "f575d27",
           "message": "Initial commit",
-          "at": "2026-07-29T20:00:51Z"
+          "at": "2026-07-31T20:23:59Z"
         }
       ],
       "more": 0
     },
     {
-      "repo": "llm-learning",
+      "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "e23132e",
-          "message": "Initial commit",
-          "at": "2026-07-30T21:55:15Z"
-        }
-      ],
-      "more": 0
-    },
-    {
-      "repo": "voice-clone",
-      "commits": [
-        {
-          "sha": "9664318",
-          "message": "Clarify license and add platforms section in README",
-          "at": "2026-07-30T18:26:23Z"
+          "sha": "6244856",
+          "message": "fix: clean up deploy history by removing outdated entries and adding recent deployments",
+          "at": "2026-07-31T20:05:45Z"
         },
         {
-          "sha": "a090bf6",
-          "message": "Update README.md",
-          "at": "2026-07-09T19:30:44Z"
+          "sha": "6e0ba1c",
+          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
+          "at": "2026-07-22T23:48:40Z"
         },
         {
-          "sha": "fda1c6a",
-          "message": "Update docker-compose.yml to change service restart policy from 'unless-stopped' to 'no', preventing automatic restarts of the service.",
-          "at": "2026-07-01T07:12:45Z"
+          "sha": "d4a3fb7",
+          "message": "feat: implement reverse geocoding for location display and add related tests",
+          "at": "2026-07-22T23:17:32Z"
         }
       ],
-      "more": 9
+      "more": 27
     }
   ],
   "commit_stats": {
@@ -156,7 +166,7 @@
       111,
       101,
       73,
-      32,
+      31,
       22,
       12,
       6,
@@ -164,12 +174,12 @@
       8,
       22,
       39,
-      79,
-      96,
-      145,
-      187,
+      78,
+      101,
+      146,
+      185,
       159,
-      120,
+      121,
       151,
       125,
       115,
@@ -181,16 +191,16 @@
       174,
       306,
       346,
-      351,
+      347,
       272,
-      323,
+      330,
       273
     ],
-    "latest": "2026-07-30T21:55:49.000Z",
+    "latest": "2026-08-01T00:42:55.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 2045,
-    "commits_7d": 12,
-    "commits_30d": 244,
+    "sample_size": 2048,
+    "commits_7d": 19,
+    "commits_30d": 242,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -198,52 +208,52 @@
   },
   "languages_by_recency": [
     {
-      "name": "Scala",
-      "repo": "fp-learning",
-      "bytes": 88,
-      "pushed_at": "2026-07-30T21:55:49Z"
-    },
-    {
       "name": "HTML",
-      "repo": "voice-clone",
-      "bytes": 63201,
-      "pushed_at": "2026-07-30T18:26:23Z"
-    },
-    {
-      "name": "Python",
-      "repo": "voice-clone",
-      "bytes": 49026,
-      "pushed_at": "2026-07-30T18:26:23Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "voice-clone",
-      "bytes": 20426,
-      "pushed_at": "2026-07-30T18:26:23Z"
-    },
-    {
-      "name": "Dockerfile",
-      "repo": "voice-clone",
-      "bytes": 2715,
-      "pushed_at": "2026-07-30T18:26:23Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 18085,
+      "pushed_at": "2026-08-01T00:42:56Z"
     },
     {
       "name": "JavaScript",
-      "repo": "voice-clone",
-      "bytes": 1069,
-      "pushed_at": "2026-07-30T18:26:23Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 17277,
+      "pushed_at": "2026-08-01T00:42:56Z"
     },
     {
       "name": "CSS",
-      "repo": "blog",
-      "bytes": 102731,
-      "pushed_at": "2026-07-28T03:34:14Z"
+      "repo": "CrustyRustaceans",
+      "bytes": 12759,
+      "pushed_at": "2026-08-01T00:42:56Z"
+    },
+    {
+      "name": "Python",
+      "repo": "CrustyRustaceans",
+      "bytes": 4802,
+      "pushed_at": "2026-08-01T00:42:56Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "CrustyRustaceans",
+      "bytes": 1214,
+      "pushed_at": "2026-08-01T00:42:56Z"
+    },
+    {
+      "name": "TypeScript",
+      "repo": "server-backup",
+      "bytes": 1050322,
+      "pushed_at": "2026-07-31T20:05:52Z"
+    },
+    {
+      "name": "TeX",
+      "repo": "server-backup",
+      "bytes": 86916,
+      "pushed_at": "2026-07-31T20:05:52Z"
     },
     {
       "name": "Ruby",
-      "repo": "blog",
+      "repo": "server-backup",
       "bytes": 8050,
-      "pushed_at": "2026-07-28T03:34:14Z"
+      "pushed_at": "2026-07-31T20:05:52Z"
     }
   ],
   "language_totals": [
