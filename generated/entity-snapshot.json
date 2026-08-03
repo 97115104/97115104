@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-02T08:49:58.355Z",
+  "synced_at": "2026-08-03T09:10:56.730Z",
   "sync_auth": "pat",
   "repo_count": 124,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "temp-uv-historical-trends",
-      "at": "2026-08-01T12:35:41Z"
+      "name": "97115104",
+      "at": "2026-08-02T08:49:59Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "f9f600f",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-02T08:49:59Z"
+        },
+        {
+          "sha": "5c56039",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-01T08:49:16Z"
+        },
+        {
+          "sha": "c355cd2",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-07-31T09:03:47Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "temp-uv-historical-trends",
       "commits": [
         {
@@ -114,27 +135,6 @@
         }
       ],
       "more": 14
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "5c56039",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-01T08:49:16Z"
-        },
-        {
-          "sha": "c355cd2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-31T09:03:47Z"
-        },
-        {
-          "sha": "fc999a0",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-07-30T08:57:57Z"
-        }
-      ],
-      "more": 27
     },
     {
       "repo": "CrustyRustaceans",
@@ -163,8 +163,8 @@
     "peak_day_pt": "Wed",
     "hours_pt": [
       95,
-      112,
-      100,
+      113,
+      99,
       73,
       31,
       23,
@@ -188,19 +188,19 @@
       99
     ],
     "days_pt": [
-      174,
+      175,
       306,
       346,
       347,
       271,
-      330,
+      329,
       275
     ],
-    "latest": "2026-08-01T12:35:40.000Z",
+    "latest": "2026-08-02T08:49:59.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2049,
-    "commits_7d": 21,
-    "commits_30d": 241,
+    "commits_7d": 20,
+    "commits_30d": 235,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -209,9 +209,15 @@
   "languages_by_recency": [
     {
       "name": "JavaScript",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 100981,
-      "pushed_at": "2026-08-01T12:35:41Z"
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-02T08:49:59Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-02T08:49:59Z"
     },
     {
       "name": "Python",
@@ -229,12 +235,6 @@
       "name": "HTML",
       "repo": "temp-uv-historical-trends",
       "bytes": 7409,
-      "pushed_at": "2026-08-01T12:35:41Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 4349,
       "pushed_at": "2026-08-01T12:35:41Z"
     },
     {
