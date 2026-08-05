@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-04T09:00:07.323Z",
+  "synced_at": "2026-08-05T08:58:57.055Z",
   "sync_auth": "pat",
   "repo_count": 123,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 8,
+    "pushed_7d": 9,
     "pushed_30d": 16,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-08-03T09:11:53Z"
+      "name": "energyaccounting",
+      "at": "2026-08-05T05:10:40Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,8 +95,34 @@
   },
   "recent_commits": [
     {
+      "repo": "energyaccounting",
+      "commits": [
+        {
+          "sha": "74af91e",
+          "message": "feat: add revealSuggestionsWhenEmpty preference to user settings and update related components",
+          "at": "2026-08-05T05:10:38Z"
+        },
+        {
+          "sha": "7adc522",
+          "message": "feat(TodayPage): improve completed items visibility and styling for better user experience",
+          "at": "2026-08-05T05:03:47Z"
+        },
+        {
+          "sha": "a713285",
+          "message": "feat(DialogFrame): enhance scroll locking for iOS PWAs and improve overlay styling",
+          "at": "2026-08-05T01:06:37Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "f5ade20",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-04T09:00:08Z"
+        },
         {
           "sha": "ef2e91a",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,11 +132,6 @@
           "sha": "f9f600f",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-02T08:49:59Z"
-        },
-        {
-          "sha": "5c56039",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-01T08:49:16Z"
         }
       ],
       "more": 27
@@ -135,32 +156,11 @@
         }
       ],
       "more": 14
-    },
-    {
-      "repo": "ssh-resume",
-      "commits": [
-        {
-          "sha": "e341761",
-          "message": "Add files via upload",
-          "at": "2026-07-31T21:44:23Z"
-        },
-        {
-          "sha": "7213fdb",
-          "message": "Fix typo in project name from 'ssh-reume' to 'ssh-resume'",
-          "at": "2026-07-31T20:24:40Z"
-        },
-        {
-          "sha": "f575d27",
-          "message": "Initial commit",
-          "at": "2026-07-31T20:23:59Z"
-        }
-      ],
-      "more": 0
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
-    "peak_day_pt": "Wed",
+    "peak_day_pt": "Tue",
     "hours_pt": [
       94,
       111,
@@ -173,33 +173,33 @@
       10,
       7,
       21,
-      38,
-      77,
-      99,
-      144,
-      183,
-      155,
-      119,
-      150,
-      125,
+      39,
+      71,
+      97,
+      146,
+      184,
+      157,
+      122,
+      151,
+      123,
       114,
       95,
-      140,
-      98
+      142,
+      96
     ],
     "days_pt": [
-      175,
+      174,
       307,
-      346,
-      347,
+      358,
+      336,
       271,
       318,
       255
     ],
-    "latest": "2026-08-03T09:11:52.000Z",
+    "latest": "2026-08-05T05:10:38.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2019,
-    "commits_7d": 18,
+    "commits_7d": 34,
     "commits_30d": 206,
     "top_commit_repo": {
       "name": "97115104",
@@ -208,40 +208,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-03T09:11:53Z"
+      "name": "TypeScript",
+      "repo": "energyaccounting",
+      "bytes": 1046500,
+      "pushed_at": "2026-08-05T05:10:40Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "energyaccounting",
+      "bytes": 131286,
+      "pushed_at": "2026-08-05T05:10:40Z"
     },
     {
       "name": "Shell",
+      "repo": "energyaccounting",
+      "bytes": 6051,
+      "pushed_at": "2026-08-05T05:10:40Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "energyaccounting",
+      "bytes": 1500,
+      "pushed_at": "2026-08-05T05:10:40Z"
+    },
+    {
+      "name": "JavaScript",
       "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-08-03T09:11:53Z"
+      "bytes": 65702,
+      "pushed_at": "2026-08-04T09:00:10Z"
     },
     {
       "name": "Python",
       "repo": "temp-uv-historical-trends",
       "bytes": 42015,
       "pushed_at": "2026-08-01T12:35:41Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 16728,
-      "pushed_at": "2026-08-01T12:35:41Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 7409,
-      "pushed_at": "2026-08-01T12:35:41Z"
-    },
-    {
-      "name": "TypeScript",
-      "repo": "server-backup",
-      "bytes": 1050322,
-      "pushed_at": "2026-07-31T20:05:52Z"
     },
     {
       "name": "TeX",
@@ -259,11 +259,11 @@
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56231861
+      "bytes": 56231934
     },
     {
       "name": "TypeScript",
-      "bytes": 8593498
+      "bytes": 8785754
     },
     {
       "name": "JavaScript",
@@ -271,7 +271,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 3484900
+      "bytes": 3496766
     },
     {
       "name": "Python",
@@ -279,7 +279,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 1363972
+      "bytes": 1364358
     },
     {
       "name": "Solidity",

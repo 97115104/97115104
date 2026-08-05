@@ -18,7 +18,7 @@
 </p>
 
 <!-- profile-sync:sync-meta-start -->
-<p><sub><a href="https://attest.97115104.com/s/vwbjetlg">verify readme</a> · synced 2026-08-04 02:00 PT · feed updates on push + daily</sub></p>
+<p><sub><a href="https://attest.97115104.com/s/yjtzm5j7">verify readme</a> · synced 2026-08-05 01:58 PT · feed updates on push + daily</sub></p>
 <!-- profile-sync:sync-meta-end -->
 
 <details>
