@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-05T08:58:57.055Z",
+  "synced_at": "2026-08-06T08:59:15.727Z",
   "sync_auth": "pat",
   "repo_count": 123,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "energyaccounting",
-      "at": "2026-08-05T05:10:40Z"
+      "name": "97115104",
+      "at": "2026-08-05T08:58:58Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "c96817d",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-05T08:58:57Z"
+        },
+        {
+          "sha": "f5ade20",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-04T09:00:08Z"
+        },
+        {
+          "sha": "ef2e91a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-03T09:11:52Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "energyaccounting",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "a713285",
           "message": "feat(DialogFrame): enhance scroll locking for iOS PWAs and improve overlay styling",
           "at": "2026-08-05T01:06:37Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "f5ade20",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-04T09:00:08Z"
-        },
-        {
-          "sha": "ef2e91a",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-03T09:11:52Z"
-        },
-        {
-          "sha": "f9f600f",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-02T08:49:59Z"
         }
       ],
       "more": 27
@@ -163,8 +163,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       94,
-      111,
-      99,
+      112,
+      98,
       72,
       30,
       22,
@@ -189,17 +189,17 @@
     ],
     "days_pt": [
       174,
-      307,
+      306,
       358,
-      336,
+      337,
       271,
       318,
       255
     ],
-    "latest": "2026-08-05T05:10:38.000Z",
+    "latest": "2026-08-05T08:58:57.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2019,
-    "commits_7d": 34,
+    "commits_7d": 32,
     "commits_30d": 206,
     "top_commit_repo": {
       "name": "97115104",
@@ -207,6 +207,18 @@
     }
   },
   "languages_by_recency": [
+    {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-05T08:58:58Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-05T08:58:58Z"
+    },
     {
       "name": "TypeScript",
       "repo": "energyaccounting",
@@ -220,22 +232,10 @@
       "pushed_at": "2026-08-05T05:10:40Z"
     },
     {
-      "name": "Shell",
-      "repo": "energyaccounting",
-      "bytes": 6051,
-      "pushed_at": "2026-08-05T05:10:40Z"
-    },
-    {
       "name": "HTML",
       "repo": "energyaccounting",
       "bytes": 1500,
       "pushed_at": "2026-08-05T05:10:40Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-04T09:00:10Z"
     },
     {
       "name": "Python",
