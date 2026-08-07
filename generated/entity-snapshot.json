@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-06T08:59:15.727Z",
+  "synced_at": "2026-08-07T08:26:34.176Z",
   "sync_auth": "pat",
   "repo_count": 123,
   "repo_counts": {
@@ -13,7 +13,7 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 9,
+    "pushed_7d": 6,
     "pushed_30d": 16,
     "top_starred": {
       "name": "lexicographer-companion",
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-08-05T08:58:58Z"
+      "at": "2026-08-06T08:59:17Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "0aefcff",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-06T08:59:16Z"
+        },
+        {
           "sha": "c96817d",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-05T08:58:57Z"
@@ -106,11 +111,6 @@
           "sha": "f5ade20",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-04T09:00:08Z"
-        },
-        {
-          "sha": "ef2e91a",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-03T09:11:52Z"
         }
       ],
       "more": 27
@@ -163,8 +163,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       94,
-      112,
-      98,
+      113,
+      97,
       72,
       30,
       22,
@@ -190,17 +190,17 @@
     "days_pt": [
       174,
       306,
-      358,
+      357,
       337,
-      271,
+      272,
       318,
       255
     ],
-    "latest": "2026-08-05T08:58:57.000Z",
+    "latest": "2026-08-06T08:59:16.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2019,
-    "commits_7d": 32,
-    "commits_30d": 206,
+    "commits_7d": 29,
+    "commits_30d": 185,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,13 +211,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-08-05T08:58:58Z"
+      "pushed_at": "2026-08-06T08:59:17Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-08-05T08:58:58Z"
+      "pushed_at": "2026-08-06T08:59:17Z"
     },
     {
       "name": "TypeScript",
