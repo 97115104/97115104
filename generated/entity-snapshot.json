@@ -1,27 +1,27 @@
 {
-  "synced_at": "2026-08-07T08:26:34.176Z",
+  "synced_at": "2026-08-08T08:15:01.028Z",
   "sync_auth": "pat",
-  "repo_count": 123,
+  "repo_count": 124,
   "repo_counts": {
-    "public": 32,
+    "public": 33,
     "private": 91,
-    "total": 123
+    "total": 124
   },
   "repo_stats": {
     "owned": 116,
-    "forked": 7,
+    "forked": 8,
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 6,
+    "pushed_7d": 4,
     "pushed_30d": 16,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-08-06T08:59:17Z"
+      "name": "blog",
+      "at": "2026-08-08T01:43:03Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -85,18 +85,44 @@
       }
     ],
     "last_read": {
-      "title": "Hands on Hacking: Become an Expert at Next Gen Penetration Testing and Purple Teaming",
-      "author": "Matthew Hickey ,  Jennifer Arcuri",
+      "title": "Quantum Computing for Everyone",
+      "author": "Chris Bernhardt",
       "progress": "",
-      "completedDate": "July 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/43864450-hands-on-hacking",
+      "completedDate": "August 2026",
+      "goodreadsUrl": "https://www.goodreads.com/book/show/40994088-quantum-computing-for-everyone",
       "rating": 3
     }
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "8e2531a",
+          "message": "Add \"Quantum Computing for Everyone\" to recently read section with review and rating",
+          "at": "2026-08-08T01:43:00Z"
+        },
+        {
+          "sha": "4c16ce1",
+          "message": "Update author description for clarity and replace profile photo",
+          "at": "2026-08-07T18:54:25Z"
+        },
+        {
+          "sha": "c1b271b",
+          "message": "Add \"Tip of the ADHD Iceberg\" to recently read section and remove from currently reading",
+          "at": "2026-07-28T03:34:06Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "9daf261",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-07T08:26:35Z"
+        },
         {
           "sha": "0aefcff",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,11 +132,6 @@
           "sha": "c96817d",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-05T08:58:57Z"
-        },
-        {
-          "sha": "f5ade20",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-04T09:00:08Z"
         }
       ],
       "more": 27
@@ -135,72 +156,51 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "temp-uv-historical-trends",
-      "commits": [
-        {
-          "sha": "61c446d",
-          "message": "chore: rebuild knowledge graph data [skip ci]",
-          "at": "2026-08-01T12:35:40Z"
-        },
-        {
-          "sha": "a2c6c3e",
-          "message": "Enhance error notification and user feedback in app.js and cityAdd.js",
-          "at": "2026-07-08T03:40:37Z"
-        },
-        {
-          "sha": "ea9be25",
-          "message": "Improve error handling and user feedback for city data loading in app.js and cityAdd.js",
-          "at": "2026-07-08T02:56:11Z"
-        }
-      ],
-      "more": 14
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      94,
-      113,
-      97,
-      72,
-      30,
+      98,
+      119,
+      101,
+      75,
+      32,
       22,
-      11,
-      5,
-      10,
-      7,
+      14,
+      9,
+      12,
+      8,
       21,
-      39,
+      40,
       71,
       97,
       146,
       184,
       157,
-      122,
-      151,
+      120,
+      152,
       123,
       114,
       95,
       142,
-      96
+      97
     ],
     "days_pt": [
-      174,
-      306,
-      357,
-      337,
-      272,
-      318,
-      255
+      175,
+      313,
+      362,
+      339,
+      274,
+      323,
+      263
     ],
-    "latest": "2026-08-06T08:59:16.000Z",
+    "latest": "2026-08-08T01:43:00.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 2019,
-    "commits_7d": 29,
-    "commits_30d": 185,
+    "sample_size": 2049,
+    "commits_7d": 25,
+    "commits_30d": 187,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,16 +208,40 @@
   },
   "languages_by_recency": [
     {
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 420493,
+      "pushed_at": "2026-08-08T01:43:03Z"
+    },
+    {
       "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-06T08:59:17Z"
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-08-08T01:43:03Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "blog",
+      "bytes": 102731,
+      "pushed_at": "2026-08-08T01:43:03Z"
     },
     {
       "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-08-06T08:59:17Z"
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-08-08T01:43:03Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-08-08T01:43:03Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-08-08T01:43:03Z"
     },
     {
       "name": "TypeScript",
@@ -226,33 +250,9 @@
       "pushed_at": "2026-08-05T05:10:40Z"
     },
     {
-      "name": "CSS",
-      "repo": "energyaccounting",
-      "bytes": 131286,
-      "pushed_at": "2026-08-05T05:10:40Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "energyaccounting",
-      "bytes": 1500,
-      "pushed_at": "2026-08-05T05:10:40Z"
-    },
-    {
-      "name": "Python",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 42015,
-      "pushed_at": "2026-08-01T12:35:41Z"
-    },
-    {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-31T20:05:52Z"
-    },
-    {
-      "name": "Ruby",
-      "repo": "server-backup",
-      "bytes": 8050,
       "pushed_at": "2026-07-31T20:05:52Z"
     }
   ],
