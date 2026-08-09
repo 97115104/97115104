@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-08T08:15:01.028Z",
+  "synced_at": "2026-08-09T08:15:43.952Z",
   "sync_auth": "pat",
   "repo_count": 124,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 4,
+    "pushed_7d": 3,
     "pushed_30d": 16,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-08-08T01:43:03Z"
+      "name": "97115104",
+      "at": "2026-08-08T08:15:03Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "e5102a6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-08T08:15:02Z"
+        },
+        {
+          "sha": "9daf261",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-07T08:26:35Z"
+        },
+        {
+          "sha": "0aefcff",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-06T08:59:16Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "c1b271b",
           "message": "Add \"Tip of the ADHD Iceberg\" to recently read section and remove from currently reading",
           "at": "2026-07-28T03:34:06Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "9daf261",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-07T08:26:35Z"
-        },
-        {
-          "sha": "0aefcff",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-06T08:59:16Z"
-        },
-        {
-          "sha": "c96817d",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-05T08:58:57Z"
         }
       ],
       "more": 27
@@ -163,8 +163,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       98,
-      119,
-      101,
+      120,
+      100,
       75,
       32,
       22,
@@ -192,15 +192,15 @@
       313,
       362,
       339,
-      274,
+      273,
       323,
-      263
+      264
     ],
-    "latest": "2026-08-08T01:43:00.000Z",
+    "latest": "2026-08-08T08:15:02.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2049,
-    "commits_7d": 25,
-    "commits_30d": 187,
+    "commits_7d": 24,
+    "commits_30d": 186,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-08T08:15:03Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-08T08:15:03Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 420493,
       "pushed_at": "2026-08-08T01:43:03Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-08-08T01:43:03Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-08-08T01:43:03Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-08-08T01:43:03Z"
     },
     {
