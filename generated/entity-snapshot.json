@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-10T08:35:05.537Z",
+  "synced_at": "2026-08-11T08:23:23.745Z",
   "sync_auth": "pat",
   "repo_count": 124,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-08-09T08:15:46Z"
+      "name": "blog",
+      "at": "2026-08-10T18:49:33Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -85,39 +85,23 @@
       }
     ],
     "last_read": {
-      "title": "Quantum Computing for Everyone",
-      "author": "Chris Bernhardt",
+      "title": "Midnight in the Garden of Good and Evil",
+      "author": "John Berendt",
       "progress": "",
       "completedDate": "August 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/40994088-quantum-computing-for-everyone",
-      "rating": 3
+      "goodreadsUrl": "https://www.goodreads.com/book/show/386187.Midnight_in_the_Garden_of_Good_and_Evil",
+      "rating": 5
     }
   },
   "recent_commits": [
     {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "6377707",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-09T08:15:45Z"
-        },
-        {
-          "sha": "e5102a6",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-08T08:15:02Z"
-        },
-        {
-          "sha": "9daf261",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-07T08:26:35Z"
-        }
-      ],
-      "more": 27
-    },
-    {
       "repo": "blog",
       "commits": [
+        {
+          "sha": "c6920a0",
+          "message": "Add \"Midnight in the Garden of Good and Evil\" to recently read and favorites sections with review and rating",
+          "at": "2026-08-10T18:49:29Z"
+        },
         {
           "sha": "8e2531a",
           "message": "Add \"Quantum Computing for Everyone\" to recently read section with review and rating",
@@ -127,11 +111,27 @@
           "sha": "4c16ce1",
           "message": "Update author description for clarity and replace profile photo",
           "at": "2026-08-07T18:54:25Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "fc40990",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-10T08:35:06Z"
         },
         {
-          "sha": "c1b271b",
-          "message": "Add \"Tip of the ADHD Iceberg\" to recently read section and remove from currently reading",
-          "at": "2026-07-28T03:34:06Z"
+          "sha": "6377707",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-09T08:15:45Z"
+        },
+        {
+          "sha": "e5102a6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-08T08:15:02Z"
         }
       ],
       "more": 27
@@ -173,7 +173,7 @@
       12,
       8,
       21,
-      40,
+      41,
       71,
       97,
       146,
@@ -181,7 +181,7 @@
       157,
       120,
       152,
-      123,
+      122,
       114,
       95,
       142,
@@ -189,18 +189,18 @@
     ],
     "days_pt": [
       176,
-      313,
-      362,
+      315,
+      361,
       339,
       273,
       322,
-      264
+      263
     ],
-    "latest": "2026-08-09T08:15:45.000Z",
+    "latest": "2026-08-10T18:49:29.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2049,
-    "commits_7d": 24,
-    "commits_30d": 154,
+    "commits_7d": 25,
+    "commits_30d": 155,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,40 +208,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-09T08:15:46Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-08-09T08:15:46Z"
-    },
-    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 420493,
-      "pushed_at": "2026-08-08T01:43:03Z"
+      "pushed_at": "2026-08-10T18:49:33Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-08-10T18:49:33Z"
     },
     {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-08-08T01:43:03Z"
+      "pushed_at": "2026-08-10T18:49:33Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-08-10T18:49:33Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-08-08T01:43:03Z"
+      "pushed_at": "2026-08-10T18:49:33Z"
     },
     {
       "name": "Python",
       "repo": "blog",
       "bytes": 6850,
-      "pushed_at": "2026-08-08T01:43:03Z"
+      "pushed_at": "2026-08-10T18:49:33Z"
     },
     {
       "name": "TypeScript",
