@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-14T08:30:25.471Z",
+  "synced_at": "2026-08-15T08:07:42.458Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "q-bank",
-      "at": "2026-08-13T20:25:15Z"
+      "name": "97115104",
+      "at": "2026-08-14T08:30:28Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "0a575c6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-14T08:30:26Z"
+        },
+        {
+          "sha": "a6510b2",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-13T08:32:57Z"
+        },
+        {
+          "sha": "f8733d3",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-12T08:31:43Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "q-bank",
       "commits": [
         {
@@ -109,27 +130,6 @@
         }
       ],
       "more": 0
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "a6510b2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-13T08:32:57Z"
-        },
-        {
-          "sha": "f8733d3",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-12T08:31:43Z"
-        },
-        {
-          "sha": "2ca6a69",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-11T08:23:24Z"
-        }
-      ],
-      "more": 27
     },
     {
       "repo": "blog",
@@ -186,22 +186,34 @@
       175,
       314,
       361,
-      340,
+      339,
       276,
-      322,
+      323,
       263
     ],
-    "latest": "2026-08-13T20:17:57.000Z",
+    "latest": "2026-08-14T08:30:26.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2051,
-    "commits_7d": 11,
-    "commits_30d": 144,
+    "commits_7d": 10,
+    "commits_30d": 116,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
     }
   },
   "languages_by_recency": [
+    {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-14T08:30:28Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-14T08:30:28Z"
+    },
     {
       "name": "TypeScript",
       "repo": "q-bank",
@@ -215,22 +227,10 @@
       "pushed_at": "2026-08-13T20:25:15Z"
     },
     {
-      "name": "Shell",
-      "repo": "q-bank",
-      "bytes": 1343,
-      "pushed_at": "2026-08-13T20:25:15Z"
-    },
-    {
       "name": "HTML",
       "repo": "q-bank",
       "bytes": 628,
       "pushed_at": "2026-08-13T20:25:15Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-13T08:32:58Z"
     },
     {
       "name": "Ruby",

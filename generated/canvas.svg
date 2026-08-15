@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-08-14 01:30 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-08-15 01:07 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -91,50 +91,50 @@
     </text>
     <text x="16" y="358" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">q-bank</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
 <text x="20" y="372" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> dc2187c</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0a575c6</tspan>
   </text>
 <text x="28" y="382" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 08/13 13:17 PT · feat: add initial project…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 08/14 01:30 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 1c16e2d</tspan>
-  </text>
-<text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>  08/13 12:39 PT · Initial commit
-  </text>
-<text x="16" y="418" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.4s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
-  </text>
-<text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.55s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> a6510b2</tspan>
   </text>
-<text x="28" y="442" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.60s" dur="0.3s" fill="freeze"/>│ 08/13 01:32 PT · [profile-sync] update gen…
+<text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 08/13 01:32 PT · [profile-sync] update gen…
   </text>
-<text x="20" y="452" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>
+<text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f8733d3</tspan>
   </text>
-<text x="28" y="462" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.85s" dur="0.3s" fill="freeze"/>│ 08/12 01:31 PT · [profile-sync] update gen…
+<text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 08/12 01:31 PT · [profile-sync] update gen…
   </text>
-<text x="20" y="472" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 2ca6a69</tspan>
-  </text>
-<text x="28" y="482" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.10s" dur="0.3s" fill="freeze"/>│ 08/11 01:23 PT · [profile-sync] update gen…
-  </text>
-<text x="20" y="492" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>
+<text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
+  </text>
+<text x="16" y="450" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#ffffff" font-weight="700">q-bank</tspan><tspan fill="#a3a3a3">/</tspan>
+  </text>
+<text x="20" y="464" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> dc2187c</tspan>
+  </text>
+<text x="28" y="474" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 08/13 13:17 PT · feat: add initial project…
+  </text>
+<text x="20" y="484" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 1c16e2d</tspan>
+  </text>
+<text x="28" y="494" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>  08/13 12:39 PT · Initial commit
   </text>
 <text x="16" y="510" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.5s" dur="0.3s" fill="freeze"/>
@@ -212,10 +212,10 @@
 <text x="462" y="234" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">activity</text>
 <line x1="462" y1="240" x2="908" y2="240" stroke="#ffffff" stroke-width="1"/>
 <text x="462" y="250" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 11</tspan>
+    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 10</tspan>
   </text>
 <text x="462" y="264" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 144</tspan>
+    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 116</tspan>
   </text>
 <text x="462" y="278" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">repos 7d</tspan><tspan fill="#ffffff" font-weight="400"> 3</tspan>
@@ -343,36 +343,36 @@
 </text>
 <text x="462" y="604" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="3.99s" dur="0.3s" fill="freeze"/>
-  TypeScript
+  JavaScript
 </text>
 <text x="908" y="604" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="3.99s" dur="0.3s" fill="freeze"/>
-  q-bank
+  97115104
 </text>
 <rect x="462" y="608" width="0" height="4" fill="#ffffff">
   <animate attributeName="width" from="0" to="446" begin="3.99s" dur="0.45s" fill="freeze"/>
 </rect>
 <text x="462" y="624" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.17s" dur="0.3s" fill="freeze"/>
-  CSS
+  Shell
 </text>
 <text x="908" y="624" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.17s" dur="0.3s" fill="freeze"/>
-  q-bank
+  97115104
 </text>
 <rect x="462" y="628" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="33" begin="4.17s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="3" begin="4.17s" dur="0.45s" fill="freeze"/>
 </rect>
 <text x="462" y="644" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.35s" dur="0.3s" fill="freeze"/>
-  Shell
+  TypeScript
 </text>
 <text x="908" y="644" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.35s" dur="0.3s" fill="freeze"/>
   q-bank
 </text>
 <rect x="462" y="648" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="33" begin="4.35s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="125" begin="4.35s" dur="0.45s" fill="freeze"/>
 </rect>
 </g>
   <g>
