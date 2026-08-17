@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-16T08:08:13.031Z",
+  "synced_at": "2026-08-17T08:15:53.110Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-08-15T08:07:44Z"
+      "at": "2026-08-16T08:08:14Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -29,7 +29,7 @@
     }
   },
   "profile_stats": {
-    "followers": 5,
+    "followers": 4,
     "following": 9,
     "member_since": "2024-10-14"
   },
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "b42c8e1",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-16T08:08:13Z"
+        },
+        {
           "sha": "45ddf34",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-15T08:07:43Z"
@@ -106,11 +111,6 @@
           "sha": "0a575c6",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-14T08:30:26Z"
-        },
-        {
-          "sha": "a6510b2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-13T08:32:57Z"
         }
       ],
       "more": 27
@@ -183,15 +183,15 @@
       97
     ],
     "days_pt": [
-      175,
+      176,
       314,
       361,
       339,
       275,
-      323,
+      322,
       264
     ],
-    "latest": "2026-08-15T08:07:43.000Z",
+    "latest": "2026-08-16T08:08:13.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2051,
     "commits_7d": 10,
@@ -206,13 +206,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-08-15T08:07:44Z"
+      "pushed_at": "2026-08-16T08:08:14Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-08-15T08:07:44Z"
+      "pushed_at": "2026-08-16T08:08:14Z"
     },
     {
       "name": "TypeScript",
