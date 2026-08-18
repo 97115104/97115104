@@ -25,16 +25,16 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-08-17)
+## recent blog (2026-08-18)
 
+- Elegy Ygele, Roost, and slumgullion: https://blog.97115104.com/2026/08/17/elegy-ygele/
 - emotion, memory, and machine intelligence: https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/
 - how i use ai in my work: https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/
 - neurodivergent and proud of it: https://blog.97115104.com/2026/07/15/systemizing-the-chaos/
 - reading the sonogram: https://blog.97115104.com/2026/06/24/reading-the-sonogram/
 - kissingparty on becoming: https://blog.97115104.com/2026/06/16/on-becoming/
-- when to start a new chat: https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/
 
-## reading (2026-08-17)
+## reading (2026-08-18)
 
 - reading: What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research by Sharri Markson (Page 57 of 352)
 - reading: The Picture of Dorian Gray by Oscar Wilde (Page 134 of 226)
@@ -42,4 +42,4 @@
 
 ## sync
 
-Last: 2026-08-17T08:15:53.110Z
+Last: 2026-08-18T08:11:38.505Z
