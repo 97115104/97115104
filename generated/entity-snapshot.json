@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-19T08:12:08.118Z",
+  "synced_at": "2026-08-20T08:13:58.081Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 2,
     "forks": 2,
     "pushed_7d": 3,
-    "pushed_30d": 13,
+    "pushed_30d": 11,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-08-19T00:52:57Z"
+      "name": "97115104",
+      "at": "2026-08-19T08:12:10Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "d44fce6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-19T08:12:08Z"
+        },
+        {
+          "sha": "81dd626",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-18T08:11:39Z"
+        },
+        {
+          "sha": "236c781",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-17T08:15:54Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "16a76e4",
           "message": "Refine wording for clarity in \"Elegy Ygele, Roost, and slumgullion\" post",
           "at": "2026-08-18T22:32:12Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "81dd626",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-18T08:11:39Z"
-        },
-        {
-          "sha": "236c781",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-17T08:15:54Z"
-        },
-        {
-          "sha": "b42c8e1",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-16T08:08:13Z"
         }
       ],
       "more": 27
@@ -158,8 +158,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       100,
-      123,
-      104,
+      124,
+      103,
       75,
       32,
       22,
@@ -184,18 +184,18 @@
     ],
     "days_pt": [
       175,
-      323,
+      322,
       370,
-      328,
+      329,
       272,
       320,
       263
     ],
-    "latest": "2026-08-19T00:52:55.000Z",
+    "latest": "2026-08-19T08:12:08.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2051,
     "commits_7d": 37,
-    "commits_30d": 134,
+    "commits_30d": 127,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -203,27 +203,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-19T08:12:10Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-19T08:12:10Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 420493,
       "pushed_at": "2026-08-19T00:52:57Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-08-19T00:52:57Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-08-19T00:52:57Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-08-19T00:52:57Z"
     },
     {
