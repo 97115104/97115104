@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-23T08:08:23.656Z",
+  "synced_at": "2026-08-24T08:17:40.884Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-08-22T08:08:03Z"
+      "at": "2026-08-23T08:08:26Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -29,7 +29,7 @@
     }
   },
   "profile_stats": {
-    "followers": 4,
+    "followers": 5,
     "following": 9,
     "member_since": "2024-10-14"
   },
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "dacbb70",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-23T08:08:24Z"
+        },
+        {
           "sha": "b638589",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-22T08:08:02Z"
@@ -106,11 +111,6 @@
           "sha": "796f782",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-08-21T08:14:49Z"
-        },
-        {
-          "sha": "f69d649",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-20T08:13:59Z"
         }
       ],
       "more": 27
@@ -183,15 +183,15 @@
       95
     ],
     "days_pt": [
-      175,
+      176,
       318,
       369,
       328,
       277,
-      320,
+      319,
       264
     ],
-    "latest": "2026-08-22T08:08:02.000Z",
+    "latest": "2026-08-23T08:08:24.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2051,
     "commits_7d": 36,
@@ -206,13 +206,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-08-22T08:08:03Z"
+      "pushed_at": "2026-08-23T08:08:26Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-08-22T08:08:03Z"
+      "pushed_at": "2026-08-23T08:08:26Z"
     },
     {
       "name": "HTML",
