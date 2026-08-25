@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-24T08:17:40.884Z",
+  "synced_at": "2026-08-25T08:16:43.206Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 2,
+    "pushed_7d": 5,
     "pushed_30d": 11,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-08-23T08:08:26Z"
+      "name": "fp-learning",
+      "at": "2026-08-25T00:31:26Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,62 +95,67 @@
   },
   "recent_commits": [
     {
-      "repo": "97115104",
+      "repo": "fp-learning",
       "commits": [
         {
-          "sha": "dacbb70",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-23T08:08:24Z"
+          "sha": "e4a6fa9",
+          "message": "scala practice abd gitignore",
+          "at": "2026-08-25T00:31:23Z"
         },
         {
-          "sha": "b638589",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-22T08:08:02Z"
+          "sha": "6f946db",
+          "message": "Update README.md",
+          "at": "2026-07-30T21:55:49Z"
         },
         {
-          "sha": "796f782",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-21T08:14:49Z"
+          "sha": "60bbcad",
+          "message": "Add .gitignore and initial hello.scala implementation",
+          "at": "2026-07-30T21:38:33Z"
+        }
+      ],
+      "more": 1
+    },
+    {
+      "repo": "server-backup",
+      "commits": [
+        {
+          "sha": "b3bc544",
+          "message": "feat: implement draft persistence and serialization functionality",
+          "at": "2026-08-24T21:02:51Z"
+        },
+        {
+          "sha": "cc336be",
+          "message": "feat: implement draft persistence and serialization functionality",
+          "at": "2026-08-24T21:02:41Z"
+        },
+        {
+          "sha": "75027f8",
+          "message": "fix: update subproject commit for server hosting scripts",
+          "at": "2026-07-31T20:05:49Z"
         }
       ],
       "more": 27
     },
     {
-      "repo": "blog",
+      "repo": "server-hosting-scripts",
       "commits": [
         {
-          "sha": "df68e86",
-          "message": "Refine wording for clarity in \"Elegy Ygele, Roost, and slumgullion\" post",
-          "at": "2026-08-21T04:17:47Z"
+          "sha": "3de2dc6",
+          "message": "feat: implement draft persistence and serialization functionality",
+          "at": "2026-08-24T21:02:44Z"
         },
         {
-          "sha": "2c34405",
-          "message": "Refine wording and structure for clarity in \"Elegy Ygele, Roost, and slumgullion\" post",
-          "at": "2026-08-21T02:36:37Z"
+          "sha": "6244856",
+          "message": "fix: clean up deploy history by removing outdated entries and adding recent deployments",
+          "at": "2026-07-31T20:05:45Z"
         },
         {
-          "sha": "e658f97",
-          "message": "Refine wording and structure for clarity in \"Elegy Ygele, Roost, and slumgullion\" post",
-          "at": "2026-08-20T23:12:56Z"
+          "sha": "6e0ba1c",
+          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
+          "at": "2026-07-22T23:48:40Z"
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "q-bank",
-      "commits": [
-        {
-          "sha": "dc2187c",
-          "message": "feat: add initial project setup with React, Vite, and Tailwind CSS",
-          "at": "2026-08-13T20:17:57Z"
-        },
-        {
-          "sha": "1c16e2d",
-          "message": "Initial commit",
-          "at": "2026-08-13T19:39:56Z"
-        }
-      ],
-      "more": 0
     }
   ],
   "commit_stats": {
@@ -160,7 +165,7 @@
       100,
       124,
       103,
-      75,
+      74,
       32,
       22,
       14,
@@ -170,32 +175,32 @@
       22,
       38,
       70,
-      96,
-      144,
+      98,
+      147,
       182,
-      158,
-      122,
+      157,
+      123,
       149,
-      125,
-      115,
+      123,
+      114,
       95,
       141,
       95
     ],
     "days_pt": [
       176,
-      318,
+      323,
       369,
-      328,
-      277,
-      319,
-      264
+      327,
+      276,
+      318,
+      263
     ],
-    "latest": "2026-08-23T08:08:24.000Z",
+    "latest": "2026-08-25T00:31:23.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
-    "sample_size": 2051,
-    "commits_7d": 36,
-    "commits_30d": 89,
+    "sample_size": 2052,
+    "commits_7d": 33,
+    "commits_30d": 93,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -203,62 +208,62 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-08-23T08:08:26Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-08-23T08:08:26Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "blog",
-      "bytes": 420493,
-      "pushed_at": "2026-08-21T04:17:49Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "blog",
-      "bytes": 102731,
-      "pushed_at": "2026-08-21T04:17:49Z"
-    },
-    {
-      "name": "Ruby",
-      "repo": "blog",
-      "bytes": 8050,
-      "pushed_at": "2026-08-21T04:17:49Z"
-    },
-    {
-      "name": "Python",
-      "repo": "blog",
-      "bytes": 6850,
-      "pushed_at": "2026-08-21T04:17:49Z"
+      "name": "Scala",
+      "repo": "fp-learning",
+      "bytes": 812,
+      "pushed_at": "2026-08-25T00:31:26Z"
     },
     {
       "name": "TypeScript",
-      "repo": "q-bank",
-      "bytes": 18352,
-      "pushed_at": "2026-08-13T20:25:15Z"
+      "repo": "server-backup",
+      "bytes": 1242578,
+      "pushed_at": "2026-08-24T21:02:56Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "server-backup",
+      "bytes": 818126,
+      "pushed_at": "2026-08-24T21:02:56Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "server-backup",
+      "bytes": 761854,
+      "pushed_at": "2026-08-24T21:02:56Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "server-backup",
+      "bytes": 520102,
+      "pushed_at": "2026-08-24T21:02:56Z"
     },
     {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-07-31T20:05:52Z"
+      "pushed_at": "2026-08-24T21:02:56Z"
+    },
+    {
+      "name": "Python",
+      "repo": "server-backup",
+      "bytes": 72572,
+      "pushed_at": "2026-08-24T21:02:56Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "server-backup",
+      "bytes": 39435,
+      "pushed_at": "2026-08-24T21:02:56Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56232562
+      "bytes": 56231565
     },
     {
       "name": "TypeScript",
-      "bytes": 8804106
+      "bytes": 8996362
     },
     {
       "name": "JavaScript",
@@ -266,7 +271,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 3498122
+      "bytes": 3509988
     },
     {
       "name": "Python",
@@ -274,7 +279,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 1365701
+      "bytes": 1366087
     },
     {
       "name": "Solidity",
