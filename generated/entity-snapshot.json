@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-25T08:16:43.206Z",
+  "synced_at": "2026-08-26T08:16:45.870Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "fp-learning",
-      "at": "2026-08-25T00:31:26Z"
+      "name": "97115104",
+      "at": "2026-08-25T08:16:45Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "6fe443a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-25T08:16:43Z"
+        },
+        {
+          "sha": "5430d35",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-24T08:17:41Z"
+        },
+        {
+          "sha": "dacbb70",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-08-23T08:08:24Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "fp-learning",
       "commits": [
         {
@@ -135,27 +156,6 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "server-hosting-scripts",
-      "commits": [
-        {
-          "sha": "3de2dc6",
-          "message": "feat: implement draft persistence and serialization functionality",
-          "at": "2026-08-24T21:02:44Z"
-        },
-        {
-          "sha": "6244856",
-          "message": "fix: clean up deploy history by removing outdated entries and adding recent deployments",
-          "at": "2026-07-31T20:05:45Z"
-        },
-        {
-          "sha": "6e0ba1c",
-          "message": "fix: update port, deployment timestamp, and improve SettingsPage accessibility",
-          "at": "2026-07-22T23:48:40Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -188,18 +188,18 @@
       95
     ],
     "days_pt": [
-      176,
+      175,
       323,
-      369,
+      370,
       327,
       276,
       318,
       263
     ],
-    "latest": "2026-08-25T00:31:23.000Z",
+    "latest": "2026-08-25T08:16:43.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2052,
-    "commits_7d": 33,
+    "commits_7d": 18,
     "commits_30d": 93,
     "top_commit_repo": {
       "name": "97115104",
@@ -207,6 +207,18 @@
     }
   },
   "languages_by_recency": [
+    {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-08-25T08:16:45Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-08-25T08:16:45Z"
+    },
     {
       "name": "Scala",
       "repo": "fp-learning",
@@ -217,12 +229,6 @@
       "name": "TypeScript",
       "repo": "server-backup",
       "bytes": 1242578,
-      "pushed_at": "2026-08-24T21:02:56Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "server-backup",
-      "bytes": 818126,
       "pushed_at": "2026-08-24T21:02:56Z"
     },
     {
@@ -247,12 +253,6 @@
       "name": "Python",
       "repo": "server-backup",
       "bytes": 72572,
-      "pushed_at": "2026-08-24T21:02:56Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "server-backup",
-      "bytes": 39435,
       "pushed_at": "2026-08-24T21:02:56Z"
     }
   ],
