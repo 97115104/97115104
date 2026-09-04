@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-03T08:15:45.124Z",
+  "synced_at": "2026-09-04T08:21:09.926Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 2,
     "forks": 2,
     "pushed_7d": 2,
-    "pushed_30d": 8,
+    "pushed_30d": 7,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-09-02T08:16:01Z"
+      "at": "2026-09-03T08:15:47Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "49000f8",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-03T08:15:46Z"
+        },
+        {
           "sha": "96589f1",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-09-02T08:16:00Z"
@@ -106,11 +111,6 @@
           "sha": "5d27c70",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-09-01T08:16:24Z"
-        },
-        {
-          "sha": "d2ce1b1",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-08-31T08:17:25Z"
         }
       ],
       "more": 27
@@ -163,8 +163,8 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       100,
-      126,
-      99,
+      127,
+      98,
       74,
       34,
       23,
@@ -190,17 +190,17 @@
     "days_pt": [
       175,
       322,
-      371,
+      370,
       328,
-      276,
+      277,
       318,
       263
     ],
-    "latest": "2026-09-02T08:16:00.000Z",
+    "latest": "2026-09-03T08:15:46.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2053,
     "commits_7d": 8,
-    "commits_30d": 82,
+    "commits_30d": 67,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,13 +211,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-09-02T08:16:01Z"
+      "pushed_at": "2026-09-03T08:15:47Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-09-02T08:16:01Z"
+      "pushed_at": "2026-09-03T08:15:47Z"
     },
     {
       "name": "Python",
