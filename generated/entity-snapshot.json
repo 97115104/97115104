@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-10T08:15:42.076Z",
+  "synced_at": "2026-09-11T08:15:10.657Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 7,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 1,
+    "pushed_7d": 2,
     "pushed_30d": 7,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-09-09T08:15:34Z"
+      "name": "blog",
+      "at": "2026-09-10T19:59:58Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -34,11 +34,6 @@
     "member_since": "2024-10-14"
   },
   "recent_posts": [
-    {
-      "title": "Elegy Ygele, Roost, and slumgullion",
-      "link": "https://blog.97115104.com/2026/08/17/elegy-ygele/",
-      "updated": "2026-08-17T15:00:00-07:00"
-    },
     {
       "title": "emotion, memory, and machine intelligence",
       "link": "https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/",
@@ -63,6 +58,11 @@
       "title": "kissingparty on becoming",
       "link": "https://blog.97115104.com/2026/06/16/on-becoming/",
       "updated": "2026-06-16T12:00:00-07:00"
+    },
+    {
+      "title": "when to start a new chat",
+      "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
+      "updated": "2026-06-05T12:00:00-07:00"
     }
   ],
   "books": {
@@ -95,8 +95,34 @@
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "bc424a2",
+          "message": "Add \"Elegy Ygele, Roost, and slumgullion\" post to archive",
+          "at": "2026-09-10T19:59:55Z"
+        },
+        {
+          "sha": "83b4af7",
+          "message": "Remove AI Transparency section from sidebar in index.html",
+          "at": "2026-08-24T21:00:22Z"
+        },
+        {
+          "sha": "62f9905",
+          "message": "Refine wording for clarity in AI Transparency section of index.html",
+          "at": "2026-08-24T20:57:20Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "6a85a57",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-10T08:15:43Z"
+        },
         {
           "sha": "2dd031c",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,11 +132,6 @@
           "sha": "d03778e",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-09-08T08:15:47Z"
-        },
-        {
-          "sha": "f12afe8",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-07T08:17:27Z"
         }
       ],
       "more": 27
@@ -135,27 +156,6 @@
         }
       ],
       "more": 15
-    },
-    {
-      "repo": "fp-learning",
-      "commits": [
-        {
-          "sha": "e4a6fa9",
-          "message": "scala practice abd gitignore",
-          "at": "2026-08-25T00:31:23Z"
-        },
-        {
-          "sha": "6f946db",
-          "message": "Update README.md",
-          "at": "2026-07-30T21:55:49Z"
-        },
-        {
-          "sha": "60bbcad",
-          "message": "Add .gitignore and initial hello.scala implementation",
-          "at": "2026-07-30T21:38:33Z"
-        }
-      ],
-      "more": 1
     }
   ],
   "commit_stats": {
@@ -174,7 +174,7 @@
       8,
       22,
       38,
-      70,
+      71,
       98,
       147,
       182,
@@ -182,24 +182,24 @@
       123,
       149,
       123,
-      114,
+      113,
       95,
       141,
       95
     ],
     "days_pt": [
       175,
-      322,
-      371,
+      321,
+      370,
       328,
-      276,
+      278,
       318,
       263
     ],
-    "latest": "2026-09-09T08:15:33.000Z",
+    "latest": "2026-09-10T19:59:55.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2053,
-    "commits_7d": 7,
+    "commits_7d": 8,
     "commits_30d": 67,
     "top_commit_repo": {
       "name": "97115104",
@@ -208,34 +208,40 @@
   },
   "languages_by_recency": [
     {
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 419958,
+      "pushed_at": "2026-09-10T19:59:58Z"
+    },
+    {
       "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-09-09T08:15:34Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-09-09T08:15:34Z"
-    },
-    {
-      "name": "Python",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 42015,
-      "pushed_at": "2026-09-01T12:22:28Z"
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-09-10T19:59:58Z"
     },
     {
       "name": "CSS",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 16728,
-      "pushed_at": "2026-09-01T12:22:28Z"
+      "repo": "blog",
+      "bytes": 102731,
+      "pushed_at": "2026-09-10T19:59:58Z"
     },
     {
-      "name": "HTML",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 7409,
-      "pushed_at": "2026-09-01T12:22:28Z"
+      "name": "Shell",
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-09-10T19:59:58Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-09-10T19:59:58Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-09-10T19:59:58Z"
     },
     {
       "name": "Scala",
@@ -247,12 +253,6 @@
       "name": "TypeScript",
       "repo": "server-backup",
       "bytes": 1242578,
-      "pushed_at": "2026-08-24T21:02:56Z"
-    },
-    {
-      "name": "TeX",
-      "repo": "server-backup",
-      "bytes": 86916,
       "pushed_at": "2026-08-24T21:02:56Z"
     }
   ],
