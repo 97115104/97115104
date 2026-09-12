@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-11T08:15:10.657Z",
+  "synced_at": "2026-09-12T08:12:59.996Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-09-10T19:59:58Z"
+      "name": "97115104",
+      "at": "2026-09-11T08:15:12Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "3bcdc7f",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-11T08:15:11Z"
+        },
+        {
+          "sha": "6a85a57",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-10T08:15:43Z"
+        },
+        {
+          "sha": "2dd031c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-09T08:15:33Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "62f9905",
           "message": "Refine wording for clarity in AI Transparency section of index.html",
           "at": "2026-08-24T20:57:20Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "6a85a57",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-10T08:15:43Z"
-        },
-        {
-          "sha": "2dd031c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-09T08:15:33Z"
-        },
-        {
-          "sha": "d03778e",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-08T08:15:47Z"
         }
       ],
       "more": 27
@@ -191,12 +191,12 @@
       175,
       321,
       370,
-      328,
+      327,
       278,
-      318,
+      319,
       263
     ],
-    "latest": "2026-09-10T19:59:55.000Z",
+    "latest": "2026-09-11T08:15:11.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2053,
     "commits_7d": 8,
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-09-11T08:15:12Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-09-11T08:15:12Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419958,
       "pushed_at": "2026-09-10T19:59:58Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-09-10T19:59:58Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-09-10T19:59:58Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-09-10T19:59:58Z"
     },
     {
