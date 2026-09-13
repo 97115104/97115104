@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-12T08:12:59.996Z",
+  "synced_at": "2026-09-13T08:13:27.455Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -14,14 +14,14 @@
     "stars": 2,
     "forks": 2,
     "pushed_7d": 2,
-    "pushed_30d": 7,
+    "pushed_30d": 6,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-09-11T08:15:12Z"
+      "at": "2026-09-12T08:13:02Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "5b2fd8d",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-12T08:13:01Z"
+        },
+        {
           "sha": "3bcdc7f",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-09-11T08:15:11Z"
@@ -106,11 +111,6 @@
           "sha": "6a85a57",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-09-10T08:15:43Z"
-        },
-        {
-          "sha": "2dd031c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-09T08:15:33Z"
         }
       ],
       "more": 27
@@ -192,15 +192,15 @@
       321,
       370,
       327,
-      278,
+      277,
       319,
-      263
+      264
     ],
-    "latest": "2026-09-11T08:15:11.000Z",
+    "latest": "2026-09-12T08:13:01.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2053,
-    "commits_7d": 8,
-    "commits_30d": 67,
+    "commits_7d": 7,
+    "commits_30d": 65,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,13 +211,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-09-11T08:15:12Z"
+      "pushed_at": "2026-09-12T08:13:02Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-09-11T08:15:12Z"
+      "pushed_at": "2026-09-12T08:13:02Z"
     },
     {
       "name": "HTML",
