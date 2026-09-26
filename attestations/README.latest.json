@@ -2,20 +2,20 @@
   "success": true,
   "attestation": {
     "version": "3.0",
-    "id": "2026-09-25-b03f4b",
+    "id": "2026-09-26-26c27c",
     "content_name": "README.md",
     "model": "composer-2.5-fast",
     "role": "collaborated",
     "authorship_type": "collab",
-    "timestamp": "2026-09-25T08:15:39.247Z",
+    "timestamp": "2026-09-26T08:14:28.933Z",
     "author": "97115104",
     "platform": "Cursor",
     "content_hash": "sha256:b168af37cd2e62ec1d0229c5d15c87aff587318e2422116205148d750abbfe7c",
     "signature": {
       "type": "hmac-sha256",
       "algorithm": "HMAC-SHA256",
-      "value": "067085d7ac3ec9eaa5c1d603192d487fbf084d9cdd41c11709383880451c8d9f",
-      "data_to_sign": "{\"content_hash\":\"sha256:b168af37cd2e62ec1d0229c5d15c87aff587318e2422116205148d750abbfe7c\",\"model\":\"composer-2.5-fast\",\"timestamp\":\"2026-09-25T08:15:39.247Z\",\"authorship_type\":\"collab\",\"role\":\"collaborated\"}"
+      "value": "a54629e71067a49fb56f45296beff69c93491e5b6e3fd7812c83b4a90f28737c",
+      "data_to_sign": "{\"content_hash\":\"sha256:b168af37cd2e62ec1d0229c5d15c87aff587318e2422116205148d750abbfe7c\",\"model\":\"composer-2.5-fast\",\"timestamp\":\"2026-09-26T08:14:28.933Z\",\"authorship_type\":\"collab\",\"role\":\"collaborated\"}"
     },
     "signer": {
       "name": "97115104",
@@ -23,8 +23,8 @@
     }
   },
   "urls": {
-    "verify": "https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA5LTI1LWIwM2Y0YiIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY29tcG9zZXItMi41LWZhc3QiLCJyb2xlIjoiY29sbGFib3JhdGVkIiwiYXV0aG9yc2hpcF90eXBlIjoiY29sbGFiIiwidGltZXN0YW1wIjoiMjAyNi0wOS0yNVQwODoxNTozOS4yNDdaIiwiYXV0aG9yIjoiOTcxMTUxMDQiLCJwbGF0Zm9ybSI6IkN1cnNvciIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpiMTY4YWYzN2NkMmU2MmVjMWQwMjI5YzVkMTVjODdhZmY1ODczMThlMjQyMjExNjIwNTE0OGQ3NTBhYmJmZTdjIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwidmFsdWUiOiIwNjcwODVkN2FjM2VjOWVhYTVjMWQ2MDMxOTJkNDg3ZmJmMDg0ZDljZGQ0MWMxMTcwOTM4Mzg4MDQ1MWM4ZDlmIiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6YjE2OGFmMzdjZDJlNjJlYzFkMDIyOWM1ZDE1Yzg3YWZmNTg3MzE4ZTI0MjIxMTYyMDUxNDhkNzUwYWJiZmU3Y1wiLFwibW9kZWxcIjpcImNvbXBvc2VyLTIuNS1mYXN0XCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjYtMDktMjVUMDg6MTU6MzkuMjQ3WlwiLFwiYXV0aG9yc2hpcF90eXBlXCI6XCJjb2xsYWJcIixcInJvbGVcIjpcImNvbGxhYm9yYXRlZFwifSJ9LCJzaWduZXIiOnsibmFtZSI6Ijk3MTE1MTA0IiwiaWQiOiI5NzExNTEwNCJ9fQ%3D%3D",
-    "short": "https://attest.97115104.com/s/0nkbzjcx"
+    "verify": "https://attest.97115104.com/verify/?data=eyJ2ZXJzaW9uIjoiMy4wIiwiaWQiOiIyMDI2LTA5LTI2LTI2YzI3YyIsImNvbnRlbnRfbmFtZSI6IlJFQURNRS5tZCIsIm1vZGVsIjoiY29tcG9zZXItMi41LWZhc3QiLCJyb2xlIjoiY29sbGFib3JhdGVkIiwiYXV0aG9yc2hpcF90eXBlIjoiY29sbGFiIiwidGltZXN0YW1wIjoiMjAyNi0wOS0yNlQwODoxNDoyOC45MzNaIiwiYXV0aG9yIjoiOTcxMTUxMDQiLCJwbGF0Zm9ybSI6IkN1cnNvciIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpiMTY4YWYzN2NkMmU2MmVjMWQwMjI5YzVkMTVjODdhZmY1ODczMThlMjQyMjExNjIwNTE0OGQ3NTBhYmJmZTdjIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwidmFsdWUiOiJhNTQ2MjllNzEwNjdhNDlmYjU2ZjQ1Mjk2YmVmZjY5YzkzNDkxZTViNmUzZmQ3ODEyYzgzYjRhOTBmMjg3MzdjIiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6YjE2OGFmMzdjZDJlNjJlYzFkMDIyOWM1ZDE1Yzg3YWZmNTg3MzE4ZTI0MjIxMTYyMDUxNDhkNzUwYWJiZmU3Y1wiLFwibW9kZWxcIjpcImNvbXBvc2VyLTIuNS1mYXN0XCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjYtMDktMjZUMDg6MTQ6MjguOTMzWlwiLFwiYXV0aG9yc2hpcF90eXBlXCI6XCJjb2xsYWJcIixcInJvbGVcIjpcImNvbGxhYm9yYXRlZFwifSJ9LCJzaWduZXIiOnsibmFtZSI6Ijk3MTE1MTA0IiwiaWQiOiI5NzExNTEwNCJ9fQ%3D%3D",
+    "short": "https://attest.97115104.com/s/m5rrxk62"
   },
   "content_hash": "b168af37cd2e62ec1d0229c5d15c87aff587318e2422116205148d750abbfe7c"
 }
