@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-02T08:15:45.125Z",
+  "synced_at": "2026-10-03T08:14:35.423Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "temp-uv-historical-trends",
-      "at": "2026-10-01T12:29:25Z"
+      "name": "97115104",
+      "at": "2026-10-02T08:15:47Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "cffa79b",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-02T08:15:45Z"
+        },
+        {
+          "sha": "6eadb2e",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-01T08:16:54Z"
+        },
+        {
+          "sha": "3913442",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-09-30T08:16:18Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "temp-uv-historical-trends",
       "commits": [
         {
@@ -114,27 +135,6 @@
         }
       ],
       "more": 16
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "6eadb2e",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-01T08:16:54Z"
-        },
-        {
-          "sha": "3913442",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-30T08:16:18Z"
-        },
-        {
-          "sha": "ce5dbf2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-09-29T08:16:32Z"
-        }
-      ],
-      "more": 27
     },
     {
       "repo": "blog",
@@ -191,12 +191,12 @@
       175,
       321,
       370,
-      328,
+      327,
       279,
-      318,
+      319,
       263
     ],
-    "latest": "2026-10-01T12:29:23.000Z",
+    "latest": "2026-10-02T08:15:45.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
     "commits_7d": 7,
@@ -209,9 +209,15 @@
   "languages_by_recency": [
     {
       "name": "JavaScript",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 100981,
-      "pushed_at": "2026-10-01T12:29:25Z"
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-10-02T08:15:47Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-10-02T08:15:47Z"
     },
     {
       "name": "Python",
@@ -229,12 +235,6 @@
       "name": "HTML",
       "repo": "temp-uv-historical-trends",
       "bytes": 7409,
-      "pushed_at": "2026-10-01T12:29:25Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 4349,
       "pushed_at": "2026-10-01T12:29:25Z"
     },
     {
