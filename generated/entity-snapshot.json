@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-04T10:09:58.632Z",
+  "synced_at": "2026-10-05T08:24:12.322Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 8,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 2,
+    "pushed_7d": 3,
     "pushed_30d": 3,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-10-03T08:14:36Z"
+      "name": "blog",
+      "at": "2026-10-04T20:15:46Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,8 +95,34 @@
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "b0d3b6d",
+          "message": "Fix typo in \"what if\" section of the \"javis and endor\" post",
+          "at": "2026-10-04T20:15:43Z"
+        },
+        {
+          "sha": "bc424a2",
+          "message": "Add \"Elegy Ygele, Roost, and slumgullion\" post to archive",
+          "at": "2026-09-10T19:59:55Z"
+        },
+        {
+          "sha": "83b4af7",
+          "message": "Remove AI Transparency section from sidebar in index.html",
+          "at": "2026-08-24T21:00:22Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "0db7a64",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-04T10:09:59Z"
+        },
         {
           "sha": "34e68bd",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,11 +132,6 @@
           "sha": "cffa79b",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-02T08:15:45Z"
-        },
-        {
-          "sha": "6eadb2e",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-01T08:16:54Z"
         }
       ],
       "more": 27
@@ -135,27 +156,6 @@
         }
       ],
       "more": 16
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "bc424a2",
-          "message": "Add \"Elegy Ygele, Roost, and slumgullion\" post to archive",
-          "at": "2026-09-10T19:59:55Z"
-        },
-        {
-          "sha": "83b4af7",
-          "message": "Remove AI Transparency section from sidebar in index.html",
-          "at": "2026-08-24T21:00:22Z"
-        },
-        {
-          "sha": "62f9905",
-          "message": "Refine wording for clarity in AI Transparency section of index.html",
-          "at": "2026-08-24T20:57:20Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -163,9 +163,9 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       100,
-      129,
+      128,
       98,
-      74,
+      75,
       32,
       24,
       14,
@@ -175,7 +175,7 @@
       22,
       38,
       71,
-      98,
+      99,
       147,
       182,
       157,
@@ -184,23 +184,23 @@
       123,
       113,
       95,
-      141,
+      140,
       95
     ],
     "days_pt": [
-      175,
-      321,
+      177,
+      320,
       370,
       327,
       278,
-      319,
+      318,
       264
     ],
-    "latest": "2026-10-03T08:14:36.000Z",
+    "latest": "2026-10-04T20:15:43.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 7,
-    "commits_30d": 31,
+    "commits_7d": 8,
+    "commits_30d": 32,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,40 +208,40 @@
   },
   "languages_by_recency": [
     {
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 419958,
+      "pushed_at": "2026-10-04T20:15:46Z"
+    },
+    {
       "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-10-03T08:14:36Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-10-03T08:14:36Z"
-    },
-    {
-      "name": "Python",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 42015,
-      "pushed_at": "2026-10-01T12:29:25Z"
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
       "name": "CSS",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 16728,
-      "pushed_at": "2026-10-01T12:29:25Z"
+      "repo": "blog",
+      "bytes": 102731,
+      "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
-      "name": "HTML",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 7409,
-      "pushed_at": "2026-10-01T12:29:25Z"
+      "name": "Shell",
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-09-10T19:59:58Z"
+      "pushed_at": "2026-10-04T20:15:46Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
       "name": "Scala",
