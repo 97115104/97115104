@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-05T08:24:12.322Z",
+  "synced_at": "2026-10-06T08:15:37.401Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-10-04T20:15:46Z"
+      "name": "97115104",
+      "at": "2026-10-05T08:24:14Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "94b3de1",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-05T08:24:13Z"
+        },
+        {
+          "sha": "0db7a64",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-04T10:09:59Z"
+        },
+        {
+          "sha": "34e68bd",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-03T08:14:36Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "83b4af7",
           "message": "Remove AI Transparency section from sidebar in index.html",
           "at": "2026-08-24T21:00:22Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "0db7a64",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-04T10:09:59Z"
-        },
-        {
-          "sha": "34e68bd",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-03T08:14:36Z"
-        },
-        {
-          "sha": "cffa79b",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-02T08:15:45Z"
         }
       ],
       "more": 27
@@ -189,17 +189,17 @@
     ],
     "days_pt": [
       177,
-      320,
+      321,
       370,
       327,
       278,
       318,
-      264
+      263
     ],
-    "latest": "2026-10-04T20:15:43.000Z",
+    "latest": "2026-10-05T08:24:13.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 8,
+    "commits_7d": 9,
     "commits_30d": 32,
     "top_commit_repo": {
       "name": "97115104",
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-10-05T08:24:14Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-10-05T08:24:14Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419958,
       "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-10-04T20:15:46Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-04T20:15:46Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-10-04T20:15:46Z"
     },
     {
