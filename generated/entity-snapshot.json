@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-08T08:17:57.339Z",
+  "synced_at": "2026-10-09T08:17:37.906Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 8,
     "stars": 2,
     "forks": 2,
-    "pushed_7d": 3,
+    "pushed_7d": 2,
     "pushed_30d": 3,
     "top_starred": {
       "name": "lexicographer-companion",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-10-07T08:17:00Z"
+      "name": "blog",
+      "at": "2026-10-08T18:57:16Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,8 +95,34 @@
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "bb58c62",
+          "message": "remove line",
+          "at": "2026-10-08T18:57:13Z"
+        },
+        {
+          "sha": "dbb66d5",
+          "message": "Remove unnecessary newline at the end of the AI usage post",
+          "at": "2026-10-08T18:55:55Z"
+        },
+        {
+          "sha": "9a3eb53",
+          "message": "Refine wording for clarity in AI usage section of \"how I use AI in my work\" post",
+          "at": "2026-10-08T18:52:16Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "6bc232a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-08T08:17:58Z"
+        },
         {
           "sha": "fc62822",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,32 +132,6 @@
           "sha": "7411c56",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-06T08:15:38Z"
-        },
-        {
-          "sha": "94b3de1",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-05T08:24:13Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "b0d3b6d",
-          "message": "Fix typo in \"what if\" section of the \"javis and endor\" post",
-          "at": "2026-10-04T20:15:43Z"
-        },
-        {
-          "sha": "bc424a2",
-          "message": "Add \"Elegy Ygele, Roost, and slumgullion\" post to archive",
-          "at": "2026-09-10T19:59:55Z"
-        },
-        {
-          "sha": "83b4af7",
-          "message": "Remove AI Transparency section from sidebar in index.html",
-          "at": "2026-08-24T21:00:22Z"
         }
       ],
       "more": 27
@@ -173,7 +173,7 @@
       12,
       8,
       22,
-      38,
+      41,
       71,
       99,
       147,
@@ -184,23 +184,23 @@
       123,
       113,
       95,
-      140,
-      95
+      138,
+      94
     ],
     "days_pt": [
       176,
-      320,
-      371,
+      317,
+      370,
       328,
-      278,
+      282,
       318,
       263
     ],
-    "latest": "2026-10-07T08:16:59.000Z",
+    "latest": "2026-10-08T18:57:13.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 8,
-    "commits_30d": 32,
+    "commits_7d": 10,
+    "commits_30d": 35,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,40 +208,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-10-07T08:17:00Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-10-07T08:17:00Z"
-    },
-    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419958,
-      "pushed_at": "2026-10-04T20:15:46Z"
+      "pushed_at": "2026-10-08T18:57:16Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-10-08T18:57:16Z"
     },
     {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-04T20:15:46Z"
+      "pushed_at": "2026-10-08T18:57:16Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-10-08T18:57:16Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-10-04T20:15:46Z"
+      "pushed_at": "2026-10-08T18:57:16Z"
     },
     {
       "name": "Python",
       "repo": "blog",
       "bytes": 6850,
-      "pushed_at": "2026-10-04T20:15:46Z"
+      "pushed_at": "2026-10-08T18:57:16Z"
     },
     {
       "name": "Scala",
