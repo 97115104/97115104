@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-10T08:14:28.843Z",
+  "synced_at": "2026-10-11T08:14:53.670Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-10-09T08:17:39Z"
+      "at": "2026-10-10T08:14:30Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "af21c6b",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-10T08:14:29Z"
+        },
+        {
           "sha": "8c0e11c",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-09T08:17:38Z"
@@ -106,11 +111,6 @@
           "sha": "6bc232a",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-08T08:17:58Z"
-        },
-        {
-          "sha": "fc62822",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-07T08:16:59Z"
         }
       ],
       "more": 27
@@ -192,15 +192,15 @@
       317,
       370,
       327,
-      282,
+      281,
       319,
-      263
+      264
     ],
-    "latest": "2026-10-09T08:17:38.000Z",
+    "latest": "2026-10-10T08:14:29.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
     "commits_7d": 11,
-    "commits_30d": 36,
+    "commits_30d": 35,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -211,13 +211,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-10-09T08:17:39Z"
+      "pushed_at": "2026-10-10T08:14:30Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-10-09T08:17:39Z"
+      "pushed_at": "2026-10-10T08:14:30Z"
     },
     {
       "name": "HTML",
