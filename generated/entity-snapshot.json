@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-21T08:14:34.231Z",
+  "synced_at": "2026-10-22T08:15:16.104Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -11,17 +11,17 @@
     "owned": 117,
     "forked": 8,
     "archived": 8,
-    "stars": 2,
+    "stars": 3,
     "forks": 2,
-    "pushed_7d": 1,
+    "pushed_7d": 2,
     "pushed_30d": 3,
     "top_starred": {
-      "name": "lexicographer-companion",
+      "name": "qualityprompts",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-10-20T08:14:42Z"
+      "name": "blog",
+      "at": "2026-10-22T04:00:09Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -34,6 +34,16 @@
     "member_since": "2024-10-14"
   },
   "recent_posts": [
+    {
+      "title": "ai vegetarianism, -1 machines!",
+      "link": "https://blog.97115104.com/2026/10/21/ai-vegetarianism/",
+      "updated": "2026-10-21T15:00:00-07:00"
+    },
+    {
+      "title": "Elegy Ygele, Roost, and slumgullion",
+      "link": "https://blog.97115104.com/2026/08/17/elegy-ygele/",
+      "updated": "2026-08-17T15:00:00-07:00"
+    },
     {
       "title": "emotion, memory, and machine intelligence",
       "link": "https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/",
@@ -50,53 +60,85 @@
       "updated": "2026-07-15T12:00:00-07:00"
     },
     {
-      "title": "reading the sonogram",
-      "link": "https://blog.97115104.com/2026/06/24/reading-the-sonogram/",
-      "updated": "2026-06-24T10:00:00-07:00"
-    },
-    {
-      "title": "kissingparty on becoming",
-      "link": "https://blog.97115104.com/2026/06/16/on-becoming/",
-      "updated": "2026-06-16T12:00:00-07:00"
-    },
-    {
-      "title": "when to start a new chat",
-      "link": "https://blog.97115104.com/2026/06/05/when-to-start-a-new-chat/",
-      "updated": "2026-06-05T12:00:00-07:00"
+      "title": "where are all the real engineers and thought leaders?",
+      "link": "https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/",
+      "updated": "2026-06-30T12:00:00-07:00"
     }
   ],
   "books": {
     "currently_reading": [
       {
-        "title": "What Really Happened in Wuhan: The Cover-Ups, the Conspiracies and the Classified Research",
-        "author": "Sharri Markson",
-        "progress": "Page 57 of 352",
+        "title": "A Little History of Mathematics",
+        "author": "Snezana Lawrence",
+        "progress": "",
         "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/58004935-what-really-happened-in-wuhan",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/220714032-a-little-history-of-mathematics",
         "rating": null
       },
       {
-        "title": "The Picture of Dorian Gray",
-        "author": "Oscar Wilde",
-        "progress": "Page 134 of 226",
+        "title": "The Master and His Emissary: The Divided Brain and the Making of the Western World",
+        "author": "Iain McGilchrist",
+        "progress": "",
         "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/489732.The_Picture_of_Dorian_Gray",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/6968772-the-master-and-his-emissary",
+        "rating": null
+      },
+      {
+        "title": "Giovanni’s Room",
+        "author": "James Baldwin",
+        "progress": "",
+        "completedDate": "",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/406235.Giovanni_s_Room",
+        "rating": null
+      },
+      {
+        "title": "Gut Feelings: The Intelligence of the Unconscious",
+        "author": "Gerd Gigerenzer",
+        "progress": "",
+        "completedDate": "",
+        "goodreadsUrl": "https://www.goodreads.com/book/show/786560.Gut_Feelings",
         "rating": null
       }
     ],
     "last_read": {
-      "title": "Midnight in the Garden of Good and Evil",
-      "author": "John Berendt",
+      "title": "Confessions of a Mask",
+      "author": "Yukio Mishima",
       "progress": "",
-      "completedDate": "August 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/386187.Midnight_in_the_Garden_of_Good_and_Evil",
+      "completedDate": "October 2026",
+      "goodreadsUrl": "https://www.goodreads.com/book/show/62794.Confessions_of_a_Mask",
       "rating": 5
     }
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "24c2598",
+          "message": "Update link to the Autophage Protocol for accuracy in \"Proffering Intelligence\" post",
+          "at": "2026-10-22T08:14:25Z"
+        },
+        {
+          "sha": "d9c76fa",
+          "message": "Update subtitle in \"Random Musings\" for improved clarity",
+          "at": "2026-10-22T04:00:06Z"
+        },
+        {
+          "sha": "53d06a0",
+          "message": "Update subtitle in \"Random Musings\" for improved clarity",
+          "at": "2026-10-22T03:57:27Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "6a6f1eb",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-21T08:14:35Z"
+        },
         {
           "sha": "0cba237",
           "message": "[profile-sync] update generated profile artifacts",
@@ -106,32 +148,6 @@
           "sha": "e34ea61",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-19T08:19:26Z"
-        },
-        {
-          "sha": "503986c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-18T08:13:02Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "bb58c62",
-          "message": "remove line",
-          "at": "2026-10-08T18:57:13Z"
-        },
-        {
-          "sha": "dbb66d5",
-          "message": "Remove unnecessary newline at the end of the AI usage post",
-          "at": "2026-10-08T18:55:55Z"
-        },
-        {
-          "sha": "9a3eb53",
-          "message": "Refine wording for clarity in AI usage section of \"how I use AI in my work\" post",
-          "at": "2026-10-08T18:52:16Z"
         }
       ],
       "more": 27
@@ -162,9 +178,9 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      100,
-      128,
       98,
+      128,
+      92,
       75,
       32,
       24,
@@ -172,35 +188,35 @@
       9,
       12,
       8,
-      22,
+      21,
       41,
-      71,
+      69,
       99,
-      147,
+      143,
       182,
-      157,
-      123,
+      159,
+      122,
       149,
-      123,
-      113,
-      95,
+      127,
+      122,
+      96,
       138,
       94
     ],
     "days_pt": [
       176,
-      318,
-      371,
-      327,
-      281,
+      317,
+      354,
+      346,
+      280,
       318,
       263
     ],
-    "latest": "2026-10-20T08:14:41.000Z",
+    "latest": "2026-10-22T08:14:25.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 7,
-    "commits_30d": 35,
+    "commits_7d": 26,
+    "commits_30d": 54,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,40 +224,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-10-20T08:14:42Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-10-20T08:14:42Z"
-    },
-    {
       "name": "HTML",
       "repo": "blog",
-      "bytes": 419958,
-      "pushed_at": "2026-10-08T18:57:16Z"
+      "bytes": 419812,
+      "pushed_at": "2026-10-22T04:00:09Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-10-22T04:00:09Z"
     },
     {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-08T18:57:16Z"
+      "pushed_at": "2026-10-22T04:00:09Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-10-22T04:00:09Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-10-08T18:57:16Z"
+      "pushed_at": "2026-10-22T04:00:09Z"
     },
     {
       "name": "Python",
       "repo": "blog",
       "bytes": 6850,
-      "pushed_at": "2026-10-08T18:57:16Z"
+      "pushed_at": "2026-10-22T04:00:09Z"
     },
     {
       "name": "Scala",
@@ -259,7 +275,7 @@
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56231565
+      "bytes": 56231419
     },
     {
       "name": "TypeScript",
