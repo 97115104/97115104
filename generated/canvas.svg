@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-10-22 01:15 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-10-23 01:14 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -102,24 +102,24 @@
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 24c2598</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 12c989a</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 10/22 01:14 PT · Update link to the Autoph…
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 10/22 01:54 PT · Update introduction in &quot;a…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> d9c76fa</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 9f95c9c</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 10/21 21:00 PT · Update subtitle in &quot;Rando…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 10/22 01:21 PT · Remove post: &quot;giving myse…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 53d06a0</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 14e162f</tspan>
   </text>
 <text x="28" y="442" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 10/21 20:57 PT · Update subtitle in &quot;Rando…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 10/22 01:19 PT · Add new post: &quot;giving mys…
   </text>
 <text x="20" y="452" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
@@ -131,24 +131,24 @@
   </text>
 <text x="20" y="484" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 6a6f1eb</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> e1b1661</tspan>
   </text>
 <text x="28" y="494" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 10/21 01:14 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 10/22 01:15 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="504" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0cba237</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 6a6f1eb</tspan>
   </text>
 <text x="28" y="514" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 10/20 01:14 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 10/21 01:14 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="524" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.25s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> e34ea61</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 0cba237</tspan>
   </text>
 <text x="28" y="534" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 10/19 01:19 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 10/20 01:14 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="544" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.50s" dur="0.3s" fill="freeze"/>
@@ -230,10 +230,10 @@
 <text x="462" y="234" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">activity</text>
 <line x1="462" y1="240" x2="908" y2="240" stroke="#ffffff" stroke-width="1"/>
 <text x="462" y="250" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 26</tspan>
+    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 29</tspan>
   </text>
 <text x="462" y="264" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 54</tspan>
+    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 57</tspan>
   </text>
 <text x="462" y="278" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">repos 7d</tspan><tspan fill="#ffffff" font-weight="400"> 2</tspan>
@@ -419,7 +419,7 @@
 <rect x="609.0" y="734.0" width="35.0" height="24" fill="#525252"/>
 <rect x="646.0" y="739.0" width="35.0" height="19" fill="#525252"/>
 <rect x="683.0" y="735.0" width="35.0" height="23" fill="#525252"/>
-<rect x="720.0" y="738.0" width="35.0" height="20" fill="#525252"/>
+<rect x="720.0" y="739.0" width="35.0" height="19" fill="#525252"/>
 <rect x="757.0" y="739.0" width="35.0" height="19" fill="#525252"/>
 <rect x="794.0" y="743.0" width="35.0" height="15" fill="#525252"/>
 <rect x="831.0" y="737.0" width="35.0" height="21" fill="#525252"/>
@@ -436,7 +436,7 @@
 <text x="333.1" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
 <rect x="398.6" y="780.0" width="122.9" height="12" fill="#333333"/>
 <text x="460.0" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">W</text>
-<rect x="525.4" y="783.0" width="122.9" height="9" fill="#333333"/>
+<rect x="525.4" y="782.0" width="122.9" height="10" fill="#333333"/>
 <text x="586.9" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">T</text>
 <rect x="652.3" y="781.0" width="122.9" height="11" fill="#333333"/>
 <text x="713.7" y="802" text-anchor="middle" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="7">F</text>

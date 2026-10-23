@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-22T08:15:16.104Z",
+  "synced_at": "2026-10-23T08:14:30.181Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "blog",
-      "at": "2026-10-22T04:00:09Z"
+      "at": "2026-10-22T08:54:33Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -114,19 +114,19 @@
       "repo": "blog",
       "commits": [
         {
-          "sha": "24c2598",
-          "message": "Update link to the Autophage Protocol for accuracy in \"Proffering Intelligence\" post",
-          "at": "2026-10-22T08:14:25Z"
+          "sha": "12c989a",
+          "message": "Update introduction in \"ai vegetarianism, -1 machines!\" post for clarity and context",
+          "at": "2026-10-22T08:54:31Z"
         },
         {
-          "sha": "d9c76fa",
-          "message": "Update subtitle in \"Random Musings\" for improved clarity",
-          "at": "2026-10-22T04:00:06Z"
+          "sha": "9f95c9c",
+          "message": "Remove post: \"giving myself permission\" to streamline content",
+          "at": "2026-10-22T08:21:49Z"
         },
         {
-          "sha": "53d06a0",
-          "message": "Update subtitle in \"Random Musings\" for improved clarity",
-          "at": "2026-10-22T03:57:27Z"
+          "sha": "14e162f",
+          "message": "Add new post: \"giving myself permission\" reflecting on personal growth and project updates",
+          "at": "2026-10-22T08:19:07Z"
         }
       ],
       "more": 27
@@ -134,6 +134,11 @@
     {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "e1b1661",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-22T08:15:16Z"
+        },
         {
           "sha": "6a6f1eb",
           "message": "[profile-sync] update generated profile artifacts",
@@ -143,11 +148,6 @@
           "sha": "0cba237",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-20T08:14:41Z"
-        },
-        {
-          "sha": "e34ea61",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-19T08:19:26Z"
         }
       ],
       "more": 27
@@ -179,7 +179,7 @@
     "peak_day_pt": "Tue",
     "hours_pt": [
       98,
-      128,
+      131,
       92,
       75,
       32,
@@ -194,29 +194,29 @@
       99,
       143,
       182,
-      159,
+      158,
       122,
       149,
-      127,
+      126,
       122,
-      96,
+      95,
       138,
       94
     ],
     "days_pt": [
       176,
       317,
-      354,
+      353,
       346,
-      280,
+      281,
       318,
       263
     ],
-    "latest": "2026-10-22T08:14:25.000Z",
+    "latest": "2026-10-22T08:54:31.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 26,
-    "commits_30d": 54,
+    "commits_7d": 29,
+    "commits_30d": 57,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -227,37 +227,37 @@
       "name": "HTML",
       "repo": "blog",
       "bytes": 419812,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "JavaScript",
       "repo": "blog",
       "bytes": 140945,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "Shell",
       "repo": "blog",
       "bytes": 17417,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "Python",
       "repo": "blog",
       "bytes": 6850,
-      "pushed_at": "2026-10-22T04:00:09Z"
+      "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
       "name": "Scala",
