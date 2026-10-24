@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-23T08:14:30.181Z",
+  "synced_at": "2026-10-24T08:13:07.837Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-10-22T08:54:33Z"
+      "name": "97115104",
+      "at": "2026-10-23T08:14:32Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -111,6 +111,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "edde74e",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-23T08:14:30Z"
+        },
+        {
+          "sha": "e1b1661",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-22T08:15:16Z"
+        },
+        {
+          "sha": "6a6f1eb",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-21T08:14:35Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -127,27 +148,6 @@
           "sha": "14e162f",
           "message": "Add new post: \"giving myself permission\" reflecting on personal growth and project updates",
           "at": "2026-10-22T08:19:07Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "e1b1661",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-22T08:15:16Z"
-        },
-        {
-          "sha": "6a6f1eb",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-21T08:14:35Z"
-        },
-        {
-          "sha": "0cba237",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-20T08:14:41Z"
         }
       ],
       "more": 27
@@ -207,15 +207,15 @@
       176,
       317,
       353,
-      346,
+      345,
       281,
-      318,
+      319,
       263
     ],
-    "latest": "2026-10-22T08:54:31.000Z",
+    "latest": "2026-10-23T08:14:30.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 29,
+    "commits_7d": 28,
     "commits_30d": 57,
     "top_commit_repo": {
       "name": "97115104",
@@ -224,27 +224,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-10-23T08:14:32Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-10-23T08:14:32Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419812,
       "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-10-22T08:54:33Z"
     },
     {
