@@ -25,7 +25,7 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-10-25)
+## recent blog (2026-10-26)
 
 - ai vegetarianism, -1 machines!: https://blog.97115104.com/2026/10/21/ai-vegetarianism/
 - Elegy Ygele, Roost, and slumgullion: https://blog.97115104.com/2026/08/17/elegy-ygele/
@@ -34,7 +34,7 @@
 - neurodivergent and proud of it: https://blog.97115104.com/2026/07/15/systemizing-the-chaos/
 - where are all the real engineers and thought leaders?: https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/
 
-## reading (2026-10-25)
+## reading (2026-10-26)
 
 - reading: A Little History of Mathematics by Snezana Lawrence
 - reading: The Master and His Emissary: The Divided Brain and the Making of the Western World by Iain McGilchrist
@@ -43,4 +43,4 @@
 
 ## sync
 
-Last: 2026-10-25T08:13:19.955Z
+Last: 2026-10-26T08:21:08.953Z
