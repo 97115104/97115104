@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-26T08:21:08.953Z",
+  "synced_at": "2026-10-27T08:15:24.782Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 8,
     "stars": 3,
     "forks": 2,
-    "pushed_7d": 2,
-    "pushed_30d": 3,
+    "pushed_7d": 4,
+    "pushed_30d": 5,
     "top_starred": {
       "name": "qualityprompts",
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-10-25T08:13:21Z"
+      "name": "server-backup",
+      "at": "2026-10-26T18:06:15Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -111,8 +111,55 @@
   },
   "recent_commits": [
     {
+      "repo": "server-backup",
+      "commits": [
+        {
+          "sha": "616b55b",
+          "message": "Various updates",
+          "at": "2026-10-26T18:06:11Z"
+        },
+        {
+          "sha": "424a266",
+          "message": "Various updates",
+          "at": "2026-10-26T18:05:59Z"
+        },
+        {
+          "sha": "b3bc544",
+          "message": "feat: implement draft persistence and serialization functionality",
+          "at": "2026-08-24T21:02:51Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "server-hosting-scripts",
+      "commits": [
+        {
+          "sha": "f2d28b4",
+          "message": "Various updates",
+          "at": "2026-10-26T18:06:06Z"
+        },
+        {
+          "sha": "3de2dc6",
+          "message": "feat: implement draft persistence and serialization functionality",
+          "at": "2026-08-24T21:02:44Z"
+        },
+        {
+          "sha": "6244856",
+          "message": "fix: clean up deploy history by removing outdated entries and adding recent deployments",
+          "at": "2026-07-31T20:05:45Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "d05a982",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-26T08:21:09Z"
+        },
         {
           "sha": "5063289",
           "message": "[profile-sync] update generated profile artifacts",
@@ -122,56 +169,9 @@
           "sha": "ef742c2",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-24T08:13:08Z"
-        },
-        {
-          "sha": "edde74e",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-23T08:14:30Z"
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "12c989a",
-          "message": "Update introduction in \"ai vegetarianism, -1 machines!\" post for clarity and context",
-          "at": "2026-10-22T08:54:31Z"
-        },
-        {
-          "sha": "9f95c9c",
-          "message": "Remove post: \"giving myself permission\" to streamline content",
-          "at": "2026-10-22T08:21:49Z"
-        },
-        {
-          "sha": "14e162f",
-          "message": "Add new post: \"giving myself permission\" reflecting on personal growth and project updates",
-          "at": "2026-10-22T08:19:07Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "temp-uv-historical-trends",
-      "commits": [
-        {
-          "sha": "4b91348",
-          "message": "chore: rebuild knowledge graph data [skip ci]",
-          "at": "2026-10-01T12:29:23Z"
-        },
-        {
-          "sha": "ec1ddad",
-          "message": "chore: rebuild knowledge graph data [skip ci]",
-          "at": "2026-09-01T12:22:27Z"
-        },
-        {
-          "sha": "61c446d",
-          "message": "chore: rebuild knowledge graph data [skip ci]",
-          "at": "2026-08-01T12:35:40Z"
-        }
-      ],
-      "more": 16
     }
   ],
   "commit_stats": {
@@ -180,7 +180,7 @@
     "hours_pt": [
       98,
       131,
-      92,
+      91,
       75,
       32,
       24,
@@ -189,12 +189,12 @@
       12,
       8,
       21,
-      41,
+      44,
       69,
       99,
-      143,
+      142,
       182,
-      158,
+      157,
       122,
       149,
       126,
@@ -204,19 +204,19 @@
       94
     ],
     "days_pt": [
-      177,
-      317,
+      176,
+      321,
       353,
-      345,
-      280,
+      344,
+      279,
       318,
-      264
+      263
     ],
-    "latest": "2026-10-25T08:13:20.000Z",
+    "latest": "2026-10-26T18:06:11.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 28,
-    "commits_30d": 56,
+    "commits_7d": 31,
+    "commits_30d": 59,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -224,58 +224,58 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-10-25T08:13:21Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-10-25T08:13:21Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "blog",
-      "bytes": 419812,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "blog",
-      "bytes": 102731,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
-      "name": "Ruby",
-      "repo": "blog",
-      "bytes": 8050,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
-      "name": "Python",
-      "repo": "blog",
-      "bytes": 6850,
-      "pushed_at": "2026-10-22T08:54:33Z"
-    },
-    {
-      "name": "Scala",
-      "repo": "fp-learning",
-      "bytes": 812,
-      "pushed_at": "2026-08-25T00:31:26Z"
-    },
-    {
       "name": "TypeScript",
       "repo": "server-backup",
       "bytes": 1242578,
-      "pushed_at": "2026-08-24T21:02:56Z"
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "JavaScript",
+      "repo": "server-backup",
+      "bytes": 818126,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "HTML",
+      "repo": "server-backup",
+      "bytes": 761708,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "server-backup",
+      "bytes": 520102,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "TeX",
+      "repo": "server-backup",
+      "bytes": 86916,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "Python",
+      "repo": "server-backup",
+      "bytes": 72572,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "server-backup",
+      "bytes": 39435,
+      "pushed_at": "2026-10-26T18:06:15Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "server-backup",
+      "bytes": 8050,
+      "pushed_at": "2026-10-26T18:06:15Z"
     }
   ],
   "language_totals": [
     {
       "name": "HTML",
-      "bytes": 56231419
+      "bytes": 56231273
     },
     {
       "name": "TypeScript",
