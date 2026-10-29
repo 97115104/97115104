@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-28T08:11:46.201Z",
+  "synced_at": "2026-10-29T08:11:38.532Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "97115104",
-      "at": "2026-10-27T08:15:26Z"
+      "name": "blog",
+      "at": "2026-10-28T23:02:29Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -35,9 +35,24 @@
   },
   "recent_posts": [
     {
-      "title": "ai vegetarianism, -1 machines!",
+      "title": "Fake News",
+      "link": "https://blog.97115104.com/2026/10/28/fake-news/",
+      "updated": "2026-10-28T12:00:00-07:00"
+    },
+    {
+      "title": "ai vegetarianism",
       "link": "https://blog.97115104.com/2026/10/21/ai-vegetarianism/",
       "updated": "2026-10-21T15:00:00-07:00"
+    },
+    {
+      "title": "attention is all you need",
+      "link": "https://blog.97115104.com/2026/09/08/attention-is-all-you-need/",
+      "updated": "2026-09-08T15:00:00-07:00"
+    },
+    {
+      "title": "not another day",
+      "link": "https://blog.97115104.com/2026/08/20/not-another-day/",
+      "updated": "2026-08-20T15:00:00-07:00"
     },
     {
       "title": "Elegy Ygele, Roost, and slumgullion",
@@ -48,47 +63,16 @@
       "title": "emotion, memory, and machine intelligence",
       "link": "https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/",
       "updated": "2026-07-20T12:00:00-07:00"
-    },
-    {
-      "title": "how i use ai in my work",
-      "link": "https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/",
-      "updated": "2026-07-15T12:00:00-07:00"
-    },
-    {
-      "title": "neurodivergent and proud of it",
-      "link": "https://blog.97115104.com/2026/07/15/systemizing-the-chaos/",
-      "updated": "2026-07-15T12:00:00-07:00"
-    },
-    {
-      "title": "where are all the real engineers and thought leaders?",
-      "link": "https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/",
-      "updated": "2026-06-30T12:00:00-07:00"
     }
   ],
   "books": {
     "currently_reading": [
-      {
-        "title": "A Little History of Mathematics",
-        "author": "Snezana Lawrence",
-        "progress": "",
-        "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/220714032-a-little-history-of-mathematics",
-        "rating": null
-      },
       {
         "title": "The Master and His Emissary: The Divided Brain and the Making of the Western World",
         "author": "Iain McGilchrist",
         "progress": "",
         "completedDate": "",
         "goodreadsUrl": "https://www.goodreads.com/book/show/6968772-the-master-and-his-emissary",
-        "rating": null
-      },
-      {
-        "title": "Giovanni’s Room",
-        "author": "James Baldwin",
-        "progress": "",
-        "completedDate": "",
-        "goodreadsUrl": "https://www.goodreads.com/book/show/406235.Giovanni_s_Room",
         "rating": null
       },
       {
@@ -101,18 +85,44 @@
       }
     ],
     "last_read": {
-      "title": "Confessions of a Mask",
-      "author": "Yukio Mishima",
+      "title": "A Little History of Mathematics",
+      "author": "Snezana Lawrence",
       "progress": "",
       "completedDate": "October 2026",
-      "goodreadsUrl": "https://www.goodreads.com/book/show/62794.Confessions_of_a_Mask",
-      "rating": 5
+      "goodreadsUrl": "https://www.goodreads.com/book/show/220714032-a-little-history-of-mathematics",
+      "rating": 4
     }
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "20adc8a",
+          "message": "Fix formatting and punctuation in \"Fake News\" post for consistency",
+          "at": "2026-10-28T23:02:24Z"
+        },
+        {
+          "sha": "e5e2c93",
+          "message": "Add new posts: \"not another day\" and \"attention is all you need\"; update \"Fake News\" post with content",
+          "at": "2026-10-28T20:11:38Z"
+        },
+        {
+          "sha": "12c989a",
+          "message": "Update introduction in \"ai vegetarianism, -1 machines!\" post for clarity and context",
+          "at": "2026-10-22T08:54:31Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "97115104",
       "commits": [
+        {
+          "sha": "15ea22c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-28T08:11:46Z"
+        },
         {
           "sha": "102c44a",
           "message": "[profile-sync] update generated profile artifacts",
@@ -122,11 +132,6 @@
           "sha": "d05a982",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-10-26T08:21:09Z"
-        },
-        {
-          "sha": "5063289",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-25T08:13:20Z"
         }
       ],
       "more": 27
@@ -151,27 +156,6 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "server-hosting-scripts",
-      "commits": [
-        {
-          "sha": "f2d28b4",
-          "message": "Various updates",
-          "at": "2026-10-26T18:06:06Z"
-        },
-        {
-          "sha": "3de2dc6",
-          "message": "feat: implement draft persistence and serialization functionality",
-          "at": "2026-08-24T21:02:44Z"
-        },
-        {
-          "sha": "6244856",
-          "message": "fix: clean up deploy history by removing outdated entries and adding recent deployments",
-          "at": "2026-07-31T20:05:45Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
@@ -191,10 +175,10 @@
       21,
       44,
       69,
-      99,
+      98,
       142,
       182,
-      157,
+      158,
       122,
       149,
       126,
@@ -205,18 +189,18 @@
     ],
     "days_pt": [
       175,
-      321,
+      318,
       354,
-      344,
+      347,
       279,
       318,
       263
     ],
-    "latest": "2026-10-27T08:15:25.000Z",
+    "latest": "2026-10-28T23:02:24.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 32,
-    "commits_30d": 60,
+    "commits_7d": 16,
+    "commits_30d": 62,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -224,16 +208,40 @@
   },
   "languages_by_recency": [
     {
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 419812,
+      "pushed_at": "2026-10-28T23:02:29Z"
+    },
+    {
       "name": "JavaScript",
-      "repo": "97115104",
-      "bytes": 65702,
-      "pushed_at": "2026-10-27T08:15:26Z"
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-10-28T23:02:29Z"
+    },
+    {
+      "name": "CSS",
+      "repo": "blog",
+      "bytes": 102731,
+      "pushed_at": "2026-10-28T23:02:29Z"
     },
     {
       "name": "Shell",
-      "repo": "97115104",
-      "bytes": 465,
-      "pushed_at": "2026-10-27T08:15:26Z"
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-10-28T23:02:29Z"
+    },
+    {
+      "name": "Ruby",
+      "repo": "blog",
+      "bytes": 8050,
+      "pushed_at": "2026-10-28T23:02:29Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-10-28T23:02:29Z"
     },
     {
       "name": "TypeScript",
@@ -242,33 +250,9 @@
       "pushed_at": "2026-10-26T18:06:15Z"
     },
     {
-      "name": "HTML",
-      "repo": "server-backup",
-      "bytes": 761708,
-      "pushed_at": "2026-10-26T18:06:15Z"
-    },
-    {
-      "name": "CSS",
-      "repo": "server-backup",
-      "bytes": 520102,
-      "pushed_at": "2026-10-26T18:06:15Z"
-    },
-    {
       "name": "TeX",
       "repo": "server-backup",
       "bytes": 86916,
-      "pushed_at": "2026-10-26T18:06:15Z"
-    },
-    {
-      "name": "Python",
-      "repo": "server-backup",
-      "bytes": 72572,
-      "pushed_at": "2026-10-26T18:06:15Z"
-    },
-    {
-      "name": "Ruby",
-      "repo": "server-backup",
-      "bytes": 8050,
       "pushed_at": "2026-10-26T18:06:15Z"
     }
   ],

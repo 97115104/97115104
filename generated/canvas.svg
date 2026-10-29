@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="810" viewBox="0 0 920 810" role="img" aria-label="feed and stats">
   <rect width="920" height="810" fill="#000000"/>
-  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-10-28 01:11 PT</text>
+  <text x="16" y="802" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8">synced 2026-10-29 01:11 PT</text>
   <g>
   <rect x="0" y="0" width="450" height="682" fill="#000000"/>
   <rect x="0" y="0" width="450" height="40" fill="#171717"/>
@@ -14,45 +14,45 @@
     </text>
     <text x="16" y="76" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> ai vegetarianism, -1 machines!</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> Fake News</tspan>
   </text>
 <text x="24" y="86" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.4s" fill="freeze"/>10/21 15:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.4s" fill="freeze"/>10/28 12:00 PT
   </text>
 <text x="16" y="98" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> Elegy Ygele, Roost, and slumgullion</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> ai vegetarianism</tspan>
   </text>
 <text x="24" y="108" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.4s" fill="freeze"/>08/17 15:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.4s" fill="freeze"/>10/21 15:00 PT
   </text>
 <text x="16" y="120" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> emotion, memory, and machine intellig…</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> attention is all you need</tspan>
   </text>
 <text x="24" y="130" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.4s" fill="freeze"/>07/20 12:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.4s" fill="freeze"/>09/08 15:00 PT
   </text>
 <text x="16" y="142" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> how i use ai in my work</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> not another day</tspan>
   </text>
 <text x="24" y="152" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.4s" fill="freeze"/>07/15 12:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.4s" fill="freeze"/>08/20 15:00 PT
   </text>
 <text x="16" y="164" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> neurodivergent and proud of it</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> Elegy Ygele, Roost, and slumgullion</tspan>
   </text>
 <text x="24" y="174" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.4s" fill="freeze"/>07/15 12:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.4s" fill="freeze"/>08/17 15:00 PT
   </text>
 <text x="16" y="186" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.4s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> where are all the real engineers and …</tspan>
+    <tspan fill="#ffffff" font-weight="700">@blog</tspan><tspan fill="#ffffff"> emotion, memory, and machine intellig…</tspan>
   </text>
 <text x="24" y="196" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.4s" fill="freeze"/>06/30 12:00 PT
+    <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.4s" fill="freeze"/>07/20 12:00 PT
   </text>
     <text x="16" y="222" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.3s" fill="freeze"/># books.97115104.com
@@ -63,127 +63,120 @@
   </text>
 <text x="20" y="254" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.10s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@now</tspan><tspan fill="#ffffff"> A Little History of Mathematics</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@now</tspan><tspan fill="#ffffff"> The Master and His Emissary: Th…</tspan>
   </text>
 <text x="28" y="264" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.15s" dur="0.3s" fill="freeze"/>│ Snezana Lawrence
+    <animate attributeName="opacity" from="0" to="1" begin="3.15s" dur="0.3s" fill="freeze"/>│ Iain McGilchrist
   </text>
 <text x="20" y="274" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.30s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@now</tspan><tspan fill="#ffffff"> The Master and His Emissary: Th…</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@now</tspan><tspan fill="#ffffff"> Gut Feelings: The Intelligence …</tspan>
   </text>
 <text x="28" y="284" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.35s" dur="0.3s" fill="freeze"/>│ Iain McGilchrist
+    <animate attributeName="opacity" from="0" to="1" begin="3.35s" dur="0.3s" fill="freeze"/>│ Gerd Gigerenzer
   </text>
-<text x="20" y="294" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+<text x="16" y="300" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.50s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@now</tspan><tspan fill="#ffffff"> Giovanni’s Room</tspan>
-  </text>
-<text x="28" y="304" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.55s" dur="0.3s" fill="freeze"/>│ James Baldwin
-  </text>
-<text x="16" y="320" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>
     <tspan fill="#ffffff">last read</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
-<text x="20" y="334" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.85s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#ffffff" font-weight="700">@read</tspan><tspan fill="#ffffff"> Confessions of a Mask</tspan>
+<text x="20" y="314" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#ffffff" font-weight="700">@read</tspan><tspan fill="#ffffff"> A Little History of Mathematics</tspan>
   </text>
-<text x="28" y="344" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>  Yukio Mishima · October 2026
+<text x="28" y="324" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>  Snezana Lawrence · October 2026
   </text>
-    <text x="16" y="364" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <text x="16" y="344" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="3.4000000000000004s" dur="0.3s" fill="freeze"/># recent commits
     </text>
-    <text x="16" y="378" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <text x="16" y="358" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">blog</tspan><tspan fill="#a3a3a3">/</tspan>
+  </text>
+<text x="20" y="372" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 20adc8a</tspan>
+  </text>
+<text x="28" y="382" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 10/28 16:02 PT · Fix formatting and punctu…
   </text>
 <text x="20" y="392" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.65s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 102c44a</tspan>
+    <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> e5e2c93</tspan>
   </text>
 <text x="28" y="402" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.70s" dur="0.3s" fill="freeze"/>│ 10/27 01:15 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 10/28 13:11 PT · Add new posts: &quot;not anoth…
   </text>
 <text x="20" y="412" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> d05a982</tspan>
+    <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 12c989a</tspan>
   </text>
 <text x="28" y="422" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="3.95s" dur="0.3s" fill="freeze"/>│ 10/26 01:21 PT · [profile-sync] update gen…
+    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 10/22 01:54 PT · Update introduction in &quot;a…
   </text>
 <text x="20" y="432" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.15s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 5063289</tspan>
-  </text>
-<text x="28" y="442" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.20s" dur="0.3s" fill="freeze"/>│ 10/25 01:13 PT · [profile-sync] update gen…
-  </text>
-<text x="20" y="452" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.40s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
   </text>
-<text x="16" y="470" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+<text x="16" y="450" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">server-backup</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">97115104</tspan><tspan fill="#a3a3a3">/</tspan>
+  </text>
+<text x="20" y="464" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 15ea22c</tspan>
+  </text>
+<text x="28" y="474" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 10/28 01:11 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="484" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 616b55b</tspan>
+    <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 102c44a</tspan>
   </text>
 <text x="28" y="494" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="4.80s" dur="0.3s" fill="freeze"/>│ 10/26 11:06 PT · Various updates
+    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 10/27 01:15 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="504" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.00s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 424a266</tspan>
+    <animate attributeName="opacity" from="0" to="1" begin="5.25s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> d05a982</tspan>
   </text>
 <text x="28" y="514" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.05s" dur="0.3s" fill="freeze"/>│ 10/26 11:05 PT · Various updates
+    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 10/26 01:21 PT · [profile-sync] update gen…
   </text>
 <text x="20" y="524" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.25s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> b3bc544</tspan>
-  </text>
-<text x="28" y="534" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="5.30s" dur="0.3s" fill="freeze"/>│ 08/24 14:02 PT · feat: implement draft per…
-  </text>
-<text x="20" y="544" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.50s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
   </text>
-<text x="16" y="562" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+<text x="16" y="542" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.7s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#ffffff" font-weight="700">server-hosting-scripts</tspan><tspan fill="#a3a3a3">/</tspan>
+    <tspan fill="#ffffff" font-weight="700">server-backup</tspan><tspan fill="#a3a3a3">/</tspan>
   </text>
-<text x="20" y="576" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+<text x="20" y="556" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.85s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> f2d28b4</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 616b55b</tspan>
   </text>
-<text x="28" y="586" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+<text x="28" y="566" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="5.90s" dur="0.3s" fill="freeze"/>│ 10/26 11:06 PT · Various updates
   </text>
-<text x="20" y="596" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+<text x="20" y="576" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.10s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 3de2dc6</tspan>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 424a266</tspan>
+  </text>
+<text x="28" y="586" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>│ 10/26 11:05 PT · Various updates
+  </text>
+<text x="20" y="596" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="6.35s" dur="0.3s" fill="freeze"/>
+    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> b3bc544</tspan>
   </text>
 <text x="28" y="606" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.15s" dur="0.3s" fill="freeze"/>│ 08/24 14:02 PT · feat: implement draft per…
+    <animate attributeName="opacity" from="0" to="1" begin="6.40s" dur="0.3s" fill="freeze"/>│ 08/24 14:02 PT · feat: implement draft per…
   </text>
 <text x="20" y="616" font-family="ui-monospace,monospace" font-size="10" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.35s" dur="0.3s" fill="freeze"/>
-    <tspan fill="#a3a3a3">├─ </tspan><tspan fill="#ffffff" font-weight="700">@git</tspan><tspan fill="#a3a3a3"> 6244856</tspan>
-  </text>
-<text x="28" y="626" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="8" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="6.40s" dur="0.3s" fill="freeze"/>│ 07/31 13:05 PT · fix: clean up deploy hist…
-  </text>
-<text x="20" y="636" font-family="ui-monospace,monospace" font-size="10" opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="6.60s" dur="0.3s" fill="freeze"/>
     <tspan fill="#a3a3a3">└─ </tspan><tspan fill="#a3a3a3">(27 more)</tspan>
   </text>
-    <text x="16" y="658" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" opacity="0">
+    <text x="16" y="638" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" opacity="0">
       <animate attributeName="opacity" values="0;1;0;1;0" begin="7.05s" dur="2s" fill="freeze"/>
       ▋
     </text>
@@ -230,10 +223,10 @@
 <text x="462" y="234" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">activity</text>
 <line x1="462" y1="240" x2="908" y2="240" stroke="#ffffff" stroke-width="1"/>
 <text x="462" y="250" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 32</tspan>
+    <tspan fill="#a3a3a3">commits 7d</tspan><tspan fill="#ffffff" font-weight="400"> 16</tspan>
   </text>
 <text x="462" y="264" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 60</tspan>
+    <tspan fill="#a3a3a3">commits 30d</tspan><tspan fill="#ffffff" font-weight="400"> 62</tspan>
   </text>
 <text x="462" y="278" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">repos 7d</tspan><tspan fill="#ffffff" font-weight="400"> 4</tspan>
@@ -254,7 +247,7 @@
     <tspan fill="#a3a3a3">top starred</tspan><tspan fill="#ffffff" font-weight="400"> qualityprompts (1)</tspan>
   </text>
 <text x="462" y="362" font-family="ui-monospace,monospace" font-size="10">
-    <tspan fill="#a3a3a3">reading</tspan><tspan fill="#ffffff" font-weight="400"> 4</tspan>
+    <tspan fill="#a3a3a3">reading</tspan><tspan fill="#ffffff" font-weight="400"> 2</tspan>
   </text>
 <text x="462" y="376" font-family="ui-monospace,monospace" font-size="10">
     <tspan fill="#a3a3a3">posts</tspan><tspan fill="#ffffff" font-weight="400"> 6</tspan>
@@ -361,36 +354,36 @@
 </text>
 <text x="462" y="604" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="3.99s" dur="0.3s" fill="freeze"/>
-  JavaScript
+  HTML
 </text>
 <text x="908" y="604" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="3.99s" dur="0.3s" fill="freeze"/>
-  97115104
+  blog
 </text>
 <rect x="462" y="608" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="24" begin="3.99s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="446" begin="3.99s" dur="0.45s" fill="freeze"/>
 </rect>
 <text x="462" y="624" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.17s" dur="0.3s" fill="freeze"/>
-  Shell
+  JavaScript
 </text>
 <text x="908" y="624" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.17s" dur="0.3s" fill="freeze"/>
-  97115104
+  blog
 </text>
 <rect x="462" y="628" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="0" begin="4.17s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="150" begin="4.17s" dur="0.45s" fill="freeze"/>
 </rect>
 <text x="462" y="644" fill="#ffffff" font-family="ui-monospace,monospace" font-size="10" font-weight="700" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.35s" dur="0.3s" fill="freeze"/>
-  TypeScript
+  CSS
 </text>
 <text x="908" y="644" text-anchor="end" fill="#a3a3a3" font-family="ui-monospace,monospace" font-size="9" opacity="0">
   <animate attributeName="opacity" from="0" to="1" begin="4.35s" dur="0.3s" fill="freeze"/>
-  server-backup
+  blog
 </text>
 <rect x="462" y="648" width="0" height="4" fill="#ffffff">
-  <animate attributeName="width" from="0" to="446" begin="4.35s" dur="0.45s" fill="freeze"/>
+  <animate attributeName="width" from="0" to="109" begin="4.35s" dur="0.45s" fill="freeze"/>
 </rect>
 </g>
   <g>

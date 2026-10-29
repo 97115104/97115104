@@ -25,22 +25,21 @@
 - vLLM-harness: Serve models through vLLM with a secure public API.
 - ollama-harness: Serve models through Ollama with a secure public API.
 
-## recent blog (2026-10-28)
+## recent blog (2026-10-29)
 
-- ai vegetarianism, -1 machines!: https://blog.97115104.com/2026/10/21/ai-vegetarianism/
+- Fake News: https://blog.97115104.com/2026/10/28/fake-news/
+- ai vegetarianism: https://blog.97115104.com/2026/10/21/ai-vegetarianism/
+- attention is all you need: https://blog.97115104.com/2026/09/08/attention-is-all-you-need/
+- not another day: https://blog.97115104.com/2026/08/20/not-another-day/
 - Elegy Ygele, Roost, and slumgullion: https://blog.97115104.com/2026/08/17/elegy-ygele/
 - emotion, memory, and machine intelligence: https://blog.97115104.com/2026/07/20/emotion-memory-and-machine-intelligence/
-- how i use ai in my work: https://blog.97115104.com/2026/07/15/how-i-use-ai-in-my-work/
-- neurodivergent and proud of it: https://blog.97115104.com/2026/07/15/systemizing-the-chaos/
-- where are all the real engineers and thought leaders?: https://blog.97115104.com/2026/06/30/where-are-all-the-real-engineers-and-thought-leaders/
 
-## reading (2026-10-28)
+## reading (2026-10-29)
 
-- reading: A Little History of Mathematics by Snezana Lawrence
 - reading: The Master and His Emissary: The Divided Brain and the Making of the Western World by Iain McGilchrist
-- reading: Giovanni’s Room by James Baldwin
-- last read: Confessions of a Mask by Yukio Mishima (October 2026)
+- reading: Gut Feelings: The Intelligence of the Unconscious by Gerd Gigerenzer
+- last read: A Little History of Mathematics by Snezana Lawrence (October 2026)
 
 ## sync
 
-Last: 2026-10-28T08:11:46.201Z
+Last: 2026-10-29T08:11:38.532Z
