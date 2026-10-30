@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-10-29T08:11:38.532Z",
+  "synced_at": "2026-10-30T08:11:19.584Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-10-28T23:02:29Z"
+      "name": "97115104",
+      "at": "2026-10-29T08:11:40Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "b57aeb1",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-29T08:11:39Z"
+        },
+        {
+          "sha": "15ea22c",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-28T08:11:46Z"
+        },
+        {
+          "sha": "102c44a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-27T08:15:25Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "12c989a",
           "message": "Update introduction in \"ai vegetarianism, -1 machines!\" post for clarity and context",
           "at": "2026-10-22T08:54:31Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "15ea22c",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-28T08:11:46Z"
-        },
-        {
-          "sha": "102c44a",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-27T08:15:25Z"
-        },
-        {
-          "sha": "d05a982",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-26T08:21:09Z"
         }
       ],
       "more": 27
@@ -190,16 +190,16 @@
     "days_pt": [
       175,
       318,
-      354,
+      353,
       347,
-      279,
+      280,
       318,
       263
     ],
-    "latest": "2026-10-28T23:02:24.000Z",
+    "latest": "2026-10-29T08:11:39.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2054,
-    "commits_7d": 16,
+    "commits_7d": 12,
     "commits_30d": 62,
     "top_commit_repo": {
       "name": "97115104",
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-10-29T08:11:40Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-10-29T08:11:40Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419812,
       "pushed_at": "2026-10-28T23:02:29Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-10-28T23:02:29Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-10-28T23:02:29Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-10-28T23:02:29Z"
     },
     {
