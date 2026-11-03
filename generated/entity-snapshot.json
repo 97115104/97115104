@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-11-02T08:11:26.062Z",
+  "synced_at": "2026-11-03T08:09:42.377Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -13,15 +13,15 @@
     "archived": 8,
     "stars": 3,
     "forks": 2,
-    "pushed_7d": 5,
+    "pushed_7d": 3,
     "pushed_30d": 5,
     "top_starred": {
       "name": "qualityprompts",
       "stars": 1
     },
     "active_repo": {
-      "name": "temp-uv-historical-trends",
-      "at": "2026-11-01T12:20:03Z"
+      "name": "blog",
+      "at": "2026-11-02T23:05:40Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,48 @@
   },
   "recent_commits": [
     {
+      "repo": "blog",
+      "commits": [
+        {
+          "sha": "2b61660",
+          "message": "Fix punctuation in \"Fake News\" post for clarity and consistency",
+          "at": "2026-11-02T23:05:38Z"
+        },
+        {
+          "sha": "20adc8a",
+          "message": "Fix formatting and punctuation in \"Fake News\" post for consistency",
+          "at": "2026-10-28T23:02:24Z"
+        },
+        {
+          "sha": "e5e2c93",
+          "message": "Add new posts: \"not another day\" and \"attention is all you need\"; update \"Fake News\" post with content",
+          "at": "2026-10-28T20:11:38Z"
+        }
+      ],
+      "more": 27
+    },
+    {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "7613c0a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-02T08:11:26Z"
+        },
+        {
+          "sha": "48d0ee9",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-01T08:08:52Z"
+        },
+        {
+          "sha": "8e4afe2",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-10-31T08:08:35Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "temp-uv-historical-trends",
       "commits": [
         {
@@ -114,56 +156,14 @@
         }
       ],
       "more": 17
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "48d0ee9",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-01T08:08:52Z"
-        },
-        {
-          "sha": "8e4afe2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-31T08:08:35Z"
-        },
-        {
-          "sha": "5d4bb98",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-30T08:11:20Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "blog",
-      "commits": [
-        {
-          "sha": "20adc8a",
-          "message": "Fix formatting and punctuation in \"Fake News\" post for consistency",
-          "at": "2026-10-28T23:02:24Z"
-        },
-        {
-          "sha": "e5e2c93",
-          "message": "Add new posts: \"not another day\" and \"attention is all you need\"; update \"Fake News\" post with content",
-          "at": "2026-10-28T20:11:38Z"
-        },
-        {
-          "sha": "12c989a",
-          "message": "Update introduction in \"ai vegetarianism, -1 machines!\" post for clarity and context",
-          "at": "2026-10-22T08:54:31Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      98,
-      131,
+      99,
+      130,
       91,
       75,
       33,
@@ -176,8 +176,8 @@
       44,
       69,
       98,
-      142,
-      182,
+      141,
+      183,
       158,
       122,
       149,
@@ -189,18 +189,18 @@
     ],
     "days_pt": [
       177,
-      318,
+      319,
       353,
       346,
       279,
       318,
-      264
+      263
     ],
-    "latest": "2026-11-01T12:20:01.000Z",
+    "latest": "2026-11-02T23:05:38.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2055,
-    "commits_7d": 13,
-    "commits_30d": 62,
+    "commits_7d": 11,
+    "commits_30d": 63,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,40 +208,40 @@
   },
   "languages_by_recency": [
     {
-      "name": "JavaScript",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 100981,
-      "pushed_at": "2026-11-01T12:20:03Z"
+      "name": "HTML",
+      "repo": "blog",
+      "bytes": 419812,
+      "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
-      "name": "Python",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 42015,
-      "pushed_at": "2026-11-01T12:20:03Z"
+      "name": "JavaScript",
+      "repo": "blog",
+      "bytes": 140945,
+      "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
       "name": "CSS",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 16728,
-      "pushed_at": "2026-11-01T12:20:03Z"
-    },
-    {
-      "name": "HTML",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 7409,
-      "pushed_at": "2026-11-01T12:20:03Z"
+      "repo": "blog",
+      "bytes": 102731,
+      "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
       "name": "Shell",
-      "repo": "temp-uv-historical-trends",
-      "bytes": 4349,
-      "pushed_at": "2026-11-01T12:20:03Z"
+      "repo": "blog",
+      "bytes": 17417,
+      "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
       "name": "Ruby",
       "repo": "blog",
       "bytes": 8050,
-      "pushed_at": "2026-10-28T23:02:29Z"
+      "pushed_at": "2026-11-02T23:05:40Z"
+    },
+    {
+      "name": "Python",
+      "repo": "blog",
+      "bytes": 6850,
+      "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
       "name": "TypeScript",
