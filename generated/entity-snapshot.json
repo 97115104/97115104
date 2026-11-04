@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-11-03T08:09:42.377Z",
+  "synced_at": "2026-11-04T08:09:37.178Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "blog",
-      "at": "2026-11-02T23:05:40Z"
+      "name": "97115104",
+      "at": "2026-11-03T08:09:44Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "c8d76c5",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-03T08:09:43Z"
+        },
+        {
+          "sha": "7613c0a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-02T08:11:26Z"
+        },
+        {
+          "sha": "48d0ee9",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-01T08:08:52Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "blog",
       "commits": [
         {
@@ -111,27 +132,6 @@
           "sha": "e5e2c93",
           "message": "Add new posts: \"not another day\" and \"attention is all you need\"; update \"Fake News\" post with content",
           "at": "2026-10-28T20:11:38Z"
-        }
-      ],
-      "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "7613c0a",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-02T08:11:26Z"
-        },
-        {
-          "sha": "48d0ee9",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-01T08:08:52Z"
-        },
-        {
-          "sha": "8e4afe2",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-10-31T08:08:35Z"
         }
       ],
       "more": 27
@@ -162,10 +162,10 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      99,
+      100,
       130,
       91,
-      75,
+      74,
       33,
       24,
       14,
@@ -188,19 +188,19 @@
       94
     ],
     "days_pt": [
-      177,
+      176,
       319,
-      353,
+      354,
       346,
       279,
       318,
       263
     ],
-    "latest": "2026-11-02T23:05:38.000Z",
+    "latest": "2026-11-03T08:09:43.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2055,
     "commits_7d": 11,
-    "commits_30d": 63,
+    "commits_30d": 62,
     "top_commit_repo": {
       "name": "97115104",
       "count": 30
@@ -208,27 +208,27 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-11-03T08:09:44Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-11-03T08:09:44Z"
+    },
+    {
       "name": "HTML",
       "repo": "blog",
       "bytes": 419812,
       "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
-      "name": "JavaScript",
-      "repo": "blog",
-      "bytes": 140945,
-      "pushed_at": "2026-11-02T23:05:40Z"
-    },
-    {
       "name": "CSS",
       "repo": "blog",
       "bytes": 102731,
-      "pushed_at": "2026-11-02T23:05:40Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "blog",
-      "bytes": 17417,
       "pushed_at": "2026-11-02T23:05:40Z"
     },
     {
