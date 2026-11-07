@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-11-06T08:10:09.686Z",
+  "synced_at": "2026-11-07T08:08:41.793Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -20,8 +20,8 @@
       "stars": 1
     },
     "active_repo": {
-      "name": "server-backup",
-      "at": "2026-11-05T20:45:28Z"
+      "name": "97115104",
+      "at": "2026-11-06T08:10:11Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -95,6 +95,27 @@
   },
   "recent_commits": [
     {
+      "repo": "97115104",
+      "commits": [
+        {
+          "sha": "fcd420a",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-06T08:10:10Z"
+        },
+        {
+          "sha": "77c6324",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-05T08:10:43Z"
+        },
+        {
+          "sha": "b01d391",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-04T08:09:37Z"
+        }
+      ],
+      "more": 27
+    },
+    {
       "repo": "server-backup",
       "commits": [
         {
@@ -135,35 +156,14 @@
         }
       ],
       "more": 27
-    },
-    {
-      "repo": "97115104",
-      "commits": [
-        {
-          "sha": "77c6324",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-05T08:10:43Z"
-        },
-        {
-          "sha": "b01d391",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-04T08:09:37Z"
-        },
-        {
-          "sha": "c8d76c5",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-03T08:09:43Z"
-        }
-      ],
-      "more": 27
     }
   ],
   "commit_stats": {
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      102,
-      128,
+      103,
+      127,
       90,
       74,
       33,
@@ -191,15 +191,15 @@
       175,
       318,
       353,
-      346,
+      345,
       283,
-      317,
+      318,
       263
     ],
-    "latest": "2026-11-05T20:45:23.000Z",
+    "latest": "2026-11-06T08:10:10.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2055,
-    "commits_7d": 12,
+    "commits_7d": 11,
     "commits_30d": 65,
     "top_commit_repo": {
       "name": "97115104",
@@ -208,15 +208,21 @@
   },
   "languages_by_recency": [
     {
+      "name": "JavaScript",
+      "repo": "97115104",
+      "bytes": 65702,
+      "pushed_at": "2026-11-06T08:10:11Z"
+    },
+    {
+      "name": "Shell",
+      "repo": "97115104",
+      "bytes": 465,
+      "pushed_at": "2026-11-06T08:10:11Z"
+    },
+    {
       "name": "TypeScript",
       "repo": "server-backup",
       "bytes": 1242578,
-      "pushed_at": "2026-11-05T20:45:28Z"
-    },
-    {
-      "name": "JavaScript",
-      "repo": "server-backup",
-      "bytes": 818126,
       "pushed_at": "2026-11-05T20:45:28Z"
     },
     {
@@ -241,12 +247,6 @@
       "name": "Python",
       "repo": "server-backup",
       "bytes": 72572,
-      "pushed_at": "2026-11-05T20:45:28Z"
-    },
-    {
-      "name": "Shell",
-      "repo": "server-backup",
-      "bytes": 39435,
       "pushed_at": "2026-11-05T20:45:28Z"
     },
     {
