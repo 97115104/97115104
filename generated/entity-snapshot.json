@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-11-22T08:08:58.865Z",
+  "synced_at": "2026-11-23T08:10:51.421Z",
   "sync_auth": "pat",
   "repo_count": 125,
   "repo_counts": {
@@ -21,7 +21,7 @@
     },
     "active_repo": {
       "name": "97115104",
-      "at": "2026-11-21T08:08:38Z"
+      "at": "2026-11-22T08:09:00Z"
     },
     "oldest_repo": {
       "name": "ferris-slack-bot-handler",
@@ -98,6 +98,11 @@
       "repo": "97115104",
       "commits": [
         {
+          "sha": "19bada6",
+          "message": "[profile-sync] update generated profile artifacts",
+          "at": "2026-11-22T08:08:59Z"
+        },
+        {
           "sha": "b5737a7",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-11-21T08:08:37Z"
@@ -106,11 +111,6 @@
           "sha": "cacab13",
           "message": "[profile-sync] update generated profile artifacts",
           "at": "2026-11-20T08:10:00Z"
-        },
-        {
-          "sha": "6af151f",
-          "message": "[profile-sync] update generated profile artifacts",
-          "at": "2026-11-19T08:10:10Z"
         }
       ],
       "more": 27
@@ -162,8 +162,8 @@
     "peak_hour_pt": 15,
     "peak_day_pt": "Tue",
     "hours_pt": [
-      118,
-      112,
+      119,
+      111,
       90,
       74,
       33,
@@ -188,18 +188,18 @@
       94
     ],
     "days_pt": [
-      175,
+      176,
       318,
       353,
       345,
       282,
-      318,
+      317,
       264
     ],
-    "latest": "2026-11-21T08:08:37.000Z",
+    "latest": "2026-11-22T08:08:59.000Z",
     "earliest": "2013-10-11T20:59:34.000Z",
     "sample_size": 2055,
-    "commits_7d": 6,
+    "commits_7d": 7,
     "commits_30d": 40,
     "top_commit_repo": {
       "name": "97115104",
@@ -211,13 +211,13 @@
       "name": "JavaScript",
       "repo": "97115104",
       "bytes": 65702,
-      "pushed_at": "2026-11-21T08:08:38Z"
+      "pushed_at": "2026-11-22T08:09:00Z"
     },
     {
       "name": "Shell",
       "repo": "97115104",
       "bytes": 465,
-      "pushed_at": "2026-11-21T08:08:38Z"
+      "pushed_at": "2026-11-22T08:09:00Z"
     },
     {
       "name": "TypeScript",
